@@ -1,0 +1,56 @@
+<div id="hidden-pypes-bullet" class="snippet-explanation-title" style="width: 100%; padding-left:0px;">
+  <h3>Pypes</h3>
+  <p>Take a look into the <a href="/tutorials/PypesBasic.html">Basic PypeS</a> tutorial to learn how to effectively pipe vmtk scripts together, the <a href="/tutorials/PypesProgrammatically.html">Use PypeS Programmatically</a> tutorial to learn how to interactively work with PypeS objects and into the <a href="/tutorials/PypesAdvanced.html">Advanced PypeS</a> tutorial to learn how to write your own PypeS modules</p>
+</div>
+
+<figure class="code bullet-description1" style="margin-top: 20px; width:100%;">
+  <pre><code>vmtkmarchingcubes --help
+Creating vmtkMarchingCubes instance.
+Automatic piping vmtkmarchingcubes
+Parsing options vmtkmarchingcubes
+vmtkmarchingcubes : generate an isosurface of given level from a 3D image
+Input arguments:
+	-id Id(int,1); default=0: script id
+	-handle Self (self,1): handle to self
+	-disabled Disabled (bool,1); default=0: disable execution and piping
+	-i Image (vtkImageData,1): the input image
+	-ifile ImageInputFileName(str,1): filename for the default Image Reader
+	-array ArrayName (str,1): name of the array to work with
+	-l Level(float,1); default=0.0: graylevel to generate the isosurface at
+	-connectivity Connectivity (bool,1); default=0: only output the largest connected region of the isosurface
+	-ofile SurfaceOutputFileName (str,1): filename for the default Surface writer
+Output arguments:
+	-id Id (int,1); default= 0: script id
+	-handle Self (self,1): handle to self
+	-o Surface (vtkPolyData,1): the output surface</code></pre>
+</figure>
+
+<figure class="code bullet-description2" style="margin-top: 20px; width:100%">
+  <pre><code>// We can use vmtkmarchingcubes as a stand-alone script by using the built-in I/O functionality
+vmtkmarchingcubes -ifile foo.vti -ofile foo.vtp
+//or we can build a pype that does the same thing
+vmtkimagereader -ifile foo.vti --pipe vmtkmarchingcubes --pipe vmtksurfacewriter -ofile foo.vtp @vmtkcenterlines.o -array MaximumInscribedSphereRadius
+//Say we want to read two images and extract a surface with Marching Cubes with a level of 20 for both. We can either write
+vmtkmarchingcubes -ifile foo1.vti -l 20 --pipe vmtkmarchingcubes -ifile foo2.vti -l 20
+//or push the input argument -l along to the second vmtkmarchingcubes this way
+vmtkmarchingcubes -ifile foo1.vti -l@ 20 --pipe vmtkmarchingcubes -ifile foo2.vti
+</code></pre>
+</figure>
+
+<div class="snippet-explanation" style="width: 100%; padding-left:0px;">
+
+<p>Writing classes implementing <code>algorithms</code> and writing actual tools 
+to be used for everyday work are two distinct tasks. </br>Very often a well-designed 
+object-oriented library ends up to be used in ever-growing collections of shell, 
+Python or Tcl scripts or small C programs, each with its own argument parsing and 
+I/O sections. Very often high-level code is duplicated to provide slightly different 
+<code>functionality</code>. On the other side, writing a GUI is a time-consuming task, and adding 
+new functionality requires time, which might deter experimentation. <code>PypeS</code> goes in the 
+direction of providing a flexible <code>framework</code> for <code>high-level</code> code, both from the user’s 
+and from the developer’s points of view. The user wants to get things done minimizing 
+the work required and the amount of intermediate data generated. The coder wants to limit 
+the amount of code, she/he has to cut and paste (and maintain), and to quickly add new 
+functionality and make it interact with what she/he’s ever written before.
+</p>
+
+</div>

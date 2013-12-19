@@ -1,0 +1,34 @@
+<div id="hidden-segmentation-bullet" class="snippet-explanation-title" style="width: 100%; padding-left:0px;">
+  <h3>Gradient-based 3D level sets segmentation</h3>
+  <p>Take a look into the <a href="/tutorials/ImageBasedModeling.html">Level Set Segmentation</a> tutorial to learn how to reconstruct the 3D surface of a vascular segment from CT or MR images using level sets.</p>
+</div>
+
+<figure class="code bullet-description1" style="margin-top: 20px; width:100%">
+  <pre><code>// Image segmentation
+vmtklevelsetsegmentation -ifile image_volume_voi.vti -ofile level_sets.vti
+//You can specify different parameters, for example:
+-levelsetsfile in order to start from an existing levelset segmentation
+-featureimagetype to change featureimage, for example the upwind modality
+-featurederivativesigma to use a Gaussian derivative convolution</code></pre>
+</figure>
+
+<div class="hidden-bullet-wrapper" style="width: 500px">
+
+<figure class="code bullet-description2" style="margin-top: 10px;">
+    <img alt="" src="/resources/img/home_levelset.png" width="500px" />
+</figure>
+</div>
+
+<div class="snippet-explanation" style="width: 370px;">
+
+<p>A new gradient computation modality based on upwind finite differences 
+allows the segmentation of small (down to 1.2 pixels/diameter) vessels.
+Interactive level sets initialization based on the <code>Fast Marching Method</code>. 
+This includes a brand new method for selecting a vascular segment comprised 
+between two points automatically ignoring side branches, no parameters involved. 
+Segmenting a complex vascular tract comes down to selecting the endpoints of a 
+branch, letting <code>level sets</code> by attracted to gradient peaks with the sole 
+advection term turned on, repeating the operation for all the branches and merging 
+everything in a single model.</p>
+
+</div>

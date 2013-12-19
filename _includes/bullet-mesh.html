@@ -1,0 +1,31 @@
+<div id="hidden-mesh-bullet" class="snippet-explanation-title" style="width: 100%; padding-left:0px;">
+  <h3>Generating a mesh</h3>
+  <p>Take a look into the <a href="/tutorials/MeshGeneration.html">Generating a Mesh</a> tutorial to learn how to generate a mesh from a surface and into <a href="/tutorials/CenterlinesGmsh.html">Meshing based on centerlines (vmtk+gmsh)</a> tutorial to learn how to generate tetrahedral or <strong>mixed hexahedral</strong> meshes using vmtk coupled to Gmsh. <em>Contributed by Emilie Marchandise, U. Louvain</em></p>
+</div>
+
+<figure class="code bullet-description1" style="margin-top: 20px; width:100%;">
+  <pre><code>// generating a uniform element mesh
+vmtkmeshgenerator -ifile foo.vtp -ofile foo.vtu -edgelength 0.5
+//Generating a radius-adaptive element mesh
+vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines -endpoints 1 -seedselector openprofiles --pipe vmtkdistancetocenterlines -useradius 1 --pipe vmtkmeshgenerator -elementsizemode edgelengtharray -edgelengtharray DistanceToCenterlines -edgelengthfactor 0.3 -ofile foo.vtu 
+//Adding a boundary layer
+vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines -endpoints 1 -seedselector openprofiles --pipe vmtkdistancetocenterlines -useradius 1 --pipe vmtkmeshgenerator -elementsizemode edgelengtharray -edgelengtharray DistanceToCenterlines -edgelengthfactor 0.3 -boundarylayer 1 -ofile foo.vtu </code></pre>
+</figure>
+
+<div class="hidden-bullet-wrapper" style="width: 500px">
+<figure class="code bullet-description2" style="margin-top: 10px;">
+    <img alt="Figure 1" src="/resources/img/home_mesh.png" />
+</figure>
+</div>
+
+<div class="snippet-explanation" style="width: 370px;">
+
+<p>Surface <code>remeshing</code> is performed under the assumption that 
+the surface requires improvement before being used for CFD.
+After the surface has been remeshed the volume is filled with 
+a combination of <code>tetrahedral</code> and <code>prismatic</code> elements. </br>
+We can heighten the <code>density</code> of the mesh near the wall by generating
+the <code>boundary layer</code>.
+</p>
+
+</div>

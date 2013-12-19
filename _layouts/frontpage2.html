@@ -1,0 +1,247 @@
+---
+layout: default
+---
+
+{% include headertop.html %}
+{% include headerbottom.html %}
+
+<div class="splash">
+  <div class="darkblue-overlay">&nbsp;</div>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div id="vmtkmaintitle" class="vmtk-logo">
+          <a href="/index.html">vmtk</a>
+        </div>
+        {% include navbar.html %}
+      </div>
+    </div>
+    <div class="row">
+      <div class="span12">
+        <div class="splash-text ontop">
+          <h2 style="font-weight: 700;">The Vascular Modeling Toolkit</h2>
+          <p class="click">Supported by <a href="http://www.orobix.com" target="_blank">Orobix srl</a></p>
+          <p class="splash-pitch">
+            vmtk is a collection of libraries and tools for 
+            3D reconstruction, geometric analysis, mesh generation 
+            and surface data analysis for image-based modeling of blood vessels.
+          </p>
+          <a class="learn-more-btn" href="{{ site.baseurl }}/what-is-vmtk.html">Learn More</a>
+          <!--<a href="#bunjee"><div class="bunjee-logo"></div></a>-->
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+
+ <div class="bullet-point-box">
+  <div class="bullet-row-1-wrap">
+    <div class="container">
+         
+      <div class="row">
+        <div class="span4 bullet-point" id="segmentation">
+          <h3>Segmentation</h3>
+          <p>Segmentation of vascular segments (or other anatomical structures) from medical images</p>
+        </div>
+        <div class="span4 bullet-point" id="centerlines">
+          <h3>Centerlines</h3>
+          <p>Compute centerlines and maximal inscribed sphere radius of branching tubular structures given their polygonal surface representation</p>
+        </div>
+        <div class="span4 bullet-point" id="geometric-analysis">
+          <h3>Geometric analysis</h3>
+          <p>Geometric analysis and surface data processing of 3D models of blood vessels</p>
+        </div>
+      </div>
+        
+      <div class="code-snippet-arrow"></div>
+    </div>
+  </div>
+
+  <div id="code-snippet-row1">
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+  </div>
+
+  <div class="bullet-row-2-wrap">
+    <div class="container">
+      <div class="row">
+        <div class="span4 bullet-point" id="mesh">
+          <h3>Mesh generation</h3>
+          <p>Surface remeshing, volume meshing and generation of boundary layers of prismatic elements with varying thickness for Computational Fluid Dynamics.</p>
+        </div>
+        <div class="span4 bullet-point" id="post-processing">
+          <h3>Post processing</h3>
+          <p>Mapping and patching of fluid dynamics variables, particle tracing and more...</p>
+        </div>
+        <div class="span4 bullet-point" id="pypes">
+          <h3>Pyping system</h3>
+          <p>PypeS is the glue among vmtk scripts. It allows new scripts to be written easily, to have a common interface and to interact with each other.</p>
+        </div>
+      </div>
+      <div class="code-snippet-arrow"></div>
+      
+    </div>
+  </div>
+
+  <div id="code-snippet-row2">
+    <div class="container">
+      <div class="row">
+      </div>
+    </div>
+  </div>
+
+  <div class="where-to-learn-more">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+          <a class="learn-more-btn" href="{{ site.baseurl }}/what-is-vmtk.html">Learn More</a>
+          <p>or visit the <a class="italicize" href="{{ site.baseurl }}/documentation">vmtk Documentation</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="bunjee">
+    <div class="container">
+      <div class="row">
+        <div class="span12 bullet-point" style="height:100%;">
+        <h2><span style="background-color:#151A2F">Support and consulting</span></h2>
+        <p class="click">&nbsp;Custom development and training courses&nbsp;</p>
+        
+        
+        <div class="row">
+	      <div id="bunjee-text" class="span12">
+          <p>Need to develop problem-specific algorithms, custom pipelines or dedicated user interfaces?</p>
+          <div class="row">
+            <div class="span2"></div>
+            <div class="bunjee-left">
+              <p><a href="http://www.orobix.com" target="_blank">Orobix srl</a> offers professional support around (but not limited to) </p>
+              <div class="row">
+                <div class="span2"></div>
+                <div class="span4">
+                  <ul>
+                    <li>image segmentation</li>
+                    <li>geometric characterization</li>
+                    <li>mesh generation</li>
+                  </ul>
+                </div>
+                <div class="span4">
+                  <ul>
+                    <li>computational hemodyamics</li>
+                    <li>post processing</li> 
+                    <li>visualization</li> 
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+         <p>In addition, <a href="http://www.orobix.com" target="_blank">Orobix srl</a> is available for electronic and on site training courses and mentoring projects.</p>
+	      
+		    <!--<p><a href="http://bunjee.github.io" target="_blank">Bunjee</a> is the new 
+		       <a href="http://www.orobix.com" target="_blank">Orobix</a>'s cloud-based 
+		       scientific computing platform. <br/>
+		       On <a href="http://bunjee.github.io" target="_blank">Bunjee</a> you can 
+		       run scientific applications such as vmtk or cfd solvers directly from your 
+		       browser.<br/>
+		       Nothing to download and nothing to install.<br/>
+		       Link it with your dropbox account and sync your data.<br/>
+		       A cloud-based, pay-as-you-go service with an intuitive interface.</p>-->
+        <!-- 
+	        <h2 class="bunjeehdr"><span>to fix</span></h2>
+		    <p>blah blah blah</br>
+		       blah blah blah</br>
+		       blah blah blah</br>
+		       blah blah blah.</br>
+		    </p>
+        -->
+	        
+		    <!--<h2 class="bunjeehdr"><span>vmtk on Bunjee</span></h2>
+		    <p>Use all the vmtk functionalities directly in your browser.</br>
+		       Easy to use interface.</br>
+		       Sync your vmtk data with your dropbox account.</br>
+		       Share your pypes with the community.</br>
+		    </p>-->
+		  </div>
+		  
+      <!--<div id="bunjee-image-right" class="span6">-->
+	        
+	      	<!--<div id="carousel-bunjee" class="carousel slide">
+			  
+			  <ol class="carousel-indicators">
+			    <li data-target="#carousel-bunjee" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-bunjee" data-slide-to="1"></li>
+			    <li data-target="#carousel-bunjee" data-slide-to="2"></li>
+			  </ol>
+	
+			  
+			  <div class="carousel-inner">
+			    <div class="item active">
+		          <img src="/resources/img/vmtk-bunjee-1.png" alt="Figure 1">
+		        </div>
+			    <div class="item">
+			      <img src="/resources/img/vmtk-bunjee-2.png" alt="Figure 2">
+			    </div>
+			    <div class="item">
+			      <img src="/resources/img/vmtk-bunjee-3.png" alt="Figure 3">
+			    </div>
+		      </div>
+		    
+		     <a class="carousel-control left" href="#carousel-bunjee" data-slide="prev">&lsaquo;</a>
+		    <a class="carousel-control right" href="#carousel-bunjee" data-slide="next">&rsaquo;</a>
+			
+		 </div>-->
+		 
+	  </div>
+    </div> 
+    <div class="where-to-learn-more">
+    <div class="container">
+      <div class="row">
+        <div class="span12">
+        
+          <a class="learn-more-btn" href="mailto:info@orobix.com">Contact us</a>
+          <p>or visit the <a class="italicize" href="http://www.orobix.com" target="_blank">Orobix website</a></p>
+          
+          <!--<a class="learn-more-btn" href="http://vmtk.herokuapp.com" target="_blank">Try vmtk on Bunjee</a>
+          <p>or visit the <a class="italicize" href="#bunjee">Bunjee website</a></p>-->
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>  
+    </div>
+    </div>
+   </div>
+ </div>
+</div>
+
+<!-- hidden code-snippet content -->
+<div id="hidden-segmentation">{% include bullet-level-set-segmentation.html %}</div>
+<div id="hidden-centerlines">{% include bullet-centerlines.html %}</div>
+<div id="hidden-geometric-analysis">{% include bullet-geometric-analysis.html %}</div>
+<div id="hidden-mesh">{% include bullet-mesh.html %}</div>
+<div id="hidden-post-processing">{% include bullet-post-processing.html %}</div>
+<div id="hidden-pypes">{% include bullet-pypes.html %}</div>
+
+
+<div class="news">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+      </div>
+    </div>
+    <div class="row">
+      {% include news.html %}
+    </div>
+  </div>
+</div>
+
+
+<div class="picture-box">
+  <div class="container">
+  </div>
+</div>
+
+{% include footer.html %}

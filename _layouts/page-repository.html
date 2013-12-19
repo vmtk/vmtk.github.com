@@ -1,0 +1,74 @@
+---
+layout: default
+toc: false
+---
+
+{% include headertop.html %}
+{% include headerbottom.html %}
+
+<script>
+	var disqus_developer = 1;
+	var disqus_domain = "http://0.0.0.0:4000";
+</script>
+
+<div class="darkstrip"></div>
+
+<div class="darkbluetopbar">
+  <div class="container" style="height: 100%">
+    <div class="navbar-wrap">
+      <div class="container" style="position: relative; height: 100%;">
+        <div id="vmtkmaintitle" style="margin-top:20px" class="vmtk-logo">
+          <a href="/index.html">vmtk</a>
+        </div>
+        {% include navbar.html %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="midbluebar">
+  <div class="container">
+    <h1 id="page-title">{{ page.title }}</h1>
+  </div>
+</div>
+
+<div class="page-container">
+  <div class="container" style="min-height: 540px;">
+    <div class="row">
+      <div class="span12">
+          <div class="main-page-column" style="width: 100%;">
+            {% if page.by %}
+              <div class="written">Written By: <span class="by">{{ page.by }}</span></div>
+            {% endif %}
+            
+            {{ content }}
+            
+            <code data-gist-id="7116473" data-gist-hide-footer="true" data-gist-hide-line-numbers="true"></code>
+            
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+	            var disqus_shortname = 'vmtk'; 
+	            (function() {
+		        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		      })();
+		    </script>
+		    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+		    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>                
+          </div>
+      </div>
+    </div>
+  </div>
+
+{% include footer.html %}
+
+ <script type="text/javascript">
+    var disqus_shortname = 'vmtk'; // required: replace example with your forum shortname
+        (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+ </script>

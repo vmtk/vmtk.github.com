@@ -1,0 +1,133 @@
+---
+layout: page
+title: Installation
+---
+
+
+## Installing binary packages
+
+
+Binary packages are supported by <a href="http://www.orobix.com" target="_blank">Orobix</a>). 
+Special thanks to Johannes Ring, the maintainer of vmtk Debian packages, <a href="http://www.simula.no" target="_blank">Simula Research Laboratory</a> and to Sara Zanchi and Valentina Rossi, University of Bergamo.
+
+### Ubuntu packages
+
+
+Starting with vmtk 0.9, vmtk has become an official Debian package. This means that the package is available for Debian and Ubuntu releases, 32 and 64 bit:
+
+    sudo apt-get install vmtk
+
+Visit the <a href="https://launchpad.net/~vmtk-packaging/+archive/ppa" target="_blank">PPA on Launchpad</a> for details on the published packages.
+
+### Mac OSX packages
+
+
+There are two different packages for Snow Leopard and Lion/Mountain Lion, both 64 bit, available for [download]({{ site.baseurl }}/download/).
+
+Once downloaded, just drag the MacOSX package to the Applications folder (or any other location). Double-clicking the package will fire up vmtk within PypePad.
+
+If you want to have vmtk available at the Terminal (recommended), just cut and paste the following line
+
+    source /Applications/vmtk.app/Contents/MacOS/vmtk
+
+into the .profile file in your home directory and restart a new Terminal (or start a new tab). At this point, not only vmtk becomes available at the command line, but you also get vmtk and VTK, Python-wrapped, for free. <br/>As a check, fire up a terminal, enter the python shell and type
+
+    from vmtk import vmtkscripts
+    from vmtk import vtkvmtk
+    import vtk
+    
+and you have access to all vmtkscripts and Python-wrapped vmtk and VTK classes. In addition, the package also contains pre-compiled VTK and ITK libraries and header files to develop their applications in C++.
+
+### Windows 7 installers
+
+After you [download]({{ site.baseurl }}/download/) the proper architecture (32bit vs 64bit - if in doubt go for 32bit), just run the installer. It will take you through the installation stage, after which you'll find vmtk in your start menu. <br/>Click on vmtk, and you'll see PypePad ready for use.
+
+Note that, along with vmtk, the installer directly provides a Python interpreter, Python-wrapped vmtk and VTK classes, and vmtk, VTK, ITK dll's and header files to develop new applications in Python and C++.
+
+
+## Installing from source
+
+vmtk is now based on SuperBuild, a CMake feature that allows to automatically download and compile dependencies (in our case VTK and ITK). This makes the whole process a lot easier than it was up until version 0.9. Make sure you update your notes based on the instructions below.
+
+### Requirements
+
+vmtk is cross-platform and will compile and work on Linux, Mac OSX and Windows. Most of the development is performed under Linux and Mac OSX, but feel free to update us on eventual issues on Windows.
+
+In order to successfully compile and use vmtk, the following software has to be installed in your system:
+
+- <span> <a href="http://www.git-scm.org" target="_blank">Git</a> (&ge; 1.6)</span>
+- <span> <a href="http://www.python.org" target="_blank">Python</a> (&ge; 2.6, &lt; 3.0)</span>
+- <span><a href="http://www.cmake.org" target="_blank">CMake</a> (&ge; 2.8)</span>
+- A C++ compiler
+
+For Ubuntu users, you'll have to install the following packages prior to compiling:
+
+    sudo apt-get install libxt-dev libgl1-mesa-glx libgl1-mesa-dev python-dev
+
+### Installation
+
+Checkout the development version from the official Git repository:
+
+    git clone https://github.com/vmtk/vmtk.git
+
+Create a build directory and cd into it
+
+    mkdir vmtk-build
+    cd vmtk-build
+
+Run CMake with the directory where the vmtk source tree is located as an argument e.g. 
+
+    ccmake ../vmtk
+    
+or if you use the CMake GUI, point the source path to the vmtk source directory.
+Set CMake variables as appropriate (they have sensible defaults), *configure* and *generate* (for more details look at the <a href="http://www.cmake.org/cmake/help/runningcmake.html" target="_blank">CMake help pages</a>). Once you're done, you'll find either Makefiles or a Visual Studio solution or an XCode project in the build directory, depending on your platform and compiler.
+
+- Start your compiler in your build directory, as your platform requires. Note that this will download and compile both VTK and ITK in the background, so it will typically take a long time. The build process will automatically install all build products in the vmtk-build/Install directory.
+
+- Set a couple of environment variables. 
+
+  - For Linux, add these lines to your .bashrc or .bash_profile file (in your home directory):
+  
+        VMTKHOME=/path-to-vmtk-build/Install
+        export PATH=$VMTKHOME/bin:$PATH
+        export LD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/InsightToolkit:$LD_LIBRARY_PATH
+        export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$PYTHONPATH
+
+  - For OSX, add these lines to your .profile file (in your home directory):
+  
+        VMTKHOME=/path-to-vmtk-build/Install
+        export PATH=$VMTKHOME/bin:$PATH
+        export DYLD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/InsightToolkit:$DYLD_LIBRARY_PATH
+        export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$PYTHONPATH
+
+Note that in the above I assume vtk is at version 5.10. It might not be if I forget to update the instructions. Check the directory name if this doesn't work, and please send an email on the mailing list.
+
+Enjoy
+
+
+### Extra note for Windows 7 64 bit users 
+
+<sub>thanks to Hugo Gratama van Andel</sub>
+
+Apparently the FindPythonLibs CMake script is not working correctly on Windows 7 64 bit, see:
+
+- <a href="http://www.cmake.org/pipermail/cmake/2011-July/045471.html" target="_blank">FindPythonLibs no longer finding Python libs in Windows 7 64 bit</a>
+- <a href="http://www.cmake.org/pipermail/cmake/2011-November/047820.html" target="_blank">FindPythonLibs fails inexplicably</a>
+
+
+If your build is throwing errors you can resolve this by editing the CMakeCache.txt file in the .\ VTK-Build\ directory:
+
+    //Path to a file.
+    PYTHON_INCLUDE_DIR:PATH=PYTHON_INCLUDE_DIR-NOTFOUND
+    change this to the correct path on your system e.g.:
+    PYTHON_INCLUDE_DIR:PATH=C:/Python27/include
+    
+    //Path to a library.
+    PYTHON_LIBRARY:FILEPATH=PYTHON_LIBRARY-NOTFOUND
+    change this to the correct path on your system e.g.:
+    PYTHON_LIBRARY:FILEPATH=C:/Python27/libs/python27.lib
+    
+    //Path to a program.
+    PYTHON_EXECUTABLE:FILEPATH=PYTHON_EXECUTABLE-NOTFOUND
+    change this to the correct path on your system e.g.:
+    PYTHON_EXECUTABLE:FILEPATH=C:/Python27/python.exe

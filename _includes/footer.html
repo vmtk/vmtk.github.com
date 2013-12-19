@@ -1,0 +1,110 @@
+
+  <div class="footer">
+  <div class="container">
+    <ul>
+      <li><h5>Documentation</h5></li>
+      <li><a href="{{ site.baseurl }}/documentation/getting-started.html">Getting Started</a></li>
+      <li><a href="{{ site.baseurl }}/documentation/installation.html/">How to install</a></li>
+      <li><a href="{{ site.baseurl }}/tutorials/">Tutorials</a></li>
+      
+    </ul>
+    <ul>	
+      <li><h5>Download</h5></li>
+        <li><a href="{{ site.baseurl }}/download/">Stable Release</a></li>
+        <li><a href="{{ site.baseurl }}/download/#development_version">Development Release</a></li>
+    </ul>
+    <ul>
+      <li><h5>Community</h5></li>
+      <li><a href="{{ site.baseurl }}/community/index.html#mailing_lists">Mailing lists</a></li>
+      <li><a href="{{ site.baseurl }}/community/index.html#links">Links</a></li>
+    </ul>
+    <ul>
+      <li><h5>Contribute</h5></li>
+      <li><a href="{{ site.baseurl }}/contribute/#reporting_bugs_and_issues">Report an Issue</a></li>
+      <li><a href="{{ site.baseurl }}/contribute/#help_with_the_documentation">How to Help</a></li>
+      
+    </ul>
+    <ul>
+      <li><h5>vmtk</h5></li>
+      <li><a href="{{ site.baseurl }}/news">News Archive</a></li>
+      <li><a href="{{ site.baseurl }}/license.html">vmtk License</a></li>
+      <li><a href="http://www.orobix.com" target="_blank">Orobix Srl</a></li>
+    </ul>
+    </div>
+    <div class="container">
+      <div class="copyright">
+        <a style="float: left; margin-right: 8px;" href="http://creativecommons.org/licenses/by/3.0/" target="_blank"><img src="{{ site.baseurl }}/resources/img/cc_license.png" style="max-width:100px;padding-top:25px;" alt="CC logo" /></a>
+        <p style="float: left; color:#000;"><br/>Copyright &copy; 2013-<span class="current-year"></span> S.Manini - L.Antiga<br/> 
+        Released under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 Unported License</a>.<br/>
+        Source code for this website was modified from <a href="https://www.scala-lang.org" target="_blank">scala website</a> at <a href="https://github.com/scala/scala-lang" target="_blank">github</a>.<br/> 
+        See original <a href="https://raw.github.com/scala/scala-lang/master/license.md" target="_blank">license</a> for details.
+        </p>
+      </div>
+      <div class="vmtk-logo-footer">
+        <a style="float: right; width:100px;" href="http://www.orobix.com" target="_blank"><img src="/resources/img/orobix-logo.png" alt="Orobix logo" /></a>
+      </div>
+    </div> <!-- container -->
+    </div> <!-- footer -->
+
+    <!-- prettify  js -->
+    <script src="{{ site.baseurl }}/resources/js/vendor/prettify/prettify.js" type="text/javascript" ></script>
+    
+    <!-- jquery js -->
+    <script src="{{ site.baseurl }}/resources/js/vendor/jquery-1.8.3.min.js" type="text/javascript" ></script>
+    <script src="{{ site.baseurl }}/resources/js/vendor/jquery.stellar.min.js" type="text/javascript" ></script>
+  
+    <!-- modernizr js -->
+    <script src="{{ site.baseurl }}/resources/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js" type="text/javascript" ></script>
+    
+    <!-- lightbox js -->
+    <script src="{{ site.baseurl }}/resources/js/vendor/lightbox-2.6.min.js" type="text/javascript" ></script>
+
+    <!-- retina js -->
+    <script src="{{ site.baseurl }}/resources/js/vendor/retina.js" type="text/javascript" ></script>
+
+    <!-- backstretch js -->
+    <script src="{{ site.baseurl }}/resources/js/vendor/jquery.backstretch.min.js" type="text/javascript" ></script>
+
+    <!-- Bootstrap JS -->
+    <script src="{{ site.baseurl }}/resources/js/vendor/bootstrap.min.js" type="text/javascript" ></script>
+    
+    <!-- Gist embed JS -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gist-embed/1.3/gist-embed.min.js" type="text/javascript"></script>
+
+    {% unless page.layout == 'page' %}
+    <!-- table of contents JS -->
+    <script src="{{ site.baseurl }}/resources/js/vendor/toc.js" type="text/javascript" ></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#toc').toc({exclude: 'h1, h5, h6', context: '', autoId: true, numerate: false});
+        function moveScroller() {
+          if ($(".sidebar").length == 0)
+            return;
+          var a = function() {
+            var topOfScroll = $(window).scrollTop();
+            var topOfSidebar = $(".sidebar").offset().top;
+            var sidebarInner = $(".sidebar-inner");
+            var bottomOfSidebarInner = $(".sidebar-inner").offset().top + $(".sidebar-inner").outerHeight();
+            var topOfFooter = $(".footer").offset().top - 10;
+            var footerHeight = $(".footer").outerHeight();
+            if (topOfScroll > topOfSidebar) {
+              if (bottomOfSidebarInner > topOfFooter) {
+                sidebarInner.css({position:"fixed",bottom:footerHeight,top:""});
+              } else {
+                sidebarInner.css({position:"fixed",top:"10px",bottom:""});
+              }
+            } else {
+              sidebarInner.css({position:"relative",top:""});
+            }
+          };
+          $(window).scroll(a);a()
+        }
+        moveScroller();
+      })
+    </script>
+    {% endunless %}
+
+    <!-- Custom javascript -->
+    <script src="{{ site.baseurl }}/resources/js/main.js" type="text/javascript"></script>
+  </body>
+</html>

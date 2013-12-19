@@ -1,0 +1,42 @@
+<div id="hidden-geometric-analysis-bullet" class="snippet-explanation-title" style="width: 100%; padding-left:0px;">
+  <h3>Geometric analysis</h3>
+  <p>Take a look into the <a href="/tutorials/GeometricAnalysis.html">Geometric analysis</a> tutorial to learn how to analyze the 3D geometry of a vascular segment and into the <a href="/tutorials/SurfaceForMeshing.html">Preparing a Surface for Meshing</a> tutorial to learn how to prepare a surface for mesh generation.</li></p>
+</div>
+
+<figure class="code bullet-description1" style="margin-top: 20px; width:100%;">
+  <pre><code>// Generate a vtp file containing the data on the bifurcation vectors
+vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines -seedselector openprofiles --pipe vmtkbranchextractor --pipe vmtkbifurcationreferencesystems --pipe vmtkbifurcationvectors -ofile foo_bv.vtp
+//Compute curvature and torsion
+vmtkcenterlinegeometry -ifile foo_cl.vtp -smoothing 1 -ofile foo_clgm.vtp
+//Smoothing a surface
+vmtksurfacesmoothing -ifile foo.vtp -passband 0.1 -iterations 30 -ofile foo_sm.vtp 
+//Adding flow extensions
+vmtksurfacereader -ifile foo.vtp --pipe vmtkcenterlines -seedselector openprofiles --pipe vmtkflowextensions -adaptivelength 1 -extensionratio 20 -normalestimationratio 1 -interactive 0 --pipe vmtksurfacewriter -ofile foo_ex.vtp </code></pre>
+</figure>
+
+<div class="hidden-bullet-wrapper" style="width: 500px">
+
+<figure class="code bullet-description2" style="margin-top: 10px;">
+    <img alt="Figure 1" src="/resources/img/home_geometry.png" />
+</figure>
+</div>
+
+<div class="snippet-explanation" style="width: 370px;">
+
+<p>Quantifying geometric features of the vascular segment, 
+those associated to <code>bifurcations</code>, such as bifurcation planes 
+and bifurcation angles, and those associated to branches, such 
+as <code>curvature and torsion</code>. Curvature and torsion are tightly linked 
+to the definition of the Frenet line frame, constituted by a tangent, 
+a normal and the binormal.
+</p>
+<p>Increase surface smoothness prior to building the mesh. 
+Image segmentation can result in bumpy surfaces, especially if the 
+image quality is not high and one didn’t use any curvature term in level 
+sets evolution. <code>Flow extensions</code> are cylindrical extensions added to the 
+inlets and outlets of a model. They are important for ensuring that the 
+flow entering and leaving the computational domain is fully developed, so 
+that fully developed boundary conditions aren’t forcing the solution in the 
+actual vessel.
+</p>
+</div>
