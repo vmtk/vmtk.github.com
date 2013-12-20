@@ -40,7 +40,7 @@ title: Learn vmtk
       <p>Screenshots from vmtk examples.</p>
     </div>
     <div class="span4 doc-block">
-      <h3><a href="{{ site.baseurl }}/documentation/presentations.html/">Presentations</a></h3>
+      <h3><a href="{{ site.baseurl }}/documentation/presentations.html">Presentations</a></h3>
       <p>Presentations about vmtk.</p>
     </div>
     <!--<div class="span4 doc-block">
