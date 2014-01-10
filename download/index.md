@@ -27,7 +27,7 @@ Binary packages are available for Debian, Ubuntu, Mac OSX 10.6 (Snow Leopard) an
   </a> 
 </div>
 
-For further details, follow the instructions on the [installation]({{ site.baseurl }}/documentation/installation.html/#installing_binary_packages) page.
+For further details, follow the instructions on the [installation]({{ site.baseurl }}/documentation/installation.html#installing_binary_packages) page.
 
 
 ##Development version
@@ -36,7 +36,7 @@ You can grab the latest development version from the <a href="https://github.com
 
      git clone https://github.com/vmtk/vmtk.git
      
-Follow the instructions on the [installation]({{ site.baseurl }}/documentation/installation.html/#installing_from_source) page to compile the source code.
+Follow the instructions on the [installation]({{ site.baseurl }}/documentation/installation.html#installing_from_source) page to compile the source code.
 
 ##Additional information
 

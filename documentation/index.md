@@ -21,7 +21,7 @@ title: Learn vmtk
   
   <div class="row">
     <div class="span4 doc-block">
-      <h3><a href="{{ site.baseurl }}/documentation/installation.html/">Installation</a></h3>
+      <h3><a href="{{ site.baseurl }}/documentation/installation.html">Installation</a></h3>
       <p>How to install vmtk.</p>
     </div>
     <div class="span4 doc-block">
