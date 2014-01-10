@@ -55,9 +55,9 @@ vmtk is cross-platform and will compile and work on Linux, Mac OSX and Windows. 
 
 In order to successfully compile and use vmtk, the following software has to be installed in your system:
 
-- <span> <a href="http://www.git-scm.org" target="_blank">Git</a> (&ge; 1.6)</span>
-- <span> <a href="http://www.python.org" target="_blank">Python</a> (&ge; 2.6, &lt; 3.0)</span>
-- <span><a href="http://www.cmake.org" target="_blank">CMake</a> (&ge; 2.8)</span>
+- <span> <a href="http://www.git-scm.org" target="_blank">Git</a> (&#8805; 1.6)</span>
+- <span> <a href="http://www.python.org" target="_blank">Python</a> (&#8805; 2.6, &lt; 3.0)</span>
+- <span><a href="http://www.cmake.org" target="_blank">CMake</a> (&#8805; 2.8)</span>
 - A C++ compiler
 
 For Ubuntu users, you'll have to install the following packages prior to compiling:
