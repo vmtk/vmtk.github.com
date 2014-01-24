@@ -4,7 +4,7 @@ title: Prepare a surface for mesh generation
 ---
 
 #### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 This tutorial demonstrates how to process a surface model (obtained like in [this tutorial]({{ site.baseurl }}/tutorials/Centerlines.html) or with other techniques) to generate a computational mesh for use in CFD.
 

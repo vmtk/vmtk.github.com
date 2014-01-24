@@ -4,7 +4,7 @@ title: vmtk Scripts
 ---
 
 #### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 vmtk algorithms are implemented in C++ classes. <a href="http://www.python.org" target="_blank">Python</a> scripts call C++ classes and make them interact with each other.
 

@@ -4,7 +4,7 @@ title: Advanced PypeS Tutorial
 ---
 
 #### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 <sub>by Carlos Remuzzi BEng, Biomedical Engineering, Freelance Developer, London UK</sub>
 

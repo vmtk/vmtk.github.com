@@ -4,7 +4,7 @@ title: Particle Tracing
 ---
 
 #### Applicable version(s): 
-[Development version]({{site.baseurl}}/download/#development_version)
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 <sub>by Simone Manini, Orobix Srl, Italy</sub>
 

@@ -3,16 +3,17 @@ layout: page
 title: Download
 ---
 
-###vmtk Latest release (1.0.1)
+###vmtk Latest release (1.2)
 
 ##Binary Packages
 
-Binary packages are available for Debian, Ubuntu, Mac OSX 10.6 (Snow Leopard) and 10.7-10.8 (Lion and Mountain Lion) and Windows 7 32bit and 64bit.
-
+Binary packages are available for Linux (Ubuntu, Fedora, Mint) 32bit and 64 bit, Mac OSX Mavericks (10.9.x) and Windows 7 32bit and 64bit.<br/>
+Other Linux distributions may be supported but vmtk is not guaranteed to work. <br/>
+In case you can't find a binary package for your operating system, please [compile vmtk from source]({{ site.baseurl }}/documentation/installation.html#installing_from_source).
 
 <p class="center">
-  Download vmtk 1.0.1 for your system
-  (<a href="http://www.sourceforge.net/projects/vmtk/files/vmtk/1.0/" target="_blank">All downloads</a>).
+  Download vmtk 1.2 for your system
+  (<a href="https://drive.google.com/folderview?id=0B4IPwYB1RDRxZnNrWFo0Y2FQZDg&usp=sharing#list" target="_blank">All downloads</a>).
 </p>
 
 
@@ -22,7 +23,7 @@ Binary packages are available for Debian, Ubuntu, Mac OSX 10.6 (Snow Leopard) an
     <span class="icon"> 
     </span> 
     <span class="version">
-      vmtk 1.0.1
+      vmtk 1.2
     </span> 
   </a> 
 </div>

@@ -4,7 +4,7 @@ title: Making a CFD mesh using a sigmoid mask
 ---
 
 #### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 In this protocol it is explained how you can mask the bone with a sigmoid function to create a good mesh from for example the internal carotid artery or an aneurysm located near bone. The sigmoid function masks the high gradients in bone and air in order to decrease their influence on the levelset. If you can't understand the used code, I advise you to look at one of the other tutorials on the vmtk website.
 

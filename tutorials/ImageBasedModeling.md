@@ -4,7 +4,7 @@ title: Image-based Modeling
 ---
 
 #### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
 
 This tutorial demonstrates how to generate an image based surface model from a vti image. If you are not sure about how to create or adjust a vti image please refer to the [Getting Started]({{ site.baseurl }}/documentation/getting-started.html) section.
 

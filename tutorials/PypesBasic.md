@@ -4,7 +4,7 @@ title: Basic PypeS tutorial
 ---
 
 #### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 This tutorial will get you started with PypeS. This is the first recommended step for using vmtk efficiently.
 

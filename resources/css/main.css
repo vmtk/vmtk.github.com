@@ -1300,6 +1300,24 @@ a.btn.download:hover, a.btn.download:focus { background-color:#58ccd5; border-co
   background-position:center center;
 }
 
+.new-vmtk-version {
+  position: absolute;
+  top: 220px;
+  right: 30px;
+  width: 150px;
+  font-size: 26px;
+  color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 2px white;
+  max-width: 80%;
+  margin-right: 10px;
+  padding: 10px;
+  font-family: "museo-slab";
+  background-color: rgba(200,200,200,0.1);
+}
+
 .vmtk-version {
   line-height: 0.9em;
   font-size: 36px;

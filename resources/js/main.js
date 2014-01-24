@@ -7,20 +7,29 @@
 
 function getOS() {
   var osname = "Unknown OS";
-  if (navigator.appVersion.indexOf("Windows NT 5.1") != -1)osname = "winXP-32bit";
-  if (navigator.appVersion.indexOf("Windows NT 6.1") != -1){
-  	osname = "Win7-32bit";
-  	if (navigator.appVersion.indexOf("WOW64") != -1) osname = "Win7-64bit";
-  	}
-  if (navigator.appVersion.indexOf("Mac") != -1) {
-    if (navigator.appVersion.indexOf("10_6") != -1) osname = "SnowLeopard-64bit";
-    if (navigator.appVersion.indexOf("10_7") != -1) osname = "Lion-64bit";
-  	if (navigator.appVersion.indexOf("10_8") != -1) osname = "Lion-64bit";
-  	if (navigator.appVersion.indexOf("10_9") != -1) osname = "Lion-64bit";	
+  //OSX-10.9
+  if (navigator.userAgent.indexOf("Mac OS X 10_9") != -1) {
+  	osname = "OSX"
   }
-  if (navigator.appVersion.indexOf("Linux") != -1) osname = "Linux";
+  //LINUX-x86_64
+  if (navigator.userAgent.indexOf("Linux x86_64") != -1) {
+  	osname = "Linux-x86_64"
+  }
+  //LINUX_i386
+  if (navigator.userAgent.indexOf("Linux i686") != -1) {
+  	osname = "Linux-i386"
+  }
+  //Windows7_i386 or Windows8_i386
+  if (navigator.userAgent.indexOf("Windows NT 6.") != -1 ){
+  	osname = "Windows-i386"
+  	//Windows7_x86_64 or Windows8_x86_64
+  	if (navigator.userAgent.indexOf("WOW64") != -1) { 
+  	  	osname = "Windows-x86_64"
+  	}
+  }
   return osname;
 }
+ 
 
 /***************************
  * Document initialization
@@ -160,33 +169,52 @@ function styleCode() {
   if (a) { prettyPrint() }
 }
 
-
+ 
 /***********************
  * Main Page Download Button
  **********************/
  $(document).ready(function() {
   var os = getOS();
   console.log(os);
-  if (os.indexOf("Win") != -1 || os.indexOf("win") != -1) {
+  if (os.indexOf("Windows-i386") != -1) {
     $('#download-button').addClass("windows");
-    var link = "http://sourceforge.net/projects/vmtk/files/vmtk/1.0/vmtk-1.0.1-"+os+".exe"
+    var link = "https://drive.google.com/file/d/0B4IPwYB1RDRxanRKNW5FWHJMZ2M/edit?usp=sharing"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
-  if (os.indexOf("Lion") != -1 || os.indexOf("Snow") != -1  ) {
+  if (os.indexOf("Windows-x86_64") != -1) {
+    $('#download-button').addClass("windows");
+    var link = "https://drive.google.com/file/d/0B4IPwYB1RDRxS2FHXzZzWE9Iemc/edit?usp=sharing"
+    $('#download-button').prop("href", link);
+    $('#download-button').prop("target","_blank");
+  }
+  if (os.indexOf("OSX") != -1 ) {
     $('#download-button').addClass("macos");
-    var link = "http://sourceforge.net/projects/vmtk/files/vmtk/1.0/vmtk-1.0.1-"+os+".dmg"
+    var link = "https://drive.google.com/file/d/0B4IPwYB1RDRxektRSDJZQlY5N3M/edit?usp=sharing"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
-  if (os == "Linux") {
+  if (os == "Linux-i386") {
     $('#download-button').addClass("unix");
-    var link = "http://sourceforge.net/projects/vmtk/files/vmtk/1.0/vmtk-1.0.1.tar.gz"
+    var link = "https://drive.google.com/file/d/0B4IPwYB1RDRxSjNpU2RHdFJRSnc/edit?usp=sharing"
+    $('#download-button').prop("href", link);
+    $('#download-button').prop("target","_blank");
+  }
+  if (os == "Linux-x86_64") {
+    $('#download-button').addClass("unix");
+    var link = "https://drive.google.com/file/d/0B4IPwYB1RDRxeFBMNmdyaUxEb00/edit?usp=sharing"
+    $('#download-button').prop("href", link);
+    $('#download-button').prop("target","_blank");
+  }
+  if (os == "Unknown OS"){
+	$('#download-button').addClass("unix");
+	var link = "download/#development_version"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
  }
  );
+
  
 /***********************
 * Google Analytics

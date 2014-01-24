@@ -4,7 +4,7 @@ title: Meshing based on centerlines (vmtk+gmsh)
 ---
 
 #### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
 
 *by Emilie Marchandise, Universite ́ catholique de Louvain, Institute of Mechanics, Materials and Civil Engineering (iMMC) *
 

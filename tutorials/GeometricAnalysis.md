@@ -4,7 +4,7 @@ title: Geometric Analysis
 ---
 
 #### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
 
 This tutorial demonstrates how to analyze the 3D geometry of a vascular segment.
 

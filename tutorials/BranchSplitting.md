@@ -4,7 +4,7 @@ title: Branch Splitting
 ---
 
 #### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
 
 This tutorial demonstrates how to split a vascular segment into its constituent branches.
 

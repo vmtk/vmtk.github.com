@@ -4,7 +4,7 @@ title: The Netgen way
 ---
 
 #### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download//#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 While the recommended way is to use vmtkmeshgenerator, this is another method to generate volume meshes.
 
