@@ -178,31 +178,31 @@ function styleCode() {
   console.log(os);
   if (os.indexOf("Windows-i386") != -1) {
     $('#download-button').addClass("windows");
-    var link = "https://drive.google.com/file/d/0B4IPwYB1RDRxanRKNW5FWHJMZ2M/edit?usp=sharing"
+    var link = "http://goo.gl/xnWr41"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
   if (os.indexOf("Windows-x86_64") != -1) {
     $('#download-button').addClass("windows");
-    var link = "https://drive.google.com/file/d/0B4IPwYB1RDRxS2FHXzZzWE9Iemc/edit?usp=sharing"
+    var link = "http://goo.gl/fXZhNk"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
   if (os.indexOf("OSX") != -1 ) {
     $('#download-button').addClass("macos");
-    var link = "https://drive.google.com/file/d/0B4IPwYB1RDRxektRSDJZQlY5N3M/edit?usp=sharing"
+    var link = "http://goo.gl/R1Haad"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
   if (os == "Linux-i386") {
     $('#download-button').addClass("unix");
-    var link = "https://drive.google.com/file/d/0B4IPwYB1RDRxSjNpU2RHdFJRSnc/edit?usp=sharing"
+    var link = "http://goo.gl/aqfav7"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
   if (os == "Linux-x86_64") {
     $('#download-button').addClass("unix");
-    var link = "https://drive.google.com/file/d/0B4IPwYB1RDRxeFBMNmdyaUxEb00/edit?usp=sharing"
+    var link = "http://goo.gl/tw1env"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
