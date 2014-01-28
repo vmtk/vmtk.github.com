@@ -1,7 +1,7 @@
 ---
 layout: page-full-width
 ---
-{:.vmtkscripts}
+{:.vmtkscripts-list}
 # vmtkScripts reference
 | Script | Description |
 |:--|:--|
