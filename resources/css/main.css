@@ -63,7 +63,7 @@ border: 1px solid #dddddd;
 .vmtklist th,td {
 	padding: 4px 5px;
 	border-left: 1px solid #dddddd;
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .vmtklist tbody > tr:nth-child(odd) > td,
