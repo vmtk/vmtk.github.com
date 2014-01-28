@@ -1,11 +1,8 @@
 ---
 layout: page-full-width
 ---
-{:.vmtkscripts}
 
 # vmtkScripts reference
-| Script | Description |
-|:--|:--|
 | [vmtkactivetubes](/vmtkscripts/vmtkactivetubes.html) | |
 | [vmtkbifurcationprofiles](/vmtkscripts/vmtkbifurcationprofiles.html) | compute bifurcation profiles, i.e. the bifurcation splitting lines. The script takes in input the surface and the relative centerlines, both already split into branches. |
 | [vmtkbifurcationreferencesystems](/vmtkscripts/vmtkbifurcationreferencesystems.html) | compute reference systems for each bifurcation of a tree. The script takes in input the centerlines already split into branches. |
@@ -30,7 +27,7 @@ layout: page-full-width
 | [vmtkcenterlinemodeller](/vmtkscripts/vmtkcenterlinemodeller.html) | converts a centerline to an image containing the tube function |
 | [vmtkcenterlineoffsetattributes](/vmtkscripts/vmtkcenterlineoffsetattributes.html) | offset centerline attributes relative to a bifurcation reference system, in such a way that the abscissa of the closest point the the origin is zero, and the centerline normal at that point coincides with the bifurcation reference system normal |
 | [vmtkcenterlineresampling](/vmtkscripts/vmtkcenterlineresampling.html) | resample input centerlines with a spline filter |
-| [vmtkcenterlines](/vmtkscripts/vmtkcenterlines.html) | compute centerlines from a branching tubular surface (see papers for details.html); seed points can be interactively selected on the surface, or specified as the barycenters of the open boundaries of the surface; if vmtk is compiled with support for TetGen, TetGen can be employed to compute the Delaunay tessellation of the input points |
+| [vmtkcenterlines](/vmtkscripts/vmtkcenterlines.html) | compute centerlines from a branching tubular surface (see papers for details); seed points can be interactively selected on the surface, or specified as the barycenters of the open boundaries of the surface; if vmtk is compiled with support for TetGen, TetGen can be employed to compute the Delaunay tessellation of the input points |
 | [vmtkcenterlinesections](/vmtkscripts/vmtkcenterlinesections.html) | compute geometric properties of sections located along centerlines. The script takes in input the surface and the relative centerlines. |
 | [vmtkcenterlinesmoothing](/vmtkscripts/vmtkcenterlinesmoothing.html) | smooth centerlines with a moving average filter |
 | [vmtkcenterlineviewer](/vmtkscripts/vmtkcenterlineviewer.html) | |
@@ -47,7 +44,7 @@ layout: page-full-width
 | [vmtkimagecompare](/vmtkscripts/vmtkimagecompare.html) | compares an image against a reference |
 | [vmtkimagecompose](/vmtkscripts/vmtkimagecompose.html) | compose an image based on user-specified parameters or on a reference image |
 | [vmtkimagecurvedmpr](/vmtkscripts/vmtkimagecurvedmpr.html) | Make an MPR image from a centerline and an input image |
-| [vmtkimagefeaturecorrection](/vmtkscripts/vmtkimagefeaturecorrection.html) | correct a feature image (e.g. remove influence of bone and/or air from CT-based feature images.html) |
+| [vmtkimagefeaturecorrection](/vmtkscripts/vmtkimagefeaturecorrection.html) | correct a feature image (e.g. remove influence of bone and/or air from CT-based feature images) |
 | [vmtkimagefeatures](/vmtkscripts/vmtkimagefeatures.html) | compute a feature image for use in segmentation |
 | [vmtkimageinitialization](/vmtkscripts/vmtkimageinitialization.html) | |
 | [vmtkimagelinetracer](/vmtkscripts/vmtkimagelinetracer.html) | interactively trace lines on 3D images; press n and p to move to the next and previous slice, respectively |
@@ -71,7 +68,7 @@ layout: page-full-width
 | [vmtklineresampling](/vmtkscripts/vmtklineresampling.html) | resample input lines with a spline filter |
 | [vmtklocalgeometry](/vmtkscripts/vmtklocalgeometry.html) | |
 | [vmtkmarchingcubes](/vmtkscripts/vmtkmarchingcubes.html) | generate an isosurface of given level from a 3D image |
-| [vmtkmeshaddexternallayer](/vmtkscripts/vmtkmeshaddexternallayer.html) | |
+| [vmtkmeshaddexternallayer](/vmtkscripts/vmtkmeshaddexternallayer.html) | create an external prismatic layer from the wall of a mesh and the normals on the wall. |
 | [vmtkmesharrayoperation](/vmtkscripts/vmtkmesharrayoperation.html) | perform an operation between arrays of two meshes and store result in the first mesh |
 | [vmtkmeshboundaryinspector](/vmtkscripts/vmtkmeshboundaryinspector.html) | |
 | [vmtkmeshbranchclipper](/vmtkscripts/vmtkmeshbranchclipper.html) | |
@@ -79,23 +76,26 @@ layout: page-full-width
 | [vmtkmeshclipper](/vmtkscripts/vmtkmeshclipper.html) | interactively clip a mesh with a box |
 | [vmtkmeshcompare](/vmtkscripts/vmtkmeshcompare.html) | compares a mesh against a reference |
 | [vmtkmeshconnectivity](/vmtkscripts/vmtkmeshconnectivity.html) | extract the largest connected region or the closest point-connected region from a mesh |
+| [vmtkmeshcutter](/vmtkscripts/vmtkmeshcutter.html) | slicing a mesh with a plane |
 | [vmtkmeshdatareader](/vmtkscripts/vmtkmeshdatareader.html) | read data associated with a mesh |
+| [vmtkmeshextractpointdata](/vmtkscripts/vmtkmeshextractpointdata.html) | extract the magnitude value of an array for a point id |
 | [vmtkmeshgenerator](/vmtkscripts/vmtkmeshgenerator.html) | generate a mesh suitable for CFD from a surface |
 | [vmtkmeshlambda2](/vmtkscripts/vmtkmeshlambda2.html) | compute lambda2 from a velocity field |
 | [vmtkmeshlinearize](/vmtkscripts/vmtkmeshlinearize.html) | convert the elements of a mesh to linear |
 | [vmtkmeshmerge](/vmtkscripts/vmtkmeshmerge.html) | Merge two or three meshes into one. |
+| [vmtkmeshmergetimesteps](/vmtkscripts/vmtkmeshmergetimesteps.html) | merge multiple mesh files with different timesteps into one |
 | [vmtkmeshpolyballevaluation](/vmtkscripts/vmtkmeshpolyballevaluation.html) | evaluate the polyball function on the vertices of a mesh. |
 | [vmtkmeshprojection](/vmtkscripts/vmtkmeshprojection.html) | interpolates the point data of a reference mesh onto the input mesh |
 | [vmtkmeshreader](/vmtkscripts/vmtkmeshreader.html) | read a mesh and stores it in a vtkUnstructuredGrid object |
 | [vmtkmeshscaling](/vmtkscripts/vmtkmeshscaling.html) | scale a mesh by an isotropic factor |
 | [vmtkmeshtetrahedralize](/vmtkscripts/vmtkmeshtetrahedralize.html) | convert the elements of a mesh to linear |
 | [vmtkmeshtetrahedralize2](/vmtkscripts/vmtkmeshtetrahedralize2.html) | convert the elements of a mesh to linear |
-| [vmtkmeshtosurface](/vmtkscripts/vmtkmeshtosurface.html) | convert a mesh to a surface by throwing out volume elements and (optionally.html) the relative points |
+| [vmtkmeshtosurface](/vmtkscripts/vmtkmeshtosurface.html) | convert a mesh to a surface by throwing out volume elements and (optionally) the relative points |
 | [vmtkmeshtransform](/vmtkscripts/vmtkmeshtransform.html) | transform a mesh with a provided matrix |
 | [vmtkmeshtransformtoras](/vmtkscripts/vmtkmeshtransformtoras.html) | transform a mesh generated in XYZ image space into RAS space |
 | [vmtkmeshvectorfromcomponents](/vmtkscripts/vmtkmeshvectorfromcomponents.html) | create a vector array from a number of scalar arrays treated as vector components |
 | [vmtkmeshviewer](/vmtkscripts/vmtkmeshviewer.html) | display a mesh |
-| [vmtkmeshviewer2](/vmtkscripts/vmtkmeshviewer2.html) | |
+| [vmtkmeshviewer2](/vmtkscripts/vmtkmeshviewer2.html) | display a mesh |
 | [vmtkmeshvolume](/vmtkscripts/vmtkmeshvolume.html) | computes the volume of a mesh |
 | [vmtkmeshvorticityhelicity](/vmtkscripts/vmtkmeshvorticityhelicity.html) | compute vorticity and helicity from a velocity field |
 | [vmtkmeshwallshearrate](/vmtkscripts/vmtkmeshwallshearrate.html) | compute wall shear rate from a velocity field, producing a surface in output |
@@ -104,6 +104,8 @@ layout: page-full-width
 | [vmtknetworkeditor](/vmtkscripts/vmtknetworkeditor.html) | |
 | [vmtknetworkextraction](/vmtkscripts/vmtknetworkextraction.html) | extract a network of approximated centerlines from a surface, the surface must have at least an opening |
 | [vmtknetworkwriter](/vmtkscripts/vmtknetworkwriter.html) | write network to disk |
+| [vmtkparticletracer](/vmtkscripts/vmtkparticletracer.html) | Generate streamlines |
+| [vmtkpathlineanimator](/vmtkscripts/vmtkpathlineanimator.html) | Particle or streaklines animation |
 | [vmtkpointsplitextractor](/vmtkscripts/vmtkpointsplitextractor.html) | |
 | [vmtkpointtransform](/vmtkscripts/vmtkpointtransform.html) | transform points with a provided matrix |
 | [vmtkpolyballmodeller](/vmtkscripts/vmtkpolyballmodeller.html) | converts a polyball to an image containing the tube function |
@@ -115,13 +117,13 @@ layout: page-full-width
 | [vmtksurfaceappend](/vmtkscripts/vmtksurfaceappend.html) | append two surfaces into a single vtkPolyData. The script does not merge coincident points, consider using vmtksurfacetriangle for this. |
 | [vmtksurfacearrayoperation](/vmtkscripts/vmtksurfacearrayoperation.html) | perform an operation between arrays of two surfaces and store result in the first surface |
 | [vmtksurfacebooleanoperation](/vmtkscripts/vmtksurfacebooleanoperation.html) | perform a boolean operation between two surfaces |
-| [vmtksurfacecapper](/vmtkscripts/vmtksurfacecapper.html) | add caps to the holes of a surface, assigning an id to each cap for easy specification of boundary conditions ("simple" method only.html). |
+| [vmtksurfacecapper](/vmtkscripts/vmtksurfacecapper.html) | add caps to the holes of a surface, assigning an id to each cap for easy specification of boundary conditions. |
 | [vmtksurfacecelldatatopointdata](/vmtkscripts/vmtksurfacecelldatatopointdata.html) | convert cell data arrays to point data surface arrays |
 | [vmtksurfacecenterlineprojection](/vmtkscripts/vmtksurfacecenterlineprojection.html) | |
 | [vmtksurfaceclipper](/vmtkscripts/vmtksurfaceclipper.html) | interactively clip a surface with a box |
 | [vmtksurfacecompare](/vmtkscripts/vmtksurfacecompare.html) | compares a surface against a baseline |
 | [vmtksurfaceconnectivity](/vmtkscripts/vmtksurfaceconnectivity.html) | extract the largest connected region, the closest point-connected region or the scalar-connected region from a surface |
-| [vmtksurfacecurvature](/vmtkscripts/vmtksurfacecurvature.html) | compute curvature of an input surface, optionally reporting results back to a reference surface (by point id.html) |
+| [vmtksurfacecurvature](/vmtkscripts/vmtksurfacecurvature.html) | compute curvature of an input surface, optionally reporting results back to a reference surface (by point id) |
 | [vmtksurfacedecimation](/vmtkscripts/vmtksurfacedecimation.html) | reduce the number of triangles in a surface |
 | [vmtksurfacedistance](/vmtkscripts/vmtksurfacedistance.html) | compute the pointwise minimum distance of the input surface from a reference surface |
 | [vmtksurfaceextractannularwalls](/vmtkscripts/vmtksurfaceextractannularwalls.html) | Extract wall surfaces from an annular-cylindric surface. |
@@ -150,6 +152,6 @@ layout: page-full-width
 | [vmtksurfacewriter](/vmtkscripts/vmtksurfacewriter.html) | write surface to disk |
 | [vmtksurfacewriter2](/vmtkscripts/vmtksurfacewriter2.html) | write surface to disk |
 | [vmtksurfmesh](/vmtkscripts/vmtksurfmesh.html) | wrapper around surfmesh surface mesh generator by Gordan Stuhne |
-| [vmtktetgen](/vmtkscripts/vmtktetgen.html) | wrapper around TetGen tetrahedral mesh generator by Hang Si (http://tetgen.berlios.de/.html) |
+| [vmtktetgen](/vmtkscripts/vmtktetgen.html) | wrapper around TetGen tetrahedral mesh generator by Hang Si (http://tetgen.berlios.de/) |
 | [vmtktetringenerator](/vmtkscripts/vmtktetringenerator.html) | generate input files for the newtetr CFD solver |
 | [vmtkthreshold](/vmtkscripts/vmtkthreshold.html) | Extract part of surface or mesh with cell entitiy ids between given thresholds. |
