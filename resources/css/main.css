@@ -46,7 +46,7 @@ border: 1px solid #dddddd;
   background-color: #1F2645;
 }
 
-.vmtkscripts-list {
+.vmtklist {
 border: 1px solid #dddddd;
   border-collapse: separate;
   *border-collapse: collapse;
@@ -56,23 +56,23 @@ border: 1px solid #dddddd;
           border-radius: 4px;
 }
 
-.vmtkscripts-list tr {
+.vmtklist tr {
 	max-width: 190px;
 }
 
-.vmtkscripts-list th,td {
+.vmtklist th,td {
 	padding: 4px 5px;
 	border-left: 1px solid #dddddd;
 	font-size: 20px;
 }
 
-.vmtkscripts-list tbody > tr:nth-child(odd) > td,
-.vmtkscripts-list tbody > tr:nth-child(odd) > th {
+.vmtklist tbody > tr:nth-child(odd) > td,
+.vmtklist tbody > tr:nth-child(odd) > th {
 	background-color: #f9f9f9;	
 }
 
-.vmtkscripts-list tbody tr:hover > td,
-.vmtkscripts-list tbody tr:hover > th {
+.vmtklist tbody tr:hover > td,
+.vmtklist tbody tr:hover > th {
   background-color: #1F2645;
 }
 
