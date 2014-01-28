@@ -1,8 +1,10 @@
 ---
 layout: page-full-width
 ---
-
+{:.vmtkscripts}
 # vmtkScripts reference
+| Script | Description |
+|:--|:--|
 | [vmtkactivetubes](/vmtkscripts/vmtkactivetubes.html) | |
 | [vmtkbifurcationprofiles](/vmtkscripts/vmtkbifurcationprofiles.html) | compute bifurcation profiles, i.e. the bifurcation splitting lines. The script takes in input the surface and the relative centerlines, both already split into branches. |
 | [vmtkbifurcationreferencesystems](/vmtkscripts/vmtkbifurcationreferencesystems.html) | compute reference systems for each bifurcation of a tree. The script takes in input the centerlines already split into branches. |
