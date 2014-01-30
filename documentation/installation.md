@@ -10,7 +10,7 @@ title: Installation
 Binary packages are supported by <a href="http://www.orobix.com" target="_blank">Orobix Srl</a>. <br/>
 Special thanks to Johannes Ring, the maintainer of vmtk Debian packages, <a href="http://www.simula.no" target="_blank">Simula Research Laboratory</a>. 
 
-### Windows 7 : Before installing vmtk
+### Windows 7 / Windows 8 : Before installing vmtk
 
 If you have an older binary version of vmtk please remove it by double clicking on the vmtk entry in the uninstall program section of the windows control panel (add/remove program section).<br/>
 If you have an older compiled from source version of vmtk simply delete the folder. <br/>
@@ -19,8 +19,8 @@ Before installing vmtk you need Python 2.7.<br/>
 Please be sure to download the proper architecture (32bit or 64bit).<br/>
 <a href="http://windows.microsoft.com/en-us/windows/32-bit-and-64-bit-windows#1TC=windows-7" target="_blank">How can I tell if my computer is running a 32-bit or a 64-bit version of Windows?</a><br/>
 
-If you have Windows 7 64 bit, it is strongly advised to download and install [Python 2.7-amd64bit](http://www.python.org/ftp/python/2.7/python-2.7.amd64.msi).<br/>
-If you have Windows 7 32 bit, you have to download and install [Python 2.7-win32] (http://www.python.org/ftp/python/2.7/python-2.7.msi).<br/>
+If you have Windows 7/8 64 bit, it is strongly advised to download and install [Python 2.7-amd64bit](http://www.python.org/ftp/python/2.7/python-2.7.amd64.msi).<br/>
+If you have Windows 7/8 32 bit, you have to download and install [Python 2.7-win32] (http://www.python.org/ftp/python/2.7/python-2.7.msi).<br/>
 
 If you already have a Python 2.7 installed in your system and you dont'know if it is Python32bit or Python64bit just run the Python Idle GUI or the Python command line and read carefully the first line: <br/>
 
@@ -33,9 +33,9 @@ Python 64bit:
 	Python 2.7.6 (default, Nov 10 2013, 19:24:24) [MSC v.1500 64 bit (AMD64)</b>] on win32
 
 In the case you try to install vmtk with a wrong python achitecture the installer will tell you that it's not able to found Python executable on your system. <br/>
-If you need to run vmtk using python32bit under Windows7 64 bit please download it from the <a href="https://drive.google.com/folderview?id=0B4IPwYB1RDRxZnNrWFo0Y2FQZDg&amp;usp=sharing#list" target="_blank">All downloads page</a>. <br/>
+If you need to run vmtk using python32bit under Windows7/8 64 bit please download it from the <a href="https://drive.google.com/folderview?id=0B4IPwYB1RDRxZnNrWFo0Y2FQZDg&amp;usp=sharing#list" target="_blank">All downloads page</a>. <br/>
 
-### Windows 7: Windows Installers
+### Windows 7/8: Windows Installers
 
 After you [download]({{ site.baseurl }}/download/) the installer, just run it. It will take you through the installation stage, after which you'll find a shortcut to vmtk in your desktop. Click on the vmtk icon, and you'll see PypePad ready for use. <br/>
 
@@ -43,7 +43,7 @@ Note that, along with vmtk, the installer directly provides Python-wrapped vmtk 
 
 If you want to uninstall vmtk, double click on vmtk entry it in the uninstall program section of the windows control panel.
 
-### Windows 7: Python Eggs
+### Windows 7/8: Python Eggs
 
 If you don't want to use windows installers you can install vmtk as a python egg using <a href="https://pypi.python.org/pypi/setuptools" target="_blank">setuptools</a>.
 	
@@ -181,7 +181,7 @@ Note that in the above I assume vtk is at version 5.10. It might not be if I for
 Enjoy
 
 
-### Extra notes for installation under Windows 7 32bit or 64bit
+### Extra notes for installation under Windows 7/8 32bit or 64bit
 
 As C++ compiler Microsoft Visual Studio Express (11 or later, free to download) is strongly suggested. <br/>
 Please be sure to set "Release" flag instead of the default "Debug" flag in Visual Studio. <br/>
