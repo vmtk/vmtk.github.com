@@ -26,11 +26,11 @@ If you already have a Python 2.7 installed in your system and you dont'know if i
 
 Python 32bit:
 	
-	Python 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)</b>] on win32 
+	Python 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)] on win32 
 
 Python 64bit:
 	
-	Python 2.7.6 (default, Nov 10 2013, 19:24:24) [MSC v.1500 64 bit (AMD64)</b>] on win32
+	Python 2.7.6 (default, Nov 10 2013, 19:24:24) [MSC v.1500 64 bit (AMD64)] on win32
 
 In the case you try to install vmtk with a wrong python achitecture the installer will tell you that it's not able to found Python executable on your system. <br/>
 If you need to run vmtk using python32bit under Windows7/8 64 bit please download it from the <a href="https://drive.google.com/folderview?id=0B4IPwYB1RDRxZnNrWFo0Y2FQZDg&amp;usp=sharing#list" target="_blank">All downloads page</a>. <br/>
@@ -167,6 +167,7 @@ In order to properly run vmtk you have to set environment variables.
 
   It allows to set environment variables for you current running shell session. This is very useful if you have different versions of vmtk installed in your system.
         
+
         source path-to-vmtk_env.sh
 
 - Otherwise you can permanently set environment variables:
