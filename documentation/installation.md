@@ -163,13 +163,17 @@ Start your compiler in your build directory, as your platform requires. Note tha
 ### Environment variables
 In order to properly run vmtk you have to set environment variables.
 
+[Recommended]
 You can use the script vmtk_env.sh located in your vmtk-build/Install folder.
 It allows to set environment variables for your current running shell session. 
 This is very useful if you have different versions of vmtk installed in your system:
         
     source path-to-vmtk_env.sh
 
-Otherwise you can permanently set environment variables:
+Otherwise you can permanently set environment variables by adding it to your .bash_profile or .bash_rc.
+
+[Not Recommended]
+You can also manually add environment variables:
 
 For Linux, add these lines to your .bashrc or .bash_profile file (in your home directory):
   
