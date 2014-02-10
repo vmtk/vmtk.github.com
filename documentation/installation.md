@@ -164,7 +164,7 @@ Start your compiler in your build directory, as your platform requires. Note tha
 In order to properly run vmtk you have to set environment variables.
 
 You can use the script vmtk_env.sh located in your vmtk-build/Install folder.
-It allows to set environment variables for you current running shell session. 
+It allows to set environment variables for your current running shell session. 
 This is very useful if you have different versions of vmtk installed in your system:
         
     source path-to-vmtk_env.sh
@@ -175,15 +175,15 @@ For Linux, add these lines to your .bashrc or .bash_profile file (in your home d
   
     VMTKHOME=/path-to-vmtk-build/Install
     export PATH=$VMTKHOME/bin:$PATH
-    export LD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/InsightToolkit:$LD_LIBRARY_PATH
-    export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$PYTHONPATH
-
+    export LD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib:$VMTKHOME/lib/vmtk:$DYLD_LIBRARY_PATH
+    export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/vmtk/vmtk:$PYTHONPATH
+    
 For OSX, add these lines to your .profile file (in your home directory):
   
     VMTKHOME=/path-to-vmtk-build/Install
     export PATH=$VMTKHOME/bin:$PATH
-    export DYLD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/InsightToolkit:$DYLD_LIBRARY_PATH
-    export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$PYTHONPATH
+    export DYLD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib:$VMTKHOME/lib/vmtk:$DYLD_LIBRARY_PATH
+    export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/vmtk/vmtk:$PYTHONPATH
 
 Note that in the above I assume vtk is at version 5.10. It might not be if I forget to update the instructions. Check the directory name if this doesn't work, and please send an email on the mailing list.
 
