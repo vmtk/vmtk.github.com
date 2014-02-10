@@ -167,7 +167,7 @@ You can use the script vmtk_env.sh located in your vmtk-build/Install folder.
 It allows to set environment variables for you current running shell session. 
 This is very useful if you have different versions of vmtk installed in your system:
         
-		source path-to-vmtk_env.sh
+    source path-to-vmtk_env.sh
 
 Otherwise you can permanently set environment variables:
 
