@@ -158,12 +158,15 @@ Run CMake with the directory where the vmtk source tree is located as an argumen
 or if you use the CMake GUI, point the source path to the vmtk source directory.
 Set CMake variables as appropriate (they have sensible defaults), *configure* and *generate* (for more details look at the <a href="http://www.cmake.org/cmake/help/runningcmake.html" target="_blank">CMake help pages</a>). Once you're done, you'll find either Makefiles or a Visual Studio solution or an XCode project in the build directory, depending on your platform and compiler.
 
-- Start your compiler in your build directory, as your platform requires. Note that this will download and compile both VTK and ITK in the background, so it will typically take a long time. The build process will automatically install all build products in the vmtk-build/Install directory.
+Start your compiler in your build directory, as your platform requires. Note that this will download and compile both VTK and ITK in the background, so it will typically take a long time. The build process will automatically install all build products in the vmtk-build/Install directory.
 
 ### Environment variables
 In order to properly run vmtk you have to set environment variables.
 
-- You can use the script vmtk_env.sh located in your vmtk-build/Install folder. This allows to set environment variables for you current running shell session. This is very useful if you have different versions of vmtk installed in your system.
+- You can use the script vmtk_env.sh located in your vmtk-build/Install folder.
+
+It allows to set environment variables for you current running shell session. This is very useful if you have different versions of vmtk installed in your system.
+        
         source path-to-vmtk_env.sh
 
 - Otherwise you can permanently set environment variables:
