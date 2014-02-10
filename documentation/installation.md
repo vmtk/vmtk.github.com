@@ -160,7 +160,13 @@ Set CMake variables as appropriate (they have sensible defaults), *configure* an
 
 - Start your compiler in your build directory, as your platform requires. Note that this will download and compile both VTK and ITK in the background, so it will typically take a long time. The build process will automatically install all build products in the vmtk-build/Install directory.
 
-- Set a couple of environment variables. 
+### Environment variables
+In order to properly run vmtk you have to set environment variables.
+
+- You can use the script vmtk_env.sh located in your vmtk-build/Install folder. This allows to set environment variables for you current running shell session. This is very useful if you have different versions of vmtk installed in your system.
+        source path-to-vmtk_env.sh
+
+- Otherwise you can permanently set environment variables:
 
   - For Linux, add these lines to your .bashrc or .bash_profile file (in your home directory):
   
