@@ -165,7 +165,7 @@ In order to properly run vmtk you have to set environment variables.
 
 - You can use the script vmtk_env.sh located in your vmtk-build/Install folder.
 
-It allows to set environment variables for you current running shell session. This is very useful if you have different versions of vmtk installed in your system.
+  It allows to set environment variables for you current running shell session. This is very useful if you have different versions of vmtk installed in your system.
         
         source path-to-vmtk_env.sh
 
