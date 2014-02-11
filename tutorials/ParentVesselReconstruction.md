@@ -84,15 +84,15 @@ Figure 3
 Three couples of centerlines have to be provided for terminal configurations: the *physiologically* correct parent vasculature centerlines (id_parentvessel.vtp) and two couples of centerlines travelling from one daughter artery to the aneurysm dome and the other daughter artery. For terminal aneurysms too some care should be put in the selection of source and target points. In the creation of the parent vessel centerlines (Figure 4A) the order of selection of daughter artery output sections, i.e. of target points, is not important per se, but the creation of the following centerline couples (id_dau1cl.vtp and id_dau2cl.vtp) should be coherent with this initial ordering. The artery where the first target point is placed will become the source point of the daughter 1 centerlines (Figure 4B), while the artery where the second target point is placed has to be the source point for the daughter 2 centerlines (Fig 4C). 
 Centerlines are computed with vmtkcenterlines and the order in placing seeds should be carefully followed.
 
-     vmtkcenterlines -ifile id2_model.vtp -endpoints 1 --pipe vmtkcenterlineresampling -length 0.1 -ofile id1_parentvessel.vtp
+     vmtkcenterlines -ifile id2_model.vtp -endpoints 1 --pipe vmtkcenterlineresampling -length 0.1 -ofile id2_parentvessel.vtp
 
 (see Figure 4A)
 
-     vmtkcenterlines -ifile id2_model.vtp -endpoints 1 --pipe vmtkcenterlineresampling -length 0.1 -ofile id1_dau1cl.vtp
+     vmtkcenterlines -ifile id2_model.vtp -endpoints 1 --pipe vmtkcenterlineresampling -length 0.1 -ofile id2_dau1cl.vtp
 
 (see Figure 4B)
 
-     vmtkcenterlines -ifile id2_model.vtp -endpoints 1 --pipe vmtkcenterlineresampling -length 0.1 -ofile id1_dau2cl.vtp
+     vmtkcenterlines -ifile id2_model.vtp -endpoints 1 --pipe vmtkcenterlineresampling -length 0.1 -ofile id2_dau2cl.vtp
 
 (see Figure 4C)
 
@@ -111,8 +111,10 @@ Figure 5
 
 The goal of this step is to identify on the given centerlines the locations delimiting the aneurysm sac. For each couple of centerlines the diverging point between the line entering the aneurysm and the one along the vessel is identified and the point one maximal sphere away from the aneurysm selected as clipping point. Eventually two clipping points are extracted for lateral aneurysms and three for terminal. The clipping points are identified on the parent vessel centerlines, the portion between them eliminated and re-created interpolating the remaining tracts.
 
-     python patchandinterpolatecenterline.py directoryPath id1 lateral
-     python patchandinterpolatecenterline.py directoryPath id2 terminal
+Before this step, make sure that the python script are in your path or in your current folder and make sure that all the files for id1 are in an id1 folder and all files for id2 are in an id2 folder. If the id1 and id2 folder are also in your current folder, use . as directoryPath.
+
+     python patchandinterpolatecenterlines.py directoryPath id1 lateral
+     python patchandinterpolatecenterlines.py directoryPath id2 terminal
 
 Figure 6A depicts the clipping points, Figure 6B the parent vessel centerlines without the tract underneath the aneurysm and Figure 6C the interpolated centerlines for the two type of aneurysm.
 
