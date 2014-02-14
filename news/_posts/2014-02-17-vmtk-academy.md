@@ -4,7 +4,7 @@ post-type: announcement
 title: "vmtkAcademy, bringing vmtk to the cloud"
 ---
 
-<a href="http://www.vmtkacademy.com" target="_blank">vmtk Academy</a> is the first interactive teaching tool for image-based modeling.<br/>
+<a href="http://goo.gl/C1ulrS" target="_blank">vmtk Academy</a> is the first interactive teaching tool for image-based modeling.<br/>
 
 Wouldn't it be great to integrate a "hands-on" <b>teaching tool</b> for education in image based modeling?<br/>
 vmtkAcademy is a <b>cloud-based</b> system that brings advanced modeling to the classroom, from medical images all the way to simulation.<br/>
