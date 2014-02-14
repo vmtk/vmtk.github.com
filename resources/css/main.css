@@ -1349,6 +1349,35 @@ a.btn.download:hover, a.btn.download:focus { background-color:#58ccd5; border-co
   background-color: rgba(200,200,200,0.1);
 }
 
+.vmtk-academy {
+  position: absolute;
+  top: 485px;
+  left: 0px;
+}
+
+.vmtk-academy > p.click {
+  padding: 0px;
+  font-family: "museo-slab", serif;
+  font-size: 24px;
+  color: white;
+  font-weight: 100;
+  font-style: italic;
+  margin-bottom: 0px;
+}
+
+.vmtk-academy > p.click a {
+   color: white;
+}
+
+.vmtk-academy > p.click a:visited {
+   color: white;
+}
+
+.vmtk-academy > p.click a:hover {
+   color: #d7830b !important;
+   text-decoration: none !important;
+}
+
 .vmtk-version {
   line-height: 0.9em;
   font-size: 36px;
@@ -1371,7 +1400,7 @@ a.btn.download:hover, a.btn.download:focus { background-color:#58ccd5; border-co
 
 .vmtk-version:hover {
  background: transparent;
- color: #174753;
+ color: #174855;
  cursor: text;
 }
 
