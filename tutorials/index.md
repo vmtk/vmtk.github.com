@@ -25,6 +25,7 @@ These are a bunch of tutorials on the use of vmtk. The first group is about the 
 - [Geometric analysis]({{ site.baseurl }}/tutorials/GeometricAnalysis.html) - learn how to analyze the 3D geometry of a vascular segment
 - [Mapping and patching]({{ site.baseurl }}/tutorials/MappingAndPatching.html) - learn how to map the surface of a population of vessels onto the same parametric space and enable statistical analyses of surface-based quantities
 - [Particle Tracing]({{ site.baseurl }}/tutorials/ParticleTracing.html) - learn how to generate pathlines and streaklines in a vector field from a collection of seed points and how to animate them. 
+- [Color Maps]({{ site.baseurl }}/tutorials/ColorMaps.html) - learn how to handle different color maps. 
 
 ## Applications
 
