@@ -20,7 +20,7 @@ Color maps are available in the following scripts:
 + vmtkpathlineanimator
 + vmtksurfaceviewer
 
-At the moment there are currently 4 different color maps implemented in vmtk:
+At the moment there are 4 different color maps currently implemented in vmtk:
 + grayscale
 + rainbow
 + cooltowarm (default one)
