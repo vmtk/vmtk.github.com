@@ -208,7 +208,7 @@ function styleCode() {
   }
   if (os == "Unknown OS"){
 	$('#download-button').addClass("unix");
-	var link = "download/#development_version"
+	var link = "https://drive.google.com/folderview?id=0B4IPwYB1RDRxZnNrWFo0Y2FQZDg&usp=sharing#list"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
