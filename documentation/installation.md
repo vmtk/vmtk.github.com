@@ -179,7 +179,7 @@ For Linux, add these lines to your .bashrc or .bash_profile file (in your home d
   
     VMTKHOME=/path-to-vmtk-build/Install
     export PATH=$VMTKHOME/bin:$PATH
-    export LD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib:$VMTKHOME/lib/vmtk:$DYLD_LIBRARY_PATH
+    export LD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib:$VMTKHOME/lib/vmtk:$LD_LIBRARY_PATH
     export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/vmtk/vmtk:$PYTHONPATH
     
 For OSX, add these lines to your .profile file (in your home directory):
