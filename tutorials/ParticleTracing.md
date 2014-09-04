@@ -3,8 +3,8 @@ layout: page-full-width
 title: Particle Tracing
 ---
 
-#### Applicable version(s): 
-[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version) 
+#### Applicable version(s):
+[Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 <sub>by Simone Manini, Orobix Srl, Italy</sub>
 
@@ -26,11 +26,11 @@ Timelines are the lines formed by a set of fluid particles that were marked at a
 
 ##Requirements
 
-In order to properly compute traces it is mandatory to have <i>n</i> mesh files resulting from a pulsatile cfd simulation. Each mesh file represent a timestep and must have, as a vtkDataArray, 3 velocity components in the axial directions, usually <i>u, v</i> and <i>w</i>. 
+In order to properly compute traces it is mandatory to have <i>n</i> mesh files resulting from a pulsatile cfd simulation. Each mesh file represent a timestep and must have, as a vtkDataArray, 3 velocity components in the axial directions ( usually <i>u, v</i> and <i>w</i> ), or the velocity vector.
 
 ##Pre-process your solution
 
-We need to create a mesh file which will contains all the data relative to the velocity components for each timestep we want to generate traces. 
+We need to create a mesh file which will contains all the data relative to the velocity components for each timestep we want to generate traces.
 We have to provide:
 + the folder where the mesh solution files are located (<i>-directory</i>)
 + the pattern of the mesh files name (<i>-pattern</i>)
@@ -43,21 +43,24 @@ In my example I used <a href="https://github.com/lorbot/Gnuid" target="_blank"> 
 gnuid_<i>timestep</i>.vtu
 
 In which the <i>timestep</i> is represented with 6 numbers (e.g. gnuid_002225.vtu)
-	
+
 	vmtkmeshmergetimesteps -directory ~/Desktop/particle_test -firststep 2225 -laststep 3600 -intervalstep 10 -pattern gnuid_%6s.vtu -ofile mesh_timesteps.vtu
+
+If you have the velocity vector instead of velocity component arrays use <i>-velocityvector 1</i> and <i>-vector <name></i> as parameters of vmtkmeshmergetimesteps.
+Please specify the name of your vector. This feature is currently available only in [Development version]({{ site.baseurl }}/download/#development_version).
 
 Then we need to have a source for generating traces and we can create it either with Paraview or vmtk.
 
 In paraview you simply have to load one mesh file of your solution, apply a slice filter near your input boundary and save it as a polydata file.
 With vmtk you can do the same by using the vmtkmeshcutter script:
-	
+
 	vmtkmeshcutter -ifile mesh.vtu -ofile source.vtp
-	
+
 If you need to clip the model before applying a slice:
 
 	vmtkmeshclipper -ifile mesh.vtu --pipe vmtkmeshcutter -ofile source.vtp
-	
-	
+
+
 ![Figure 2]({{ site.baseurl }}/resources/img/tutorials/particle_mesh_clipper.png)
 *Figure 2: Clipping the mesh*
 
@@ -108,14 +111,14 @@ Optional arguments:
 In this example we animate the traces with the default method (particles):
 
 	vmtkpathlineanimator -ifile traces.vtp -timestep 0.001 -legend 1
-	
+
 <object width="640" height="360"><param name="movie" value="//www.youtube.com/v/pIRt-6GHYFw?&amp;version=3&amp;hl=it_IT"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/pIRt-6GHYFw?version=3&amp;hl=it_IT" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
 
 If we want to visualize the particle tracing inside our mesh we can render the mesh and the traces animation in the same render window
 
 	vmtkrenderer --pipe vmtkmeshviewer -ifile mesh.vtu -opacity 0.3 --pipe vmtkparticletracer -ifile traces.vtp -timestep 0.001 -legend 1
-	
+
 If we want to create a video we have to generate screenshots and then make a video with a dedicated software.
 I suggest quicktimepro (not free) or mencoder library (opensource).
 

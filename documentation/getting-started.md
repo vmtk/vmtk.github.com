@@ -35,7 +35,7 @@ Or maybe you want to have 8-bit png images to put in your next paper:
 
      vmtkimagereader -f dicom -d dicom_directory_path --pipe vmtkimagewriter -f png -ofile image_file_prefix
 
-If the image volume is composed by more than one slice, single slices will be output in separate png files named image_file_prefix0001.png, image_file_prefix0002.png, image_file_prefix0003.png, etc. For 8-bit formats, image levels will be automatically scaled to 0-255. You can adjust that with the *-windowlevel* option of *vmtkimagewriter*. (Use of 8-bit images should be limited to display purposes only such as those used in presentations or publications. No processing should be carried out on them since important information and details can be lost by rescaling levels.) 
+If the image volume is composed by more than one slice, single slices will be output in separate png files named image_file_prefix0001.png, image_file_prefix0002.png, image_file_prefix0003.png, etc. For 8-bit formats, image levels will be automatically scaled to 0-255. You can adjust that with the *-windowlevel* option of *vmtkimagewriter*. (Use of 8-bit images should be limited to display purposes only such as those used in presentations or publications. No processing should be carried out on them since important information and details can be lost by rescaling levels.)
 
 ## File formats
 ---
@@ -59,6 +59,7 @@ If the image volume is composed by more than one slice, single slices will be ou
 ###Meshes
 
 + **vtu (VTK XML)**: the Visualization Toolkit (VTK) format for meshes; XML syntax with embedded binary data; UnstructuredGrid (.vtu) — Serial vtkUnstructuredGrid (unstructured)
++ **pvtu (VTK XMLP)**: the Visualization Toolkit (VTK) parallel format for meshes; XML syntax with embedded binary data
 + **xda (libMesh, only Write)**: libMesh mesh files consist of two sections, the header and the data. The header contains important size information. It defines the number of elements, number of nodes, etc... that are in the mesh. The data section contains the actual element connectivity, the nodal coordinates, and any boundary condition information
 + **msh (Fluent, only Write)**: Fluent mesh files format
 + **lifev (LifeV)**: LifeV mesh files format
@@ -76,7 +77,7 @@ If the image volume is composed by more than one slice, single slices will be ou
 
 Often, medical images contain structures which are not of interest. To extract a volume of interest (VOI) from a dataset, one can pipe an instance of vmtkimagevoiselector between the DICOM reader and the writer in this way:
 
-     vmtkimagereader -f dicom -d dicom_directory_path --pipe 
+     vmtkimagereader -f dicom -d dicom_directory_path --pipe
      vmtkimagevoiselector -ofile image_volume_voi.vti
 
 (this time I chose to use the built_in writer in vmtkimagevoiselector instead of piping to a *vmtkimagewriter*. No real difference.)
@@ -97,7 +98,7 @@ Consider the example where we have an image volume image_volume_voi.vti.
 
 The quickest and most simple way of creating a surface model from a vessel image is to contour the image using Marching Cubes:
 
-     vmtkmarchingcubes -ifile image_volume_voi.vti -l 300.0 -ofile mc_surface.vtp --pipe vmtksurfaceviewer 
+     vmtkmarchingcubes -ifile image_volume_voi.vti -l 300.0 -ofile mc_surface.vtp --pipe vmtksurfaceviewer
 
 where *-l 300.0* is the *level* in the image at which you want to build the surface. (Using contouring to build CFD models is not always a good idea. The location of the vessel wall depends on the level you choose, and a single level might not represent the interface between blood and wall over the whole image. Read on if you want to know how to overcome these problems.) The surface viewer will show you the resulting surface.
 
