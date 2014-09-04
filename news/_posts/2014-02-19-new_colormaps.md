@@ -9,7 +9,7 @@ Check out the [new tutorial]({{ site.baseurl }}/tutorials/ColorMaps.html) and le
 
 ![Figure 1]({{ site.baseurl }}/resources/img/colormaps.png)
 
-These color maps will be added in the next binary release of vmtk (1.3).
+Those color maps will be added in the next binary release of vmtk (1.3).
 
 
 <!--break-->
