@@ -46,7 +46,7 @@ In which the <i>timestep</i> is represented with 6 numbers (e.g. gnuid_002225.vt
 
 	vmtkmeshmergetimesteps -directory ~/Desktop/particle_test -firststep 2225 -laststep 3600 -intervalstep 10 -pattern gnuid_%6s.vtu -ofile mesh_timesteps.vtu
 
-If you have the velocity vector instead of velocity component arrays use <i>-velocityvector 1</i> and <i>-vector <name></i> as parameters of vmtkmeshmergetimesteps.
+If you have the velocity vector instead of velocity component arrays use <i>-velocityvector 1</i> and <i>-vector name</i> as parameters of vmtkmeshmergetimesteps.
 Please specify the name of your vector. This feature is currently available only in [Development version]({{ site.baseurl }}/download/#development_version).
 
 Then we need to have a source for generating traces and we can create it either with Paraview or vmtk.
