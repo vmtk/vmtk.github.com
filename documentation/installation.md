@@ -20,7 +20,7 @@ Please be sure to download the proper architecture (32bit or 64bit).<br/>
 <a href="http://windows.microsoft.com/en-us/windows/32-bit-and-64-bit-windows#1TC=windows-7" target="_blank">How can I tell if my computer is running a 32-bit or a 64-bit version of Windows?</a><br/>
 
 If you have Windows 7/8 64 bit, it is strongly advised to download and install [Python 2.7-amd64bit](http://www.python.org/ftp/python/2.7/python-2.7.amd64.msi).<br/>
-If you have Windows 7/8 32 bit, you have to download and install [Python 2.7-win32] (http://www.python.org/ftp/python/2.7/python-2.7.msi).<br/>
+If you have Windows 7/8 32 bit, you have to download and install [Python 2.7-win32](http://www.python.org/ftp/python/2.7/python-2.7.msi).<br/>
 
 If you already have a Python 2.7 installed in your system and you dont'know if it is Python32bit or Python64bit just run the Python Idle GUI or the Python command line and read carefully the first line: <br/>
 
