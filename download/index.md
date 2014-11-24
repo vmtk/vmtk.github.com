@@ -7,7 +7,7 @@ title: Download
 
 ##Binary Packages
 
-Binary packages are available for Linux (Ubuntu, Fedora, Mint) 32bit and 64 bit, Mac OSX Mavericks (10.9.x) and Windows 7 / Windows 8 32bit and 64bit.<br/>
+Binary packages are available for Linux (Ubuntu, Fedora, Mint) 32bit and 64 bit, Mac OSX Yosemite (10.10.x), Mavericks (10.9.x) and Windows 7 / Windows 8 32bit and 64bit.<br/>
 Other Linux distributions may be supported but vmtk is not guaranteed to work. <br/>
 In case you can't find a binary package for your operating system, please [compile vmtk from source]({{ site.baseurl }}/documentation/installation.html#installing_from_source).
 
@@ -17,15 +17,15 @@ In case you can't find a binary package for your operating system, please [compi
 </p>
 
 
-<div class="download-wrapper"> 
-  <a id="download-button"> 
-    <span class="slider">Download</span> 
-    <span class="icon"> 
-    </span> 
+<div class="download-wrapper">
+  <a id="download-button">
+    <span class="slider">Download</span>
+    <span class="icon">
+    </span>
     <span class="version">
       vmtk 1.2
-    </span> 
-  </a> 
+    </span>
+  </a>
 </div>
 
 For further details, follow the instructions on the [installation]({{ site.baseurl }}/documentation/installation.html#installing_binary_packages) page.
@@ -36,7 +36,7 @@ For further details, follow the instructions on the [installation]({{ site.baseu
 You can grab the latest development version from the <a href="https://github.com/vmtk/vmtk" target="_blank">official vmtk git repository on Github</a>. To clone this repository, make sure <a href="http://git-scm.com" target="_blank">git</a> is installed on your system and issue the following:
 
      git clone https://github.com/vmtk/vmtk.git
-     
+
 Follow the instructions on the [installation]({{ site.baseurl }}/documentation/installation.html#installing_from_source) page to compile the source code.
 
 ##Additional information

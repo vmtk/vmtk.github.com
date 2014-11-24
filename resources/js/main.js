@@ -9,30 +9,30 @@ function getOS() {
   var osname = "Unknown OS";
   //OSX-10.10
   if (navigator.userAgent.indexOf("Mac OS X 10_10") != -1) {
-    osname = "OSX"
+    osname = "OSX";
   }
   //OSX-10.9
   if (navigator.userAgent.indexOf("Mac OS X 10_9") != -1) {
-  	osname = "OSX"
+  	osname = "OSX";
   }
   //LINUX-x86_64
   if (navigator.userAgent.indexOf("Linux x86_64") != -1) {
-  	osname = "Linux-x86_64"
+  	osname = "Linux-x86_64";
   }
   //LINUX_i386
   if (navigator.userAgent.indexOf("Linux i686") != -1) {
-  	osname = "Linux-i386"
+  	osname = "Linux-i386";
   }
   //Windows7_i386 or Windows8_i386
   if (navigator.userAgent.indexOf("Windows NT 6.") != -1 ){
-  	osname = "Windows-i386"
+  	osname = "Windows-i386";
   	//Windows7_x86_64 or Windows8_x86_64
   	if (navigator.userAgent.indexOf("WOW64") != -1) {
-  	  	osname = "Windows-x86_64"
+  	  	osname = "Windows-x86_64";
   	}
   }
   return osname;
-}
+};
 
 
 /***************************
