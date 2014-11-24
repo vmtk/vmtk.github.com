@@ -7,6 +7,10 @@
 
 function getOS() {
   var osname = "Unknown OS";
+  //OSX-10.10
+  if (navigator.userAgent.indexOf("Mac OS X 10_10") != -1) {
+    osname = "OSX"
+  }
   //OSX-10.9
   if (navigator.userAgent.indexOf("Mac OS X 10_9") != -1) {
   	osname = "OSX"
@@ -23,13 +27,13 @@ function getOS() {
   if (navigator.userAgent.indexOf("Windows NT 6.") != -1 ){
   	osname = "Windows-i386"
   	//Windows7_x86_64 or Windows8_x86_64
-  	if (navigator.userAgent.indexOf("WOW64") != -1) { 
+  	if (navigator.userAgent.indexOf("WOW64") != -1) {
   	  	osname = "Windows-x86_64"
   	}
   }
   return osname;
 }
- 
+
 
 /***************************
  * Document initialization
@@ -47,7 +51,7 @@ $(document).ready(function(){
   $("#source-code").mouseout(function(){ $(this).find(".toptip").hide(); });
   $("#scala-lang-twitter").mouseover(function(){ $(this).find(".toptip").show(); });
   $("#scala-lang-twitter").mouseout(function(){ $(this).find(".toptip").hide(); });
-    
+
   // get current year and put it in span
   var currYear = new Date().getFullYear()
   $(".current-year").text(currYear);
@@ -88,7 +92,7 @@ $(document).ready(function(){
         $('html,body').animate({
 	    scrollTop: $(snippetID+'-bullet').offset().top
 	    }, 1000);
-	    
+
       } else if (codeSnippetInContainer == snippet) {
         container.slideUp(function() {
           arrow.hide();
@@ -102,15 +106,15 @@ $(document).ready(function(){
 	    scrollTop: $(snippetID+'-bullet').offset().top
 	    }, 1000);
       }
-      
+
     }
     return go;
   }
-   
+
   var row1 = $("#code-snippet-row1");
   var row2 = $("#code-snippet-row2");
-    
-  $("#segmentation").click(expandSnippetAction("#hidden-segmentation", row1));  
+
+  $("#segmentation").click(expandSnippetAction("#hidden-segmentation", row1));
   $("#centerlines").click(expandSnippetAction("#hidden-centerlines", row1));
   $("#geometric-analysis").click(expandSnippetAction("#hidden-geometric-analysis", row1));
 
@@ -169,7 +173,7 @@ function styleCode() {
   if (a) { prettyPrint() }
 }
 
- 
+
 /***********************
  * Main Page Download Button
  **********************/
@@ -215,16 +219,16 @@ function styleCode() {
  }
  );
 
- 
+
 /***********************
 * Google Analytics
 **********************/
- 
+
  var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-29589511-1']);
     _gaq.push(['_setDomainName', 'vmtk.org']);
     _gaq.push(['_trackPageview']);
-  
+
     (function() {
       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
