@@ -9,7 +9,7 @@ function getOS() {
   var osname = "Unknown OS";
   //OSX-10.10
   if (navigator.userAgent.indexOf("Mac OS X 10_10") != -1) {
-    osname = "OSX";
+        osname = "OSX";
   }
   //OSX-10.9
   if (navigator.userAgent.indexOf("Mac OS X 10_9") != -1) {
