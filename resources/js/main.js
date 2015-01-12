@@ -182,31 +182,31 @@ function styleCode() {
   console.log(os);
   if (os.indexOf("Windows-i386") != -1) {
     $('#download-button').addClass("windows");
-    var link = "http://goo.gl/xnWr41"
+    var link = "http://goo.gl/ioPy0l"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
   if (os.indexOf("Windows-x86_64") != -1) {
     $('#download-button').addClass("windows");
-    var link = "http://goo.gl/fXZhNk"
+    var link = "http://goo.gl/aqDZgM"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
   if (os.indexOf("OSX") != -1 ) {
     $('#download-button').addClass("macos");
-    var link = "http://goo.gl/R1Haad"
+    var link = "http://goo.gl/8N66xM"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
   if (os == "Linux-i386") {
     $('#download-button').addClass("unix");
-    var link = "http://goo.gl/aqfav7"
+    var link = "http://goo.gl/tKSQlL"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }
   if (os == "Linux-x86_64") {
     $('#download-button').addClass("unix");
-    var link = "http://goo.gl/tw1env"
+    var link = "http://goo.gl/EAYHzo"
     $('#download-button').prop("href", link);
     $('#download-button').prop("target","_blank");
   }

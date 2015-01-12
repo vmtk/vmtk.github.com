@@ -13,7 +13,7 @@ In case you can't find a binary package for your operating system, please [compi
 
 <p class="center">
   Download vmtk 1.2 for your system
-  (<a href="https://drive.google.com/folderview?id=0B4IPwYB1RDRxZnNrWFo0Y2FQZDg&amp;usp=sharing#list" target="_blank">All downloads</a>).
+  (<a href="http://vmtk-installers.s3.amazonaws.com/list.html" target="_blank">All downloads</a>).
 </p>
 
 
