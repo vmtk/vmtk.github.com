@@ -9,7 +9,7 @@ This tutorial demonstrates how to open your dataset in vmtk, navigate into a 3D 
 
 The first step is read the images and display them on the screen. vmtkimagereader is capable of reading DICOM directories. Additionally, it will reorient the image volume correctly based on its orientation relative to the patient. ((This feature can be disabled))
 
-     vmtkimagereader -f dicom -d dicom_directory_path --pipe vmtkimageviewer
+     vmtkimagereader -ifile first_dicom_file_in_the_series.dcm --pipe vmtkimageviewer
 
 where *dicom_directory_path* is the path where your DICOM images (* *.dcm* or whatever extension you have) can be found.
 
@@ -27,13 +27,13 @@ Once the viewer pops up, you can:
 
 Suppose you want to write the image volume in vti format (the VTK XML format for images - it's convenient because it's internally gzip'd):
 
-     vmtkimagereader -f dicom -d dicom_directory_path --pipe vmtkimagewriter -ofile image_volume.vti
+     vmtkimagereader -ifile first_dicom_file_in_the_series.dcm --pipe vmtkimagewriter -ofile image_volume.vti
 
 where image_volume.vti is the output file name.
 
 Or maybe you want to have 8-bit png images to put in your next paper:
 
-     vmtkimagereader -f dicom -d dicom_directory_path --pipe vmtkimagewriter -f png -ofile image_file_prefix
+     vmtkimagereader -ifile first_dicom_file_in_the_series.dcm --pipe vmtkimagewriter -f png -ofile image_file_prefix
 
 If the image volume is composed by more than one slice, single slices will be output in separate png files named image_file_prefix0001.png, image_file_prefix0002.png, image_file_prefix0003.png, etc. For 8-bit formats, image levels will be automatically scaled to 0-255. You can adjust that with the *-windowlevel* option of *vmtkimagewriter*. (Use of 8-bit images should be limited to display purposes only such as those used in presentations or publications. No processing should be carried out on them since important information and details can be lost by rescaling levels.)
 
