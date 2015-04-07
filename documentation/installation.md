@@ -8,7 +8,7 @@ title: Installation
 
 
 Binary packages are supported by <a href="http://www.orobix.com" target="_blank">Orobix Srl</a>. <br/>
-Special thanks to Johannes Ring, the maintainer of vmtk Debian packages, <a href="http://www.simula.no" target="_blank">Simula Research Laboratory</a>. 
+Special thanks to Johannes Ring, the maintainer of vmtk Debian packages, <a href="http://www.simula.no" target="_blank">Simula Research Laboratory</a>.
 
 ### Windows 7 / Windows 8 : Before installing vmtk
 
@@ -25,11 +25,11 @@ If you have Windows 7/8 32 bit, you have to download and install [Python 2.7-win
 If you already have a Python 2.7 installed in your system and you dont'know if it is Python32bit or Python64bit just run the Python Idle GUI or the Python command line and read carefully the first line: <br/>
 
 Python 32bit:
-	
-	Python 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)] on win32 
+
+	Python 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)] on win32
 
 Python 64bit:
-	
+
 	Python 2.7.6 (default, Nov 10 2013, 19:24:24) [MSC v.1500 64 bit (AMD64)] on win32
 
 In the case you try to install vmtk with a wrong python achitecture the installer will tell you that it's not able to found Python executable on your system. <br/>
@@ -46,9 +46,9 @@ If you want to uninstall vmtk, double click on vmtk entry it in the uninstall pr
 ### Windows 7/8: Python Eggs
 
 If you don't want to use windows installers you can install vmtk as a python egg using <a href="https://pypi.python.org/pypi/setuptools" target="_blank">setuptools</a>.
-	
+
 The recommended way to install setuptools on Windows is to download (right click and Save as...) <a href="https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py" target="_blank">ez_setup.py</a> and run it.
-	
+
 	python ez_setup.py
 
 Once installation is complete, you will find an easy_install program in your Python Scripts subdirectory. For simple invocation and best results, add this directory to your PATH environment variable, if it is not already present.
@@ -56,9 +56,9 @@ Once installation is complete, you will find an easy_install program in your Pyt
 - From the start menu, right-click on Computer and click Properties.
 - In the Left Menu, click on Advanced system settings.
 - In the Advanced section, click the Environment Variables button.
-- Finally, in the Environment Variables window, highlight the PATH variable in the Systems Variable section and click the Edit button. 
+- Finally, in the Environment Variables window, highlight the PATH variable in the Systems Variable section and click the Edit button.
 
-If you have not changed default path during Python installation, you have to add at the end of the field: 
+If you have not changed default path during Python installation, you have to add at the end of the field:
 
 	;C:\Python27\;C:\Python27\Scripts\
 
@@ -77,25 +77,25 @@ If you have an older compiled from source version of vmtk simply delete the fold
 If you installed vmtk under ubuntu using apt-get install vmtk please remove it by typing:
 
 	sudo apt-get --purge remove vmtk
-	
+
 
 We currently provide vmtk Linux packages (Ubuntu, Fedora, Mint) as python egg. <br/>
 After you [download]({{ site.baseurl }}/download/) the egg file you can install it using <a href="https://pypi.python.org/pypi/setuptools" target="_blank">setuptools</a>. <br/>
 
 	wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | sudo python
-	
+
 If you don't have wget, install it or manually download (right click and Save as...)<a href="https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py" target="_blank">ez_setup.py</a>. Then type:
 
 	sudo python ez_setup.py
-	
+
 Then simply type:
 
 	sudo easy_install path-to-vmtk-egg
-	
+
 After installation run the vmtk_post_install_script (with sudo) in order to set execution permissions to vmtk scripts. The script will ask you if you want to automatically set vmtk variables in your .bashrc (under linux) or your .bash_profile (under OSX). <br/>
 
 	sudo python vmtk_post_install.py
-	
+
 If you choose to do not set environment variables, you will have to set them manually (see installation from source section at the end of the page). <br/>
 Otherwise you will only need to close and reopen your terminal to have vmtk ready and working.
 
@@ -151,10 +151,10 @@ Create a build directory and cd into it
     mkdir vmtk-build
     cd vmtk-build
 
-Run CMake with the directory where the vmtk source tree is located as an argument e.g. 
+Run CMake with the directory where the vmtk source tree is located as an argument e.g.
 
     ccmake ../vmtk
-    
+
 or if you use the CMake GUI, point the source path to the vmtk source directory.
 Set CMake variables as appropriate (they have sensible defaults), *configure* and *generate* (for more details look at the <a href="http://www.cmake.org/cmake/help/runningcmake.html" target="_blank">CMake help pages</a>). Once you're done, you'll find either Makefiles or a Visual Studio solution or an XCode project in the build directory, depending on your platform and compiler.
 
@@ -165,9 +165,9 @@ In order to properly run vmtk you have to set environment variables.
 
 [Recommended]
 You can use the script vmtk_env.sh located in your vmtk-build/Install folder.
-It allows to set environment variables for your current running shell session. 
+It allows to set environment variables for your current running shell session.
 This is very useful if you have different versions of vmtk installed in your system:
-        
+
     source path-to-vmtk_env.sh
 
 Otherwise you can permanently set environment variables by adding it to your .bash_profile or .bash_rc.
@@ -176,18 +176,24 @@ Otherwise you can permanently set environment variables by adding it to your .ba
 You can also manually add environment variables:
 
 For Linux, add these lines to your .bashrc or .bash_profile file (in your home directory):
-  
+
     VMTKHOME=/path-to-vmtk-build/Install
     export PATH=$VMTKHOME/bin:$PATH
     export LD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib:$VMTKHOME/lib/vmtk:$LD_LIBRARY_PATH
     export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/vmtk/vmtk:$PYTHONPATH
-    
+
 For OSX, add these lines to your .profile file (in your home directory):
-  
+
     VMTKHOME=/path-to-vmtk-build/Install
     export PATH=$VMTKHOME/bin:$PATH
     export DYLD_LIBRARY_PATH=$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib:$VMTKHOME/lib/vmtk:$DYLD_LIBRARY_PATH
     export PYTHONPATH=$VMTKHOME/bin/Python:$VMTKHOME/lib/vtk-5.10:$VMTKHOME/lib/vmtk:$VMTKHOME/lib/vmtk/vmtk:$PYTHONPATH
+
+For Windows, set these variables into your PATH environment variable
+
+PATH=VMTKHOME\Install\bin;VMTKHOME\Install\lib\vtk-5.10;VMTKHOME\Install\lib;VMTKHOME\Install\lib\vmtk;%PATH%
+
+PYTHONPATH=VMTKHOME\Install\bin\Python;VMTKHOME\Install\lib\vtk-5.10;VMTKHOME\Install\lib\vmtk;VMTKHOME\Install\lib\vmtk\vmtk;%PYTHONPATH%
 
 Note that in the above I assume vtk is at version 5.10. It might not be if I forget to update the instructions. Check the directory name if this doesn't work, and please send an email on the mailing list.
 
