@@ -117,11 +117,11 @@ In this example we animate the traces with the default method (particles):
 
 If we want to visualize the particle tracing inside our mesh we can render the mesh and the traces animation in the same render window
 
-	vmtkrenderer --pipe vmtkmeshviewer -ifile mesh.vtu -opacity 0.3 --pipe vmtkparticletracer -ifile traces.vtp -timestep 0.001 -legend 1
+	vmtkrenderer --pipe vmtkmeshviewer -ifile mesh.vtu -opacity 0.3 --pipe vmtkpathlineanimator -ifile traces.vtp -timestep 0.001 -legend 1
 
 If we want to create a video we have to generate screenshots and then make a video with a dedicated software.
 I suggest quicktimepro (not free) or mencoder library (opensource).
 
-	vmtkrenderer --pipe vmtkmeshviewer -ifile mesh.vtu --pipe vmtkparticletracer -ifile traces.vtp -timestep 0.001 -method streaklines - legend 1 -screenshots 1 -imagesdirectory ~/Desktop/particle_images
+	vmtkrenderer --pipe vmtkmeshviewer -ifile mesh.vtu --pipe vmtkpathlineanimator -ifile traces.vtp -timestep 0.001 -method streaklines - legend 1 -screenshots 1 -imagesdirectory ~/Desktop/particle_images
 
 <object width="640" height="360"><param name="movie" value="//www.youtube.com/v/lqBvbKHS7Qo?&amp;hl=it_IT&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/lqBvbKHS7Qo?hl=it_IT&amp;version=3" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object>
