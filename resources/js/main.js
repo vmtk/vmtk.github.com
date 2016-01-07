@@ -177,47 +177,47 @@ function styleCode() {
 /***********************
  * Main Page Download Button
  **********************/
- $(document).ready(function() {
-  var os = getOS();
-  console.log(os);
-  if (os.indexOf("Windows-i386") != -1) {
-    $('#download-button').addClass("windows");
-    var link = "http://vmtk-installers.s3.amazonaws.com/1.2/vmtk-1.2-py2.7-win32.exe"
-    $('#download-button').prop("href", link);
-    $('#download-button').prop("target","_blank");
-  }
-  if (os.indexOf("Windows-x86_64") != -1) {
-    $('#download-button').addClass("windows");
-    var link = "http://vmtk-installers.s3.amazonaws.com/1.2/vmtk-1.2-py2.7_amd64-win-amd64.exe"
-    $('#download-button').prop("href", link);
-    $('#download-button').prop("target","_blank");
-  }
-  if (os.indexOf("OSX") != -1 ) {
-    $('#download-button').addClass("macos");
-    var link = "http://vmtk-installers.s3.amazonaws.com/1.2/vmtk-1.2-py2.7-macosx-10.9-intel.egg"
-    $('#download-button').prop("href", link);
-    $('#download-button').prop("target","_blank");
-  }
-  if (os == "Linux-i386") {
-    $('#download-button').addClass("unix");
-    var link = "http://vmtk-installers.s3.amazonaws.com/1.2/vmtk-1.2-py2.7-linux-i386.egg"
-    $('#download-button').prop("href", link);
-    $('#download-button').prop("target","_blank");
-  }
-  if (os == "Linux-x86_64") {
-    $('#download-button').addClass("unix");
-    var link = "http://vmtk-installers.s3.amazonaws.com/1.2/vmtk-1.2-py2.7-linux-x86_64.egg"
-    $('#download-button').prop("href", link);
-    $('#download-button').prop("target","_blank");
-  }
-  if (os == "Unknown OS"){
-	$('#download-button').addClass("unix");
-	var link = "{{ site.baseurl }}/download/#development_version"
-    $('#download-button').prop("href", link);
-    $('#download-button').prop("target","_blank");
-  }
- }
- );
+ // $(document).ready(function() {
+ //  var os = getOS();
+ //  console.log(os);
+ //  if (os.indexOf("Windows-i386") != -1) {
+ //    $('#download-button').addClass("windows");
+ //    var link = "http://vmtk-installers.s3.amazonaws.com/1.2/vmtk-1.2-py2.7-win32.exe"
+ //    $('#download-button').prop("href", link);
+ //    $('#download-button').prop("target","_blank");
+ //  }
+ //  if (os.indexOf("Windows-x86_64") != -1) {
+ //    $('#download-button').addClass("windows");
+ //    var link = "http://vmtk-installers.s3.amazonaws.com/1.2/vmtk-1.2-py2.7_amd64-win-amd64.exe"
+ //    $('#download-button').prop("href", link);
+ //    $('#download-button').prop("target","_blank");
+ //  }
+ //  if (os.indexOf("OSX") != -1 ) {
+ //    $('#download-button').addClass("macos");
+ //    var link = "http://vmtk-installers.s3.amazonaws.com/1.2/vmtk-1.2-py2.7-macosx-10.9-intel.egg"
+ //    $('#download-button').prop("href", link);
+ //    $('#download-button').prop("target","_blank");
+ //  }
+ //  if (os == "Linux-i386") {
+ //    $('#download-button').addClass("unix");
+ //    var link = "http://vmtk-installers.s3.amazonaws.com/1.2/vmtk-1.2-py2.7-linux-i386.egg"
+ //    $('#download-button').prop("href", link);
+ //    $('#download-button').prop("target","_blank");
+ //  }
+ //  if (os == "Linux-x86_64") {
+ //    $('#download-button').addClass("unix");
+ //    var link = "http://vmtk-installers.s3.amazonaws.com/1.2/vmtk-1.2-py2.7-linux-x86_64.egg"
+ //    $('#download-button').prop("href", link);
+ //    $('#download-button').prop("target","_blank");
+ //  }
+ //  if (os == "Unknown OS"){
+ // $('#download-button').addClass("unix");
+ // var link = "{{ site.baseurl }}/download/#development_version"
+ //    $('#download-button').prop("href", link);
+ //    $('#download-button').prop("target","_blank");
+ //  }
+ // }
+ // );
 
 
 /***********************

@@ -293,6 +293,10 @@ a.brand {
   margin-top: -36px;
 }
 
+#download-links {
+  width: 100%;
+}
+
 #download-button {
   display: block;
   position: relative;

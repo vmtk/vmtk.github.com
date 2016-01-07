@@ -4,7 +4,7 @@ title: News Archive
 ---
 
 <ul class="news-archive-list">
-{% for p in site.categories.news limit: 30 %}
+{% for p in site.categories.news limit: 50 %}
 <li class="news-archive-entry">
   {% if p.link-out %}
     <a href="{{ p.link-out }}">{{ p.title }}</a>
