@@ -17,25 +17,25 @@ In case you can't find a binary package for your operating system, please [compi
       <td><i class="fa fa-windows"></i></td>
       <td>Windows 7/8/10</td>
       <td>32bit</td>
-      <td><a href="http://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3-py2.7-win32.exe"><i class="fa fa-download"></i></a></td>
+      <td><a href="https://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3.win32.exe"><i class="fa fa-download"></i></a></td>
     </tr>
     <tr>
       <td><i class="fa fa-windows"></i></td>
       <td>Windows 7/8/10</td>
       <td>64bit</td>
-      <td><a href="http://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3-py2.7_amd64-win-amd64.exe"><i class="fa fa-download"></i></a></td>
+      <td><a href="https://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3.win-amd64.exe"><i class="fa fa-download"></i></a></td>
     </tr>
     <tr>
       <td><i class="fa fa-linux"></i></td>
       <td>Linux</td>
       <td>32bit</td>
-      <td><a href="http://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3-py2.7-linux-i386.egg"><i class="fa fa-download"></i></a></td>
+      <td><a href="http://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3.linux-i386.egg"><i class="fa fa-download"></i></a></td>
     </tr>
     <tr>
       <td><i class="fa fa-linux"></i></td>
       <td>Linux</td>
       <td>64bit</td>
-      <td><a href="http://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3-py2.7-linux-x86_64.egg"><i class="fa fa-download"></i></a></td>
+      <td><a href="http://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3.linux-x86_64.egg"><i class="fa fa-download"></i></a></td>
     </tr>
     <tr>
       <td><i class="fa fa-apple"></i></td>
@@ -141,7 +141,21 @@ Then simply type:
 
 	 sudo easy_install path-to-vmtk-egg
 
-After installation you will have to manually set environment variables (see installation from source section at the end of the page). <br/>
+After installation you will have to manually set environment variables <br/>
+
+Last lines of the installation process will give you information about the installed location of vmtk:
+
+    Installed usr/local/lib/python2.7/dist-packages/vmtk-1.3-py2.7.egg
+    Processing dependencies for vmtk==1.3
+    Finished processing dependencies for vmtk==1.3
+
+Use this information in order to setup your environment variables, e.g.:
+NB pay attention to add / at the beginning of the VMTKHOME path.
+
+    VMTKHOME=/usr/local/lib/python2.7/dist-packages/vmtk-1.3-py2.7.egg
+    export PATH=$VMTKHOME/vmtk/bin:$PATH
+    export LD_LIBRARY_PATH=$VMTKHOME/vmtk/lib:$LD_LIBRARY_PATH
+    export PYTHONPATH=$VMTKHOME/vmtk:$PYTHONPATH
 
 ### Mac OSX packages
 
@@ -169,7 +183,7 @@ To install vmtk binary distribution you need <a href="http://www.brew.sh" target
 
 Then install vmtk:
 
-    brew install vmtk
+    brew install https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
 
 ## Installing from source
 
@@ -189,7 +203,7 @@ In order to successfully compile and use vmtk, the following software has to be 
 
 For Ubuntu users, you'll have to install the following packages prior to compiling:
 
-    sudo apt-get install libxt-dev libgl1-mesa-glx libgl1-mesa-dev python-dev
+    sudo apt-get install libxt-dev libgl1-mesa-glx libgl1-mesa-dev libglapi-mesa libosmesa-dev build-essential python-dev
 
 ### Installation
 
@@ -203,6 +217,10 @@ Create a build directory and cd into it
     cd vmtk-build
 
 Run CMake with the directory where the vmtk source tree is located as an argument e.g.
+
+    cmake ../vmtk
+
+Or with the GUI
 
     ccmake ../vmtk
 
@@ -230,7 +248,7 @@ For Linux, add these lines to your .bashrc or .bash_profile file (in your home d
 
     VMTKHOME=/path-to-vmtk-build/Install
     export PATH=$VMTKHOME/bin:$PATH
-    export LD_LIBRARY_PATH=$VMTKHOME/lib:$DYLD_LIBRARY_PATH
+    export LD_LIBRARY_PATH=$VMTKHOME/lib:$LD_LIBRARY_PATH
     export PYTHONPATH=$VMTKHOME/lib/Python2.7/site-packages:$PYTHONPATH
 
 For OSX, add these lines to your .profile file (in your home directory):
