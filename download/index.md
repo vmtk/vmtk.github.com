@@ -26,6 +26,12 @@ In case you can't find a binary package for your operating system, please [compi
       <td><a href="https://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3.win-amd64.exe"><i class="fa fa-download"></i></a></td>
     </tr>
     <tr>
+      <td><i class="fa fa-apple"></i></td>
+      <td>OSX 10.9+</td>
+      <td>64bit</td>
+      <td><a href="{{ site.baseurl }}/download/#mac-osx-packages"><i class="fa fa-download"></i></a></td>
+    </tr>
+    <tr>
       <td><i class="fa fa-linux"></i></td>
       <td>Linux</td>
       <td>32bit</td>
@@ -37,30 +43,14 @@ In case you can't find a binary package for your operating system, please [compi
       <td>64bit</td>
       <td><a href="http://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3.linux-x86_64.egg"><i class="fa fa-download"></i></a></td>
     </tr>
-    <tr>
-      <td><i class="fa fa-apple"></i></td>
-      <td>OSX 10.9+</td>
-      <td>64bit</td>
-      <td><a href="{{ site.baseurl }}/download/#mac-osx-packages"><i class="fa fa-download"></i></a></td>
-    </tr>
   </tbody>
 </table>
 
-For further details, follow the instructions [below](#installing-binary-packages).
-
-##Development version
-
-You can grab the latest development version from the <a href="https://github.com/vmtk/vmtk" target="_blank">official vmtk git repository on Github</a>. To clone this repository, make sure <a href="http://git-scm.com" target="_blank">git</a> is installed on your system and issue the following:
-
-     git clone https://github.com/vmtk/vmtk.git
-
-Follow the instructions [below](#installing-from-source) to compile the source code.
-
-##Additional information
+For further details, follow the instructions on [installing binary packages](#installing-binary-packages).
 
 New vmtk users might want to read the <a href="{{ site.baseurl }}/documentation/getting-started.html">Getting Started</a> guide.<br/>
 To see a detailed list of changes for each version of vmtk please refer to the <a href="https://github.com/vmtk/vmtk/commits/master" target="_blank">changelog</a>.<br/>
-The vmtk distribution is released under a <a href="{{ site.baseurl }}/license.html">BSD-like license</a>.
+The vmtk distribution is released under a <a href="{{ site.baseurl }}/license.html" target="_blank">BSD-like license</a>.
 
 
 ## Installing binary packages
@@ -83,11 +73,11 @@ If you already have a Python 2.7 installed in your system and you dont'know if i
 
 Python 32bit:
 
-	Python 2.7.6 (default, Nov 10 2013, 19:24:18) [MSC v.1500 32 bit (Intel)] on win32
+	Python 2.7.x (default, Jan 22 2016, 09:24:18) [MSC v.1500 32 bit (Intel)] on win32
 
 Python 64bit:
 
-	Python 2.7.6 (default, Nov 10 2013, 19:24:24) [MSC v.1500 64 bit (AMD64)] on win32
+	Python 2.7.x (default, Jan 22 2016, 09:24:24) [MSC v.1500 64 bit (AMD64)] on win32
 
 In the case you try to install vmtk with a wrong python architecture the installer will tell you that it's not able to found Python executable on your system. <br/>
 
@@ -99,6 +89,33 @@ Note that, along with vmtk, the installer directly provides Python-wrapped vmtk 
 
 If you want to uninstall vmtk, double click on vmtk entry it in the uninstall program section of the windows control panel.
 
+### Mac OSX packages
+
+If you have an older compiled from source, simply delete the folder and please remove any vmtk related environment variables you have set in your .bashrc file or .bash_profile or .profile <br/>
+If you have an older version of vmtk installed as a python egg, please remove it by following instructions below:
+
+If you installed vmtk 1.2 using egg distribution please remove it using pip.
+If you do not have pip, install it by typing:
+
+    wget https://bootstrap.pypa.io/get-pip.py
+
+    python get-pip.py
+
+You can check all python packages installed with:
+
+    pip freeze
+
+To uninstall vmtk please type:
+
+    pip uninstall vmtk
+
+To install vmtk binary distribution you need <a href="http://www.brew.sh" target="_blank">homebrew</a>.
+
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+Then install vmtk:
+
+    brew install https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
 
 ### Linux packages
 
@@ -141,7 +158,7 @@ Then simply type:
 
 	 sudo easy_install path-to-vmtk-egg
 
-After installation you will have to manually set environment variables <br/>
+After installation you will have to manually set environment variables. <br/>
 
 Last lines of the installation process will give you information about the installed location of vmtk:
 
@@ -150,43 +167,21 @@ Last lines of the installation process will give you information about the insta
     Finished processing dependencies for vmtk==1.3
 
 Use this information in order to setup your environment variables, e.g.:
-NB pay attention to add / at the beginning of the VMTKHOME path.
+
+
+Please pay attention to add / at the beginning of the VMTKHOME path.
 
     VMTKHOME=/usr/local/lib/python2.7/dist-packages/vmtk-1.3-py2.7.egg
     export PATH=$VMTKHOME/vmtk/bin:$PATH
     export LD_LIBRARY_PATH=$VMTKHOME/vmtk/lib:$LD_LIBRARY_PATH
     export PYTHONPATH=$VMTKHOME/vmtk:$PYTHONPATH
 
-### Mac OSX packages
 
-If you have an older compiled from source version of vmtk simply delete the folder and please remove any vmtk related environment variable you have set in your .bashrc file or .bash_profile or .profile <br/>
-If you have an older version of vmtk installed as a python egg, please remove it by following instructions below:
+##Development version
 
-If you installed vmtk 1.2 using egg distribution please remove it using pip.
-If you do not have pip, install it by typing:
+You can grab the latest development version from the <a href="https://github.com/vmtk/vmtk" target="_blank">official vmtk git repository on Github</a>. To clone this repository, make sure <a href="http://git-scm.com" target="_blank">git</a> is installed on your system and issue the following:
 
-    wget https://bootstrap.pypa.io/get-pip.py
-
-    python get-pip.py
-
-You can check all python packages installed with:
-
-    pip freeze
-
-To uninstall vmtk please type:
-
-    pip uninstall vmtk
-
-To install vmtk binary distribution you need <a href="http://www.brew.sh" target="_blank">homebrew</a>.
-
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-Then install vmtk:
-
-    brew install https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
-
-## Installing from source
-
+     git clone https://github.com/vmtk/vmtk.git
 
 vmtk is now based on SuperBuild, a CMake feature that allows to automatically download and compile dependencies (in our case VTK and ITK). This makes the whole process a lot easier than it was up until version 0.9. Make sure you update your notes based on the instructions below.
 
@@ -205,11 +200,7 @@ For Ubuntu users, you'll have to install the following packages prior to compili
 
     sudo apt-get install libxt-dev libgl1-mesa-glx libgl1-mesa-dev libglapi-mesa libosmesa-dev build-essential python-dev
 
-### Installation
-
-Checkout the development version from the official Git repository:
-
-    git clone https://github.com/vmtk/vmtk.git
+### Build
 
 Create a build directory and cd into it
 
@@ -249,19 +240,19 @@ For Linux, add these lines to your .bashrc or .bash_profile file (in your home d
     VMTKHOME=/path-to-vmtk-build/Install
     export PATH=$VMTKHOME/bin:$PATH
     export LD_LIBRARY_PATH=$VMTKHOME/lib:$LD_LIBRARY_PATH
-    export PYTHONPATH=$VMTKHOME/lib/Python2.7/site-packages:$PYTHONPATH
+    export PYTHONPATH=$VMTKHOME/lib/python2.7/site-packages:$PYTHONPATH
 
 For OSX, add these lines to your .profile file (in your home directory):
 
     VMTKHOME=/path-to-vmtk-build/Install
     export PATH=$VMTKHOME/bin:$PATH
     export DYLD_LIBRARY_PATH=$VMTKHOME/lib:$DYLD_LIBRARY_PATH
-    export PYTHONPATH=$VMTKHOME/lib/Python2.7/site-packages:$PYTHONPATH
+    export PYTHONPATH=$VMTKHOME/lib/python2.7/site-packages:$PYTHONPATH
 
 For Windows, set these variables into your PATH environment variable
 
     PATH=path-to-vmtk-build\Install\bin;VMTKHOME\Install\lib;%PATH%
-    PYTHONPATH=path-to-vmtk-build\Install\lib\Python2.7\site-packages;%PYTHONPATH%
+    PYTHONPATH=path-to-vmtk-build\Install\lib\python2.7\site-packages;%PYTHONPATH%
 
 Enjoy
 
