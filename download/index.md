@@ -98,7 +98,6 @@ If you installed vmtk 1.2 using egg distribution please remove it using pip.
 If you do not have pip, install it by typing:
 
     wget https://bootstrap.pypa.io/get-pip.py
-
     python get-pip.py
 
 You can check all python packages installed with:
@@ -133,10 +132,10 @@ Then install vmtk:
 
 Finally:
 
-    mkdir -p /Users/<Username>/Library/Python/2.7/lib/python/site-packages
-    echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/<Username>/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+    mkdir -p /Users/Username/Library/Python/2.7/lib/python/site-packages
+    echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/Username/Library/Python/2.7/lib/python/site-packages/homebrew.pth
 
-where "<Username>" is your user's account name.
+where Username is your user's account name.
 
 ### Linux packages
 
