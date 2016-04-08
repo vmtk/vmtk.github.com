@@ -113,9 +113,30 @@ To install vmtk binary distribution you need <a href="http://www.brew.sh" target
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+
+Due to an <a href="https://github.com/Homebrew/homebrew-science/issues/3401" target="_blank">unresolved issue</a> in homebrew-science with VTK,
+in order to install vmtk you need to apply a temporary workaround.
+
+Remove brew python, if installed
+
+    brew uninstall python
+
+Remove older versions of vmtk installed with brew:
+
+    brew uninstall vmtk
+    brew uninstall vtk
+    brew unistall insighttoolkit
+
 Then install vmtk:
 
     brew install https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
+
+Finally:
+
+    mkdir -p /Users/<Username>/Library/Python/2.7/lib/python/site-packages
+    echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/<Username>/Library/Python/2.7/lib/python/site-packages/homebrew.pth
+
+where <Username> is your user's account name.
 
 ### Linux packages
 
