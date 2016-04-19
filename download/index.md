@@ -3,9 +3,9 @@ layout: page
 title: Download
 ---
 
-###vmtk Latest release (1.3)
+### vmtk Latest release (1.3)
 
-##Binary Packages
+## Binary Packages
 
 Binary packages are available for Linux (Ubuntu, Fedora, Mint) 32bit and 64 bit, Mac OSX( > 10.10), and Windows 7/8/10 32bit and 64bit.<br/>
 Other Linux distributions may be supported but vmtk is not guaranteed to work. <br/>
@@ -197,7 +197,7 @@ Please pay attention to add / at the beginning of the VMTKHOME path.
     export PYTHONPATH=$VMTKHOME/vmtk:$PYTHONPATH
 
 
-##Development version
+## Development version
 
 You can grab the latest development version from the <a href="https://github.com/vmtk/vmtk" target="_blank">official vmtk git repository on Github</a>. To clone this repository, make sure <a href="http://git-scm.com" target="_blank">git</a> is installed on your system and issue the following:
 
