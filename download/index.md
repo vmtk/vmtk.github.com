@@ -9,7 +9,7 @@ title: Download
 
 Binary packages are available for Linux (Ubuntu, Fedora, Mint) 32bit and 64 bit, Mac OSX( > 10.10), and Windows 7/8/10 32bit and 64bit.<br/>
 Other Linux distributions may be supported but vmtk is not guaranteed to work. <br/>
-In case you can't find a binary package for your operating system, please [compile vmtk from source](#installing-from-source).
+In case you can't find a binary package for your operating system, please [compile vmtk from source](#development-version).
 
 <table id="download-links" class="table table condensed table-hover">
   <tbody>
