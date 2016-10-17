@@ -126,6 +126,10 @@ Remove older versions of vmtk installed with brew:
     brew uninstall vtk
     brew unistall insighttoolkit
 
+Register brew science:
+
+    brew tap homebrew/science 
+
 Then install vmtk:
 
     brew install https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
