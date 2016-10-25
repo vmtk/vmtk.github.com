@@ -3,7 +3,7 @@ layout: page-full-width
 title: Mapping and Patching
 ---
 
-#### Applicable version(s): 
+#### Applicable version(s):
 [Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 <sub>by Marina Piccinelli, Math CS Department, Emory University, Atlanta, US</sub>
@@ -12,19 +12,19 @@ This tutorial demonstrates how to map the surface of a population of vessels ont
 
 ---
 
-##Overview
+## Overview
 
 The theory behind this tutorial can be found in details in the following publication:
 
-+ Antiga L, Steinman DA. Robust and objective decomposition and mapping of bifurcating vessels. *IEEE Transactions on Medical Imaging*, 23(6), 2004. 
++ Antiga L, Steinman DA. Robust and objective decomposition and mapping of bifurcating vessels. *IEEE Transactions on Medical Imaging*, 23(6), 2004.
 
 Briefly, each segment of a vascular network is topologically equivalent to a cylinder and can consequently be mapped onto a rectangular parametric space that allows both easier investigations and comparisons between different models and datasets. The parameterization is performed longitudinally by means of the curvilinear abscissa computed over the model centerlines and circumferentially, by the angular position of each point on the surface mesh with respect to the centerlines.
 
-##Pre-requisites
+## Pre-requisites
 
 In addition to ad hoc vmtk scripts for metric calculation (`vmtkbranchmetrics`), mapping (`vmtkbranchmapping`) and patching (`vmtkbranchpatching`), this tutorial relies on concepts and operations presented in previous sections, such as [centerlines extraction]({{ site.baseurl }}/tutorials/Centerlines.html), their [geometric analysis]({{ site.baseurl }}/tutorials/GeometricAnalysis.html), [bifurcations identification]({{ site.baseurl }}/tutorials/GeometricAnalysis.html) and [branch splitting]({{ site.baseurl }}/tutorials/BranchSplitting.html).
 
-##An example: WSS and OSI along a branching vascular district
+## An example: WSS and OSI along a branching vascular district
 
 A common application is mapping and patching of fluid dynamics variables, such as wall shear stress (WSS) or oscillatory shear index (OSI), obtained on the surface mesh typically by means of a CFD simulation.<br>
 Let's assume we have the mesh surface depicted in Figure 1: it represents the aorta of a mouse with its main branches (from top to bottom: celiac, mesenteric and right renal arteries) for which the WSS and OSI were computed.<br>
@@ -37,28 +37,28 @@ We will refer to the mesh surface as aorta.vtp; we also assume, even if it is no
 
 Here are the steps you may want to follow to patch and flatten the surface:
 
-###Centerlines extraction and branch splitting
+### Centerlines extraction and branch splitting
 
 We extract the centerlines from the model, compute their attributes, i.e. the curvilinear abscissa and the parallel transport normals system - both attributes are crucial for the surface parameterization - and split them (Figure 2-left).
 
     vmtkcenterlines -ifile aorta.vtp --pipe vmtkcenterlineattributes --pipe vmtkbranchextractor -ofile aorta_cl.vtp
 
-###Bifurcation reference systems
+### Bifurcation reference systems
 
 We compute the bifurcation reference systems along the centerline network just computed
 
     vmtkbifurcationreferencesystems -ifile aorta_cl.vtp -radiusarray MaximumInscribedSphereRadius -blankingarray Blanking -groupidsarray GroupIds -ofile aorta_cl_rs.vtp
 
-###Surface splitting
+### Surface splitting
 
 We subdivide the surface in its constituent branches: in this way the mapping and patching will be performed on each singular branch (Figure 2-right).
 
-    vmtkbranchclipper -ifile aorta.vtp -centerlinesfile aorta_cl.vtp -groupidsarray GroupIds -radiusarray MaximumInscribedSphereRadius -blankingarray Blanking -ofile aorta_clipped.vtp 
+    vmtkbranchclipper -ifile aorta.vtp -centerlinesfile aorta_cl.vtp -groupidsarray GroupIds -radiusarray MaximumInscribedSphereRadius -blankingarray Blanking -ofile aorta_clipped.vtp
 
 ![Figure 2]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure2.png)
 <br>Figure 2. Split centerlines (left) and surface (right): GroupIds array shown.
 
-###Longitudinal and circumferential metrics
+### Longitudinal and circumferential metrics
 
 By means of the `vmtkbranchmetrics` script two additional arrays are created on each branch of the split surface whose default names are AbscissaMetric and AngularMetric: the first is computed from the curvilinear abscissa defined on the centerlines, while the second represents the periodic circumferential coordinate of mesh points around the centerlines and spans the interval (-&pi;, +&pi;). In Figure 3 iso-contours over the two arrays are also shown.
 
@@ -67,7 +67,7 @@ By means of the `vmtkbranchmetrics` script two additional arrays are created on 
 ![Figure 3]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure3.png)
 <br>Figure 3. Longitudinal (left) and circumferential metrics created over the surface model by vmtkbranchmetrics script; iso-contours over the two fields are shown.
 
-##Metrics mapping to branches
+## Metrics mapping to branches
 
 By construction of a harmonic function (Figure 4-left) over each vascular segment, vmtkbranchmapping maps and stretches the longitudinal metric to correctly account for the presence of insertion regions at bifurcations; the additional StretchedMapping array is added to the surface (Figure 4-middle).
 
@@ -82,7 +82,7 @@ to verify all the information needed by the script: results from `vmtkbranchmetr
 ![Figure 4]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure4.png)
 <br>Figure 4. Harmonic funtion built over each branch (left); stretched longitudinal metric (middle) and angular metric (right).
 
-##Patching of surface mesh and attributes
+## Patching of surface mesh and attributes
 
 All the ingredients are now in place to perform the real patching of the surface, that is to "cut" a set of contiguous rectangular regions on the mesh that follow iso-contours in the StretchedMapping and AngularMetric arrays; all the quantities of interest (WSS and OSI in this case) are averaged over these areas.
 
@@ -99,16 +99,16 @@ By means of the options `-longitudinalpatchsize` and `-circularpatches` we impos
 
 Figure 6 shows the patching of the data attributes over the surface.<br>
 ![Figure 6]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure6.png)
-<br>Figure 6. Surface model with patched WSS and OSI attributes; the mesh tesselation is also displayed. 
+<br>Figure 6. Surface model with patched WSS and OSI attributes; the mesh tesselation is also displayed.
 
 By adding the following option to the previous patching command the patched data will be flattened and exported as a .vti image or a .png (.jpg, .tiff, etc). Figure 7 shows the patched 3D surface (WSS is visualized) and the flattened WSS (middle) and OSI (right) images. By default in the final .vti (or .png) images the flattened patched dataset of each branch are vertically juxtaposed.
 
     -patcheddatafile aorta_clipped_patching.vti or -patcheddatafile aorta_clipped_patching.png
 
 ![Figure 7]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure7.png)
-<br>Figure 7. Left: 3D patched dataset (WSS displayed) for the complete model; middle and rigth: flattened images of patched WSS and OSI for the whole vascular network by vertical juxtaposition of each branch portion. 
+<br>Figure 7. Left: 3D patched dataset (WSS displayed) for the complete model; middle and rigth: flattened images of patched WSS and OSI for the whole vascular network by vertical juxtaposition of each branch portion.
 
-###Extraction of one branch
+### Extraction of one branch
 
 One possible way to extract the patched 3D surface and the flattened image for only one of the vascular branches is to use `vmtkbranchclipper` to clip the segment of interest before performing the patching. For example to extract the branch with group id 5
 
@@ -119,4 +119,4 @@ Figure 8 shows the results.
 ![Figure 8]({{ site.baseurl }}/resources/img/tutorials/MapPatchFigure8.png)
 <br>Figure 8. 3D patched surface and flattened images for the branch #5.
 
-By means of the flattened images, comparisons or correlations between different models or different datasets are readily computable. 
+By means of the flattened images, comparisons or correlations between different models or different datasets are readily computable.

@@ -12,7 +12,7 @@ This tutorial demonstrates how to generate particles and streaklines from a velo
 
 ---
 
-##Overview
+## Overview
 
 Fluid flow is characterized by a velocity vector field in three-dimensional space, within the framework of continuum mechanics. Streamlines, streaklines, and pathlines are field lines resulting from this vector field description of the flow. They differ only when the flow changes with time: that is, when the flow is not steady.
 Streamlines are a family of curves that are instantaneously tangent to the velocity vector of the flow. These show the direction a fluid element will travel in at any point in time.
@@ -24,11 +24,11 @@ Timelines are the lines formed by a set of fluid particles that were marked at a
 
 *Figure 1: The red particle moves in a flowing fluid; its pathline is traced in red; the tip of the trail of blue ink released from the origin follows the particle, but unlike the static pathline (which records the earlier motion of the dot), ink released after the red dot departs continues to move up with the flow. (This is a streakline.) The dashed lines represent contours of the velocity field (streamlines), showing the motion of the whole field at the same time.*
 
-##Requirements
+## Requirements
 
 In order to properly compute traces it is mandatory to have <i>n</i> mesh files resulting from a pulsatile cfd simulation. Each mesh file represent a timestep and must have, as a vtkDataArray, 3 velocity components in the axial directions ( usually <i>u, v</i> and <i>w</i> ), or the velocity vector.
 
-##Pre-process your solution
+## Pre-process your solution
 
 We need to create a mesh file which will contains all the data relative to the velocity components for each timestep we want to generate traces.
 We have to provide:
@@ -68,7 +68,7 @@ If you need to clip the model before applying a slice:
 ![Figure 3]({{ site.baseurl }}/resources/img/tutorials/particle_mesh_cutter.png)
 *Figure 3: Creating a source slice for the particle tracer*  
 
-##Generate the traces
+## Generate the traces
 
 We will now see how to generate the traces from a velocity field.
 We have to provide to the script:
@@ -89,7 +89,7 @@ Or we can build a pipe in order to avoid to write to disk the mesh_timesteps.vtu
 
 *Figure 4: The traces generated with vmtkparticletracer script*
 
-##Animate the traces
+## Animate the traces
 
 We are now ready to animate our traces.
 We have to provide to the script:

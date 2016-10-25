@@ -3,7 +3,7 @@ layout: page-full-width
 title: Making a CFD mesh using a sigmoid mask
 ---
 
-#### Applicable version(s): 
+#### Applicable version(s):
 [Latest stable release]({{ site.baseurl }}/download/#binary_packages) & [Development version]({{ site.baseurl }}/download/#development_version)
 
 In this protocol it is explained how you can mask the bone with a sigmoid function to create a good mesh from for example the internal carotid artery or an aneurysm located near bone. The sigmoid function masks the high gradients in bone and air in order to decrease their influence on the levelset. If you can't understand the used code, I advise you to look at one of the other tutorials on the vmtk website.
@@ -16,9 +16,9 @@ In this protocol it is explained how you can mask the bone with a sigmoid functi
 
  ---
 
-##Read and Display the image
+## Read and Display the image
 
-The first step is to read in the dicom files and to display them on the screen. This is done using `vmtkimagereader` and `vmtkimageviewer` 
+The first step is to read in the dicom files and to display them on the screen. This is done using `vmtkimagereader` and `vmtkimageviewer`
 
      vmtkimagereader -f dicom -d dicom_directory_path -ofile image_volume.vti --pipe vmtkimageviewer
 
@@ -28,7 +28,7 @@ The next step is to select a volume of interest. If you look at the object using
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure1]({{ site.baseurl }}/resources/img//tutorials/Jansen_location.png)| ![Figure2]({{ site.baseurl }}/resources/img//tutorials/Jansen_voi.png) 
+|![Figure1]({{ site.baseurl }}/resources/img//tutorials/Jansen_location.png)| ![Figure2]({{ site.baseurl }}/resources/img//tutorials/Jansen_voi.png)
 |*Figure 1: location of the aneurysm*	          | *Figure 2: Volume of Interest selection*
 
 ---
@@ -59,7 +59,7 @@ If you then use vmtkimageviewer on the levelsetfiles you see that there is a dif
 
     vmtkimagecompose -ifile bone_lvlset_500.vti -i2file air_lvlset_-50.vti -negatei2 1  -ofile bone_air_lvlset.vti
 
-###**How to segment specific regions**
+### **How to segment specific regions**
 
 When creating the levelsets of bone and air, it is wise to choose a relatively small volume of interest, because it may take a while before the process is completed. With VMTK it is also possible to make a smaller volume of interest in the one you already made, which contains the region of bone that you want to segment (I.e. the region where the aneurysm/vessel is very close to the bone)
 
@@ -68,7 +68,7 @@ When creating the levelsets of bone and air, it is wise to choose a relatively s
 |![Figure3]({{ site.baseurl }}/resources/img//tutorials/Jansen_bonelvlset.png)| ![Figure4]({{ site.baseurl }}/resources/img//tutorials/Jansen_airlvlset.png) |
 |*Figure 3: Bone levelset*	          | *Figure 4: Air levelset* |
 |![Figure5]({{ site.baseurl }}/resources/img/tutorials/Jansen_comblvlset.png)| |
-|*Figure 5: Bone and Air levelsets combined* | 
+|*Figure 5: Bone and Air levelsets combined* |
 
 <br>
 
@@ -100,7 +100,7 @@ In this composed image the positions of the gradients you want to mask can be se
 |*Figure 6: Problem situation* | |
 
 <br>
-     vmtkimagefeaturecorrection -ifile bone_feature_500.vti -levelsetsfile bone_air_lvlset.vti 
+     vmtkimagefeaturecorrection -ifile bone_feature_500.vti -levelsetsfile bone_air_lvlset.vti
      -scalefrominput 0 -ofile sigmoid_feature.vti
 
 |    		 			  |     					      |
@@ -112,7 +112,7 @@ In this composed image the positions of the gradients you want to mask can be se
 
 Figure 7 shows the original feature image, figure 8 shows the altered one. In the latter figure you can see that some areas are brighter compared to figure 7. This is caused by the application of the sigmoid function
 
-I recommend however to use a small standard deviation (for example one pixel) because then you will be able to use the curvature option more efficiently. If you will use a higher standard deviation , the curvature option has less freedom when creating the actual levelset. This is because they both erode the levelset a bit in order to create a better shape. The curvature is also capable of smoothing the surface of the aneurysm, which the sigmoid cannot. 
+I recommend however to use a small standard deviation (for example one pixel) because then you will be able to use the curvature option more efficiently. If you will use a higher standard deviation , the curvature option has less freedom when creating the actual levelset. This is because they both erode the levelset a bit in order to create a better shape. The curvature is also capable of smoothing the surface of the aneurysm, which the sigmoid cannot.
 
 ### Short explanation of the problem.
 
@@ -175,7 +175,7 @@ My endvalues here were 500, 0, 0.2, 1.0
 
 ### Why initial levelset
 
-Initially I created a model of the internal carotid in the same way as described in the aneurysm section. However, this sometimes gave complications and took a long time. Afterwards I tried to make a model with an initial levelset which gave a result almost as good as the previous method, only taking two steps. 
+Initially I created a model of the internal carotid in the same way as described in the aneurysm section. However, this sometimes gave complications and took a long time. Afterwards I tried to make a model with an initial levelset which gave a result almost as good as the previous method, only taking two steps.
 
 ---
 
@@ -235,7 +235,7 @@ Finally the mesh is written to libmesh format. This is also dependant on the sol
 
      vmtkmeshwriter -ifile aneurysm_model_meshq_sc.vtu -entityidsarray CellEntityIds -ofile aneurysm_model_meshq_sc.xda
 
-###Creating mesh with NetGen
+### Creating mesh with NetGen
 
 In this section, the use of creating a mesh with NetGen will be discussed
 
@@ -265,4 +265,4 @@ With meshscaling you have to convert the model from millimeters to centimeters.
 
 After this step you are ready to generate the input for your solver. This greatly depends on the solver you are using. [Generating an inputfile for a CFD solver]({{ site.baseurl }}/tutorials/SurfaceToMesh.html).
 
-If you have any questions, feel free to contact me at R.P.M.Jansen@student.tue.nl 
+If you have any questions, feel free to contact me at R.P.M.Jansen@student.tue.nl

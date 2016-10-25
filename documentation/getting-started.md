@@ -40,7 +40,7 @@ If the image volume is composed by more than one slice, single slices will be ou
 ## File formats
 ---
 
-###Images
+### Images
 
 + **dcm (DICOM Image, only Read)**: Digital Imaging and Communications in Medicine (DICOM) is a standard for handling, storing, printing, and transmitting information in medical imaging. It includes a file format definition and a network communications protocol
 + **mha/mhd (Meta Image)**: it specifies a standardized way of expressing the meta- information in the header about the pixel data; .mha: header embedded, .mhd+.raw (or other pixel data formats): header in separate file
@@ -56,7 +56,7 @@ If the image volume is composed by more than one slice, single slices will be ou
 + **stl (Stereolithography)**: STL (STereoLithography) is a file format native to the stereolithography CAD software created by 3D Systems. STL is also known as Standard Tessellation Language. STL files describe only the surface geometry of a three dimensional object without any representation of color, texture or other common CAD model attributes. The STL format specifies both ASCII and binary representations. Binary files are more common, since they are more compact
 + **tec (Tecplot)**: TEC files are used by the TECPLOT program, which is a visualization program for technical data.
 
-###Meshes
+### Meshes
 
 + **vtu (VTK XML)**: the Visualization Toolkit (VTK) format for meshes; XML syntax with embedded binary data; UnstructuredGrid (.vtu) — Serial vtkUnstructuredGrid (unstructured)
 + **pvtu (VTK XMLP)**: the Visualization Toolkit (VTK) parallel format for meshes; XML syntax with embedded binary data
