@@ -113,9 +113,6 @@ To install vmtk binary distribution you need <a href="http://www.brew.sh" target
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 
-Due to an <a href="https://github.com/Homebrew/homebrew-science/issues/3401" target="_blank">unresolved issue</a> in homebrew-science with VTK,
-in order to install vmtk you need to apply a temporary workaround.
-
 Remove brew python, if installed
 
     brew uninstall python
@@ -124,11 +121,11 @@ Remove older versions of vmtk installed with brew:
 
     brew uninstall vmtk
     brew uninstall vtk
-    brew unistall insighttoolkit
+    brew uninstall insighttoolkit
 
 Register brew science:
 
-    brew tap homebrew/science 
+    brew tap homebrew/science
 
 Then install vmtk:
 
@@ -223,6 +220,14 @@ In order to successfully compile and use vmtk, the following software has to be 
 For Ubuntu users, you'll have to install the following packages prior to compiling:
 
     sudo apt-get install libxt-dev libgl1-mesa-glx libgl1-mesa-dev libglapi-mesa libosmesa-dev build-essential python-dev
+
+For OSX users, due to python linking with VTK, <a href="http://www.brew.sh" target="_blank">homebrew</a> python is required
+
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+    brew update
+
+    brew install python
 
 ### Build
 
