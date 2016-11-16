@@ -119,9 +119,9 @@ Remove brew python, if installed
 
 Remove older versions of vmtk installed with brew:
 
-    brew uninstall vmtk
-    brew uninstall vtk
-    brew uninstall insighttoolkit
+    brew uninstall --force https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
+    brew uninstall --force vtk
+    brew uninstall --force insighttoolkit
 
 Register brew science:
 
