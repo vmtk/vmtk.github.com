@@ -108,7 +108,7 @@ To uninstall vmtk please type:
 
     pip uninstall vmtk
 
-To install vmtk binary distribution you need <a href="http://www.brew.sh" target="_blank">homebrew</a>.
+To install vmtk binary distribution you need <a href="http://brew.sh" target="_blank">homebrew</a>.
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
