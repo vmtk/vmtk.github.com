@@ -112,16 +112,15 @@ To install vmtk binary distribution you need <a href="http://www.brew.sh" target
 
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-
-Remove brew python, if installed
-
-    brew uninstall python
-
 Remove older versions of vmtk installed with brew:
 
     brew uninstall --force https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
     brew uninstall --force vtk
     brew uninstall --force insighttoolkit
+
+Install brew python
+
+    brew install python
 
 Register brew science:
 
