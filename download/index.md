@@ -114,7 +114,7 @@ To install vmtk binary distribution you need <a href="http://brew.sh" target="_b
 
 Remove older versions of vmtk installed with brew:
 
-    brew uninstall --force https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
+    brew uninstall --force https://raw.githubusercontent.com/vmtk/vmtk/v1.3.2/distribution/homebrew/vmtk.rb
     brew uninstall --force vtk
     brew uninstall --force insighttoolkit
 
@@ -128,7 +128,7 @@ Register brew science:
 
 Then install vmtk:
 
-    brew install https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
+    brew install https://raw.githubusercontent.com/vmtk/vmtk/v1.3.2/distribution/homebrew/vmtk.rb
 
 Finally:
 
