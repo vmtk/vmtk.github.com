@@ -11,9 +11,9 @@ title: Working With Numpy Arrays
 
 This tutorial demonstrates how to convert VMTK Image, Surface, and Centerline object data to and from a structured dictionary of Numpy arrays.  
 
-<b>Note:</b> <i> This is an advanced function </i> meant only for users who wish to access & progrimatically modify the underlying Visualization Toolkit (VTK) object data which defines Images, Surfaces, and Centerlines in VMTK. While the described vmtkscripts are valid PypeScript members, the API is designed to be called from a typicall python script or from within a [Jupyter Notebook](http://jupyter.org/)<br> 
+<b>Note:</b> <i> This is an advanced function </i> meant only for users who wish to access & programmatically modify the underlying Visualization Toolkit (VTK) object data which defines Images, Surfaces, and Centerlines in VMTK. the described vmtkscripts are valid PypeScript members, the API is designed to be called from a typical python script or from within a [Jupyter Notebook](http://jupyter.org/)<br> 
 
-Though deep expertise is not necessary, it is recomended that users are familiar with the VTK [data model](http://www.vtk.org/data-model/) and typical class structures for [vtkImageData](http://www.vtk.org/doc/nightly/html/classvtkImageData.html) and [vtkPolyData](http://www.vtk.org/doc/nightly/html/classvtkPolyData.html)
+Though deep expertise is not necessary, it is recommended that users are familiar with the VTK [data model](http://www.vtk.org/data-model/) and typical class structures for [vtkImageData](http://www.vtk.org/doc/nightly/html/classvtkImageData.html) and [vtkPolyData](http://www.vtk.org/doc/nightly/html/classvtkPolyData.html)
 
 ---
 
@@ -42,7 +42,7 @@ In addition to the standard VMTK package, the following packages must be install
 1. [numpy](http://www.numpy.org/)
 2. [h5py](http://www.h5py.org/)
 
-We recomend using the [Python Anaconda](https://anaconda.org/) package manager to create a virtual environment and install the packages. Installation and Quickstart instructions are available [here](https://docs.continuum.io/docs_oss/conda/get-started). 
+We recommend using the [Python Anaconda](https://anaconda.org/) package manager to create a virtual environment and install the packages. Installation and Quickstart instructions are available [here](https://docs.continuum.io/docs_oss/conda/get-started). 
 
 ---
 
@@ -57,7 +57,7 @@ For our purposes, we can think of any VTK data object as being composed of an or
 
 #### Points & Cells
 
-In this interpretation, we can think of <i> Points </i> as a vertices which define the geometry of the data object. For surfaces & centerlines, this interpretation is immediatly intuitive; the geometry of these structures is composed of a discrete set of vertices (aka. Points) in 3D space (see Figure 1). To understand Points in the context of an image, we can think of any image as being composed of a structured grid of points in space with an intensity value at each point (see Figure 2) 
+In this interpretation, we can think of <i> Points </i> as a vertices which define the geometry of the data object. For surfaces & centerlines, this interpretation is immediately intuitive; the geometry of these structures is composed of a discrete set of vertices (aka. Points) in 3D space (see Figure 1). To understand Points in the context of an image, we can think of any image as being composed of a structured grid of points in space with an intensity value at each point (see Figure 2) 
 
 
 |    		 			  |     					      |
@@ -66,7 +66,7 @@ In this interpretation, we can think of <i> Points </i> as a vertices which defi
 |*Figure 1: Illustration of vertices as Points*	          | *Figure 2: Illustration of image as points*
 
 
-On the other hand, <i> Cells </i> define the topology of the data object. In the context of surfaces, this is a  describest the connectivity of the vertices which form each triangle in the surface (see Figure 3). For centerlines, Cells describe the connectivity and grouping of points which make up the centerline data object (see Figure 4). Though in theory, cells can be used to group certain regions in vtkImageData, we do not define the concept of cells as it relates to a VMTK image. 
+On the other hand, <i> Cells </i> define the topology of the data object. In the context of surfaces, this is a  describes the connectivity of the vertices which form each triangle in the surface (see Figure 3). For centerlines, Cells describe the connectivity and grouping of points which make up the centerline data object (see Figure 4). Though in theory, cells can be used to group certain regions in vtkImageData, we do not define the concept of cells as it relates to a VMTK image. 
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
@@ -77,15 +77,15 @@ When working with Points & Cells, just remember that: <i> Points define geometry
 
 #### Point Data & Cell Data
 
-At this point, it should be noted that a complete description of surface or centerline geometry & toplogy is given by the Point & Cell descriptors; this is similar to the information which might be encoded in a common STL or PLY file. Though undoubtedly useful, the VTK data model allows far more flexibility and customization than these simple descriptors. This flexibility is employed through the use of dataset attributes (ie. Point Data & Cell Data). 
+At this point, it should be noted that a complete description of surface or centerline geometry & topology is given by the Point & Cell descriptors; this is similar to the information which might be encoded in a common STL or PLY file. Though undoubtedly useful, the VTK data model allows far more flexibility and customization than these simple descriptors. This flexibility is employed through the use of dataset attributes (ie. Point Data & Cell Data). 
 
-Throughout the previous tutorials, we have generated scalar and vector field maps which have been applied to both centerlines and surfaces. These may have come in the form of measuring the surface distance to centerlines in the [Mesh Generation](http://www.vmtk.org/tutorials/MeshGeneration.html) tutorial, or generating centerline Group or Tract Ids in the [Branch Splitting](http://www.vmtk.org/tutorials/BranchSplitting.html) tutorial. The algorithms that VMTK employs to do these operations stores the resulting attribute data in Point Data / Cell Data arrays associated with the underlying VTK object which is being processed. It is important to note that though both Point Data & Cell Data both act to describe some data attribute of the underlying VTK object, they are not necessarily interchangable (or easily interchangable, that is).
+Throughout the previous tutorials, we have generated scalar and vector field maps which have been applied to both centerlines and surfaces. These may have come in the form of measuring the surface distance to centerlines in the [Mesh Generation](http://www.vmtk.org/tutorials/MeshGeneration.html) tutorial, or generating centerline Group or Tract Ids in the [Branch Splitting](http://www.vmtk.org/tutorials/BranchSplitting.html) tutorial. The algorithms that VMTK employs to do these operations stores the resulting attribute data in Point Data / Cell Data arrays associated with the underlying VTK object which is being processed. It is important to note that though both Point Data & Cell Data both act to describe some data attribute of the underlying VTK object, they are not necessarily interchangeable (or easily interchangeable, that is).
 
 Point Data refers to a dataset attribute which is specified for every Point in the VTK object. Cell Data refers to a dataset attribute which is specified at every cell in the VTK object. We will illustrate the difference in the following example: 
 
 If we are given a centerline which has been split into branches (refer to the [Branch Splitting](http://www.vmtk.org/tutorials/BranchSplitting.html) tutorial), the Centerline Id, Tract Id, & Group Id of each centerline segment is stored as Cell Data key/value pairs. If we then go on to calculate the centerline geometry (refer to the [Geometric Analysis](http://www.vmtk.org/tutorials/GeometricAnalysis.html) tutorial), the tortuosity values will be stored as Point Data. 
 
-Basically, if a datset attribute varies for every vertex defining geometry, it is Point Data. If the dataset attribute varies along the object's toplogy, it is Cell Data. 
+Basically, if a dataset attribute varies for every vertex defining geometry, it is Point Data. If the dataset attribute varies along the object's topology, it is Cell Data. 
 
 ---
 
@@ -102,7 +102,7 @@ When we want to access VTK data in numpy, we actually need to access the four pr
 
 In order to make use of the data in numpy/python, we create a unique numpy array for every VTK array defining these components. In order to handle these arrays in a manageable fashion (accessible through one python object), we assign each data array to a key/value pair in a (nested) python dictionary of pre-defined structure. The following subsections defines the dictionary structure required for centerlines, images, and surfaces. 
 
-Note: The following structure must be reproduced <i> exactly </i> in order to successfully convert a numpy dataset back into VMTK. Be sure to include all dictionary components (even if they are empty) and ensure that all keys exactally match the description below / the output from converting VMTK objects to numpy. 
+Note: The following structure must be reproduced <i> exactly </i> in order to successfully convert a numpy dataset back into VMTK. Be sure to include all dictionary components (even if they are empty) and ensure that all keys exactly match the description below / the output from converting VMTK objects to numpy. 
 
 ### Converting VMTK Surface Objects
 
@@ -205,9 +205,9 @@ print('numpySurface["PointData"]["DistanceToCenterlines"] shape = ', numpySurfac
     numpySurface["PointData"]["DistanceToCenterlines"] shape =  (209988,)
 
 
-which exactally matches the number of Vertices in the Points. In this case, each index in ` numpySurface['PointData']['DistanceToCenterlines'] ` corresponds to a row in ` numpySurface['Points'] `. ie. ` numpySurface['PointData']['DistanceToCenterlines'][100] ` corresponds to the vertex defined by coordinates at ` numpySurface['Points'][100, :] `
+which exactly matches the number of Vertices in the Points. In this case, each index in ` numpySurface['PointData']['DistanceToCenterlines'] ` corresponds to a row in ` numpySurface['Points'] `. ie. ` numpySurface['PointData']['DistanceToCenterlines'][100] ` corresponds to the vertex defined by coordinates at ` numpySurface['Points'][100, :] `
 
-From here, we can modify the location of the points, define a new cell connectivity list, or add a new Point Data or cell Data array. If we decide we want to modify the ` DistanceToCenterlines ` array values by a contastant scale factor, we can perform the operation and convert back to a VMTK surface Object by:
+From here, we can modify the location of the points, define a new cell connectivity list, or add a new Point Data or cell Data array. If we decide we want to modify the ` DistanceToCenterlines ` array values by a constant scale factor, we can perform the operation and convert back to a VMTK surface Object by:
 
 
 ```python
@@ -308,7 +308,7 @@ print('Point Data Shape: ', numpyCenterlines['PointData']['MaximumInscribedSpher
     Point Data Shape:  (20758,)  = Number of Points:  20758
 
 
-We can also see that ` ['CellData']['CellPointIds'] ` is a list of a certain length which contains a series of numpy arrays, and that the sizes of the arrays are not necesarily the same:
+We can also see that ` ['CellData']['CellPointIds'] ` is a list of a certain length which contains a series of numpy arrays, and that the sizes of the arrays are not necessarily the same:
 
 
 ```python
@@ -325,8 +325,8 @@ for index, cellId in enumerate(numpyCenterlines['CellData']['CellPointIds']):
         minSize = cellId.shape[0]
         minSizeCellIndex = index
         
-print("Minimum size of array in ['CellData']['CellPointIds'] = ", minSize, ' Which occured at index ', minSizeCellIndex)
-print("Maximum size of array in ['CellData']['CellPointIds'] = ", maxSize, ' Which occured at index ', maxSizeCellIndex)
+print("Minimum size of array in ['CellData']['CellPointIds'] = ", minSize, ' Which occurred at index ', minSizeCellIndex)
+print("Maximum size of array in ['CellData']['CellPointIds'] = ", maxSize, ' Which occurred at index ', maxSizeCellIndex)
 ```
 
     ['CellData']['CellPointIds] is a python list:  True
