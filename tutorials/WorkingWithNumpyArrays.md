@@ -14,7 +14,7 @@ This tutorial demonstrates how to convert VMTK Image, Surface, and Centerline ob
 
 <b>Note:</b> <i> This is an advanced function </i> meant only for users who wish to access & programmatically modify the underlying Visualization Toolkit (VTK) object data which defines Images, Surfaces, and Centerlines in VMTK. While the described vmtkscripts are valid PypeScript members, the API is designed to be called from a typical python script or from within a [Jupyter Notebook](http://jupyter.org/). Also please note that as of VMTK version 1.3, <i> the vmtkscripts described below are not included in the pre-built binary installer </i>. In order to take advantage of these functions, please build VMTK from source by following this instructions [here]({{ site.baseurl }}/download/#development_version) <br> 
 
-Though deep expertise is not necessary, it is recomended that users are familiar with the VTK [data model](http://www.vtk.org/data-model/) and typical class structures for [vtkImageData](http://www.vtk.org/doc/nightly/html/classvtkImageData.html) and [vtkPolyData](http://www.vtk.org/doc/nightly/html/classvtkPolyData.html)
+Though deep expertise is not necessary, we recommend that users are familiar with the VTK [data model](http://www.vtk.org/data-model/) and typical class structures for [vtkImageData](http://www.vtk.org/doc/nightly/html/classvtkImageData.html) and [vtkPolyData](http://www.vtk.org/doc/nightly/html/classvtkPolyData.html)
 
 ---
 
@@ -43,7 +43,7 @@ In addition to the standard VMTK package, the following packages must be install
 1. [numpy](http://www.numpy.org/)
 2. [h5py](http://www.h5py.org/)
 
-We recomend using the [Python Anaconda](https://anaconda.org/) package manager to create a virtual environment and install the packages. Installation and quickstart instructions are available [here](https://docs.continuum.io/docs_oss/conda/get-started). 
+We recommend using the [Python Anaconda](https://anaconda.org/) package manager to create a virtual environment and install the packages. Installation and quickstart instructions are available [here](https://docs.continuum.io/docs_oss/conda/get-started). 
 
 ---
 
