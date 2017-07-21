@@ -5,15 +5,16 @@ title: Working With Numpy Arrays
 ---
 
 #### Applicable version(s):
+
 [Development version]({{ site.baseurl }}/download/#development_version)
 
 <sub>by Richard Izzo (Github @rlizzo), State University of New York at Buffalo, USA</sub>
 
-This tutorial demonstrates how to convert VMTK Image, Surface, and Centerline object data to and from a structured dictionary of Numpy arrays.  
+This tutorial demonstrates how to convert VMTK Image, Surface, and Centerline object data to and from a structured dictionary of Numpy arrays. This tutorial can be viewed as a Jupyter Notebook at [this link]({{ site.baseurl }}/tutorials/WorkingWithNumpyArraysIPYNB.html)
 
-<b>Note:</b> <i> This is an advanced function </i> meant only for users who wish to access & programmatically modify the underlying Visualization Toolkit (VTK) object data which defines Images, Surfaces, and Centerlines in VMTK. the described vmtkscripts are valid PypeScript members, the API is designed to be called from a typical python script or from within a [Jupyter Notebook](http://jupyter.org/)<br> 
+<b>Note:</b> <i> This is an advanced function </i> meant only for users who wish to access & programmatically modify the underlying Visualization Toolkit (VTK) object data which defines Images, Surfaces, and Centerlines in VMTK. While the described vmtkscripts are valid PypeScript members, the API is designed to be called from a typical python script or from within a [Jupyter Notebook](http://jupyter.org/). Also please note that as of VMTK version 1.3, <i> the vmtkscripts described below are not included in the pre-built binary installer </i>. In order to take advantage of these functions, please build VMTK from source by following this instructions [here]({{ site.baseurl }}/download/#development_version) <br> 
 
-Though deep expertise is not necessary, it is recommended that users are familiar with the VTK [data model](http://www.vtk.org/data-model/) and typical class structures for [vtkImageData](http://www.vtk.org/doc/nightly/html/classvtkImageData.html) and [vtkPolyData](http://www.vtk.org/doc/nightly/html/classvtkPolyData.html)
+Though deep expertise is not necessary, it is recomended that users are familiar with the VTK [data model](http://www.vtk.org/data-model/) and typical class structures for [vtkImageData](http://www.vtk.org/doc/nightly/html/classvtkImageData.html) and [vtkPolyData](http://www.vtk.org/doc/nightly/html/classvtkPolyData.html)
 
 ---
 
@@ -42,7 +43,7 @@ In addition to the standard VMTK package, the following packages must be install
 1. [numpy](http://www.numpy.org/)
 2. [h5py](http://www.h5py.org/)
 
-We recommend using the [Python Anaconda](https://anaconda.org/) package manager to create a virtual environment and install the packages. Installation and Quickstart instructions are available [here](https://docs.continuum.io/docs_oss/conda/get-started). 
+We recomend using the [Python Anaconda](https://anaconda.org/) package manager to create a virtual environment and install the packages. Installation and quickstart instructions are available [here](https://docs.continuum.io/docs_oss/conda/get-started). 
 
 ---
 
@@ -51,9 +52,9 @@ We recommend using the [Python Anaconda](https://anaconda.org/) package manager 
 VMTK is built on top of Kitware's [Visualization Toolkit](http://www.vtk.org/) data model & processing pipeline. A full description of the VTK data model format and pipeline is well beyond the scope of this tutorial. For those interested users, please refer to the following two resources:
 
 1. [Data Structures in the Visualization Toolkit](https://www.researchgate.net/profile/Stefan_Bruckner/publication/228936817_Data_Structures_in_the_Visualization_Toolkit/links/0912f50ebdc4027636000000.pdf), Stefan Bruckner, Seminar Paper, The Institute of Computer Graphics and Algorithms, Vienna University of Technology, Austria 
-2. The VTK [Users Guide](https://www.kitware.com/products/books/VTKUsersGuide.pdf)
+2. [The VTK Users Guide](https://www.kitware.com/products/books/VTKUsersGuide.pdf)
 
-For our purposes, we can think of any VTK data object as being composed of an organizing structure (ie. Points & Cells) and associated data attributes (Point Data & Cell Data). 
+For our purposes, we can think of any VTK data object as being composed of an organizing structure (ie. Points & Cells) and associated data attributes (Point Data & Cell Data).
 
 #### Points & Cells
 
@@ -65,7 +66,6 @@ In this interpretation, we can think of <i> Points </i> as a vertices which defi
 |![Figure1]({{ site.baseurl }}/resources/img//tutorials/izzo-numpy-1-1.png)| ![Figure2]({{ site.baseurl }}/resources/img//tutorials/izzo-numpy-1-2.png)
 |*Figure 1: Illustration of vertices as Points*	          | *Figure 2: Illustration of image as points*
 
-
 On the other hand, <i> Cells </i> define the topology of the data object. In the context of surfaces, this is a  describes the connectivity of the vertices which form each triangle in the surface (see Figure 3). For centerlines, Cells describe the connectivity and grouping of points which make up the centerline data object (see Figure 4). Though in theory, cells can be used to group certain regions in vtkImageData, we do not define the concept of cells as it relates to a VMTK image. 
 
 |    		 			  |     					      |
@@ -73,23 +73,23 @@ On the other hand, <i> Cells </i> define the topology of the data object. In the
 |![Figure3]({{ site.baseurl }}/resources/img//tutorials/izzo-numpy-2-1.png)| ![Figure4]({{ site.baseurl }}/resources/img//tutorials/izzo-numpy-2-2.png)
 |*Figure 1: Illustration of cells creating a triangulated surface*	          | *Figure 2: Illustration cells defining a line*
 
-When working with Points & Cells, just remember that: <i> Points define geometry, Cells define topology </i>. 
+When working with Points & Cells, just remember that: <i> Points define geometry, Cells define topology </i>.
 
 #### Point Data & Cell Data
 
-At this point, it should be noted that a complete description of surface or centerline geometry & topology is given by the Point & Cell descriptors; this is similar to the information which might be encoded in a common STL or PLY file. Though undoubtedly useful, the VTK data model allows far more flexibility and customization than these simple descriptors. This flexibility is employed through the use of dataset attributes (ie. Point Data & Cell Data). 
+At this point, it should be noted that a complete description of surface or centerline geometry & topology is given by the Point & Cell descriptors; this is similar to the information which might be encoded in a common STL or PLY file. Though undoubtedly useful, the VTK data model allows far more flexibility and customization than these simple descriptors. This flexibility is employed through the use of <i> dataset attributes </i> (ie. Point Data & Cell Data). 
 
-Throughout the previous tutorials, we have generated scalar and vector field maps which have been applied to both centerlines and surfaces. These may have come in the form of measuring the surface distance to centerlines in the [Mesh Generation](http://www.vmtk.org/tutorials/MeshGeneration.html) tutorial, or generating centerline Group or Tract Ids in the [Branch Splitting](http://www.vmtk.org/tutorials/BranchSplitting.html) tutorial. The algorithms that VMTK employs to do these operations stores the resulting attribute data in Point Data / Cell Data arrays associated with the underlying VTK object which is being processed. It is important to note that though both Point Data & Cell Data both act to describe some data attribute of the underlying VTK object, they are not necessarily interchangeable (or easily interchangeable, that is).
+Throughout the previous tutorials, we have generated scalar and vector field maps which have been applied to both centerlines and surfaces. These may have come in the form of measuring the surface distance to centerlines in the [Mesh Generation](http://www.vmtk.org/tutorials/MeshGeneration.html) tutorial, or generating centerline Group or Tract Ids in the [Branch Splitting](http://www.vmtk.org/tutorials/BranchSplitting.html) tutorial. The algorithms that VMTK employs to do these operations stores the resulting attribute data in Point Data / Cell Data arrays associated with the underlying VTK object which is being processed. It is important to note that though both Point Data & Cell Data both act to describe some data attribute of the underlying VTK object, they are not necessarily interchangeable. In general, cell data can be easily converted to point data, but point data <i> may not </i> necessarily be easily converted to cell data - the reason for this (along with the methods to convert cell data to point data) will be illustrated later on in this tutorial.
 
-Point Data refers to a dataset attribute which is specified for every Point in the VTK object. Cell Data refers to a dataset attribute which is specified at every cell in the VTK object. We will illustrate the difference in the following example: 
+Point Data refers to a dataset attribute which is specified <i> for every Point </i> in the VTK object. Cell Data refers to a dataset attribute which is specified <i> at every cell </i> in the VTK object. The following example is provided to attempt to make this distinction clear: 
 
-If we are given a centerline which has been split into branches (refer to the [Branch Splitting](http://www.vmtk.org/tutorials/BranchSplitting.html) tutorial), the Centerline Id, Tract Id, & Group Id of each centerline segment is stored as Cell Data key/value pairs. If we then go on to calculate the centerline geometry (refer to the [Geometric Analysis](http://www.vmtk.org/tutorials/GeometricAnalysis.html) tutorial), the tortuosity values will be stored as Point Data. 
+> If we are given a centerline which has been split into branches (refer to the [Branch Splitting](http://www.vmtk.org/tutorials/BranchSplitting.html) tutorial), the Centerline Id, Tract Id, & Group Id of each centerline segment is stored as Cell Data key/value pairs. If we then go on to calculate the centerline geometry (refer to the [Geometric Analysis](http://www.vmtk.org/tutorials/GeometricAnalysis.html) tutorial), the tortuosity values will be stored as Point Data. 
 
-Basically, if a dataset attribute varies for every vertex defining geometry, it is Point Data. If the dataset attribute varies along the object's topology, it is Cell Data. 
+> In this example the cell data (Centerline Id, Tract Id, etc.) applies the same value - an integer indicating some attribute in this case - to a large number of points which are specified by a single cell. Conversely, a value such a tortuosity inherently varies for every point making up the centerline, and therefore needs to be specified individually for every point. 
+
+This explanation all acts to say the following: if a dataset attribute varies <i> for every vertex </i>  defining geometry, it is Point Data. If the dataset attribute <i> varies according to the object's topology </i>, it is Cell Data.
 
 ---
-
-
 
 ## Structured Conversion Between VTK Data and Numpy Arrays
 
@@ -102,24 +102,24 @@ When we want to access VTK data in numpy, we actually need to access the four pr
 
 In order to make use of the data in numpy/python, we create a unique numpy array for every VTK array defining these components. In order to handle these arrays in a manageable fashion (accessible through one python object), we assign each data array to a key/value pair in a (nested) python dictionary of pre-defined structure. The following subsections defines the dictionary structure required for centerlines, images, and surfaces. 
 
-Note: The following structure must be reproduced <i> exactly </i> in order to successfully convert a numpy dataset back into VMTK. Be sure to include all dictionary components (even if they are empty) and ensure that all keys exactly match the description below / the output from converting VMTK objects to numpy. 
+Note: The following structure must be reproduced <i> exactly </i> in order to successfully convert a numpy dataset back into VMTK. Be sure to include all dictionary components (even if they are empty) and ensure that all keys exactly match the description below / the output from converting VMTK objects to numpy.
 
 ### Converting VMTK Surface Objects
 
-The following example demonstrates how to convert a VMTK surface to a numpy array. This is handled by the `vmtkscripts.vmtkSurfaceToNumpy()` script which accepts a `Surface` as a input and outputs the nested dictionary of arrays through the `ArrayDict` class attribute. 
+The following example demonstrates how to convert a VMTK surface to a numpy array. This is handled by the `vmtkscripts.vmtkSurfaceToNumpy()` script which accepts a `Surface` as a input and outputs the nested dictionary of arrays through the `ArrayDict` class attribute.
 
 The structure of the `ArrayDict` nested dictionary is as follows:
 
 ```
 ArrayDict
-    ['Points']                   <-- required. is Nx3 array of N vertexes and x, y, z locations
+    ['Points']                   <-- required, is Nx3 array of N vertexes and x, y, z locations
     ['PointData']                <-- required, even if subarrays are empty
-        ['PointDataArray1']      <-- optional (ex. MaximumInscribedSphereRadius)
+        ['PointDataArray1']      <-- optional, (ex. MaximumInscribedSphereRadius)
         ['PointDataArray2']      <-- optional
         ...
     ['CellData']                 <-- required
-        ['CellPointIds']         <-- required. is Mx3 array defines cell conectivity to ['Points] Indices
-        ['CellDataArray1']       <-- optional ie. CenterlineTractId
+        ['CellPointIds']         <-- required, is Mx3 array defines cell conectivity to ['Points] Indices
+        ['CellDataArray1']       <-- optional, (ex. CenterlineTractId)
         ['CellDataArray2']       <-- optional
         ...
 ```
@@ -205,9 +205,9 @@ print('numpySurface["PointData"]["DistanceToCenterlines"] shape = ', numpySurfac
     numpySurface["PointData"]["DistanceToCenterlines"] shape =  (209988,)
 
 
-which exactly matches the number of Vertices in the Points. In this case, each index in ` numpySurface['PointData']['DistanceToCenterlines'] ` corresponds to a row in ` numpySurface['Points'] `. ie. ` numpySurface['PointData']['DistanceToCenterlines'][100] ` corresponds to the vertex defined by coordinates at ` numpySurface['Points'][100, :] `
+which exactly matches the number of vertices in the ` Points ` array. In this case, each index in ` numpySurface['PointData']['DistanceToCenterlines'] ` corresponds to a row in ` numpySurface['Points'] `. ie. ` numpySurface['PointData']['DistanceToCenterlines'][100] ` corresponds to the vertex defined by coordinates at ` numpySurface['Points'][100, :] `
 
-From here, we can modify the location of the points, define a new cell connectivity list, or add a new Point Data or cell Data array. If we decide we want to modify the ` DistanceToCenterlines ` array values by a constant scale factor, we can perform the operation and convert back to a VMTK surface Object by:
+From here, we can modify the location of the points, define a new cell connectivity list, or add a new Point Data or Cell Data array. If we decide we want to modify the ` DistanceToCenterlines ` array values by a constant scale factor, we can perform the operation and convert back to a VMTK surface Object by:
 
 
 ```python
@@ -236,19 +236,19 @@ The structure of the `ArrayDict` nested dictionary is as follows:
 
 ```
 ArrayDict
-    ['Points']                   <-- required. is Nx3 array of N vertexes and x, y, z locations
+    ['Points']                   <-- required, is Nx3 array of N vertexes and x, y, z locations
     ['PointData']                <-- required, even if subarrays are empty
-        ['PointDataArray1']      <-- optional (ex. MaximumInscribedSphereRadius)
+        ['PointDataArray1']      <-- optional, (ex. MaximumInscribedSphereRadius)
         ['PointDataArray2']      <-- optional
         ...
     ['CellData']                 <-- required
-        ['CellPointIds']         <-- required. is list of M_ix1 arrays which define cell conectivity to ['Points] Indices
-        ['CellDataArray1']       <-- optional ie. CenterlineTractId
+        ['CellPointIds']         <-- required, list of Mx1 arrays defining cell connectivity to ['Points']
+        ['CellDataArray1']       <-- optional, (ex: CenterlineTractId)
         ['CellDataArray2']       <-- optional
         ...
 ```
 
-Note: The format for ` ['CellData']['CellPointIds'] ` is slightly different for centerlines than it is for the surface example above. Unlike a surface (which defined each triangle face as a row in ` ['CellData']['CellPointIds'] ` with fixed dimensions Mx3), the number of Points making up each cell in a centerline are completely arbitrary. Instead of a ` Mx3 ` size array, the centerline version of ` ['CellData']['CellPointIds'] ` contains a list of numpy arrays with (potentially) non-equal sizes. Aside from this semantic difference, the meaning of each index in ` ['CellData']['CellPointIds'] ` is the same for centerlines and surfaces; that is, each value in ` ['CellData']['CellPointIds'] ` refers to a row index in ` ['Points'] ` which contains the coordinates of the associated points. 
+Note: The format for ` ['CellData']['CellPointIds'] ` is slightly different for centerlines than it is for the surface example above. Unlike a surface (which defined each triangle face as a row in ` ['CellData']['CellPointIds'] ` with fixed dimensions Mx3), the number of Points making up each cell in a centerline are completely arbitrary. Instead of a ` Mx3 ` size array, the centerline version of ` ['CellData']['CellPointIds'] ` contains a list of numpy arrays with (potentially) non-equal sizes. Aside from this semantic difference, the meaning of each index in ` ['CellData']['CellPointIds'] ` is the same for centerlines and surfaces; that is, each value in ` ['CellData']['CellPointIds'] ` refers to a row index in ` ['Points'] ` which contains the coordinates of the associated points.
 
 
 ```python
@@ -308,7 +308,7 @@ print('Point Data Shape: ', numpyCenterlines['PointData']['MaximumInscribedSpher
     Point Data Shape:  (20758,)  = Number of Points:  20758
 
 
-We can also see that ` ['CellData']['CellPointIds'] ` is a list of a certain length which contains a series of numpy arrays, and that the sizes of the arrays are not necessarily the same:
+We can also see that ` ['CellData']['CellPointIds'] ` is a list of a certain length which contains a series of numpy arrays, and that the sizes of the arrays are not necesarily the same:
 
 
 ```python
@@ -325,8 +325,8 @@ for index, cellId in enumerate(numpyCenterlines['CellData']['CellPointIds']):
         minSize = cellId.shape[0]
         minSizeCellIndex = index
         
-print("Minimum size of array in ['CellData']['CellPointIds'] = ", minSize, ' Which occurred at index ', minSizeCellIndex)
-print("Maximum size of array in ['CellData']['CellPointIds'] = ", maxSize, ' Which occurred at index ', maxSizeCellIndex)
+print("Minimum size of array in ['CellData']['CellPointIds'] = ", minSize, ' Which occured at index ', minSizeCellIndex)
+print("Maximum size of array in ['CellData']['CellPointIds'] = ", maxSize, ' Which occured at index ', maxSizeCellIndex)
 ```
 
     ['CellData']['CellPointIds] is a python list:  True
@@ -377,12 +377,12 @@ The conversion of VMTK Image Objects requires a much simpler ArrayDict structure
 
 ```
 ArrayDict
-    ['Origin']                   <-- required. is 3x1 array of (float) x, y, z vertex locations at index (0, 0, 0)
-    ['Dimensions']               <-- required, is 3x1 array of (int) number of voxels in the x, y, z direction (ie. 512x512x320)
-    ['Spacing']                  <-- required, is 3x1 array of (float) spacing between voxels in the x, y, z directions
-    ['PointData']                <-- required, name
-        ['PointDataArray1']      <-- required, is np.ndarray of shape = dimensions containing image data. 
-        ['PointDataArray2']      <-- optional, is np.ndarray of shape = dimensions containing image data. 
+    ['Origin']                 <-- required, is 3x1 array of (float) x,y,z vertex locations at index (0,0,0)
+    ['Dimensions']             <-- required, is 3x1 array of (int) number of voxels in the x,y,z direction.
+    ['Spacing']                <-- required, is 3x1 array of (float) voxel spacing in the x,y,z directions
+    ['PointData']              <-- required
+        ['PointDataArray1']    <-- required, is np.ndarray of shape = dimensions containing image data. 
+        ['PointDataArray2']    <-- optional, is np.ndarray of shape = dimensions containing image data. 
         ...
 
 ```
@@ -456,8 +456,23 @@ imageVmtkAdaptor.Execute()
     converting point data
 
 
+##### Note on Time Required for Converting Images to Numpy Arrays
+
+The process of converting VMTK Surface and Centerline objects to and from numpy arrays is fairly quick. The reason for this is twofold:
+
+1. Essentially we are just creating a new container to store some data, and copying over the data in bulk.
+2. The data required to describe even large surface or centerline datasets is relatively small. ex: For a surface containing 500,000+ Points and 1,500,000+ faces, there are only 6,000,000 numbers to store (with 1,500,000 being of type ` float32 ` and 4,500,000 being of type ` int32 `) which works out to a (very rough approximation) of 24 MB. 
+
+As a result, these scripts run fairly quickly even on larger datasets. 
+
+The computational efficiency does not apply to images, however. Unlike vtkPolyData (the base VTK class for Surfaces and Points), the conversion to/from vtkImageData (the base VTK class for Images) is not a simple copy operation. In order to convert to/from a N-D numpy array, you must iterate over every element in the numpy array and call into the C++ layer to compute it's corresponding index in the VTK array. Then each element in either the VTK or numpy array (whichever way you are converting) is filled in for that element. While this operation is fairly quick in the scope of one loop cycle, it can grow signficantly as the size of the image scales up. 
+
+For reference, the image size output by a modern CT scanner during a coronary CT Angiography scan is commonly captured at a resolution of 512x512x320 across a single volume (or if you're lucky enough to have access to a super high-quality system you can play tricks with focal spot wobble and capture a single volume with 512x512x640 resolution, but I digress...) A 512x512x320 voxel grid has 83,886,080 elements in it and is typically stored as int16 values, working out to (roughly) 671 MB of data. Compare that to the 24 MB required for a decent sized Surface scan. 
+
+Due to the shear size of a common image, along with the indexing computations that must occur (instead of a simple copy and reshape), it should not be a surprise that the time to perform the operation can be long at times. While we have made attempts to speed up the computation by using the efficient np.nditer looping method, please be aware of this fact. A 512x512x320 image grid takes roughly 1.5 minutes to convert to/from VTK. This will get much longer as you increase the size of the voxel grid beyond that. 
+
 ## Saving VMTK Numpy Objects
 
 Two convenience scripts have been provided to save and read VMTK numpy objects (surfaces, centerlines, or images) to disk. The files can be written in either HDF5 format (provided the h5py module is installed) or via a standard python pickle object. The procedure is identical for every object type. 
 
-Simply use vmtkscripts.vmtkNumpyWriter() and vmtkscripts.vmtkNumpyReader() in the fashion standard through vmtk. The scripts take an ` ArrayDict ` as an input member along with a ` Format ` identification (default = pickle) and a output/input file name, and read/write the array to/from disk. 
+Simply use vmtkscripts.vmtkNumpyWriter() and vmtkscripts.vmtkNumpyReader() in the fashion standard through vmtk. The scripts take an ` ArrayDict ` as an input member along with a ` Format ` identification (default = pickle) and a output/input file name, and read/write the array to/from disk.
