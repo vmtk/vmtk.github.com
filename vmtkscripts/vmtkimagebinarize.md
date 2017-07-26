@@ -1,9 +1,9 @@
 ---
 layout: page-full-width
 ---
-<h1>vmtkimagemorphology</h1>
+<h1>vmtkimagebinarize</h1>
 <h2>Description</h2>
-apply binary or grayscale morphology filter to the input image
+binarize the input image producing a label map
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
@@ -19,9 +19,11 @@ apply binary or grayscale morphology filter to the input image
 </tr>
 <tr><td>ifile</td><td>ImageInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Image reader</td>
 </tr>
-<tr><td>radius</td><td>BallRadius</td><td>int</td><td>3</td><td>(0,)</td><td>[1, 1, 1]</td><td>the radius of the structuring element</td>
+<tr><td>threshold</td><td>Threshold</td><td>float</td><td>1</td><td></td><td>0.0</td><td>the threshold at which the image should be binarized</td>
 </tr>
-<tr><td>operation</td><td>Operation</td><td>str</td><td>1</td><td>["dilate","erode","open","close"]</td><td>closing</td><td>the morphological operation to perform</td>
+<tr><td>lowerlabel</td><td>LowerLabel</td><td>int</td><td>1</td><td></td><td>0</td><td>the label to associate to the pixels lower than the threshold</td>
+</tr>
+<tr><td>upperlabel</td><td>UpperLabel</td><td>int</td><td>1</td><td></td><td>1</td><td>the label to associate to the pixels higher than the threshold</td>
 </tr>
 <tr><td>ofile</td><td>ImageOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Image writer</td>
 </tr>

@@ -1,9 +1,9 @@
 ---
 layout: page-full-width
 ---
-<h1>vmtkimagemorphology</h1>
+<h1>vmtkCenterlinesToNumpy</h1>
 <h2>Description</h2>
-apply binary or grayscale morphology filter to the input image
+Takes a VTK centerlines vtkPolyData file (optionally containing point data scalar arrays or cell data scalar arrays) and returns a nested python dictionary containing numpy arrays specifying vertex points, associated scalar data, and cell data yielding connectivity
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
@@ -15,15 +15,13 @@ apply binary or grayscale morphology filter to the input image
 </tr>
 <tr><td>disabled</td><td>Disabled</td><td>bool</td><td>1</td><td></td><td>0</td><td>disable execution and piping</td>
 </tr>
-<tr><td>i</td><td>Image</td><td>vtkImageData</td><td>1</td><td></td><td></td><td>the input image</td>
+<tr><td>i</td><td>Centerlines</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the input centerlines</td>
 </tr>
-<tr><td>ifile</td><td>ImageInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Image reader</td>
+<tr><td>ifile</td><td>CenterlinesInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Centerlines reader</td>
 </tr>
-<tr><td>radius</td><td>BallRadius</td><td>int</td><td>3</td><td>(0,)</td><td>[1, 1, 1]</td><td>the radius of the structuring element</td>
+<tr><td>celltopoint</td><td>ConvertCellToPoint</td><td>bool</td><td>1</td><td></td><td>0</td><td>convert cell data to point data</td>
 </tr>
-<tr><td>operation</td><td>Operation</td><td>str</td><td>1</td><td>["dilate","erode","open","close"]</td><td>closing</td><td>the morphological operation to perform</td>
-</tr>
-<tr><td>ofile</td><td>ImageOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Image writer</td>
+<tr><td>ofile</td><td>ArrayDictOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default ArrayDict writer</td>
 </tr>
 </table>
 <h3>Output arguments</h3>
@@ -35,7 +33,7 @@ apply binary or grayscale morphology filter to the input image
 </tr>
 <tr><td>handle</td><td>Self</td><td>self</td><td>1</td><td></td><td></td><td>handle to self</td>
 </tr>
-<tr><td>o</td><td>Image</td><td>vtkImageData</td><td>1</td><td></td><td></td><td>the output image</td>
+<tr><td>o</td><td>ArrayDict</td><td>dict</td><td>1</td><td></td><td></td><td>the output dictionary</td>
 </tr>
 </table>
 

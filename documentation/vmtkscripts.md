@@ -3,9 +3,7 @@ layout: page-full-width
 ---
 
 {:.vmtklist}
-
 # vmtkScripts reference
-
 | Script | Description |
 |:--|:--|
 | [vmtkactivetubes](/vmtkscripts/vmtkactivetubes.html) | |
@@ -35,16 +33,18 @@ layout: page-full-width
 | [vmtkcenterlines](/vmtkscripts/vmtkcenterlines.html) | compute centerlines from a branching tubular surface (see papers for details); seed points can be interactively selected on the surface, or specified as the barycenters of the open boundaries of the surface; if vmtk is compiled with support for TetGen, TetGen can be employed to compute the Delaunay tessellation of the input points |
 | [vmtkcenterlinesections](/vmtkscripts/vmtkcenterlinesections.html) | compute geometric properties of sections located along centerlines. The script takes in input the surface and the relative centerlines. |
 | [vmtkcenterlinesmoothing](/vmtkscripts/vmtkcenterlinesmoothing.html) | smooth centerlines with a moving average filter |
+| [vmtkcenterlinestonumpy](/vmtkscripts/vmtkcenterlinestonumpy.html) | Takes a VTK centerlines vtkPolyData file (optionally containing point data scalar arrays or cell data scalar arrays) and returns a nested python dictionary containing numpy arrays specifying vertex points, associated scalar data, and cell data yielding connectivity |
 | [vmtkcenterlineviewer](/vmtkscripts/vmtkcenterlineviewer.html) | |
 | [vmtkdelaunayvoronoi](/vmtkscripts/vmtkdelaunayvoronoi.html) | |
 | [vmtkdijkstradistancetopoints](/vmtkscripts/vmtkdijkstradistancetopoints.html) | |
 | [vmtkdistancetocenterlines](/vmtkscripts/vmtkdistancetocenterlines.html) | |
 | [vmtkdistancetospheres](/vmtkscripts/vmtkdistancetospheres.html) | |
 | [vmtkendpointextractor](/vmtkscripts/vmtkendpointextractor.html) | |
-| [vmtkentityrenumber](/vmtkscripts/vmtkentityrenumber.html) | Renumber cell entity id array. |
+| [vmtkentityrenumber](/vmtkscripts/vmtkentityrenumber.html) | Traceback (most recent call last): File "/home/rick/anaconda3/envs/autosegment/lib/python3.6/site-packages/vmtk/pypeserver.py", line 46, in RunPypeProcess pipe.Execute() File "/home/rick/anaconda3/envs/autosegment/lib/python3.6/site-packages/vmtk/pype.py", line 259, in Execute scriptObject = scriptObject() File "/home/rick/anaconda3/envs/autosegment/lib/python3.6/site-packages/vmtk/vmtkentityrenumber.py", line 13, in __init__ self.SetScriptName(vmtkentityrenumber) NameError: name 'vmtkentityrenumber' is not defined |
 | [vmtkflowextensions](/vmtkscripts/vmtkflowextensions.html) | |
 | [vmtkgeodesicsurfaceresolution](/vmtkscripts/vmtkgeodesicsurfaceresolution.html) | |
 | [vmtkicpregistration](/vmtkscripts/vmtkicpregistration.html) | register a surface to a reference surface using the ICP algorithm |
+| [vmtkimagebinarize](/vmtkscripts/vmtkimagebinarize.html) | binarize the input image producing a label map |
 | [vmtkimagecast](/vmtkscripts/vmtkimagecast.html) | cast an image to a specified type |
 | [vmtkimagecompare](/vmtkscripts/vmtkimagecompare.html) | compares an image against a reference |
 | [vmtkimagecompose](/vmtkscripts/vmtkimagecompose.html) | compose an image based on user-specified parameters or on a reference image |
@@ -52,7 +52,6 @@ layout: page-full-width
 | [vmtkimagefeaturecorrection](/vmtkscripts/vmtkimagefeaturecorrection.html) | correct a feature image (e.g. remove influence of bone and/or air from CT-based feature images) |
 | [vmtkimagefeatures](/vmtkscripts/vmtkimagefeatures.html) | compute a feature image for use in segmentation |
 | [vmtkimageinitialization](/vmtkscripts/vmtkimageinitialization.html) | |
-| [vmtkimagelinetracer](/vmtkscripts/vmtkimagelinetracer.html) | interactively trace lines on 3D images; press n and p to move to the next and previous slice, respectively |
 | [vmtkimagemipviewer](/vmtkscripts/vmtkimagemipviewer.html) | display a 3D image |
 | [vmtkimagemorphology](/vmtkscripts/vmtkimagemorphology.html) | apply binary or grayscale morphology filter to the input image |
 | [vmtkimagenormalize](/vmtkscripts/vmtkimagenormalize.html) | automatically label an image using multiple Otsu thresholding |
@@ -63,6 +62,7 @@ layout: page-full-width
 | [vmtkimageseeder](/vmtkscripts/vmtkimageseeder.html) | interactively place seeds in a 3D image |
 | [vmtkimageshiftscale](/vmtkscripts/vmtkimageshiftscale.html) | shift and scale the intensity of an image and cast it to a specified type |
 | [vmtkimagesmoothing](/vmtkscripts/vmtkimagesmoothing.html) | smooth an image with a Gaussian kernel |
+| [vmtkimagetonumpy](/vmtkscripts/vmtkimagetonumpy.html) | Takes a vtkImageData object and returns a numpy |
 | [vmtkimagevesselenhancement](/vmtkscripts/vmtkimagevesselenhancement.html) | compute a feature image for use in segmentation |
 | [vmtkimageviewer](/vmtkscripts/vmtkimageviewer.html) | display a 3D image |
 | [vmtkimagevoipainter](/vmtkscripts/vmtkimagevoipainter.html) | fill a cubical region of an image with a given gray level |
@@ -109,6 +109,11 @@ layout: page-full-width
 | [vmtknetworkeditor](/vmtkscripts/vmtknetworkeditor.html) | |
 | [vmtknetworkextraction](/vmtkscripts/vmtknetworkextraction.html) | extract a network of approximated centerlines from a surface, the surface must have at least an opening |
 | [vmtknetworkwriter](/vmtkscripts/vmtknetworkwriter.html) | write network to disk |
+| [vmtknumpyreader](/vmtkscripts/vmtknumpyreader.html) | reads a pickled file containing a numpy dictionary into an output array |
+| [vmtknumpytocenterlines](/vmtkscripts/vmtknumpytocenterlines.html) | Takes a nested python dictionary containg numpy arrays specifying vertex points, associated scalar data, and cell data specifying line connectivityand returns a VTK centerlines vtkPolyData file |
+| [vmtknumpytoimage](/vmtkscripts/vmtknumpytoimage.html) | Takes a dictionary of numpy arrays and returns a vtkImageData object. |
+| [vmtknumpytosurface](/vmtkscripts/vmtknumpytosurface.html) | Takes a nested python dictionary containg numpy arrays specifying vertex points, associated scalar data, and cell data specifying triangle connectivityand returns a VTK triangulated surface vtkPolyData file |
+| [vmtknumpywriter](/vmtkscripts/vmtknumpywriter.html) | Writes a dictionary containing numpy array data to a file |
 | [vmtkparticletracer](/vmtkscripts/vmtkparticletracer.html) | Generate streamlines |
 | [vmtkpathlineanimator](/vmtkscripts/vmtkpathlineanimator.html) | Particle or streaklines animation |
 | [vmtkpointsplitextractor](/vmtkscripts/vmtkpointsplitextractor.html) | |
@@ -121,19 +126,23 @@ layout: page-full-width
 | [vmtkrendertoimage](/vmtkscripts/vmtkrendertoimage.html) | takes a renderer in input and saves the rendering into an image file |
 | [vmtksurfaceappend](/vmtkscripts/vmtksurfaceappend.html) | append two surfaces into a single vtkPolyData. The script does not merge coincident points, consider using vmtksurfacetriangle for this. |
 | [vmtksurfacearrayoperation](/vmtkscripts/vmtksurfacearrayoperation.html) | perform an operation between arrays of two surfaces and store result in the first surface |
+| [vmtksurfacearraysmoothing](/vmtkscripts/vmtksurfacearraysmoothing.html) | Perform smoothing of the point array defined on the surface |
 | [vmtksurfacebooleanoperation](/vmtkscripts/vmtksurfacebooleanoperation.html) | perform a boolean operation between two surfaces |
 | [vmtksurfacecapper](/vmtkscripts/vmtksurfacecapper.html) | add caps to the holes of a surface, assigning an id to each cap for easy specification of boundary conditions. |
 | [vmtksurfacecelldatatopointdata](/vmtkscripts/vmtksurfacecelldatatopointdata.html) | convert cell data arrays to point data surface arrays |
 | [vmtksurfacecenterlineprojection](/vmtkscripts/vmtksurfacecenterlineprojection.html) | |
+| [vmtksurfacecliploop](/vmtkscripts/vmtksurfacecliploop.html) | Clip input surface using a loop |
 | [vmtksurfaceclipper](/vmtkscripts/vmtksurfaceclipper.html) | interactively clip a surface with a box |
 | [vmtksurfacecompare](/vmtkscripts/vmtksurfacecompare.html) | compares a surface against a baseline |
 | [vmtksurfaceconnectivity](/vmtkscripts/vmtksurfaceconnectivity.html) | extract the largest connected region, the closest point-connected region or the scalar-connected region from a surface |
 | [vmtksurfacecurvature](/vmtkscripts/vmtksurfacecurvature.html) | compute curvature of an input surface, optionally reporting results back to a reference surface (by point id) |
 | [vmtksurfacedecimation](/vmtkscripts/vmtksurfacedecimation.html) | reduce the number of triangles in a surface |
 | [vmtksurfacedistance](/vmtkscripts/vmtksurfacedistance.html) | compute the pointwise minimum distance of the input surface from a reference surface |
-| [vmtksurfaceextractannularwalls](/vmtkscripts/vmtksurfaceextractannularwalls.html) | Extract wall surfaces from an annular-cylindric surface. |
-| [vmtksurfaceextractinnercylinder](/vmtkscripts/vmtksurfaceextractinnercylinder.html) | Extract inner surface from an annular-cylindric volume. |
+| [vmtksurfaceendclipper](/vmtkscripts/vmtksurfaceendclipper.html) | interactively clip a tubular surface with normals estimated at seed locations |
+| [vmtksurfaceextractannularwalls](/vmtkscripts/vmtksurfaceextractannularwalls.html) | Traceback (most recent call last): File "/home/rick/anaconda3/envs/autosegment/lib/python3.6/site-packages/vmtk/pypeserver.py", line 46, in RunPypeProcess pipe.Execute() File "/home/rick/anaconda3/envs/autosegment/lib/python3.6/site-packages/vmtk/pype.py", line 259, in Execute scriptObject = scriptObject() File "/home/rick/anaconda3/envs/autosegment/lib/python3.6/site-packages/vmtk/vmtksurfaceextractannularwalls.py", line 16, in __init__ self.SetScriptName(vmtksurfaceextractannularwalls) NameError: name 'vmtksurfaceextractannularwalls' is not defined |
+| [vmtksurfaceextractinnercylinder](/vmtkscripts/vmtksurfaceextractinnercylinder.html) | Traceback (most recent call last): File "/home/rick/anaconda3/envs/autosegment/lib/python3.6/site-packages/vmtk/pypeserver.py", line 46, in RunPypeProcess pipe.Execute() File "/home/rick/anaconda3/envs/autosegment/lib/python3.6/site-packages/vmtk/pype.py", line 259, in Execute scriptObject = scriptObject() File "/home/rick/anaconda3/envs/autosegment/lib/python3.6/site-packages/vmtk/vmtksurfaceextractinnercylinder.py", line 16, in __init__ self.SetScriptName(vmtksurfaceextractinnercylinder) NameError: name 'vmtksurfaceextractinnercylinder' is not defined |
 | [vmtksurfacekiteremoval](/vmtkscripts/vmtksurfacekiteremoval.html) | remove small kites in a surface mesh to avoid Taubin smoothing artifacts |
+| [vmtksurfaceloopextraction](/vmtkscripts/vmtksurfaceloopextraction.html) | |
 | [vmtksurfacemassproperties](/vmtkscripts/vmtksurfacemassproperties.html) | compute the volume of a closed surface. |
 | [vmtksurfacemodeller](/vmtkscripts/vmtksurfacemodeller.html) | converts a surface to an image containing the signed distance transform from the surface points |
 | [vmtksurfacenormals](/vmtkscripts/vmtksurfacenormals.html) | compute normals to a surface |
@@ -149,6 +158,7 @@ layout: page-full-width
 | [vmtksurfacesmoothing](/vmtkscripts/vmtksurfacesmoothing.html) | smooth a surface using Taubin's algorithm |
 | [vmtksurfacesubdivision](/vmtkscripts/vmtksurfacesubdivision.html) | subdivide a triangulated surface |
 | [vmtksurfacetomesh](/vmtkscripts/vmtksurfacetomesh.html) | convert surface to a mesh |
+| [vmtksurfacetonumpy](/vmtkscripts/vmtksurfacetonumpy.html) | Takes a VTK triangulated surface vtkPolyData file (optionally containing point data scalar arrays) and returns a nested python dictionary containing numpy arrays specifying vertex points, associated scalar data, and cell data yielding triangle connectivity |
 | [vmtksurfacetransform](/vmtkscripts/vmtksurfacetransform.html) | transform a surface with a provided matrix |
 | [vmtksurfacetransforminteractive](/vmtkscripts/vmtksurfacetransforminteractive.html) | interactively transform a surface to another surface |
 | [vmtksurfacetransformtoras](/vmtkscripts/vmtksurfacetransformtoras.html) | transform a surface generated in XYZ image space into RAS space |

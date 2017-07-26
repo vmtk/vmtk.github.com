@@ -456,21 +456,6 @@ imageVmtkAdaptor.Execute()
     converting point data
 
 
-##### Note on Time Required for Converting Images to Numpy Arrays
-
-The process of converting VMTK Surface and Centerline objects to and from numpy arrays is fairly quick. The reason for this is twofold:
-
-1. Essentially we are just creating a new container to store some data, and copying over the data in bulk.
-2. The data required to describe even large surface or centerline datasets is relatively small. ex: For a surface containing 500,000+ Points and 1,500,000+ faces, there are only 6,000,000 numbers to store (with 1,500,000 being of type ` float32 ` and 4,500,000 being of type ` int32 `) which works out to a (very rough approximation) of 24 MB. 
-
-As a result, these scripts run fairly quickly even on larger datasets. 
-
-The computational efficiency does not apply to images, however. Unlike vtkPolyData (the base VTK class for Surfaces and Points), the conversion to/from vtkImageData (the base VTK class for Images) is not a simple copy operation. In order to convert to/from a N-D numpy array, you must iterate over every element in the numpy array and call into the C++ layer to compute it's corresponding index in the VTK array. Then each element in either the VTK or numpy array (whichever way you are converting) is filled in for that element. While this operation is fairly quick in the scope of one loop cycle, it can grow signficantly as the size of the image scales up. 
-
-For reference, the image size output by a modern CT scanner during a coronary CT Angiography scan is commonly captured at a resolution of 512x512x320 across a single volume (or if you're lucky enough to have access to a super high-quality system you can play tricks with focal spot wobble and capture a single volume with 512x512x640 resolution, but I digress...) A 512x512x320 voxel grid has 83,886,080 elements in it and is typically stored as int16 values, working out to (roughly) 671 MB of data. Compare that to the 24 MB required for a decent sized Surface scan. 
-
-Due to the shear size of a common image, along with the indexing computations that must occur (instead of a simple copy and reshape), it should not be a surprise that the time to perform the operation can be long at times. While we have made attempts to speed up the computation by using the efficient np.nditer looping method, please be aware of this fact. A 512x512x320 image grid takes roughly 1.5 minutes to convert to/from VTK. This will get much longer as you increase the size of the voxel grid beyond that. 
-
 ## Saving VMTK Numpy Objects
 
 Two convenience scripts have been provided to save and read VMTK numpy objects (surfaces, centerlines, or images) to disk. The files can be written in either HDF5 format (provided the h5py module is installed) or via a standard python pickle object. The procedure is identical for every object type. 
