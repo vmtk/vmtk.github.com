@@ -1,7 +1,7 @@
 ---
 layout: page-full-width
 ---
-<h1>VmtkThreshold</h1>
+<h1>vmtkthreshold</h1>
 <h2>Description</h2>
 Extract part of surface or mesh with cell entitiy ids between given thresholds.
 <h3>Input arguments</h3>
@@ -23,7 +23,7 @@ Extract part of surface or mesh with cell entitiy ids between given thresholds.
 </tr>
 <tr><td>imeshfile</td><td>MeshInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Mesh reader</td>
 </tr>
-<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td>CellEntityIds</td><td>CellEntityIds</td><td>name of the array where entity ids have been stored</td>
+<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td>CellEntityIds</td><td>name of the array where entity ids have been stored</td>
 </tr>
 <tr><td>lowthreshold</td><td>LowThreshold</td><td>int</td><td>1</td><td></td><td>0</td><td>lower threshold for surface filtering</td>
 </tr>
@@ -47,7 +47,7 @@ Extract part of surface or mesh with cell entitiy ids between given thresholds.
 </tr>
 <tr><td>omesh</td><td>Mesh</td><td>vtkUnstructuredGrid</td><td>1</td><td></td><td></td><td>the output mesh</td>
 </tr>
-<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td>CellEntityIds</td><td>CellEntityIds</td><td>name of the array where entity ids have been stored</td>
+<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td>CellEntityIds</td><td>name of the array where entity ids have been stored</td>
 </tr>
 </table>
 
