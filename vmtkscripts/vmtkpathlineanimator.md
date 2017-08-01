@@ -27,10 +27,6 @@ Particle or streaklines animation
 </tr>
 <tr><td>legend</td><td>Legend</td><td>bool</td><td>1</td><td></td><td>0</td><td>toggle scalar bar</td>
 </tr>
-<tr><td>colormap</td><td>ColorMap</td><td>str</td><td>1</td><td>["rainbow","blackbody","cooltowarm","grayscale"]</td><td>cooltowarm</td><td>change the color map</td>
-</tr>
-<tr><td>numberofcolors</td><td>NumberOfColors</td><td>int</td><td>1</td><td></td><td>256</td><td>number of colors in the color map</td>
-</tr>
 <tr><td>mintime</td><td>MinTime</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.0</td><td></td>
 </tr>
 <tr><td>maxtime</td><td>MaxTime</td><td>float</td><td>1</td><td>(0.0,)</td><td>1.0</td><td></td>
@@ -39,7 +35,7 @@ Particle or streaklines animation
 </tr>
 <tr><td>pattern</td><td>Pattern</td><td>str</td><td>1</td><td></td><td>frame_%04d.png</td><td></td>
 </tr>
-<tr><td>imagesdirectory</td><td>ImagesDirectory</td><td>str</td><td>1</td><td></td><td>/home/rick</td><td></td>
+<tr><td>imagesdirectory</td><td>ImagesDirectory</td><td>str</td><td>1</td><td></td><td>/Users/daron</td><td></td>
 </tr>
 <tr><td>screenshot</td><td>WithScreenshots</td><td>bool</td><td>1</td><td></td><td>0</td><td></td>
 </tr>

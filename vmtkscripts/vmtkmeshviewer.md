@@ -29,11 +29,9 @@ display a mesh
 </tr>
 <tr><td>scalarrange</td><td>ScalarRange</td><td>float</td><td>2</td><td></td><td>[0.0, 0.0]</td><td>range of the scalar map</td>
 </tr>
-<tr><td>colormap</td><td>ColorMap</td><td>str</td><td>1</td><td>["rainbow","blackbody","cooltowarm","grayscale"]</td><td>cooltowarm</td><td>choose the color map</td>
-</tr>
-<tr><td>numberofcolors</td><td>NumberOfColors</td><td>int</td><td>1</td><td></td><td>256</td><td>number of colors in the color map</td>
-</tr>
 <tr><td>legend</td><td>Legend</td><td>bool</td><td>1</td><td></td><td>0</td><td>toggle scalar bar</td>
+</tr>
+<tr><td>grayscale</td><td>Grayscale</td><td>bool</td><td>1</td><td></td><td>0</td><td>toggle color or grayscale</td>
 </tr>
 <tr><td>color</td><td>Color</td><td>float</td><td>3</td><td></td><td>[-1.0, -1.0, -1.0]</td><td>RGB color of the object in the scene</td>
 </tr>

@@ -27,8 +27,6 @@ layout: page-full-width
 </tr>
 <tr><td>centerlineradius</td><td>EvaluateCenterlineRadius</td><td>bool</td><td>1</td><td></td><td>0</td><td></td>
 </tr>
-<tr><td>combined</td><td>UseCombinedDistance</td><td>bool</td><td>1</td><td></td><td>0</td><td>combines local radius with maximum inscribed sphere radius</td>
-</tr>
 <tr><td>projectarrays</td><td>ProjectPointArrays</td><td>bool</td><td>1</td><td></td><td>0</td><td></td>
 </tr>
 <tr><td>distancetocenterlinesarray</td><td>DistanceToCenterlinesArrayName</td><td>str</td><td>1</td><td></td><td>DistanceToCenterlines</td><td></td>

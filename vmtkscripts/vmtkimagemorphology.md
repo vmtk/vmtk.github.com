@@ -23,6 +23,8 @@ apply binary or grayscale morphology filter to the input image
 </tr>
 <tr><td>operation</td><td>Operation</td><td>str</td><td>1</td><td>["dilate","erode","open","close"]</td><td>closing</td><td>the morphological operation to perform</td>
 </tr>
+<tr><td>grayscale</td><td>Grayscale</td><td>bool</td><td>1</td><td></td><td>1</td><td>perform binary or grayscale morphology</td>
+</tr>
 <tr><td>ofile</td><td>ImageOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Image writer</td>
 </tr>
 </table>

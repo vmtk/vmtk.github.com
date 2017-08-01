@@ -33,11 +33,9 @@ create a prismatic boundary layer from a surface mesh and a set of vectors defin
 </tr>
 <tr><td>sublayers</td><td>NumberOfSubLayers</td><td>int</td><td>1</td><td>(0,)</td><td>1</td><td>number of sublayers which the boundary layer has to be made of</td>
 </tr>
-<tr><td>substeps</td><td>NumberOfSubsteps</td><td>int</td><td>1</td><td>(0,)</td><td>2000</td><td>number of substeps for smoothly propagating the boundary layer</td>
+<tr><td>substeps</td><td>NumberOfSubsteps</td><td>int</td><td>1</td><td>(0,)</td><td>500</td><td>number of substeps for smoothly propagating the boundary layer</td>
 </tr>
 <tr><td>relaxation</td><td>Relaxation</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.01</td><td>relaxation factor for the evolution of the inner surface</td>
-</tr>
-<tr><td>localcorrection</td><td>LocalCorrectionFactor</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.45</td><td>amount of correction to apply to warp vectors during local untangling</td>
 </tr>
 <tr><td>innersurfaceentityid</td><td>InnerSurfaceCellEntityId</td><td>int</td><td>1</td><td>(0,)</td><td>0</td><td>cell entity id assigned to the inner warped surface</td>
 </tr>

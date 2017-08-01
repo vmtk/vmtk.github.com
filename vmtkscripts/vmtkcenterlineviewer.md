@@ -23,10 +23,6 @@ layout: page-full-width
 </tr>
 <tr><td>legend</td><td>Legend</td><td>bool</td><td>1</td><td></td><td>1</td><td></td>
 </tr>
-<tr><td>colormap</td><td>ColorMap</td><td>str</td><td>1</td><td>["rainbow","blackbody","cooltowarm","grayscale"]</td><td>cooltowarm</td><td>choose the color map</td>
-</tr>
-<tr><td>numberofcolors</td><td>NumberOfColors</td><td>int</td><td>1</td><td></td><td>256</td><td>number of colors in the color map</td>
-</tr>
 <tr><td>renderer</td><td>vmtkRenderer</td><td>vmtkRenderer</td><td>1</td><td></td><td></td><td>external renderer</td>
 </tr>
 <tr><td>ofile</td><td>CenterlinesOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Centerlines writer</td>
