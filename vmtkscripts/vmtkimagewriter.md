@@ -39,7 +39,7 @@ write an image to disk
 </tr>
 <tr><td>windowlevel</td><td>WindowLevel</td><td>float</td><td>2</td><td></td><td>[1.0, 0.0]</td><td>window and level for mapping graylevels to 0-255 before writing - png, tiff</td>
 </tr>
-<tr><td>matrix</td><td>RasToIjkMatrixCoefficients</td><td>float</td><td>16</td><td></td><td>None</td><td></td>
+<tr><td>matrix</td><td>RasToIjkMatrixCoefficients</td><td>float</td><td>16</td><td></td><td>[1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1]</td><td></td>
 </tr>
 </table>
 <h3>Output arguments</h3>

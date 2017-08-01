@@ -49,11 +49,9 @@ generate a mesh suitable for CFD from a surface
 </tr>
 <tr><td>sublayers</td><td>NumberOfSubLayers</td><td>int</td><td>1</td><td>(0,)</td><td>2</td><td></td>
 </tr>
-<tr><td>substeps</td><td>NumberOfSubsteps</td><td>int</td><td>1</td><td>(0,)</td><td>2000</td><td></td>
+<tr><td>substeps</td><td>NumberOfSubsteps</td><td>int</td><td>1</td><td>(0,)</td><td>500</td><td></td>
 </tr>
 <tr><td>relaxation</td><td>Relaxation</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.01</td><td></td>
-</tr>
-<tr><td>localcorrection</td><td>LocalCorrectionFactor</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.45</td><td></td>
 </tr>
 <tr><td>sublayerratio</td><td>SubLayerRatio</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.5</td><td></td>
 </tr>

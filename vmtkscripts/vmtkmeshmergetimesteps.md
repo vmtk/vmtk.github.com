@@ -29,8 +29,6 @@ merge multiple mesh files with different timesteps into one
 </tr>
 <tr><td>velocityvector</td><td>VelocityVector</td><td>bool</td><td>1</td><td></td><td>0</td><td>velocity vector instead of components</td>
 </tr>
-<tr><td>vector</td><td>VelocityVectorArrayName</td><td>str</td><td>1</td><td></td><td>None</td><td>velocity vector name</td>
-</tr>
 <tr><td>pressure</td><td>Pressure</td><td>bool</td><td>1</td><td></td><td>0</td><td>pressure array</td>
 </tr>
 <tr><td>pressurearrayname</td><td>PressureArrayName</td><td>str</td><td>1</td><td></td><td>p</td><td>name of the pressure array</td>

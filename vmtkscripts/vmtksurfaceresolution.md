@@ -1,7 +1,7 @@
 ---
 layout: page-full-width
 ---
-<h1>vmtksurfaceresolution</h1>
+<h1>vtksurfaceresolution</h1>
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

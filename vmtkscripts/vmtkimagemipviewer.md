@@ -29,8 +29,6 @@ display a 3D image
 </tr>
 <tr><td>windowlevel</td><td>WindowLevel</td><td>float</td><td>2</td><td></td><td>[0.0, 0.0]</td><td>the window/level for generating the rendering</td>
 </tr>
-<tr><td>opacity</td><td>Opacity</td><td>float</td><td>2</td><td></td><td>None</td><td>the opacity range is defined from 0 (transparent) to 1 (opaque)</td>
-</tr>
 <tr><td>display</td><td>Display</td><td>bool</td><td>1</td><td></td><td>1</td><td>toggle rendering</td>
 </tr>
 <tr><td>ofile</td><td>ImageOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Image writer</td>

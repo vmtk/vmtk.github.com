@@ -15,7 +15,7 @@ read a mesh and stores it in a vtkUnstructuredGrid object
 </tr>
 <tr><td>disabled</td><td>Disabled</td><td>bool</td><td>1</td><td></td><td>0</td><td>disable execution and piping</td>
 </tr>
-<tr><td>f</td><td>Format</td><td>str</td><td>1</td><td>["vtkxml", "vtkxmlp", "vtk","fdneut","ngneut","tecplot","tetgen","gambit"]</td><td></td><td>file format (fdneut - FIDAP neutral format, ngneut - Netgen neutral format)</td>
+<tr><td>f</td><td>Format</td><td>str</td><td>1</td><td>["vtkxml","vtk","fdneut","ngneut","tecplot","tetgen","gambit"]</td><td></td><td>file format (fdneut - FIDAP neutral format, ngneut - Netgen neutral format)</td>
 </tr>
 <tr><td>guessformat</td><td>GuessFormat</td><td>bool</td><td>1</td><td></td><td>1</td><td>guess file format from extension</td>
 </tr>
