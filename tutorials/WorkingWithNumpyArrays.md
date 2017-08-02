@@ -1,14 +1,11 @@
-
 ---
 layout: page-full-width
 title: Working With Numpy Arrays
+by: Richard Izzo (Github @rlizzo), State University of New York at Buffalo, USA
 ---
 
 #### Applicable version(s):
-
 [Development version]({{ site.baseurl }}/download/#development_version)
-
-<sub>by Richard Izzo (Github @rlizzo), State University of New York at Buffalo, USA</sub>
 
 This tutorial demonstrates how to convert VMTK Image, Surface, and Centerline object data to and from a structured dictionary of Numpy arrays. This tutorial can be viewed as a Jupyter Notebook at [this link]({{ site.baseurl }}/tutorials/WorkingWithNumpyArraysIPYNB.html)
 
@@ -21,18 +18,18 @@ Though deep expertise is not necessary, we recommend that users are familiar wit
 ## Relevant VMTK scripts
 
 Scripts that convert VMTK objects to numpy arrays:
-1. vmtkcenterlinestonumpy 
-2. vmtkimagetonumpy
-3. vmtksurfacetonumpy
+- [vmtkcenterlinestonumpy]({{ site.baseurl }}/vmtkscripts/vmtkcenterlinestonumpy.html)
+- [vmtkimagetonumpy]({{ site.baseurl }}/vmtkscripts/vmtkimagetonumpy.html)
+- [vmtksurfacetonumpy]({{ site.baseurl }}/vmtkscripts/vmtksurfacetonumpy.html)
 
 Scripts that convert a nested dictionary of numpy arrays to VMTK objects:
-1. vmtknumpytocenterlines
-2. vmtknumpytoimage
-3. vmtknumpytosurface
+- [vmtknumpytocenterlines]({{ site.baseurl }}/vmtkscripts/vmtknumpytocenterlines.html)
+- [vmtknumpytoimage]({{ site.baseurl }}/vmtkscripts/vmtknumpytoimage.html)
+- [vmtknumpytosurface]({{ site.baseurl }}/vmtkscripts/vmtknumpytosurface.html)
 
 Convenience scripts to write and read a nested dictionary of numpy arrays to disk:
-1. vmtknumpyreader 
-2. vmtknumpywriter 
+- [vmtknumpyreader]({{ site.baseurl }}/vmtkscripts/vmtknumpyreader.html)
+- [vmtknumpywriter]({{ site.baseurl }}/vmtkscripts/vmtknumpywriter.html)
 
 ---
 
@@ -40,8 +37,8 @@ Convenience scripts to write and read a nested dictionary of numpy arrays to dis
 
 In addition to the standard VMTK package, the following packages must be installed and available on the users PATH:
 
-1. [numpy](http://www.numpy.org/)
-2. [h5py](http://www.h5py.org/)
+- [Numpy](http://www.numpy.org/)
+- [h5py](http://www.h5py.org/)
 
 We recommend using the [Python Anaconda](https://anaconda.org/) package manager to create a virtual environment and install the packages. Installation and quickstart instructions are available [here](https://docs.continuum.io/docs_oss/conda/get-started). 
 
@@ -51,8 +48,8 @@ We recommend using the [Python Anaconda](https://anaconda.org/) package manager 
 
 VMTK is built on top of Kitware's [Visualization Toolkit](http://www.vtk.org/) data model & processing pipeline. A full description of the VTK data model format and pipeline is well beyond the scope of this tutorial. For those interested users, please refer to the following two resources:
 
-1. [Data Structures in the Visualization Toolkit](https://www.researchgate.net/profile/Stefan_Bruckner/publication/228936817_Data_Structures_in_the_Visualization_Toolkit/links/0912f50ebdc4027636000000.pdf), Stefan Bruckner, Seminar Paper, The Institute of Computer Graphics and Algorithms, Vienna University of Technology, Austria 
-2. [The VTK Users Guide](https://www.kitware.com/products/books/VTKUsersGuide.pdf)
+- [Data Structures in the Visualization Toolkit](https://www.researchgate.net/profile/Stefan_Bruckner/publication/228936817_Data_Structures_in_the_Visualization_Toolkit/links/0912f50ebdc4027636000000.pdf), Stefan Bruckner, Seminar Paper, The Institute of Computer Graphics and Algorithms, Vienna University of Technology, Austria 
+- [The VTK Users Guide](https://www.kitware.com/products/books/VTKUsersGuide.pdf)
 
 For our purposes, we can think of any VTK data object as being composed of an organizing structure (ie. Points & Cells) and associated data attributes (Point Data & Cell Data).
 
@@ -63,7 +60,7 @@ In this interpretation, we can think of <i> Points </i> as a vertices which defi
 
 |    		 			  |     					      |
 |:----------------------------------------:|:---------------------------------------------------:|
-|![Figure1]({{ site.baseurl }}/resources/img//tutorials/izzo-numpy-1-1.png)| ![Figure2]({{ site.baseurl }}/resources/img//tutorials/izzo-numpy-1-2.png)
+|![Figure1]({{ site.baseurl }}/resources/img/tutorials/izzo-numpy-1-1.png){:height="250px" width="250px"}| ![Figure2]({{ site.baseurl }}/resources/img//tutorials/izzo-numpy-1-2.png)
 |*Figure 1: Illustration of vertices as Points*	          | *Figure 2: Illustration of image as points*
 
 On the other hand, <i> Cells </i> define the topology of the data object. In the context of surfaces, this is a  describes the connectivity of the vertices which form each triangle in the surface (see Figure 3). For centerlines, Cells describe the connectivity and grouping of points which make up the centerline data object (see Figure 4). Though in theory, cells can be used to group certain regions in vtkImageData, we do not define the concept of cells as it relates to a VMTK image. 
@@ -73,7 +70,8 @@ On the other hand, <i> Cells </i> define the topology of the data object. In the
 |![Figure3]({{ site.baseurl }}/resources/img//tutorials/izzo-numpy-2-1.png)| ![Figure4]({{ site.baseurl }}/resources/img//tutorials/izzo-numpy-2-2.png)
 |*Figure 1: Illustration of cells creating a triangulated surface*	          | *Figure 2: Illustration cells defining a line*
 
-When working with Points & Cells, just remember that: <i> Points define geometry, Cells define topology </i>.
+<br>
+When working with Points & Cells, just remember that: <b><i> Points define geometry, Cells define topology </i>. </b>
 
 #### Point Data & Cell Data
 
@@ -95,10 +93,10 @@ This explanation all acts to say the following: if a dataset attribute varies <i
 
 When we want to access VTK data in numpy, we actually need to access the four principle component of a VTK object as described above:
 
-1. Points
-2. Cells
-3. Point Data
-4. Cell Data
+- Points
+- Cells
+- Point Data
+- Cell Data
 
 In order to make use of the data in numpy/python, we create a unique numpy array for every VTK array defining these components. In order to handle these arrays in a manageable fashion (accessible through one python object), we assign each data array to a key/value pair in a (nested) python dictionary of pre-defined structure. The following subsections defines the dictionary structure required for centerlines, images, and surfaces. 
 
@@ -142,6 +140,7 @@ surfaceNumpyAdaptor.Execute()
 numpySurface = surfaceNumpyAdaptor.ArrayDict
 ```
 
+
     Reading VTK XML surface file.
     wrapping vtkPolyData object
     converting cell data: 
@@ -158,8 +157,6 @@ The python object `numpySurface` is now a nested dictionary of numpy arrays. The
 ```python
 numpySurface
 ```
-
-
 
 
     {'CellData': {'CellPointIds': array([[     0,      1,      2],
@@ -205,9 +202,9 @@ print('numpySurface["PointData"]["DistanceToCenterlines"] shape = ', numpySurfac
     numpySurface["PointData"]["DistanceToCenterlines"] shape =  (209988,)
 
 
-which exactly matches the number of vertices in the ` Points ` array. In this case, each index in ` numpySurface['PointData']['DistanceToCenterlines'] ` corresponds to a row in ` numpySurface['Points'] `. ie. ` numpySurface['PointData']['DistanceToCenterlines'][100] ` corresponds to the vertex defined by coordinates at ` numpySurface['Points'][100, :] `
+which exactly matches the number of vertices in the `Points` array. In this case, each index in `numpySurface['PointData']['DistanceToCenterlines']` corresponds to a row in ` numpySurface['Points'] `. ie. `numpySurface['PointData']['DistanceToCenterlines'][100]` corresponds to the vertex defined by coordinates at `numpySurface['Points'][100, :]`
 
-From here, we can modify the location of the points, define a new cell connectivity list, or add a new Point Data or Cell Data array. If we decide we want to modify the ` DistanceToCenterlines ` array values by a constant scale factor, we can perform the operation and convert back to a VMTK surface Object by:
+From here, we can modify the location of the points, define a new cell connectivity list, or add a new Point Data or Cell Data array. If we decide we want to modify the `DistanceToCenterlines` array values by a constant scale factor, we can perform the operation and convert back to a VMTK surface Object by:
 
 
 ```python
@@ -248,7 +245,7 @@ ArrayDict
         ...
 ```
 
-Note: The format for ` ['CellData']['CellPointIds'] ` is slightly different for centerlines than it is for the surface example above. Unlike a surface (which defined each triangle face as a row in ` ['CellData']['CellPointIds'] ` with fixed dimensions Mx3), the number of Points making up each cell in a centerline are completely arbitrary. Instead of a ` Mx3 ` size array, the centerline version of ` ['CellData']['CellPointIds'] ` contains a list of numpy arrays with (potentially) non-equal sizes. Aside from this semantic difference, the meaning of each index in ` ['CellData']['CellPointIds'] ` is the same for centerlines and surfaces; that is, each value in ` ['CellData']['CellPointIds'] ` refers to a row index in ` ['Points'] ` which contains the coordinates of the associated points.
+Note: The format for `['CellData']['CellPointIds']` is slightly different for centerlines than it is for the surface example above. Unlike a surface (which defined each triangle face as a row in `['CellData']['CellPointIds']` with fixed dimensions Mx3), the number of Points making up each cell in a centerline are completely arbitrary. Instead of a `Mx3` size array, the centerline version of `['CellData']['CellPointIds']` contains a list of numpy arrays with (potentially) non-equal sizes. Aside from this semantic difference, the meaning of each index in `['CellData']['CellPointIds']` is the same for centerlines and surfaces; that is, each value in `['CellData']['CellPointIds']` refers to a row index in `['Points']` which contains the coordinates of the associated points.
 
 
 ```python
@@ -276,7 +273,7 @@ numpyCenterlines = clNumpyAdaptor.ArrayDict
     converting cell connectivity list
 
 
-Like the surface example above, we can see that the data accessed through ` numpyCenterlines['Points'] ` is a numpy array of shape Nx3:
+Like the surface example above, we can see that the data accessed through `numpyCenterlines['Points']` is a numpy array of shape Nx3:
 
 
 ```python
@@ -298,7 +295,7 @@ print('Cell Data Keys: ', numpyCenterlines['CellData'].keys())
     Cell Data Keys:  dict_keys(['CenterlineIds', 'TractIds', 'Blanking', 'GroupIds', 'CellPointIds'])
 
 
-We see that the number of components in ` ['PointData']['MaximumInscribedSphereRadius'] ` is equal to the number of rows in ` ['Points'] `
+We see that the number of components in `['PointData']['MaximumInscribedSphereRadius']` is equal to the number of rows in `['Points']`
 
 
 ```python
@@ -308,7 +305,7 @@ print('Point Data Shape: ', numpyCenterlines['PointData']['MaximumInscribedSpher
     Point Data Shape:  (20758,)  = Number of Points:  20758
 
 
-We can also see that ` ['CellData']['CellPointIds'] ` is a list of a certain length which contains a series of numpy arrays, and that the sizes of the arrays are not necesarily the same:
+We can also see that `['CellData']['CellPointIds']` is a list of a certain length which contains a series of numpy arrays, and that the sizes of the arrays are not necesarily the same:
 
 
 ```python
@@ -336,7 +333,7 @@ print("Maximum size of array in ['CellData']['CellPointIds'] = ", maxSize, ' Whi
     Maximum size of array in ['CellData']['CellPointIds'] =  2950  Which occured at index  7
 
 
-We can the see that the data inside of ` ['CellData'] ` (not at ` ['CellPointIds'] `) has a shape equal to the length of the ` ['CellData']['CellPointIds'] `  list
+We can the see that the data inside of `['CellData']` (not at `['CellPointIds']`) has a shape equal to the length of the `['CellData']['CellPointIds']`  list
 
 
 ```python
@@ -353,11 +350,11 @@ for cellDataKey in numpyCenterlines['CellData']:
     Shape of  GroupIds  =  (30,)
 
 
-This is important, as the data stored in the ` ['CellData'] ` arrays are indexed so that the value at ` ['CellData']['foo'][index] ` refers to the list element at the corresponding list index in ` ['CellData']['CellPointIds'] `. For example: the data sorted at ` ['CellData']['TractIds'][5] ` refers to the cell point id list accessible at ` ['CellData']['CellPointIds'][5] `. Recall that this array's values indicate the row indices of the vertices in ` ['Points'] ` which make up the cell. In this way it is possible to map a Cell Data value to a particular Point coordinate. 
+This is important, as the data stored in the `['CellData']` arrays are indexed so that the value at `['CellData']['foo'][index]` refers to the list element at the corresponding list index in `['CellData']['CellPointIds']`. For example: the data sorted at `['CellData']['TractIds'][5]` refers to the cell point id list accessible at `['CellData']['CellPointIds'][5]`. Recall that this array's values indicate the row indices of the vertices in `['Points']` which make up the cell. In this way it is possible to map a Cell Data value to a particular Point coordinate. 
 
-However, it is not always convenient to have to map each ` ['CellData']['foo'] ` index to the ` ['CellData']['CellPointIds'] ` list to the corresponding coordinate in ` ['Points'] `. A conceptually simpler (though more resource intensive) method to perform the mapping is to take each dataset attribute in ` ['CellData'] ` (with the exception of ` CellPointIDs `), and map it to a dense array in ` ['PointData'] `. This can be performed automatically by specifying ` foo.ConvertCellToPoint = 1 ` when calling ` vmtkscripts.vmtkCenterlinesToNumpy() `
+However, it is not always convenient to have to map each `['CellData']['foo']` index to the `['CellData']['CellPointIds']` list to the corresponding coordinate in `['Points']`. A conceptually simpler (though more resource intensive) method to perform the mapping is to take each dataset attribute in `['CellData']` (with the exception of `CellPointIDs`), and map it to a dense array in `['PointData']`. This can be performed automatically by specifying `foo.ConvertCellToPoint = 1` when calling `vmtkscripts.vmtkCenterlinesToNumpy()`
 
-Like the surface example above, it is possible to convert from the nested python dictionary of arrays to a VMTK centerlines object via the ` vmtkscripts.vmtkNumpyToCenterlines() ` module: 
+Like the surface example above, it is possible to convert from the nested python dictionary of arrays to a VMTK centerlines object via the `vmtkscripts.vmtkNumpyToCenterlines()` module: 
 
 
 ```python
@@ -373,7 +370,7 @@ clVmtkAdaptor.Execute()
 
 ### Converting VMTK Image Objects
 
-The conversion of VMTK Image Objects requires a much simpler ArrayDict structure than for a surface or centerline. The structure of the ` ArrayDict ` is as follows:
+The conversion of VMTK Image Objects requires a much simpler ArrayDict structure than for a surface or centerline. The structure of the `ArrayDict` is as follows:
 
 ```
 ArrayDict
@@ -426,7 +423,7 @@ print("['PointData']['ImageScalars'] shape = ", numpyImage['PointData']['ImageSc
     ['PointData']['ImageScalars'] shape =  (157, 393, 34)
 
 
-We can modify the data stored in ` ['PointData']['ImageScalars'] ` and return it to a VMTK image object as demonstrated below:
+We can modify the data stored in `['PointData']['ImageScalars']` and return it to a VMTK image object as demonstrated below:
 
 
 ```python
@@ -460,4 +457,4 @@ imageVmtkAdaptor.Execute()
 
 Two convenience scripts have been provided to save and read VMTK numpy objects (surfaces, centerlines, or images) to disk. The files can be written in either HDF5 format (provided the h5py module is installed) or via a standard python pickle object. The procedure is identical for every object type. 
 
-Simply use vmtkscripts.vmtkNumpyWriter() and vmtkscripts.vmtkNumpyReader() in the fashion standard through vmtk. The scripts take an ` ArrayDict ` as an input member along with a ` Format ` identification (default = pickle) and a output/input file name, and read/write the array to/from disk.
+Simply use `vmtkscripts.vmtkNumpyWriter()` and `vmtkscripts.vmtkNumpyReader()` in the fashion standard through vmtk. The scripts take an `ArrayDict` as an input member along with a `Format` identification (default = pickle) and a output/input file name, and read/write the array to/from disk.

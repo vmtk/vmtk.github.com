@@ -3,7 +3,7 @@ layout: page-full-width
 ---
 <h1>vmtkNumpyToImage</h1>
 <h2>Description</h2>
-Takes a dictionary of numpy arrays and returns a vtkImageData object.
+Takes a dictionary of numpy arrays specifying dimensions, origin, spacing, and the image point data and returns a vtkImageData object.
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
