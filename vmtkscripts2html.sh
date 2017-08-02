@@ -36,7 +36,9 @@ echo layout: page-full-width >> documentation/vmtkscripts.md
 echo --- >> documentation/vmtkscripts.md
 echo >> documentation/vmtkscripts.md
 echo {:.vmtklist} >> documentation/vmtkscripts.md
+echo >> documentation/vmtkscripts.md
 echo \# vmtkScripts reference >> documentation/vmtkscripts.md
+echo >> documentation/vmtkscripts.md
 echo \| Script \| Description \| >> documentation/vmtkscripts.md
 echo \|:--\|:--\| >> documentation/vmtkscripts.md
 

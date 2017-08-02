@@ -3,7 +3,7 @@ layout: page-full-width
 ---
 <h1>vmtkCenterlinesToNumpy</h1>
 <h2>Description</h2>
-Takes a VTK centerlines vtkPolyData file (optionally containing point data scalar arrays or cell data scalar arrays) and returns a nested python dictionary containing numpy arrays specifying vertex points, associated scalar data, and cell data yielding connectivity
+Takes a VTK centerlines vtkPolyData file and returns a nested python dictionary containing numpyarrays specifying vertex points, associated scalar data, and cell data yielding connectivity
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

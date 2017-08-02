@@ -3,7 +3,7 @@ layout: page-full-width
 ---
 <h1>vmtkNumpyToSurface</h1>
 <h2>Description</h2>
-Takes a nested python dictionary containg numpy arrays specifying vertex points, associated scalar data, and cell data specifying triangle connectivityand returns a VTK triangulated surface vtkPolyData file
+Takes a nested python dictionary containing numpy arrays specifying vertex points, associated scalar data, and cell data specifying triangle connectivityand returns a VTK triangulated surface vtkPolyData file
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

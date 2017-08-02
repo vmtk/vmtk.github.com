@@ -3,7 +3,7 @@ layout: page-full-width
 ---
 <h1>vmtkImageToNumpy</h1>
 <h2>Description</h2>
-Takes a vtkImageData object and returns a numpy
+Takes a vtkImageData object and returns a nested dictionary of numpy arrays
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
