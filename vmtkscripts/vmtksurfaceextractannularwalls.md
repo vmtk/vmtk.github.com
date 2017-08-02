@@ -1,7 +1,7 @@
 ---
 layout: page-full-width
 ---
-<h1>VmtkSurfaceExtractAnnularWalls</h1>
+<h1>vmtksurfaceextractannularwalls</h1>
 <h2>Description</h2>
 Extract wall surfaces from an annular-cylindric surface.
 <h3>Input arguments</h3>

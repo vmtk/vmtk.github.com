@@ -1,7 +1,7 @@
 ---
 layout: page-full-width
 ---
-<h1>VmtkEntityRenumber</h1>
+<h1>vmtkentityrenumber</h1>
 <h2>Description</h2>
 Renumber cell entity id array.
 <h3>Input arguments</h3>
