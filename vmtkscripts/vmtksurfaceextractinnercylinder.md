@@ -1,7 +1,7 @@
 ---
 layout: page-full-width
 ---
-<h1>VmtkSurfaceExtractInnerCylinder</h1>
+<h1>vmtksurfaceextractinnercylinder</h1>
 <h2>Description</h2>
 Extract inner surface from an annular-cylindric volume.
 <h3>Input arguments</h3>

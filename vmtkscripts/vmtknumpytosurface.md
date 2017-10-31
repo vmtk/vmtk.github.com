@@ -1,7 +1,9 @@
 ---
 layout: page-full-width
 ---
-<h1>vmtksurfaceresolution</h1>
+<h1>vmtkNumpyToSurface</h1>
+<h2>Description</h2>
+Takes a nested python dictionary containing numpy arrays specifying vertex points, associated scalar data, and cell data specifying triangle connectivityand returns a VTK triangulated surface vtkPolyData file
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
@@ -13,17 +15,9 @@ layout: page-full-width
 </tr>
 <tr><td>disabled</td><td>Disabled</td><td>bool</td><td>1</td><td></td><td>0</td><td>disable execution and piping</td>
 </tr>
-<tr><td>i</td><td>Surface</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the input surface</td>
+<tr><td>i</td><td>ArrayDict</td><td>dict</td><td>1</td><td></td><td></td><td>the input array dictionary</td>
 </tr>
-<tr><td>ifile</td><td>SurfaceInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface reader</td>
-</tr>
-<tr><td>resolutionarray</td><td>ResolutionArrayName</td><td>str</td><td>1</td><td></td><td>ResolutionArray</td><td>array storing the desired edge length</td>
-</tr>
-<tr><td>rbftype</td><td>RBFType</td><td>str</td><td>1</td><td>["thinplatespline","biharmonic","triharmonic"]</td><td>biharmonic</td><td>the type of RBF interpolation</td>
-</tr>
-<tr><td>opacity</td><td>Opacity</td><td>float</td><td>1</td><td>(0.0,1.0)</td><td>1.0</td><td>object opacities in the scene</td>
-</tr>
-<tr><td>renderer</td><td>vmtkRenderer</td><td>vmtkRenderer</td><td>1</td><td></td><td></td><td>external renderer</td>
+<tr><td>ifile</td><td>ArrayDictInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default ArrayDict reader</td>
 </tr>
 <tr><td>ofile</td><td>SurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface writer</td>
 </tr>
@@ -37,7 +31,7 @@ layout: page-full-width
 </tr>
 <tr><td>handle</td><td>Self</td><td>self</td><td>1</td><td></td><td></td><td>handle to self</td>
 </tr>
-<tr><td>o</td><td>Surface</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td></td>
+<tr><td>o</td><td>Surface</td><td>vtkPolyData</td><td>1</td><td></td><td></td><td>the output surface</td>
 </tr>
 </table>
 

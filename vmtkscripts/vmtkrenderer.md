@@ -15,7 +15,9 @@ renderer used to make several viewers use the same rendering window
 </tr>
 <tr><td>disabled</td><td>Disabled</td><td>bool</td><td>1</td><td></td><td>0</td><td>disable execution and piping</td>
 </tr>
-<tr><td>size</td><td>WindowSize</td><td>int</td><td>2</td><td></td><td>[800, 600]</td><td>size of the rendering window</td>
+<tr><td>size</td><td>WindowSize</td><td>int</td><td>2</td><td></td><td>[800, 600]</td><td>size of the rendering window in pixels</td>
+</tr>
+<tr><td>position</td><td>WindowPosition</td><td>int</td><td>2</td><td></td><td>[50, 50]</td><td>position of the rendering window (top left pixel)</td>
 </tr>
 <tr><td>pointsmoothing</td><td>PointSmoothing</td><td>bool</td><td>1</td><td></td><td>1</td><td>toggle rendering smooth points</td>
 </tr>
