@@ -108,34 +108,35 @@ To uninstall vmtk please type:
 
     pip uninstall vmtk
 
-To install vmtk binary distribution you need <a href="http://brew.sh" target="_blank">homebrew</a>.
+If you installed vmtk 1.3 using <a href="http://brew.sh" target="_blank">homebrew</a> distribution please remove it using brew.
 
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew uninstall --force https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
+brew uninstall --force vtk
+brew uninstall --force insighttoolkit
 
-Remove older versions of vmtk installed with brew:
+Last version (1.4) of vmtk is available through <a href="https://conda.io/docs/" target="_blank">conda</a>
+Please download conda if you do not have it:
 
-    brew uninstall --force https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
-    brew uninstall --force vtk
-    brew uninstall --force insighttoolkit
+  <a href="https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh" target="_blank">conda for python 2.x</a>
+  <a href="https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh" target="_blank">conda for python 3.x</a>
 
-Install brew python
+Then install it according to the downloaded version:
 
-    brew install python
+  bash Miniconda2-latest-MacOSX-x86_64.sh
+  bash Miniconda3-latest-MacOSX-x86_64.sh
 
-Register brew science:
+Create a conda environment by providing a name:
 
-    brew tap homebrew/science
+  conda-env create <name_of_the_environment>
+
+Activate the created environment:
+
+  source activate <name_of_the_environment>
 
 Then install vmtk:
 
-    brew install https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
+    conda install -c vmtk/label/dev vmtk
 
-Finally:
-
-    mkdir -p /Users/Username/Library/Python/2.7/lib/python/site-packages
-    echo 'import site; site.addsitedir("/usr/local/lib/python2.7/site-packages")' >> /Users/Username/Library/Python/2.7/lib/python/site-packages/homebrew.pth
-
-where Username is your user's account name.
 
 ### Linux packages
 
