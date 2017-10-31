@@ -110,28 +110,29 @@ To uninstall vmtk please type:
 
 If you installed vmtk 1.3 using <a href="http://brew.sh" target="_blank">homebrew</a> distribution please remove it using brew.
 
-brew uninstall --force https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
-brew uninstall --force vtk
-brew uninstall --force insighttoolkit
+    brew uninstall --force https://raw.githubusercontent.com/vmtk/vmtk/master/distribution/homebrew/vmtk.rb
+    brew uninstall --force vtk
+    brew uninstall --force insighttoolkit
 
 Last version (1.4) of vmtk is available through <a href="https://conda.io/docs/" target="_blank">conda</a>
 Please download conda if you do not have it:
 
-  <a href="https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh" target="_blank">conda for python 2.x</a>
-  <a href="https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh" target="_blank">conda for python 3.x</a>
+    <a href="https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh" target="_blank">conda for python 2.x</a>
+
+    <a href="https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh" target="_blank">conda for python 3.x</a>
 
 Then install it according to the downloaded version:
 
-  bash Miniconda2-latest-MacOSX-x86_64.sh
-  bash Miniconda3-latest-MacOSX-x86_64.sh
+    bash Miniconda2-latest-MacOSX-x86_64.sh
+    bash Miniconda3-latest-MacOSX-x86_64.sh
 
 Create a conda environment by providing a name:
 
-  conda-env create <name_of_the_environment>
+    conda-env create <name_of_the_environment>
 
 Activate the created environment:
 
-  source activate <name_of_the_environment>
+    source activate <name_of_the_environment>
 
 Then install vmtk:
 
