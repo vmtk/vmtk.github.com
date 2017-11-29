@@ -126,9 +126,9 @@ Then install it according to the downloaded version:
     bash Miniconda2-latest-MacOSX-x86_64.sh
     bash Miniconda3-latest-MacOSX-x86_64.sh
 
-Create a conda environment by providing a name:
+Create a conda environment by providing a name and python version (2.7.x or 3.5.x or 3.6.x is required)
 
-    conda-env create <name_of_the_environment>
+    conda-env create <name_of_the_environment> python=x.x.x
 
 Activate the created environment:
 
