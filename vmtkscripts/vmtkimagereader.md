@@ -29,8 +29,6 @@ read an image and stores it in a vtkImageData object
 </tr>
 <tr><td>pattern</td><td>InputFilePattern</td><td>str</td><td>1</td><td></td><td></td><td>input file pattern (e.g. %s%04d.png)</td>
 </tr>
-<tr><td>d</td><td>InputDirectoryName</td><td>str</td><td>1</td><td></td><td></td><td>input directory name - dicom only</td>
-</tr>
 <tr><td>extent</td><td>DataExtent</td><td>int</td><td>6</td><td></td><td>[-1, -1, -1, -1, -1, -1]</td><td>3D extent of the image - raw and png</td>
 </tr>
 <tr><td>headersize</td><td>HeaderSize</td><td>int</td><td>1</td><td>(0,)</td><td>0</td><td>size of the image header - raw only</td>

@@ -39,7 +39,7 @@ Particle or streaklines animation
 </tr>
 <tr><td>pattern</td><td>Pattern</td><td>str</td><td>1</td><td></td><td>frame_%04d.png</td><td></td>
 </tr>
-<tr><td>imagesdirectory</td><td>ImagesDirectory</td><td>str</td><td>1</td><td></td><td>/home/rick</td><td></td>
+<tr><td>imagesdirectory</td><td>ImagesDirectory</td><td>str</td><td>1</td><td></td><td>/Users/rick</td><td></td>
 </tr>
 <tr><td>screenshot</td><td>WithScreenshots</td><td>bool</td><td>1</td><td></td><td>0</td><td></td>
 </tr>
