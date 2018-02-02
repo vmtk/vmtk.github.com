@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtksurfaceresolution</h1>
+<h2>Description</h2>
+This allows the user to specify a edge-length array to be used to specify resolution for surface remeshing                            The array is produced by RBF interpolation of values specified by the user by positioning spheres
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
