@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkdijkstradistancetopoints</h1>
+<h2>Description</h2>
+This class computes the geodesic distance on the graph of a surface                            from a set of user-selected points on the surface using the Dijkstra algorithm.
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
