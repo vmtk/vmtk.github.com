@@ -23,7 +23,7 @@ interactively clip a mesh using the distance to centerlines
 </tr>
 <tr><td>centerlinesfile</td><td>CenterlinesInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Centerlines reader</td>
 </tr>
-<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td></td>
 </tr>
 <tr><td>polyballtype</td><td>PolyBallType</td><td>int</td><td>1</td><td></td><td>0</td><td>type of polyball used (0: global, 1: local)</td>
 </tr>

@@ -29,7 +29,7 @@ write a mesh to disk
 </tr>
 <tr><td>o</td><td>Mesh</td><td>vtkUnstructuredGrid</td><td>1</td><td></td><td></td><td>the output mesh</td>
 </tr>
-<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where entity ids are stored</td>
+<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td>CellEntityIds</td><td>name of the array where entity ids are stored</td>
 </tr>
 <tr><td>entityidsoffset</td><td>CellEntityIdsOffset</td><td>int</td><td>1</td><td></td><td>0</td><td>add this number to entity ids in output (dolfin only)</td>
 </tr>

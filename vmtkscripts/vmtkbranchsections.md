@@ -27,15 +27,15 @@ compute geometric properties of branch sections located a fixed number of sphere
 </tr>
 <tr><td>reverse</td><td>ReverseDirection</td><td>bool</td><td>1</td><td></td><td>0</td><td>toggle start generating sections from the end of the branches rather than the start</td>
 </tr>
-<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline radius is stored</td>
+<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td>name of the array where centerline radius is stored</td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline group ids are stored</td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td>name of the array where centerline group ids are stored</td>
 </tr>
-<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline ids are stored</td>
+<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td>CenterlineIds</td><td>name of the array where centerline ids are stored</td>
 </tr>
-<tr><td>tractidsarray</td><td>TractIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline tract ids are stored</td>
+<tr><td>tractidsarray</td><td>TractIdsArrayName</td><td>str</td><td>1</td><td></td><td>TractIds</td><td>name of the array where centerline tract ids are stored</td>
 </tr>
-<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline blanking information about branches is stored</td>
+<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td>Blanking</td><td>name of the array where centerline blanking information about branches is stored</td>
 </tr>
 <tr><td>branchsectiongroupids</td><td>BranchSectionGroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>BranchSectionGroupIds</td><td>name of the array where the group id to which each section belongs has to be stored</td>
 </tr>

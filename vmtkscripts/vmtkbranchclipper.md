@@ -21,7 +21,7 @@ layout: page-full-width
 </tr>
 <tr><td>centerlinesfile</td><td>CenterlinesInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Centerlines reader</td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td></td>
 </tr>
 <tr><td>groupids</td><td>GroupIds</td><td>int</td><td>-1</td><td></td><td>[]</td><td></td>
 </tr>
@@ -29,9 +29,9 @@ layout: page-full-width
 </tr>
 <tr><td>useradius</td><td>UseRadiusInformation</td><td>bool</td><td>1</td><td></td><td>1</td><td></td>
 </tr>
-<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td></td>
 </tr>
-<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td>Blanking</td><td></td>
 </tr>
 <tr><td>cutoffradiusfactor</td><td>CutoffRadiusFactor</td><td>float</td><td>1</td><td>(0.0,)</td><td>1e+16</td><td></td>
 </tr>

@@ -23,7 +23,7 @@ generate input files for the newtetr CFD solver
 </tr>
 <tr><td>timestepsonly</td><td>TimeStepsOnly</td><td>bool</td><td>1</td><td></td><td>0</td><td>only generate the $time section of the tetr.in file</td>
 </tr>
-<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where entity ids relative to cells are stored</td>
+<tr><td>entityidsarray</td><td>CellEntityIdsArrayName</td><td>str</td><td>1</td><td></td><td>CellEntityIds</td><td>name of the array where entity ids relative to cells are stored</td>
 </tr>
 <tr><td>normalizationid</td><td>NormalizationEntityId</td><td>int</td><td>1</td><td></td><td>-1</td><td>id of the entity relative to which the mesh has to be normalized</td>
 </tr>

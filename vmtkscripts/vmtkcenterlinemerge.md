@@ -19,15 +19,15 @@ merge centerline tracts belonging to the same groups
 </tr>
 <tr><td>ifile</td><td>CenterlinesInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Centerlines reader</td>
 </tr>
-<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline radius is stored</td>
+<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td>name of the array where centerline radius is stored</td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline group ids are stored</td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td>name of the array where centerline group ids are stored</td>
 </tr>
-<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline ids are stored</td>
+<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td>CenterlineIds</td><td>name of the array where centerline ids are stored</td>
 </tr>
-<tr><td>tractidsarray</td><td>TractIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline tract ids are stored</td>
+<tr><td>tractidsarray</td><td>TractIdsArrayName</td><td>str</td><td>1</td><td></td><td>TractIds</td><td>name of the array where centerline tract ids are stored</td>
 </tr>
-<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline blanking information about branches is stored</td>
+<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td>Blanking</td><td>name of the array where centerline blanking information about branches is stored</td>
 </tr>
 <tr><td>length</td><td>Length</td><td>float</td><td>1</td><td>(0.0,)</td><td>0.0</td><td>length of the resampling interval</td>
 </tr>

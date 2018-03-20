@@ -27,11 +27,11 @@ layout: page-full-width
 </tr>
 <tr><td>connectivity</td><td>UseConnectivity</td><td>bool</td><td>1</td><td></td><td>1</td><td></td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td></td>
 </tr>
-<tr><td>longitudinalmappingarray</td><td>LongitudinalMappingArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>longitudinalmappingarray</td><td>LongitudinalMappingArrayName</td><td>str</td><td>1</td><td></td><td>AbscissaMetric</td><td></td>
 </tr>
-<tr><td>circularmappingarray</td><td>CircularMappingArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>circularmappingarray</td><td>CircularMappingArrayName</td><td>str</td><td>1</td><td></td><td>AngularMetric</td><td></td>
 </tr>
 <tr><td>longitudinalpatchnumberarray</td><td>LongitudinalPatchNumberArrayName</td><td>str</td><td>1</td><td></td><td>Slab</td><td></td>
 </tr>

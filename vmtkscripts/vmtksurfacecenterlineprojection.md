@@ -23,7 +23,7 @@ layout: page-full-width
 </tr>
 <tr><td>useradius</td><td>UseRadiusInformation</td><td>bool</td><td>1</td><td></td><td>0</td><td></td>
 </tr>
-<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td></td>
 </tr>
 <tr><td>ofile</td><td>SurfaceOutputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Surface writer</td>
 </tr>

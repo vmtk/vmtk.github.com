@@ -1,7 +1,7 @@
 ---
 layout: page-full-width
 ---
-<h1>vtkvmtkimagecurvedmpr</h1>
+<h1>vmtkimagecurvedmpr</h1>
 <h2>Description</h2>
 Make an MPR image from a centerline and an input image
 <h3>Input arguments</h3>

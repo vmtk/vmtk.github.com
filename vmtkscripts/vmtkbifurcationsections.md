@@ -25,15 +25,15 @@ compute branch sections located a fixed number of spheres away from each bifurca
 </tr>
 <tr><td>distancespheres</td><td>NumberOfDistanceSpheres</td><td>int</td><td>1</td><td></td><td>1</td><td>distance from the bifurcation at which the sections have to be taken; the distance is expressed in number of inscribed spheres, where each sphere touches the center of the previous one</td>
 </tr>
-<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline radius is stored</td>
+<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td>name of the array where centerline radius is stored</td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline group ids are stored</td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td>name of the array where centerline group ids are stored</td>
 </tr>
-<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline ids are stored</td>
+<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td>CenterlineIds</td><td>name of the array where centerline ids are stored</td>
 </tr>
-<tr><td>tractidsarray</td><td>TractIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline tract ids are stored</td>
+<tr><td>tractidsarray</td><td>TractIdsArrayName</td><td>str</td><td>1</td><td></td><td>TractIds</td><td>name of the array where centerline tract ids are stored</td>
 </tr>
-<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline blanking information about branches is stored</td>
+<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td>Blanking</td><td>name of the array where centerline blanking information about branches is stored</td>
 </tr>
 <tr><td>bifurcationsectiongroupids</td><td>BifurcationSectionGroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>BifurcationSectionGroupIds</td><td>name of the array where the group id to which each section belongs has to be stored</td>
 </tr>

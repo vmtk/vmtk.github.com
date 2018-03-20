@@ -27,15 +27,15 @@ offset centerline attributes relative to a bifurcation reference system, in such
 </tr>
 <tr><td>replaceattributes</td><td>ReplaceAttributes</td><td>bool</td><td>1</td><td></td><td>1</td><td>overwrite the existing attributes</td>
 </tr>
-<tr><td>abscissasarray</td><td>AbscissasArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline abscissas are stored</td>
+<tr><td>abscissasarray</td><td>AbscissasArrayName</td><td>str</td><td>1</td><td></td><td>Abscissas</td><td>name of the array where centerline abscissas are stored</td>
 </tr>
-<tr><td>normalsarray</td><td>NormalsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline normals are stored</td>
+<tr><td>normalsarray</td><td>NormalsArrayName</td><td>str</td><td>1</td><td></td><td>ParallelTransportNormals</td><td>name of the array where centerline normals are stored</td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline group ids are stored</td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td>name of the array where centerline group ids are stored</td>
 </tr>
-<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline ids are stored</td>
+<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td>CenterlineIds</td><td>name of the array where centerline ids are stored</td>
 </tr>
-<tr><td>referencesystemsnormalarray</td><td>ReferenceSystemsNormalArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where reference system normals are stored</td>
+<tr><td>referencesystemsnormalarray</td><td>ReferenceSystemsNormalArrayName</td><td>str</td><td>1</td><td></td><td>Normal</td><td>name of the array where reference system normals are stored</td>
 </tr>
 <tr><td>offsetabscissasarray</td><td>OffsetAbscissasArrayName</td><td>str</td><td>1</td><td></td><td>OffsetAbscissas</td><td>name of the array where offset centerline abscissas have to be stored if ReplaceAttributes is off</td>
 </tr>
@@ -65,9 +65,9 @@ offset centerline attributes relative to a bifurcation reference system, in such
 </tr>
 <tr><td>offsetnormalsarray</td><td>OffsetNormalsArrayName</td><td>str</td><td>1</td><td></td><td>OffsetNormals</td><td>name of the array where offset centerline normals are stored if ReplaceAttributes is off</td>
 </tr>
-<tr><td>abscissasarray</td><td>AbscissasArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline abscissas are stored</td>
+<tr><td>abscissasarray</td><td>AbscissasArrayName</td><td>str</td><td>1</td><td></td><td>Abscissas</td><td>name of the array where centerline abscissas are stored</td>
 </tr>
-<tr><td>normalsarray</td><td>NormalsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline normals are stored</td>
+<tr><td>normalsarray</td><td>NormalsArrayName</td><td>str</td><td>1</td><td></td><td>ParallelTransportNormals</td><td>name of the array where centerline normals are stored</td>
 </tr>
 </table>
 

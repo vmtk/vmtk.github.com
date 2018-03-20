@@ -17,7 +17,7 @@ layout: page-full-width
 </tr>
 <tr><td>ifile</td><td>CenterlinesInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Centerlines reader</td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td></td>
 </tr>
 <tr><td>labelidsarray</td><td>LabelIdsArrayName</td><td>str</td><td>1</td><td></td><td>LabelIds</td><td></td>
 </tr>

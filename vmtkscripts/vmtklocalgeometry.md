@@ -27,7 +27,7 @@ layout: page-full-width
 </tr>
 <tr><td>poleids</td><td>PoleIds</td><td>vtkIdList</td><td>1</td><td></td><td></td><td></td>
 </tr>
-<tr><td>edgearray</td><td>EdgeArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>edgearray</td><td>EdgeArrayName</td><td>str</td><td>1</td><td></td><td>EdgeArray</td><td></td>
 </tr>
 <tr><td>voronoigeodesicdistancearray</td><td>VoronoiGeodesicDistanceArrayName</td><td>str</td><td>1</td><td></td><td>VoronoiGeodesicDistance</td><td></td>
 </tr>
