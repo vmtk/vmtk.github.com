@@ -19,7 +19,7 @@ create a prismatic boundary layer from a surface mesh and a set of vectors defin
 </tr>
 <tr><td>ifile</td><td>MeshInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Mesh reader</td>
 </tr>
-<tr><td>warpvectorsarray</td><td>WarpVectorsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where warp vectors are stored</td>
+<tr><td>warpvectorsarray</td><td>WarpVectorsArrayName</td><td>str</td><td>1</td><td></td><td>Normals</td><td>name of the array where warp vectors are stored</td>
 </tr>
 <tr><td>thicknessarray</td><td>ThicknessArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where scalars defining boundary layer thickness are stored</td>
 </tr>

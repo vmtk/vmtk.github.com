@@ -29,7 +29,7 @@ extract the largest connected region, the closest point-connected region or the 
 </tr>
 <tr><td>cleanoutput</td><td>CleanOutput</td><td>bool</td><td>1</td><td></td><td>0</td><td>clean the unused points in the output</td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array containing the connectivity scalar</td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td>name of the array containing the connectivity scalar</td>
 </tr>
 <tr><td>groupid</td><td>GroupId</td><td>int</td><td>1</td><td></td><td>-1</td><td>value of the connectivity scalar</td>
 </tr>

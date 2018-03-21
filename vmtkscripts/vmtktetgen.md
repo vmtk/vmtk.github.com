@@ -67,7 +67,7 @@ wrapper around TetGen tetrahedral mesh generator by Hang Si (http://tetgen.berli
 </tr>
 <tr><td>tetravolumearray</td><td>TetrahedronVolumeArrayName</td><td>str</td><td>1</td><td></td><td>TetrahedronVolume</td><td>name of the array where volumes of tetrahedra are stored</td>
 </tr>
-<tr><td>sizingfunctionarray</td><td>SizingFunctionArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where sizing function values are stored</td>
+<tr><td>sizingfunctionarray</td><td>SizingFunctionArrayName</td><td>str</td><td>1</td><td></td><td>VolumeSizingFunction</td><td>name of the array where sizing function values are stored</td>
 </tr>
 <tr><td>surfaceelements</td><td>OutputSurfaceElements</td><td>int</td><td>1</td><td></td><td>1</td><td>toggle output surface elements</td>
 </tr>

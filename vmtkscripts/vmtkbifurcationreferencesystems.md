@@ -19,11 +19,11 @@ compute reference systems for each bifurcation of a tree. The script takes in in
 </tr>
 <tr><td>ifile</td><td>CenterlinesInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default Centerlines reader</td>
 </tr>
-<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td></td><td>the name of the array where centerline radius values are stored</td>
+<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td>the name of the array where centerline radius values are stored</td>
 </tr>
-<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td></td><td>the name of the array where centerline blanking information about branches is stored</td>
+<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td>Blanking</td><td>the name of the array where centerline blanking information about branches is stored</td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>the name of the array where centerline group ids are stored</td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td>the name of the array where centerline group ids are stored</td>
 </tr>
 <tr><td>normalarray</td><td>ReferenceSystemsNormalArrayName</td><td>str</td><td>1</td><td></td><td>Normal</td><td>the name of the array where reference system plane normals have to be stored</td>
 </tr>

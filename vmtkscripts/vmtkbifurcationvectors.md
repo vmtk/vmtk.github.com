@@ -23,19 +23,19 @@ layout: page-full-width
 </tr>
 <tr><td>referencesystemsfile</td><td>ReferenceSystemsInputFileName</td><td>str</td><td>1</td><td></td><td></td><td>filename for the default ReferenceSystems reader</td>
 </tr>
-<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline radius values are stored</td>
+<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td>name of the array where centerline radius values are stored</td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline group ids are stored</td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td>name of the array where centerline group ids are stored</td>
 </tr>
-<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline ids are stored</td>
+<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td>CenterlineIds</td><td>name of the array where centerline ids are stored</td>
 </tr>
-<tr><td>tractidsarray</td><td>TractIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where centerline tract ids are stored</td>
+<tr><td>tractidsarray</td><td>TractIdsArrayName</td><td>str</td><td>1</td><td></td><td>TractIds</td><td>name of the array where centerline tract ids are stored</td>
 </tr>
-<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where blanking information about branches is stored</td>
+<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td>Blanking</td><td>name of the array where blanking information about branches is stored</td>
 </tr>
-<tr><td>normalarray</td><td>ReferenceSystemsNormalArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where reference system normal vectors are stored</td>
+<tr><td>normalarray</td><td>ReferenceSystemsNormalArrayName</td><td>str</td><td>1</td><td></td><td>Normal</td><td>name of the array where reference system normal vectors are stored</td>
 </tr>
-<tr><td>upnormalarray</td><td>ReferenceSystemsUpNormalArrayName</td><td>str</td><td>1</td><td></td><td></td><td>name of the array where reference system upnormal vectors are stored</td>
+<tr><td>upnormalarray</td><td>ReferenceSystemsUpNormalArrayName</td><td>str</td><td>1</td><td></td><td>UpNormal</td><td>name of the array where reference system upnormal vectors are stored</td>
 </tr>
 <tr><td>vectorsarray</td><td>BifurcationVectorsArrayName</td><td>str</td><td>1</td><td></td><td>BifurcationVectors</td><td></td>
 </tr>

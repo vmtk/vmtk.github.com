@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkbranchmetrics</h1>
+<h2>Description</h2>
+Takes a centerline and input surface, already split into branches (with centerline attributes calculated)                            and calculates the surface angular and abscissa metric.
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
@@ -25,19 +27,19 @@ layout: page-full-width
 </tr>
 <tr><td>angularmetric</td><td>ComputeAngularMetric</td><td>bool</td><td>1</td><td></td><td>1</td><td></td>
 </tr>
-<tr><td>abscissasarray</td><td>AbscissasArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>abscissasarray</td><td>AbscissasArrayName</td><td>str</td><td>1</td><td></td><td>Abscissas</td><td></td>
 </tr>
-<tr><td>normalsarray</td><td>NormalsArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>normalsarray</td><td>NormalsArrayName</td><td>str</td><td>1</td><td></td><td>ParallelTransportNormals</td><td></td>
 </tr>
-<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>groupidsarray</td><td>GroupIdsArrayName</td><td>str</td><td>1</td><td></td><td>GroupIds</td><td></td>
 </tr>
-<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>centerlineidsarray</td><td>CenterlineIdsArrayName</td><td>str</td><td>1</td><td></td><td>CenterlineIds</td><td></td>
 </tr>
-<tr><td>tractidsarray</td><td>TractIdsArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>tractidsarray</td><td>TractIdsArrayName</td><td>str</td><td>1</td><td></td><td>TractIds</td><td></td>
 </tr>
-<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>radiusarray</td><td>RadiusArrayName</td><td>str</td><td>1</td><td></td><td>MaximumInscribedSphereRadius</td><td></td>
 </tr>
-<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td></td><td></td>
+<tr><td>blankingarray</td><td>BlankingArrayName</td><td>str</td><td>1</td><td></td><td>Blanking</td><td></td>
 </tr>
 <tr><td>angularmetricarray</td><td>AngularMetricArrayName</td><td>str</td><td>1</td><td></td><td>AngularMetric</td><td></td>
 </tr>
