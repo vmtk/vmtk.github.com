@@ -1,5 +1,5 @@
 ---
-layout: page-full-width
+layout: page
 title: Download VMTK 1.4
 ---
 
@@ -14,6 +14,7 @@ Note: These instructions are for the the VMTK 1.4+ releases. For legacy installa
 - To see a detailed list of changes for each version of vmtk please refer to the <a href="https://github.com/vmtk/vmtk/commits/master" target="_blank">changelog</a>.<br/>
 - The vmtk distribution is released under a <a href="{{ site.baseurl }}/license.html" target="_blank">BSD-like license</a>.
 
+---------------
 ## Compatibility and Dependencies
 
 The general dependencies of VMTK 1.4+ are automatically installed by the anaconda package manager. For reference they are:
@@ -24,19 +25,21 @@ The general dependencies of VMTK 1.4+ are automatically installed by the anacond
 
 We no longer support python 2.7 on Windows builds. VMTK 1.4+ requires python 3.5+ on Windows 10. Linux and MacOSX machines support python 2.7, 3.5+ In the next release of VMTK, python 2.7 support will be dropped entirely for all platforms. 
 
+---------------
 ## Package Distribution and Management
 
 With the VMTK 1.4 release, we have transitioned to utilizing [Anaconda Python](https://www.anaconda.com/download/) as our primary method for packaging and distribution. Utilizing this system greatly simplifies the installation burden, environment activation, sequestration and general day to day use of the VMTK tool. 
 
 Please note: We are no longer updating the VMTK PyPi Package, therefore pip installs will be frozen at VMTK 1.3. 
 
+---------------
 ### Install Instructions:
 
 1) Make sure you have either [Anaconda](https://www.anaconda.com/download/) or [Miniconda](https://conda.io/miniconda.html) (preferably the python 3.6 version) installed on your system.
 
 2) Open the anaconda prompt
 
-3) Make sure that conda and anaconda-client are installed and updated by entering the following two commands exactaly as shown:
+3) Make sure that conda and anaconda-client are installed and updated by entering the following two commands exactly as shown:
 
     conda install anaconda-client
     conda update conda anaconda-client
@@ -51,6 +54,7 @@ Please note: We are no longer updating the VMTK PyPi Package, therefore pip inst
 
 6) Say "y" to accept the generated package specifications, and the install should proceed regularly. Once this is done, the VMTK icon should show up on your browser.
 
+---------------
 ### Executable Installers
 
 Binary Installers are available for and Windows 7/8/10 64bit.
@@ -77,6 +81,7 @@ table, td, th {
   </tbody>
 </table>
 
+---------------
 #### Installing Executable Packages
 
 If you have an older binary version of vmtk please remove it by double clicking on the vmtk entry in the uninstall program section of the windows control panel (add/remove program section).
@@ -89,6 +94,7 @@ Note that, along with vmtk, the installer directly provides Python-wrapped vmtk 
 
 If you want to uninstall vmtk, double click on vmtk entry it in the uninstall program section of the windows control panel.
 
+---------------
 ## Development version
 
 You can grab the latest development version from the <a href="https://github.com/vmtk/vmtk" target="_blank">official vmtk git repository on Github</a>. To clone this repository, make sure <a href="http://git-scm.com" target="_blank">git</a> is installed on your system and issue the following:
@@ -97,6 +103,7 @@ You can grab the latest development version from the <a href="https://github.com
 
 vmtk is now based on SuperBuild, a CMake feature that allows to automatically download and compile dependencies (in our case VTK and ITK). This makes the whole process a lot easier than it was up until version 0.9. Make sure you update your notes based on the instructions below.
 
+---------------
 ### Requirements
 
 vmtk is cross-platform and will compile and work on Linux, Mac OSX and Windows. Most of the development is performed under Linux and Mac OSX, but feel free to update us on eventual issues on Windows.
@@ -126,6 +133,7 @@ Visual Studios 2015+ is required on the system. VMTK no longer supports python 2
 
 In addition make sure that you choose the Visual Studio amd64 version during cmake configuration in order to build for an x64 system.  
 
+---------------
 ### Build
 
 Create a build directory and cd into it
@@ -146,6 +154,7 @@ Set CMake variables as appropriate (they have sensible defaults), *configure* an
 
 Start your compiler in your build directory, as your platform requires. Note that this will download and compile both VTK and ITK in the background, so it will typically take a long time. The build process will automatically install all build products in the vmtk-build/Install directory.
 
+---------------
 ### Environment variables
 In order to properly run vmtk you have to set environment variables.
 
