@@ -75,8 +75,14 @@ table, td, th {
     <tr>
       <td><i class="fa fa-windows"></i></td>
       <td>Windows 7/8/10</td>
-      <td>64bit</td>
-      <td><a href="https://s3.amazonaws.com/vmtk-installers/1.3/vmtk-1.3.win32.exe"><i class="fa fa-download"></i></a></td>
+      <td>Python 3.6</td>
+      <td><a href=""><i class="fa fa-download"></i></a></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-windows"></i></td>
+      <td>Windows 7/8/10</td>
+      <td>Python 3.5</td>
+      <td><a href=""><i class="fa fa-download"></i></a></td>
     </tr>
   </tbody>
 </table>
