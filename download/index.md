@@ -4,7 +4,7 @@ title: Download VMTK 1.4
 ---
 
 
-Note: These instructions are for the the VMTK 1.4+ releases. For legacy installation instructions, please refer to the folliwng webpage: 
+Note: These instructions are for the the VMTK 1.4+ releases. For legacy installation instructions, please refer to the folliwng webpage:
 <a href='./vmtk-1.3-instructions'>VMTK 1.3 Installation Instructions</a>
 
 # VMTK Latest Release (1.4.0)
@@ -23,14 +23,14 @@ The general dependencies of VMTK 1.4+ are automatically installed by the anacond
 - H5Py
 - Numpy <= 1.13
 
-We no longer support python 2.7 on Windows builds. VMTK 1.4+ requires python 3.5+ on Windows 10. Linux and MacOSX machines support python 2.7, 3.5+ In the next release of VMTK, python 2.7 support will be dropped entirely for all platforms. 
+We no longer support python 2.7 on Windows builds. VMTK 1.4+ requires python 3.5+ on Windows 10. Linux and MacOSX machines support python 2.7, 3.5+ In the next release of VMTK, python 2.7 support will be dropped entirely for all platforms.
 
 ---------------
 ## Package Distribution and Management
 
-With the VMTK 1.4 release, we have transitioned to utilizing [Anaconda Python](https://www.anaconda.com/download/) as our primary method for packaging and distribution. Utilizing this system greatly simplifies the installation burden, environment activation, sequestration and general day to day use of the VMTK tool. 
+With the VMTK 1.4 release, we have transitioned to utilizing [Anaconda Python](https://www.anaconda.com/download/) as our primary method for packaging and distribution. Utilizing this system greatly simplifies the installation burden, environment activation, sequestration and general day to day use of the VMTK tool.
 
-Please note: We are no longer updating the VMTK PyPi Package, therefore pip installs will be frozen at VMTK 1.3. 
+Please note: We are no longer updating the VMTK PyPi Package, therefore pip installs will be frozen at VMTK 1.3.
 
 ---------------
 ### Install Instructions:
@@ -46,7 +46,7 @@ Please note: We are no longer updating the VMTK PyPi Package, therefore pip inst
 
 4) Enter the following commands to create a new virtual environment with vmtk installed (replace the name "foo" with whatever you want to call the environment, or replace python=3.6 with python=3.5 if you want python 3.5):
 
-    conda create -n foo -c vmtk python=3.6 itk vtk vmtk 
+    conda create -n foo -c vmtk python=3.6 itk vtk vmtk
 
 5) (optional) if you want to install vmtk into an environment which is already created, first activate that environment with the new conda environment management commands (conda activate foo). Then enter:
 
@@ -76,13 +76,13 @@ table, td, th {
       <td><i class="fa fa-windows"></i></td>
       <td>Windows 7/8/10</td>
       <td>Python 3.6</td>
-      <td><a href=""><i class="fa fa-download"></i></a></td>
+      <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Python3.6-Windows-x86_64.exe"><i class="fa fa-download"></i></a></td>
     </tr>
     <tr>
       <td><i class="fa fa-windows"></i></td>
       <td>Windows 7/8/10</td>
       <td>Python 3.5</td>
-      <td><a href=""><i class="fa fa-download"></i></a></td>
+      <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Python3.5-Windows-x86_64.exe"><i class="fa fa-download"></i></a></td>
     </tr>
   </tbody>
 </table>
@@ -96,7 +96,7 @@ If you have an older compiled from source version of vmtk simply delete the fold
 
 After you've [downloaded]({{ site.baseurl }}/download/) the installer, just run it. It will take you through the installation stage, after which you'll find a shortcut to vmtk in your desktop. Click on the vmtk icon, and you'll see PypePad ready for use.
 
-Note that, along with vmtk, the installer directly provides Python-wrapped vmtk and VTK classes, and vmtk, VTK, ITK dll's and header files to develop new applications in Python and C++. 
+Note that, along with vmtk, the installer directly provides Python-wrapped vmtk and VTK classes, and vmtk, VTK, ITK dll's and header files to develop new applications in Python and C++.
 
 If you want to uninstall vmtk, double click on vmtk entry it in the uninstall program section of the windows control panel.
 
@@ -127,15 +127,15 @@ For Ubuntu users, you'll have to install the following packages prior to compili
 
     sudo apt-get install libxt-dev libgl1-mesa-glx libgl1-mesa-dev libglapi-mesa libosmesa-dev build-essential
 
-For other distributions, please ensure that that OpenGL (version 2), Glew, and OSMesa libraries are installed. VMTK also requires a C++ 11 compatible C++ compiler (we currently use gcc-7 and g++-7). 
+For other distributions, please ensure that that OpenGL (version 2), Glew, and OSMesa libraries are installed. VMTK also requires a C++ 11 compatible C++ compiler (we currently use gcc-7 and g++-7).
 
 #### MacOS Requirements
 
-VMTK only support MacOSX 10.9+. Please ensure that XCode (with xcode command line tools) is installed on the system (we currently clang-9 and clang++-9). 
+VMTK only support MacOSX 10.9+. Please ensure that XCode (with xcode command line tools) is installed on the system (we currently clang-9 and clang++-9).
 
 #### Windows Requirements
 
-Visual Studios 2015+ is required on the system. VMTK no longer supports python 2.7 on windows builds.Please be sure to set "Release" flag instead of the default "Debug" flag in Visual Studio. 
+Visual Studios 2015+ is required on the system. VMTK no longer supports python 2.7 on windows builds.Please be sure to set "Release" flag instead of the default "Debug" flag in Visual Studio.
 
 In addition make sure that you choose the Visual Studio amd64 version during cmake configuration in order to build for an x64 system.  
 
@@ -174,10 +174,10 @@ This is very useful if you have different versions of vmtk installed in your sys
 Otherwise you can permanently set environment variables by adding it to your .bash_profile or .bash_rc.
 
 #### Not Recommended (manually set as global defaults)
-You can also manually add environment variables. Please substitute ```${path-to-vmtk-build}``` with the correct installation directory, and ```${VMTK_PYTHON_VERSION}``` with the string "pythonX.Y" where X is the python major version (2 or 3) and Y is the python minor version 
+You can also manually add environment variables. Please substitute ```${path-to-vmtk-build}``` with the correct installation directory, and ```${VMTK_PYTHON_VERSION}``` with the string "pythonX.Y" where X is the python major version (2 or 3) and Y is the python minor version
 
-Examples: 
-- for python 2.7 ```${VMTK_PYTHON_VERSION}=python2.7``` 
+Examples:
+- for python 2.7 ```${VMTK_PYTHON_VERSION}=python2.7```
 - for python 3.6 ```${VMTK_PYTHON_VERSION}=3.6```
 
 ##### For Linux or MacOS
