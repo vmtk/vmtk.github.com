@@ -29,7 +29,7 @@ In case you can't find a binary package for your operating system, please [compi
       <td><i class="fa fa-apple"></i></td>
       <td>OSX 10.9+</td>
       <td>64bit</td>
-      <td><a href="{{ site.baseurl }}/download/#mac-osx-packages"><i class="fa fa-download"></i></a></td>
+      <td><a href="{{ site.baseurl }}/download/vmtk-1.3-instructions#mac-osx-packages"><i class="fa fa-download"></i></a></td>
     </tr>
     <tr>
       <td><i class="fa fa-linux"></i></td>
