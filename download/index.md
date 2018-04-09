@@ -3,10 +3,6 @@ layout: page
 title: Download VMTK 1.4
 ---
 
-
-Note: These instructions are for the the VMTK 1.4+ releases. For legacy installation instructions, please refer to the folliwng webpage:
-<a href='./vmtk-1.3-instructions'>VMTK 1.3 Installation Instructions</a>
-
 # VMTK Latest Release (1.4.0)
 
 - Binary packages are supported by <a href="http://www.orobix.com" target="_blank">Orobix Srl</a>.
@@ -196,4 +192,8 @@ Set these variables into your PATH environment variable:
     PATH=VMTKHOME\bin;VMTKHOME\lib;%PATH%
     PYTHONPATH=VMTKHOME\lib\${VMTK_PYTHON_VERSION}\site-packages;%PYTHONPATH%
 
-Enjoy
+
+##### Prior Releases
+====================
+
+Note: These instructions are for the the VMTK 1.4+ releases. For research groups or individuals requiring the use of prior vmtk versions, please post on the <a href="https://groups.google.com/forum/#!forum/vmtk-users">mailing list</a> so that we can address concerns on a case-by-case basis. 
