@@ -53,7 +53,7 @@ Please note: We are no longer updating the VMTK PyPi Package, therefore pip inst
 ---------------
 ### Executable Installers
 
-Binary Installers are available for and Windows 7/8/10 64bit.
+Binary Installers are available for and Windows 7/8/10 64bit and MacOSX 10.9+.
 
 In case you can't find a binary package for your operating system, please [compile vmtk from source](#development-version).
 
@@ -80,12 +80,35 @@ table, td, th {
       <td>Python 3.5</td>
       <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Python3.5-Windows-x86_64.exe"><i class="fa fa-download"></i></a></td>
     </tr>
+    <tr>
+      <td><i class="fa fa-windows"></i></td>
+      <td>MacOSX</td>
+      <td>Python 2.7</td>
+      <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Py27-MacOSX-x86_64.pkg"><i class="fa fa-download"></i></a></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-windows"></i></td>
+      <td>MacOSX</td>
+      <td>Python 3.5</td>
+      <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Py35-MacOSX-x86_64.pkg"><i class="fa fa-download"></i></a></td>
+    </tr>
+    <tr>
+      <td><i class="fa fa-windows"></i></td>
+      <td>MacOSX</td>
+      <td>Python 3.6</td>
+      <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Py36-MacOSX-x86_64.pkg"><i class="fa fa-download"></i></a></td>
+    </tr>
   </tbody>
 </table>
+
+
+
+
 
 ---------------
 #### Installing Executable Packages
 
+##### Windows 10
 If you have an older binary version of vmtk please remove it by double clicking on the vmtk entry in the uninstall program section of the windows control panel (add/remove program section).
 
 If you have an older compiled from source version of vmtk simply delete the folder.
@@ -95,6 +118,11 @@ After you've [downloaded]({{ site.baseurl }}/download/) the installer, just run 
 Note that, along with vmtk, the installer directly provides Python-wrapped vmtk and VTK classes, and vmtk, VTK, ITK dll's and header files to develop new applications in Python and C++.
 
 If you want to uninstall vmtk, double click on vmtk entry it in the uninstall program section of the windows control panel.
+
+##### MacOSX
+The MacOSX pkg installer does not place an icon in your application folder. By default, all contents of the package will be placed in your home directory in a folder name "vmtk". Additionally, the installer alters your .bash_profile so that script execution is available on the terminal without the need of a virtual environment. If you wish to execute commands within PypePad, just type "vmtk &" from the terminal, and a new window will appear. 
+
+To uninstall the package, just delete the "vmtk" folder from your home directory (and don't forget to remove the additions to your bash_profile!)
 
 ---------------
 ## Development version
