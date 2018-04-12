@@ -81,19 +81,19 @@ table, td, th {
       <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Python3.5-Windows-x86_64.exe"><i class="fa fa-download"></i></a></td>
     </tr>
     <tr>
-      <td><i class="fa fa-windows"></i></td>
+      <td><i class="fa fa-apple"></i></td>
       <td>MacOSX</td>
       <td>Python 2.7</td>
       <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Py27-MacOSX-x86_64.pkg"><i class="fa fa-download"></i></a></td>
     </tr>
     <tr>
-      <td><i class="fa fa-windows"></i></td>
+      <td><i class="fa fa-apple"></i></td>
       <td>MacOSX</td>
       <td>Python 3.5</td>
       <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Py35-MacOSX-x86_64.pkg"><i class="fa fa-download"></i></a></td>
     </tr>
     <tr>
-      <td><i class="fa fa-windows"></i></td>
+      <td><i class="fa fa-apple"></i></td>
       <td>MacOSX</td>
       <td>Python 3.6</td>
       <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Py36-MacOSX-x86_64.pkg"><i class="fa fa-download"></i></a></td>
