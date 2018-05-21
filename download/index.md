@@ -44,7 +44,9 @@ Please note: We are no longer updating the VMTK PyPi Package, therefore pip inst
 
     conda create -n foo -c vmtk python=3.6 itk vtk vmtk
 
-5) (optional) if you want to install vmtk into an environment which is already created, first activate that environment with the new conda environment management commands (conda activate foo). Then enter:
+Keep in mind that you will need to activate this virtual invironment before you can use the library. Start the environment with the command `source activate foo`. 
+
+5) (optional) if you want to install vmtk into an environment which is already created, first activate that environment with the new conda environment management commands (source activate foo). Then enter:
 
     conda install -c vmtk vtk itk vmtk
 
