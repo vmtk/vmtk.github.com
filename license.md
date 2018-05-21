@@ -5,7 +5,7 @@ title: vmtk License
 
 VMTK, the Vascular Modeling Toolkit.
 
-Copyright (C) 2004-2012, Luca Antiga, David Steinman
+Copyright (C) 2004-2018, Luca Antiga, David Steinman
 
 
 ##COMPLETE LICENSE FOR VMTK
@@ -46,6 +46,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 * vmtk is licensed under the BSD license.
 
+* pypes is licensed under the BSD license
+
 * ITK is licensed under the Apache 2.0 license.
 
 * VTK is licensed under the Visualization Toolkit (VTK) license.
@@ -57,6 +59,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 * Stellar and Starbase are licensed under the BSD license.
 
 
-See <a href="https://raw.github.com/vmtk/vmtk/master/Copyright.txt" target="_blank">Copyright</a> for details.
+See <a href="https://raw.github.com/vmtk/vmtk/master/LICENSE" target="_blank">LICENSE</a> for details.
 
 
