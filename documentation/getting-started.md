@@ -13,9 +13,9 @@ The first step is read the images and display them on the screen. vmtkimagereade
 
 where *dicom_directory_path* is the path where your DICOM images (* *.dcm* or whatever extension you have) can be found.
 
-**A note on file names:**
+**A note on file names**
 
-If the directory path to your file - or the file name itself - contains a space character in it then you must enclose the full path to the file within "quotation marks" for it to be read correctly. This is especially important for *windows* users who may have a space in their user name! Example: if we have dicome file you want to view which is located at `C:\Users\Your Name\Documents\foo.dcm`, the corresponding script would be:
+If the directory path to your file - or the file name itself - contains a space character in it then you must enclose the full path to the file within "quotation marks" for it to be read correctly. This is especially important for *windows* users who may have a space in their user name! Example: if we have dicom file you want to view which is located at `C:\Users\Your Name\Documents\foo.dcm`, the corresponding script would be:
 
     vmtkimagereader -ifile "C:\Users\Your Name\Documents\foo.dcm" --pipe vmtkimageviewer
 
