@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkpointsplitextractor</h1>
+<h2>Description</h2>
+split a centerline at specific xyz coordinates
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

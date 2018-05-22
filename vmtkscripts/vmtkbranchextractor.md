@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkbranchextractor</h1>
+<h2>Description</h2>
+split and group centerlines along branches
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

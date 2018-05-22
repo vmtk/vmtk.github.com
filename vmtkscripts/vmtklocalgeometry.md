@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtklocalgeometry</h1>
+<h2>Description</h2>
+compute local geometric properties of a surface
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

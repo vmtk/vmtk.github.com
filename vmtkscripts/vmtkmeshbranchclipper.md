@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkmeshbranchclipper</h1>
+<h2>Description</h2>
+interactivly clip a mesh based on proximity to a split and grouped centerline
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

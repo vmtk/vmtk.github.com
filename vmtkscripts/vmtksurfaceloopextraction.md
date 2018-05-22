@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtksurfaceloopextraction</h1>
+<h2>Description</h2>
+interactively define loops on a surface
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

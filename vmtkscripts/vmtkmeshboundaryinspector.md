@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkmeshboundaryinspector</h1>
+<h2>Description</h2>
+display a 3D render of the mesh with individual boundary groups colored and labeled
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

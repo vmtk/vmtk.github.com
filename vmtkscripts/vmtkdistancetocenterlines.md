@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkdistancetocenterlines</h1>
+<h2>Description</h2>
+calculate the minimum euclidian from surface points to a centerline
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

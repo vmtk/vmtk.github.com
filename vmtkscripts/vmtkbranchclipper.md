@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkbranchclipper</h1>
+<h2>Description</h2>
+divide a surface in relation to its split and grouped centerlines
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

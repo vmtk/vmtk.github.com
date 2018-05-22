@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkdelaunayvoronoi</h1>
+<h2>Description</h2>
+calculate the delaunay tesellation, voronoi diagram, and voronoi poleIds of an input surface
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

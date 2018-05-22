@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkbranchmapping</h1>
+<h2>Description</h2>
+constructs a harmonic function over each vascular segment; maps and stretches the longitudinal metric to correctly account for the presence of insertion regions at bifurcations; the additional StretchedMapping array is added to the surface
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

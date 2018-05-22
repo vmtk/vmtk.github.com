@@ -3,7 +3,7 @@ layout: page-full-width
 ---
 <h1>vmtkbifurcationvectors</h1>
 <h2>Description</h2>
-.
+calculate in plane and out of place binfurcation vectors for a centerline
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

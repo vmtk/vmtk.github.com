@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkcenterlineviewer</h1>
+<h2>Description</h2>
+display a 3D centerline
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkendpointextractor</h1>
+<h2>Description</h2>
+find the endpoints of a split and grouped centerline
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtklevelsetsegmentation</h1>
+<h2>Description</h2>
+interactivly initialize an initial level set and evolve it to image gradients
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

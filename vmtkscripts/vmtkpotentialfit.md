@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkpotentialfit</h1>
+<h2>Description</h2>
+explicitly deformable model which evolves a surface to gradient magnitudes of an input image
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
