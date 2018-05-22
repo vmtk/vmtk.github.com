@@ -5,13 +5,13 @@ title: vmtk License
 
 VMTK, the Vascular Modeling Toolkit.
 
-Copyright (C) 2004-2018, Luca Antiga, David Steinman
+Copyright (C) 2004-2018, Luca Antiga, David Steinman, Simone Manini, Richard Izzo
 
 
 ##COMPLETE LICENSE FOR VMTK
 
 
-Copyright (c) 2004-2011, Luca Antiga, David Steinman
+Copyright (c) 2004-2018, Luca Antiga, David Steinman, Simone Manini, Richard Izzo
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
