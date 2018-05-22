@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtksurfacecenterlineprojection</h1>
+<h2>Description</h2>
+project centerline data onto surface points
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

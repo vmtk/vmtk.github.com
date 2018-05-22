@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkbranchpatching</h1>
+<h2>Description</h2>
+cut a set of contiguous rectangular regions on a surface that follow iso-contours in the StretchedMapping and AngularMetric arrays
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

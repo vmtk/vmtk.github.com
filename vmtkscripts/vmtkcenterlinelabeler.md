@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkcenterlinelabeler</h1>
+<h2>Description</h2>
+interactively change the group ids of a split centerline
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

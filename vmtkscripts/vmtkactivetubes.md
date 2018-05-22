@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkactivetubes</h1>
+<h2>Description</h2>
+experimental method for generating centerlines from an image.
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

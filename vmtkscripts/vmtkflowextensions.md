@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtkflowextensions</h1>
+<h2>Description</h2>
+interactivly add flow extensions to a surface for CFD processing
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>

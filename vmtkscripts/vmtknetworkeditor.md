@@ -2,6 +2,8 @@
 layout: page-full-width
 ---
 <h1>vmtknetworkeditor</h1>
+<h2>Description</h2>
+extract an approximated centerline from a surface containing at least one hole
 <h3>Input arguments</h3>
 <table class="vmtkscripts">
 <tr>
