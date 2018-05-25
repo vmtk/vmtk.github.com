@@ -1,8 +1,8 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classvtkvmtkPolyDataLaplaceBeltramiStencil.html" title=".." alt="" coords="21,393,277,421"/>
-<area shape="rect" id="node4" href="$classvtkvmtkPolyDataManifoldStencil.html" title=".." alt="" coords="44,315,255,343"/>
-<area shape="rect" id="node6" href="$classvtkvmtkStencil.html" title=".." alt="" coords="96,238,201,266"/>
-<area shape="rect" id="node8" href="$classvtkvmtkNeighborhood.html" title=".." alt="" coords="74,161,224,189"/>
-<area shape="rect" id="node10" href="$classvtkvmtkDataSetItem.html" title=".." alt="" coords="79,83,219,111"/>
-<area shape="rect" id="node12" href="$classvtkvmtkItem.html" title=".." alt="" coords="103,6,195,34"/>
+<map id="vtkvmtkPolyDataFVFELaplaceBeltramiStencil" name="vtkvmtkPolyDataFVFELaplaceBeltramiStencil">
+<area shape="rect" id="node2" href="$classvtkvmtkPolyDataLaplaceBeltramiStencil.html" title="Apply LB weighting to the neighborhood connections of a surface. " alt="" coords="5,372,222,411"/>
+<area shape="rect" id="node3" href="$classvtkvmtkPolyDataManifoldStencil.html" title=".. " alt="" coords="8,299,219,324"/>
+<area shape="rect" id="node4" href="$classvtkvmtkStencil.html" title="Apply a weighting matrix to a single neighborhood of a data set. " alt="" coords="60,225,167,251"/>
+<area shape="rect" id="node5" href="$classvtkvmtkNeighborhood.html" title="Query the neighborhood surrounding the set point id in an data set item. " alt="" coords="38,152,189,177"/>
+<area shape="rect" id="node6" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="43,79,184,104"/>
+<area shape="rect" id="node7" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="67,5,160,31"/>
 </map>

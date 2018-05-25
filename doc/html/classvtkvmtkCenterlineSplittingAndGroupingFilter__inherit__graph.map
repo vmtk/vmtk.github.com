@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classvtkvmtkCenterlineBranchExtractor.html" title="..." alt="" coords="342,5,565,33"/>
-<area shape="rect" id="node5" href="$classvtkvmtkCenterlineEndpointExtractor.html" title="..." alt="" coords="337,57,570,85"/>
-<area shape="rect" id="node7" href="$classvtkvmtkCenterlineSplitExtractor.html" title="..." alt="" coords="350,109,557,137"/>
+<map id="vtkvmtkCenterlineSplittingAndGroupingFilter" name="vtkvmtkCenterlineSplittingAndGroupingFilter">
+<area shape="rect" id="node2" href="$classvtkvmtkCenterlineBranchExtractor.html" title="Split and group centerlines. " alt="" coords="228,5,451,31"/>
+<area shape="rect" id="node3" href="$classvtkvmtkCenterlineEndpointExtractor.html" title="Split a centerline into tracts which can be used to mark endpoints of the centerline. " alt="" coords="250,55,429,93"/>
+<area shape="rect" id="node4" href="$classvtkvmtkCenterlineSplitExtractor.html" title="Split a centerline into three tracts with the middle (blanked) tract being initialized between any tw..." alt="" coords="236,117,443,143"/>
 </map>

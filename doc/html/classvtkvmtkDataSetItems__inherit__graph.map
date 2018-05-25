@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$classvtkvmtkNeighborhoods.html" title=".." alt="" coords="4,161,160,189"/>
-<area shape="rect" id="node7" href="$classvtkvmtkStencils.html" title=".." alt="" coords="185,161,297,189"/>
-<area shape="rect" id="node2" href="$classvtkvmtkItems.html" title=".." alt="" coords="112,6,211,34"/>
+<map id="vtkvmtkDataSetItems" name="vtkvmtkDataSetItems">
+<area shape="rect" id="node3" href="$classvtkvmtkNeighborhoods.html" title="Create an empty, polydata, polydata manifold, polydata manifold extended, or unstructured grid neighb..." alt="" coords="5,152,162,177"/>
+<area shape="rect" id="node4" href="$classvtkvmtkStencils.html" title="Create an empty, umbrella, area weighted umbrella, finite&#45;element LP, or finite&#45;volume finite&#45;element..." alt="" coords="186,152,299,177"/>
+<area shape="rect" id="node2" href="$classvtkvmtkItems.html" title="Control allocation and memory footprint of item instances. " alt="" coords="113,5,212,31"/>
 </map>

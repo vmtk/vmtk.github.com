@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classvtkvmtkSparseMatrix.html" title=".." alt="" coords="18,99,163,127"/>
-<area shape="rect" id="node4" href="$classvtkvmtkSparseMatrixRow.html" title=".." alt="" coords="5,6,176,34"/>
-<area shape="rect" id="node6" href="$classvtkvmtkDoubleVector.html" title=".." alt="" coords="187,99,332,127"/>
+<map id="vtkvmtkFEAssembler" name="vtkvmtkFEAssembler">
+<area shape="rect" id="node2" href="$classvtkvmtkSparseMatrix.html" title=".. " alt="" coords="19,92,164,117"/>
+<area shape="rect" id="node3" href="$classvtkvmtkSparseMatrixRow.html" title=".. " alt="" coords="5,5,177,31"/>
+<area shape="rect" id="node4" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="187,92,334,117"/>
 </map>

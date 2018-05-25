@@ -1,8 +1,8 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$vtkvmtkPolyDataAreaWeightedUmbrellaStencil_8h.html" title="vtkvmtkPolyDataAreaWeightedUmbrellaStencil.h" alt="" coords="5,83,315,111"/>
-<area shape="rect" id="node5" href="$vtkvmtkPolyDataLaplaceBeltramiStencil_8h.html" title="vtkvmtkPolyDataLaplaceBeltramiStencil.h" alt="" coords="338,83,605,111"/>
-<area shape="rect" id="node11" href="$vtkvmtkPolyDataGradientStencil_8h.html" title="vtkvmtkPolyDataGradientStencil.h" alt="" coords="630,83,852,111"/>
-<area shape="rect" id="node13" href="$vtkvmtkPolyDataUmbrellaStencil_8h.html" title="vtkvmtkPolyDataUmbrellaStencil.h" alt="" coords="877,83,1101,111"/>
-<area shape="rect" id="node7" href="$vtkvmtkPolyDataFELaplaceBeltramiStencil_8h.html" title="vtkvmtkPolyDataFELaplaceBeltramiStencil.h" alt="" coords="171,161,455,189"/>
-<area shape="rect" id="node9" href="$vtkvmtkPolyDataFVFELaplaceBeltramiStencil_8h.html" title="vtkvmtkPolyDataFVFELaplaceBeltramiStencil.h" alt="" coords="480,161,781,189"/>
+<map id="vtkvmtkPolyDataManifoldStencil.h" name="vtkvmtkPolyDataManifoldStencil.h">
+<area shape="rect" id="node2" href="$vtkvmtkPolyDataAreaWeightedUmbrellaStencil_8h.html" title="vtkvmtkPolyDataAreaWeighted\lUmbrellaStencil.h" alt="" coords="5,79,210,117"/>
+<area shape="rect" id="node3" href="$vtkvmtkPolyDataLaplaceBeltramiStencil_8h.html" title="vtkvmtkPolyDataLaplaceBeltrami\lStencil.h" alt="" coords="234,79,451,117"/>
+<area shape="rect" id="node6" href="$vtkvmtkPolyDataGradientStencil_8h.html" title="vtkvmtkPolyDataGradientStencil.h" alt="" coords="475,85,698,111"/>
+<area shape="rect" id="node7" href="$vtkvmtkPolyDataUmbrellaStencil_8h.html" title="vtkvmtkPolyDataUmbrellaStencil.h" alt="" coords="722,85,947,111"/>
+<area shape="rect" id="node4" href="$vtkvmtkPolyDataFELaplaceBeltramiStencil_8h.html" title="vtkvmtkPolyDataFELaplace\lBeltramiStencil.h" alt="" coords="141,165,325,204"/>
+<area shape="rect" id="node5" href="$vtkvmtkPolyDataFVFELaplaceBeltramiStencil_8h.html" title="vtkvmtkPolyDataFVFELaplace\lBeltramiStencil.h" alt="" coords="350,165,551,204"/>
 </map>

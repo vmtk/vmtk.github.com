@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$vtkvmtkCenterlineBranchExtractor_8h.html" title="vtkvmtkCenterlineBranchExtractor.h" alt="" coords="5,83,237,111"/>
-<area shape="rect" id="node5" href="$vtkvmtkCenterlineEndpointExtractor_8h.html" title="vtkvmtkCenterlineEndpointExtractor.h" alt="" coords="262,83,505,111"/>
-<area shape="rect" id="node7" href="$vtkvmtkCenterlineSplitExtractor_8h.html" title="vtkvmtkCenterlineSplitExtractor.h" alt="" coords="530,83,747,111"/>
+<map id="vtkvmtkCenterlineSplittingAndGroupingFilter.h" name="vtkvmtkCenterlineSplittingAndGroupingFilter.h">
+<area shape="rect" id="node2" href="$vtkvmtkCenterlineBranchExtractor_8h.html" title="vtkvmtkCenterlineBranchExtractor.h" alt="" coords="5,99,239,124"/>
+<area shape="rect" id="node3" href="$vtkvmtkCenterlineEndpointExtractor_8h.html" title="vtkvmtkCenterlineEndpoint\lExtractor.h" alt="" coords="263,92,443,131"/>
+<area shape="rect" id="node4" href="$vtkvmtkCenterlineSplitExtractor_8h.html" title="vtkvmtkCenterlineSplitExtractor.h" alt="" coords="467,99,684,124"/>
 </map>
