@@ -1,0 +1,11 @@
+\form#0:$T_i$
+\form#1:\[(x_j - c_i) \cdot n_j \geq 0 \qquad \forall x_j \in T_i \]
+\form#2:$x_i$
+\form#3:$c_i$
+\form#4:$n_j$
+\form#5:\[|\nabla T(\mathbf{x})| = F(\mathbf{x})\]
+\form#6:$F^{-1}(\mathbf{x})$
+\form#7:\[ D_g(\mathbf{x}) = T(\mathbf{p}(\mathbf{x})) + |\mathbf{p}(\mathbf{x}) - \mathbf{x}| \]
+\form#8:\[\mathit{NTD}=\frac{T(\mathbf{p}(\mathbf{x}))}{D_g(\mathbf{x})}\]
+\form#9:\[\frac{d\gamma(\tau)}{d\tau}=-\nabla T(\mathbf{x})\]
+\form#10:$\gamma(\tau)$

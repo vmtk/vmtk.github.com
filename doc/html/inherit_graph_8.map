@@ -1,3 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classvtkvmtkBoundedReciprocalImageFilter.html" title="Wrapper class around itk::BoundedReciprocalImageFilter." alt="" coords="6,5,255,33"/>
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classvtkvmtkDolfinWriter.html" title="write mesh data in Dolfin file formats. " alt="" coords="239,5,374,31"/>
+<area shape="rect" id="node3" href="$classvtkvmtkFDNEUTWriter.html" title="writes FDNEUT Fidap files " alt="" coords="229,55,384,80"/>
+<area shape="rect" id="node4" href="$classvtkvmtkFluentWriter.html" title="writes Fluent .msh files. " alt="" coords="237,104,376,129"/>
+<area shape="rect" id="node5" href="$classvtkvmtkXdaWriter.html" title="writes libmesh Xda files " alt="" coords="244,153,369,179"/>
 </map>

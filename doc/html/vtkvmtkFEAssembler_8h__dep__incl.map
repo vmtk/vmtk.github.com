@@ -1,7 +1,7 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$vtkvmtkPolyDataFEGradientAssembler_8h.html" title="vtkvmtkPolyDataFEGradientAssembler.h" alt="" coords="5,83,267,111"/>
-<area shape="rect" id="node5" href="$vtkvmtkPolyDataFELaplaceAssembler_8h.html" title="vtkvmtkPolyDataFELaplaceAssembler.h" alt="" coords="291,83,548,111"/>
-<area shape="rect" id="node7" href="$vtkvmtkUnstructuredGridFEGradientAssembler_8h.html" title="vtkvmtkUnstructuredGridFEGradientAssembler.h" alt="" coords="573,83,883,111"/>
-<area shape="rect" id="node9" href="$vtkvmtkUnstructuredGridFELaplaceAssembler_8h.html" title="vtkvmtkUnstructuredGridFELaplaceAssembler.h" alt="" coords="907,83,1212,111"/>
-<area shape="rect" id="node11" href="$vtkvmtkUnstructuredGridFEVorticityAssembler_8h.html" title="vtkvmtkUnstructuredGridFEVorticityAssembler.h" alt="" coords="1237,83,1541,111"/>
+<map id="vtkvmtkFEAssembler.h" name="vtkvmtkFEAssembler.h">
+<area shape="rect" id="node2" href="$vtkvmtkPolyDataFEGradientAssembler_8h.html" title="vtkvmtkPolyDataFEGradient\lAssembler.h" alt="" coords="5,79,194,117"/>
+<area shape="rect" id="node3" href="$vtkvmtkPolyDataFELaplaceAssembler_8h.html" title="vtkvmtkPolyDataFELaplace\lAssembler.h" alt="" coords="218,79,403,117"/>
+<area shape="rect" id="node4" href="$vtkvmtkUnstructuredGridFEGradientAssembler_8h.html" title="vtkvmtkUnstructuredGridFEGradient\lAssembler.h" alt="" coords="427,79,663,117"/>
+<area shape="rect" id="node5" href="$vtkvmtkUnstructuredGridFELaplaceAssembler_8h.html" title="vtkvmtkUnstructuredGridFELaplace\lAssembler.h" alt="" coords="687,79,918,117"/>
+<area shape="rect" id="node6" href="$vtkvmtkUnstructuredGridFEVorticityAssembler_8h.html" title="vtkvmtkUnstructuredGridFEVorticity\lAssembler.h" alt="" coords="943,79,1174,117"/>
 </map>
