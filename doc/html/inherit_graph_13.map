@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
 <area shape="rect" id="node2" href="$classvtkvmtkPolyBall.html" title="An instance of vtkImplicitFunction which evaluates the minimum sphere function from a collection of p..." alt="" coords="210,5,325,31"/>
 <area shape="rect" id="node3" href="$classvtkvmtkPolyBallLine.html" title="Instance of vtkImplicitFunction which evaluates the minimum sphere function for an envelope created b..." alt="" coords="198,55,338,80"/>
-<area shape="rect" id="node4" href="$classvtkvmtkRBFInterpolation.html" title="interpolate a radial basis function on a surface " alt="" coords="184,104,351,129"/>
+<area shape="rect" id="node4" href="$classvtkvmtkRBFInterpolation.html" title="Implicit function which when given a set of disjoined points and a radial basis shape type will evalu..." alt="" coords="184,104,351,129"/>
 </map>

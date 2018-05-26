@@ -1,7 +1,7 @@
 <map id="vtkvmtkDirichletBoundaryConditions" name="vtkvmtkDirichletBoundaryConditions">
-<area shape="rect" id="node2" href="$classvtkvmtkBoundaryConditions.html" title="Base class to store nodes, value, and linear system composing a boundary condition. " alt="" coords="125,279,311,304"/>
-<area shape="rect" id="node3" href="$classvtkvmtkLinearSystem.html" title="Base container to hold sparse matrice objects representing a linear system of equations Ax = B..." alt="" coords="144,192,292,217"/>
-<area shape="rect" id="node4" href="$classvtkvmtkSparseMatrix.html" title=".. " alt="" coords="19,92,164,117"/>
-<area shape="rect" id="node5" href="$classvtkvmtkSparseMatrixRow.html" title=".. " alt="" coords="5,5,177,31"/>
-<area shape="rect" id="node6" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="187,92,334,117"/>
+<area shape="rect" id="node2" href="$classvtkvmtkBoundaryConditions.html" title="Base class to store nodes, value, and linear system composing a boundary condition. " alt="" coords="5,353,192,379"/>
+<area shape="rect" id="node4" href="$classvtkvmtkLinearSystem.html" title="Base container to hold sparse matrice objects representing a linear system of equations Ax = B..." alt="" coords="107,267,255,292"/>
+<area shape="rect" id="node5" href="$classvtkvmtkSparseMatrix.html" title="Class for constructing sparse matrices from a dataset and performing basic mathematical operations on..." alt="" coords="145,179,290,205"/>
+<area shape="rect" id="node6" href="$classvtkvmtkSparseMatrixRow.html" title="Class to handle operating on rows of a sparse matrix. " alt="" coords="195,80,367,105"/>
+<area shape="rect" id="node7" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="313,129,460,155"/>
 </map>

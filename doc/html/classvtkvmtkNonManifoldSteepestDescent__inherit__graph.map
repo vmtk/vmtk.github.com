@@ -1,4 +1,4 @@
 <map id="vtkvmtkNonManifoldSteepestDescent" name="vtkvmtkNonManifoldSteepestDescent">
-<area shape="rect" id="node2" href="$classvtkvmtkSteepestDescentLineTracer.html" title="Trace the steepest descent line over a polygonal non&#45;manifold. " alt="" coords="5,92,199,131"/>
-<area shape="rect" id="node3" href="$classvtkvmtkSteepestDescentShooter.html" title="experimental method attempting movement across voronoi vertices; implement with caution. " alt="" coords="223,99,437,124"/>
+<area shape="rect" id="node3" href="$classvtkvmtkSteepestDescentLineTracer.html" title="Trace the steepest descent line over a polygonal non&#45;manifold. " alt="" coords="5,165,199,204"/>
+<area shape="rect" id="node4" href="$classvtkvmtkSteepestDescentShooter.html" title="experimental method attempting movement across voronoi vertices; implement with caution. " alt="" coords="223,172,437,197"/>
 </map>

@@ -67,7 +67,6 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkDoubleVector-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkDoubleVector Class Reference</div>  </div>
@@ -78,8 +77,18 @@ $(function() {
  <a href="classvtkvmtkDoubleVector.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkDoubleVector_8h_source.html">vtkvmtkDoubleVector.h</a>&gt;</code></p>
-
-<p>Inherits vtkObject.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkDoubleVector:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkDoubleVector__inherit__graph.svg" width="158" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkDoubleVector:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkDoubleVector__coll__graph.svg" width="158" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -169,15 +178,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a238c882d2996c4622f4571319a5830f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d7492cf4309560ca9a076fadff9823f"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkDoubleVector.html#a9d7492cf4309560ca9a076fadff9823f">Array</a></td></tr>
 <tr class="separator:a9d7492cf4309560ca9a076fadff9823f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a8210291d58f3390659ca3e227e7fdef7"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkDoubleVector.html#a8210291d58f3390659ca3e227e7fdef7">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a8210291d58f3390659ca3e227e7fdef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42340f75610db6b0c025d1ce06b49ac5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkDoubleVector.html#a42340f75610db6b0c025d1ce06b49ac5">vtkvmtkDoubleVector</a> (const <a class="el" href="classvtkvmtkDoubleVector.html">vtkvmtkDoubleVector</a> &amp;)</td></tr>
-<tr class="separator:a42340f75610db6b0c025d1ce06b49ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a72fb17b730d938b3f6b6bbfe5e3dab85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkDoubleVector.html#a72fb17b730d938b3f6b6bbfe5e3dab85">operator=</a> (const <a class="el" href="classvtkvmtkDoubleVector.html">vtkvmtkDoubleVector</a> &amp;)</td></tr>
-<tr class="separator:a72fb17b730d938b3f6b6bbfe5e3dab85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for vectors utilized in finite-element and other PDE evaluations. </p>
@@ -205,7 +205,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a108b28f5f4a84bac56722e3c2d987536"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a108b28f5f4a84bac56722e3c2d987536">&#9670;&nbsp;</a></span>vtkvmtkDoubleVector() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a108b28f5f4a84bac56722e3c2d987536">&#9670;&nbsp;</a></span>vtkvmtkDoubleVector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,32 +254,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a42340f75610db6b0c025d1ce06b49ac5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42340f75610db6b0c025d1ce06b49ac5">&#9670;&nbsp;</a></span>vtkvmtkDoubleVector() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkDoubleVector::vtkvmtkDoubleVector </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkDoubleVector.html">vtkvmtkDoubleVector</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a534ae83dd5c0c4b9b0a10b5e1c7dc58c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a534ae83dd5c0c4b9b0a10b5e1c7dc58c">&#9670;&nbsp;</a></span>New()</h2>
@@ -300,31 +274,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8210291d58f3390659ca3e227e7fdef7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8210291d58f3390659ca3e227e7fdef7">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkDoubleVector::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -526,7 +475,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkDoubleVector_8h_source.html#l00048">48</a> of file <a class="el" href="vtkvmtkDoubleVector_8h_source.html">vtkvmtkDoubleVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {this-&gt;<a class="code" href="classvtkvmtkDoubleVector.html#a1f7608a773c4a545d8e8cc9937e033f2">SetNormType</a>(<a class="code" href="vtkvmtkDoubleVector_8h.html#adfc04ea85cb904eb91d92e4af9d36da4">VTK_VMTK_L2_NORM</a>);};  </div><div class="ttc" id="vtkvmtkDoubleVector_8h_html_adfc04ea85cb904eb91d92e4af9d36da4"><div class="ttname"><a href="vtkvmtkDoubleVector_8h.html#adfc04ea85cb904eb91d92e4af9d36da4">VTK_VMTK_L2_NORM</a></div><div class="ttdeci">#define VTK_VMTK_L2_NORM</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkDoubleVector_8h_source.html#l00036">vtkvmtkDoubleVector.h:36</a></div></div>
+<div class="ttc" id="classvtkvmtkDoubleVector_html_a1f7608a773c4a545d8e8cc9937e033f2"><div class="ttname"><a href="classvtkvmtkDoubleVector.html#a1f7608a773c4a545d8e8cc9937e033f2">vtkvmtkDoubleVector::SetNormType</a></div><div class="ttdeci">virtual void SetNormType(int)</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aaa8e3f1897d3f16d12a12a9e2f526457"></a>
@@ -553,7 +504,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkDoubleVector_8h_source.html#l00050">50</a> of file <a class="el" href="vtkvmtkDoubleVector_8h_source.html">vtkvmtkDoubleVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {this-&gt;<a class="code" href="classvtkvmtkDoubleVector.html#a1f7608a773c4a545d8e8cc9937e033f2">SetNormType</a>(<a class="code" href="vtkvmtkDoubleVector_8h.html#a3d9c1c677036e94a95417b047dae9847">VTK_VMTK_LINF_NORM</a>);};  </div><div class="ttc" id="classvtkvmtkDoubleVector_html_a1f7608a773c4a545d8e8cc9937e033f2"><div class="ttname"><a href="classvtkvmtkDoubleVector.html#a1f7608a773c4a545d8e8cc9937e033f2">vtkvmtkDoubleVector::SetNormType</a></div><div class="ttdeci">virtual void SetNormType(int)</div></div>
+<div class="ttc" id="vtkvmtkDoubleVector_8h_html_a3d9c1c677036e94a95417b047dae9847"><div class="ttname"><a href="vtkvmtkDoubleVector_8h.html#a3d9c1c677036e94a95417b047dae9847">VTK_VMTK_LINF_NORM</a></div><div class="ttdeci">#define VTK_VMTK_LINF_NORM</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkDoubleVector_8h_source.html#l00037">vtkvmtkDoubleVector.h:37</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a5c9b663c686f7092730fd59b5753b0cd"></a>
@@ -748,7 +701,8 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkDoubleVector_8h_source.html#l00062">62</a> of file <a class="el" href="vtkvmtkDoubleVector_8h_source.html">vtkvmtkDoubleVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{<span class="keywordflow">return</span> this-&gt;<a class="code" href="classvtkvmtkDoubleVector.html#a9d7492cf4309560ca9a076fadff9823f">Array</a>[i];};</div><div class="ttc" id="classvtkvmtkDoubleVector_html_a9d7492cf4309560ca9a076fadff9823f"><div class="ttname"><a href="classvtkvmtkDoubleVector.html#a9d7492cf4309560ca9a076fadff9823f">vtkvmtkDoubleVector::Array</a></div><div class="ttdeci">double * Array</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkDoubleVector_8h_source.html#l00092">vtkvmtkDoubleVector.h:92</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ad879f829b85742f927d2f4d3fe9abe46"></a>
@@ -786,7 +740,8 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkDoubleVector_8h_source.html#l00063">63</a> of file <a class="el" href="vtkvmtkDoubleVector_8h_source.html">vtkvmtkDoubleVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{this-&gt;<a class="code" href="classvtkvmtkDoubleVector.html#a9d7492cf4309560ca9a076fadff9823f">Array</a>[i] = value;};</div><div class="ttc" id="classvtkvmtkDoubleVector_html_a9d7492cf4309560ca9a076fadff9823f"><div class="ttname"><a href="classvtkvmtkDoubleVector.html#a9d7492cf4309560ca9a076fadff9823f">vtkvmtkDoubleVector::Array</a></div><div class="ttdeci">double * Array</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkDoubleVector_8h_source.html#l00092">vtkvmtkDoubleVector.h:92</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9077fba52c7df4c5077600d682012482"></a>
@@ -824,7 +779,8 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkDoubleVector_8h_source.html#l00064">64</a> of file <a class="el" href="vtkvmtkDoubleVector_8h_source.html">vtkvmtkDoubleVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{this-&gt;<a class="code" href="classvtkvmtkDoubleVector.html#a9d7492cf4309560ca9a076fadff9823f">Array</a>[i] += value;};</div><div class="ttc" id="classvtkvmtkDoubleVector_html_a9d7492cf4309560ca9a076fadff9823f"><div class="ttname"><a href="classvtkvmtkDoubleVector.html#a9d7492cf4309560ca9a076fadff9823f">vtkvmtkDoubleVector::Array</a></div><div class="ttdeci">double * Array</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkDoubleVector_8h_source.html#l00092">vtkvmtkDoubleVector.h:92</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3ddfc4005ae9b1bb0e15ba4e72a33633"></a>
@@ -851,7 +807,8 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkDoubleVector_8h_source.html#l00070">70</a> of file <a class="el" href="vtkvmtkDoubleVector_8h_source.html">vtkvmtkDoubleVector.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{<span class="keywordflow">return</span> this-&gt;<a class="code" href="classvtkvmtkDoubleVector.html#a9d7492cf4309560ca9a076fadff9823f">Array</a>;};</div><div class="ttc" id="classvtkvmtkDoubleVector_html_a9d7492cf4309560ca9a076fadff9823f"><div class="ttname"><a href="classvtkvmtkDoubleVector.html#a9d7492cf4309560ca9a076fadff9823f">vtkvmtkDoubleVector::Array</a></div><div class="ttdeci">double * Array</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkDoubleVector_8h_source.html#l00092">vtkvmtkDoubleVector.h:92</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a83f76b0165438867683955ec1360eda9"></a>
@@ -1019,32 +976,6 @@ Private Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a72fb17b730d938b3f6b6bbfe5e3dab85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72fb17b730d938b3f6b6bbfe5e3dab85">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkDoubleVector::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkDoubleVector.html">vtkvmtkDoubleVector</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

@@ -9,8 +9,8 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 657)">
 <title>Graphical Class Hierarchy</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-657 1449.99,-657 1449.99,4 -4,4"/>
-<!-- Node130 -->
-<g id="node1" class="node"><title>Node130</title>
+<!-- Node135 -->
+<g id="node1" class="node"><title>Node135</title>
 <polygon fill="white" stroke="#bfbfbf" points="0,-314.5 0,-332.5 57.6797,-332.5 57.6797,-314.5 0,-314.5"/>
 <text text-anchor="middle" x="28.8398" y="-320.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkObject</text>
 </g>
@@ -22,229 +22,229 @@
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node0 -->
-<g id="edge1" class="edge"><title>Node130&#45;&gt;Node0</title>
+<!-- Node135&#45;&gt;Node0 -->
+<g id="edge1" class="edge"><title>Node135&#45;&gt;Node0</title>
 <path fill="none" stroke="midnightblue" d="M31.3281,-343.005C36.2766,-402.631 54.1558,-580.835 93.6797,-620.5 97.4999,-624.334 101.935,-627.435 106.728,-629.936"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="34.7931,-342.427 30.5082,-332.737 27.8153,-342.984 34.7931,-342.427"/>
 </g>
-<!-- Node133 -->
-<g id="node4" class="node"><title>Node133</title>
+<!-- Node138 -->
+<g id="node4" class="node"><title>Node138</title>
 <g id="a_node4"><a xlink:href="classvtkvmtkCenterlineSphereDistance.html" target="_top" xlink:title="Collection of functions which compute point ids which are n&#45;spheres away from a reference point...">
 <polygon fill="white" stroke="black" points="93.6797,-592.5 93.6797,-610.5 260.3,-610.5 260.3,-592.5 93.6797,-592.5"/>
 <text text-anchor="middle" x="176.99" y="-598.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkCenterlineSphereDistance</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node133 -->
-<g id="edge3" class="edge"><title>Node130&#45;&gt;Node133</title>
+<!-- Node135&#45;&gt;Node138 -->
+<g id="edge3" class="edge"><title>Node135&#45;&gt;Node138</title>
 <path fill="none" stroke="midnightblue" d="M31.9345,-342.683C38.2423,-396.895 58.8014,-549.499 93.6797,-583.5 97.3457,-587.074 101.548,-590.007 106.071,-592.407"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="35.4057,-342.23 30.8048,-332.687 28.45,-343.016 35.4057,-342.23"/>
 </g>
-<!-- Node134 -->
-<g id="node5" class="node"><title>Node134</title>
+<!-- Node139 -->
+<g id="node5" class="node"><title>Node139</title>
 <g id="a_node5"><a xlink:href="classvtkvmtkCenterlineUtilities.html" target="_top" xlink:title="Collection of functions which are used when working with split and grouped centerlines. ">
 <polygon fill="white" stroke="black" points="113.143,-555.5 113.143,-573.5 240.837,-573.5 240.837,-555.5 113.143,-555.5"/>
 <text text-anchor="middle" x="176.99" y="-561.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkCenterlineUtilities</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node134 -->
-<g id="edge4" class="edge"><title>Node130&#45;&gt;Node134</title>
+<!-- Node135&#45;&gt;Node139 -->
+<g id="edge4" class="edge"><title>Node135&#45;&gt;Node139</title>
 <path fill="none" stroke="midnightblue" d="M29.2371,-342.856C29.0132,-386.156 34.9143,-491.354 93.6797,-546.5 99.2263,-551.705 105.916,-555.538 113.055,-558.342"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="32.7373,-342.87 29.4106,-332.811 25.7384,-342.749 32.7373,-342.87"/>
 </g>
-<!-- Node135 -->
-<g id="node6" class="node"><title>Node135</title>
+<!-- Node140 -->
+<g id="node6" class="node"><title>Node140</title>
 <g id="a_node6"><a xlink:href="classvtkvmtkDoubleVector.html" target="_top" xlink:title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. ">
 <polygon fill="white" stroke="black" points="122.024,-518.5 122.024,-536.5 231.955,-536.5 231.955,-518.5 122.024,-518.5"/>
 <text text-anchor="middle" x="176.99" y="-524.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkDoubleVector</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node135 -->
-<g id="edge5" class="edge"><title>Node130&#45;&gt;Node135</title>
+<!-- Node135&#45;&gt;Node140 -->
+<g id="edge5" class="edge"><title>Node135&#45;&gt;Node140</title>
 <path fill="none" stroke="midnightblue" d="M30.5251,-342.697C32.9665,-380.612 44.0094,-465.252 93.6797,-509.5 101.544,-516.506 111.495,-520.994 121.738,-523.828"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="34.0114,-342.338 30.0103,-332.527 27.0204,-342.692 34.0114,-342.338"/>
 </g>
-<!-- Node136 -->
-<g id="node7" class="node"><title>Node136</title>
-<g id="a_node7"><a xlink:href="classvtkvmtkEllipticProblem.html" target="_top" xlink:title=".. ">
+<!-- Node141 -->
+<g id="node7" class="node"><title>Node141</title>
+<g id="a_node7"><a xlink:href="classvtkvmtkEllipticProblem.html" target="_top" xlink:title="High level container holding references to vtkvmtkLinearSystem and associated vtkvmtkDirichletBoundar...">
 <polygon fill="white" stroke="black" points="118.98,-481.5 118.98,-499.5 235,-499.5 235,-481.5 118.98,-481.5"/>
 <text text-anchor="middle" x="176.99" y="-487.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkEllipticProblem</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node136 -->
-<g id="edge6" class="edge"><title>Node130&#45;&gt;Node136</title>
+<!-- Node135&#45;&gt;Node141 -->
+<g id="edge6" class="edge"><title>Node135&#45;&gt;Node141</title>
 <path fill="none" stroke="midnightblue" d="M32.4094,-342.816C37.7429,-374.902 53.1068,-438.969 93.6797,-472.5 100.896,-478.464 109.649,-482.571 118.718,-485.376"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="35.8153,-341.927 30.8702,-332.557 28.8928,-342.966 35.8153,-341.927"/>
 </g>
-<!-- Node137 -->
-<g id="node8" class="node"><title>Node137</title>
+<!-- Node142 -->
+<g id="node8" class="node"><title>Node142</title>
 <g id="a_node8"><a xlink:href="classvtkvmtkFEAssembler.html" target="_top" xlink:title="Base class on which to build to build specific finite element routines. ">
 <polygon fill="white" stroke="black" points="122.039,-444.5 122.039,-462.5 231.94,-462.5 231.94,-444.5 122.039,-444.5"/>
 <text text-anchor="middle" x="176.99" y="-450.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkFEAssembler</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node137 -->
-<g id="edge7" class="edge"><title>Node130&#45;&gt;Node137</title>
+<!-- Node135&#45;&gt;Node142 -->
+<g id="edge7" class="edge"><title>Node135&#45;&gt;Node142</title>
 <path fill="none" stroke="midnightblue" d="M35.3544,-342.657C43.6786,-367.998 61.9509,-412.171 93.6797,-435.5 101.929,-441.566 111.821,-445.66 121.841,-448.407"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="38.5967,-341.294 32.3011,-332.773 31.9085,-343.36 38.5967,-341.294"/>
 </g>
-<!-- Node143 -->
-<g id="node14" class="node"><title>Node143</title>
-<g id="a_node14"><a xlink:href="classvtkvmtkFEShapeFunctions.html" target="_top" xlink:title=".. ">
+<!-- Node148 -->
+<g id="node14" class="node"><title>Node148</title>
+<g id="a_node14"><a xlink:href="classvtkvmtkFEShapeFunctions.html" target="_top" xlink:title="Set of common utility (calculate jacobian, interpolation function, and interpolation function derivat...">
 <polygon fill="white" stroke="black" points="109.522,-407.5 109.522,-425.5 244.458,-425.5 244.458,-407.5 109.522,-407.5"/>
 <text text-anchor="middle" x="176.99" y="-413.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkFEShapeFunctions</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node143 -->
-<g id="edge13" class="edge"><title>Node130&#45;&gt;Node143</title>
+<!-- Node135&#45;&gt;Node148 -->
+<g id="edge13" class="edge"><title>Node135&#45;&gt;Node148</title>
 <path fill="none" stroke="midnightblue" d="M40.0778,-341.19C51.0732,-358.545 70.1744,-384.396 93.6797,-398.5 99.8257,-402.188 106.634,-405.123 113.627,-407.46"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="43.0118,-339.279 34.8267,-332.552 37.0302,-342.915 43.0118,-339.279"/>
 </g>
-<!-- Node144 -->
-<g id="node15" class="node"><title>Node144</title>
-<g id="a_node15"><a xlink:href="classvtkvmtkGaussQuadrature.html" target="_top" xlink:title=".. ">
+<!-- Node149 -->
+<g id="node15" class="node"><title>Node149</title>
+<g id="a_node15"><a xlink:href="classvtkvmtkGaussQuadrature.html" target="_top" xlink:title="Finite element quadrature rule; Approximation of the definite integral of a function, as a weighted sum of function values at specified points. ">
 <polygon fill="white" stroke="black" points="112.303,-370.5 112.303,-388.5 241.677,-388.5 241.677,-370.5 112.303,-370.5"/>
 <text text-anchor="middle" x="176.99" y="-376.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkGaussQuadrature</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node144 -->
-<g id="edge14" class="edge"><title>Node130&#45;&gt;Node144</title>
+<!-- Node135&#45;&gt;Node149 -->
+<g id="edge14" class="edge"><title>Node135&#45;&gt;Node149</title>
 <path fill="none" stroke="midnightblue" d="M50.8409,-338.345C62.886,-346.246 78.5752,-355.535 93.6797,-361.5 102.795,-365.1 112.777,-368.048 122.548,-370.44"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="52.6564,-335.348 42.4102,-332.652 48.7389,-341.149 52.6564,-335.348"/>
 </g>
-<!-- Node145 -->
-<g id="node16" class="node"><title>Node145</title>
+<!-- Node150 -->
+<g id="node16" class="node"><title>Node150</title>
 <g id="a_node16"><a xlink:href="classvtkvmtkItem.html" target="_top" xlink:title="Base class for the construction of neighborhoods and stencil from a set of points. ">
 <polygon fill="white" stroke="black" points="142.322,-333.5 142.322,-351.5 211.657,-351.5 211.657,-333.5 142.322,-333.5"/>
 <text text-anchor="middle" x="176.99" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkItem</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node145 -->
-<g id="edge15" class="edge"><title>Node130&#45;&gt;Node145</title>
+<!-- Node135&#45;&gt;Node150 -->
+<g id="edge15" class="edge"><title>Node135&#45;&gt;Node150</title>
 <path fill="none" stroke="midnightblue" d="M68.118,-328.476C91.1175,-331.466 120.116,-335.236 142.254,-338.114"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="68.3868,-324.982 58.019,-327.163 67.4843,-331.923 68.3868,-324.982"/>
 </g>
-<!-- Node162 -->
-<g id="node33" class="node"><title>Node162</title>
+<!-- Node167 -->
+<g id="node33" class="node"><title>Node167</title>
 <g id="a_node33"><a xlink:href="classvtkvmtkItems.html" target="_top" xlink:title="Control allocation and memory footprint of item instances. ">
 <polygon fill="white" stroke="black" points="139.822,-296.5 139.822,-314.5 214.157,-314.5 214.157,-296.5 139.822,-296.5"/>
 <text text-anchor="middle" x="176.99" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkItems</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node162 -->
-<g id="edge32" class="edge"><title>Node130&#45;&gt;Node162</title>
+<!-- Node135&#45;&gt;Node167 -->
+<g id="edge32" class="edge"><title>Node135&#45;&gt;Node167</title>
 <path fill="none" stroke="midnightblue" d="M68.0537,-318.794C90.1493,-316.072 117.799,-312.667 139.581,-309.984"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="67.5162,-315.333 58.019,-320.029 68.3719,-322.281 67.5162,-315.333"/>
 </g>
-<!-- Node166 -->
-<g id="node37" class="node"><title>Node166</title>
+<!-- Node171 -->
+<g id="node37" class="node"><title>Node171</title>
 <g id="a_node37"><a xlink:href="classvtkvmtkLinearSystem.html" target="_top" xlink:title="Base container to hold sparse matrice objects representing a linear system of equations Ax = B...">
 <polygon fill="white" stroke="black" points="121.478,-259.5 121.478,-277.5 232.502,-277.5 232.502,-259.5 121.478,-259.5"/>
 <text text-anchor="middle" x="176.99" y="-265.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkLinearSystem</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node166 -->
-<g id="edge36" class="edge"><title>Node130&#45;&gt;Node166</title>
+<!-- Node135&#45;&gt;Node171 -->
+<g id="edge36" class="edge"><title>Node135&#45;&gt;Node171</title>
 <path fill="none" stroke="midnightblue" d="M52.2493,-308.764C64.1511,-301.488 79.2652,-293.094 93.6797,-287.5 103.934,-283.521 115.245,-280.242 126.113,-277.596"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="50.0709,-306 43.4677,-314.285 53.7965,-311.926 50.0709,-306"/>
 </g>
-<!-- Node167 -->
-<g id="node38" class="node"><title>Node167</title>
+<!-- Node172 -->
+<g id="node38" class="node"><title>Node172</title>
 <g id="a_node38"><a xlink:href="classvtkvmtkLinearSystemSolver.html" target="_top" xlink:title="Base class for linear system of equation solver implementations. ">
 <polygon fill="white" stroke="black" points="107.305,-222.5 107.305,-240.5 246.674,-240.5 246.674,-222.5 107.305,-222.5"/>
 <text text-anchor="middle" x="176.99" y="-228.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkLinearSystemSolver</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node167 -->
-<g id="edge37" class="edge"><title>Node130&#45;&gt;Node167</title>
+<!-- Node135&#45;&gt;Node172 -->
+<g id="edge37" class="edge"><title>Node135&#45;&gt;Node172</title>
 <path fill="none" stroke="midnightblue" d="M40.8896,-305.335C52.0911,-288.508 70.9792,-264.093 93.6797,-250.5 100.6,-246.356 108.346,-243.116 116.243,-240.582"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="37.644,-303.914 35.2119,-314.226 43.5437,-307.682 37.644,-303.914"/>
 </g>
-<!-- Node169 -->
-<g id="node40" class="node"><title>Node169</title>
+<!-- Node174 -->
+<g id="node40" class="node"><title>Node174</title>
 <g id="a_node40"><a xlink:href="classvtkvmtkMath.html" target="_top" xlink:title="Static utility mathematical functions included to avoid repeating ourselves. ">
 <polygon fill="white" stroke="black" points="140.931,-185.5 140.931,-203.5 213.049,-203.5 213.049,-185.5 140.931,-185.5"/>
 <text text-anchor="middle" x="176.99" y="-191.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkMath</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node169 -->
-<g id="edge39" class="edge"><title>Node130&#45;&gt;Node169</title>
+<!-- Node135&#45;&gt;Node174 -->
+<g id="edge39" class="edge"><title>Node135&#45;&gt;Node174</title>
 <path fill="none" stroke="midnightblue" d="M35.4923,-304.732C43.9726,-279.898 62.4211,-236.575 93.6797,-213.5 107.131,-203.571 124.924,-198.717 140.525,-196.387"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="32.1072,-303.826 32.3731,-314.418 38.7702,-305.972 32.1072,-303.826"/>
 </g>
-<!-- Node170 -->
-<g id="node41" class="node"><title>Node170</title>
+<!-- Node175 -->
+<g id="node41" class="node"><title>Node175</title>
 <g id="a_node41"><a xlink:href="classvtkvmtkMinHeap.html" target="_top" xlink:title="Implementation of the min heap data structure. ">
 <polygon fill="white" stroke="black" points="132.037,-148.5 132.037,-166.5 221.943,-166.5 221.943,-148.5 132.037,-148.5"/>
 <text text-anchor="middle" x="176.99" y="-154.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkMinHeap</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node170 -->
-<g id="edge40" class="edge"><title>Node130&#45;&gt;Node170</title>
+<!-- Node135&#45;&gt;Node175 -->
+<g id="edge40" class="edge"><title>Node135&#45;&gt;Node175</title>
 <path fill="none" stroke="midnightblue" d="M32.6131,-304.034C38.1995,-272.297 53.8674,-209.625 93.6797,-176.5 104.39,-167.589 118.486,-162.675 131.98,-160.019"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="29.108,-303.788 30.985,-314.216 36.0202,-304.894 29.108,-303.788"/>
 </g>
-<!-- Node171 -->
-<g id="node42" class="node"><title>Node171</title>
+<!-- Node176 -->
+<g id="node42" class="node"><title>Node176</title>
 <g id="a_node42"><a xlink:href="classvtkvmtkPolyDataBranchUtilities.html" target="_top" xlink:title="Utility functions to ease working with branches and surfaces. ">
 <polygon fill="white" stroke="black" points="99.8027,-111.5 99.8027,-129.5 254.177,-129.5 254.177,-111.5 99.8027,-111.5"/>
 <text text-anchor="middle" x="176.99" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataBranchUtilities</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node171 -->
-<g id="edge41" class="edge"><title>Node130&#45;&gt;Node171</title>
+<!-- Node135&#45;&gt;Node176 -->
+<g id="edge41" class="edge"><title>Node135&#45;&gt;Node176</title>
 <path fill="none" stroke="midnightblue" d="M30.6752,-304.027C33.3878,-266.346 44.8957,-183.32 93.6797,-139.5 98.2621,-135.384 103.556,-132.107 109.206,-129.505"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="27.1718,-303.985 30.0842,-314.172 34.16,-304.392 27.1718,-303.985"/>
 </g>
-<!-- Node172 -->
-<g id="node43" class="node"><title>Node172</title>
+<!-- Node177 -->
+<g id="node43" class="node"><title>Node177</title>
 <g id="a_node43"><a xlink:href="classvtkvmtkReferenceSystemUtilities.html" target="_top" xlink:title="Utility function to get the reference system point id of a group. ">
 <polygon fill="white" stroke="black" points="96.1943,-74.5 96.1943,-92.5 257.785,-92.5 257.785,-74.5 96.1943,-74.5"/>
 <text text-anchor="middle" x="176.99" y="-80.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkReferenceSystemUtilities</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node172 -->
-<g id="edge42" class="edge"><title>Node130&#45;&gt;Node172</title>
+<!-- Node135&#45;&gt;Node177 -->
+<g id="edge42" class="edge"><title>Node135&#45;&gt;Node177</title>
 <path fill="none" stroke="midnightblue" d="M29.3427,-304.087C29.3627,-261.096 35.7762,-157.339 93.6797,-102.5 97.939,-98.4662 102.877,-95.229 108.177,-92.6381"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="25.8454,-304.337 29.4637,-314.295 32.8449,-304.254 25.8454,-304.337"/>
 </g>
-<!-- Node173 -->
-<g id="node44" class="node"><title>Node173</title>
-<g id="a_node44"><a xlink:href="classvtkvmtkSparseMatrix.html" target="_top" xlink:title=".. ">
+<!-- Node178 -->
+<g id="node44" class="node"><title>Node178</title>
+<g id="a_node44"><a xlink:href="classvtkvmtkSparseMatrix.html" target="_top" xlink:title="Class for constructing sparse matrices from a dataset and performing basic mathematical operations on...">
 <polygon fill="white" stroke="black" points="122.593,-37.5 122.593,-55.5 231.386,-55.5 231.386,-37.5 122.593,-37.5"/>
 <text text-anchor="middle" x="176.99" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkSparseMatrix</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node173 -->
-<g id="edge43" class="edge"><title>Node130&#45;&gt;Node173</title>
+<!-- Node135&#45;&gt;Node178 -->
+<g id="edge43" class="edge"><title>Node135&#45;&gt;Node178</title>
 <path fill="none" stroke="midnightblue" d="M31.9455,-304.39C38.2827,-250.385 58.9128,-98.3619 93.6797,-64.5 101.539,-56.8455 111.858,-52.1311 122.521,-49.2911"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="28.4655,-304.016 30.8102,-314.348 35.4204,-304.809 28.4655,-304.016"/>
 </g>
-<!-- Node174 -->
-<g id="node45" class="node"><title>Node174</title>
-<g id="a_node45"><a xlink:href="classvtkvmtkSparseMatrixRow.html" target="_top" xlink:title=".. ">
+<!-- Node179 -->
+<g id="node45" class="node"><title>Node179</title>
+<g id="a_node45"><a xlink:href="classvtkvmtkSparseMatrixRow.html" target="_top" xlink:title="Class to handle operating on rows of a sparse matrix. ">
 <polygon fill="white" stroke="black" points="112.591,-0.5 112.591,-18.5 241.389,-18.5 241.389,-0.5 112.591,-0.5"/>
 <text text-anchor="middle" x="176.99" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkSparseMatrixRow</text>
 </a>
 </g>
 </g>
-<!-- Node130&#45;&gt;Node174 -->
-<g id="edge44" class="edge"><title>Node130&#45;&gt;Node174</title>
+<!-- Node135&#45;&gt;Node179 -->
+<g id="edge44" class="edge"><title>Node135&#45;&gt;Node179</title>
 <path fill="none" stroke="midnightblue" d="M31.338,-304.06C36.3153,-244.633 54.2692,-67.0239 93.6797,-27.5 98.9472,-22.2173 105.383,-18.3251 112.312,-15.4789"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="27.8279,-304.045 30.513,-314.294 34.8053,-304.607 27.8279,-304.045"/>
 </g>
@@ -262,209 +262,209 @@
 <path fill="none" stroke="midnightblue" d="M257.218,-638.5C278.044,-638.5 300.239,-638.5 320.137,-638.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="257.12,-635 247.12,-638.5 257.12,-642 257.12,-635"/>
 </g>
-<!-- Node138 -->
-<g id="node9" class="node"><title>Node138</title>
-<g id="a_node9"><a xlink:href="classvtkvmtkPolyDataFEGradientAssembler.html" target="_top" xlink:title="Construct a gradient based finite element calculation. ">
+<!-- Node143 -->
+<g id="node9" class="node"><title>Node143</title>
+<g id="a_node9"><a xlink:href="classvtkvmtkPolyDataFEGradientAssembler.html" target="_top" xlink:title="Construct a gradient based finite element calculation on a surface. ">
 <polygon fill="white" stroke="black" points="314.081,-558.5 314.081,-586.5 455.676,-586.5 455.676,-558.5 314.081,-558.5"/>
 <text text-anchor="start" x="322.081" y="-574.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataFEGradient</text>
 <text text-anchor="middle" x="384.878" y="-564.5" font-family="Helvetica,sans-Serif" font-size="10.00">Assembler</text>
 </a>
 </g>
 </g>
-<!-- Node137&#45;&gt;Node138 -->
-<g id="edge8" class="edge"><title>Node137&#45;&gt;Node138</title>
+<!-- Node142&#45;&gt;Node143 -->
+<g id="edge8" class="edge"><title>Node142&#45;&gt;Node143</title>
 <path fill="none" stroke="midnightblue" d="M241.988,-462.028C248.59,-464.68 254.861,-468.1 260.3,-472.5 289.671,-496.259 267.288,-525.304 296.3,-549.5 301.491,-553.83 307.409,-557.354 313.664,-560.22"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="242.729,-458.583 232.135,-458.666 240.469,-465.208 242.729,-458.583"/>
 </g>
-<!-- Node139 -->
-<g id="node10" class="node"><title>Node139</title>
-<g id="a_node10"><a xlink:href="classvtkvmtkPolyDataFELaplaceAssembler.html" target="_top" xlink:title="construct a laplacian based finite element calculation. ">
+<!-- Node144 -->
+<g id="node10" class="node"><title>Node144</title>
+<g id="a_node10"><a xlink:href="classvtkvmtkPolyDataFELaplaceAssembler.html" target="_top" xlink:title="construct a laplacian based finite element calculation on a surface. ">
 <polygon fill="white" stroke="black" points="315.743,-511.5 315.743,-539.5 454.014,-539.5 454.014,-511.5 315.743,-511.5"/>
 <text text-anchor="start" x="323.743" y="-527.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataFELaplace</text>
 <text text-anchor="middle" x="384.878" y="-517.5" font-family="Helvetica,sans-Serif" font-size="10.00">Assembler</text>
 </a>
 </g>
 </g>
-<!-- Node137&#45;&gt;Node139 -->
-<g id="edge9" class="edge"><title>Node137&#45;&gt;Node139</title>
+<!-- Node142&#45;&gt;Node144 -->
+<g id="edge9" class="edge"><title>Node142&#45;&gt;Node144</title>
 <path fill="none" stroke="midnightblue" d="M241.963,-465.11C248.304,-467.19 254.524,-469.633 260.3,-472.5 278.955,-481.761 277.786,-492.96 296.3,-502.5 303.007,-505.956 310.279,-508.925 317.666,-511.467"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="242.528,-461.627 231.946,-462.132 240.534,-468.337 242.528,-461.627"/>
 </g>
-<!-- Node140 -->
-<g id="node11" class="node"><title>Node140</title>
-<g id="a_node11"><a xlink:href="classvtkvmtkUnstructuredGridFEGradientAssembler.html" target="_top" xlink:title=".. ">
+<!-- Node145 -->
+<g id="node11" class="node"><title>Node145</title>
+<g id="a_node11"><a xlink:href="classvtkvmtkUnstructuredGridFEGradientAssembler.html" target="_top" xlink:title="Construct a gradient based finite element calculation on a mesh. ">
 <polygon fill="white" stroke="black" points="296.3,-464.5 296.3,-492.5 473.457,-492.5 473.457,-464.5 296.3,-464.5"/>
 <text text-anchor="start" x="304.3" y="-480.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkUnstructuredGridFEGradient</text>
 <text text-anchor="middle" x="384.878" y="-470.5" font-family="Helvetica,sans-Serif" font-size="10.00">Assembler</text>
 </a>
 </g>
 </g>
-<!-- Node137&#45;&gt;Node140 -->
-<g id="edge10" class="edge"><title>Node137&#45;&gt;Node140</title>
+<!-- Node142&#45;&gt;Node145 -->
+<g id="edge10" class="edge"><title>Node142&#45;&gt;Node145</title>
 <path fill="none" stroke="midnightblue" d="M242.41,-461.322C259.365,-463.381 277.948,-465.637 295.91,-467.818"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="242.434,-457.799 232.085,-460.068 241.59,-464.748 242.434,-457.799"/>
 </g>
-<!-- Node141 -->
-<g id="node12" class="node"><title>Node141</title>
-<g id="a_node12"><a xlink:href="classvtkvmtkUnstructuredGridFELaplaceAssembler.html" target="_top" xlink:title=".. ">
+<!-- Node146 -->
+<g id="node12" class="node"><title>Node146</title>
+<g id="a_node12"><a xlink:href="classvtkvmtkUnstructuredGridFELaplaceAssembler.html" target="_top" xlink:title="Construct a laplacian based finite element calculation on a mesh. ">
 <polygon fill="white" stroke="black" points="297.962,-417.5 297.962,-445.5 471.794,-445.5 471.794,-417.5 297.962,-417.5"/>
 <text text-anchor="start" x="305.962" y="-433.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkUnstructuredGridFELaplace</text>
 <text text-anchor="middle" x="384.878" y="-423.5" font-family="Helvetica,sans-Serif" font-size="10.00">Assembler</text>
 </a>
 </g>
 </g>
-<!-- Node137&#45;&gt;Node141 -->
-<g id="edge11" class="edge"><title>Node137&#45;&gt;Node141</title>
+<!-- Node142&#45;&gt;Node146 -->
+<g id="edge11" class="edge"><title>Node142&#45;&gt;Node146</title>
 <path fill="none" stroke="midnightblue" d="M242.238,-446.635C259.862,-444.752 279.258,-442.679 297.891,-440.688"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="241.656,-443.177 232.085,-447.72 242.4,-450.137 241.656,-443.177"/>
 </g>
-<!-- Node142 -->
-<g id="node13" class="node"><title>Node142</title>
-<g id="a_node13"><a xlink:href="classvtkvmtkUnstructuredGridFEVorticityAssembler.html" target="_top" xlink:title=".. ">
+<!-- Node147 -->
+<g id="node13" class="node"><title>Node147</title>
+<g id="a_node13"><a xlink:href="classvtkvmtkUnstructuredGridFEVorticityAssembler.html" target="_top" xlink:title="Construct a vorticity based finite element calculation on a mesh. ">
 <polygon fill="white" stroke="black" points="297.97,-370.5 297.97,-398.5 471.787,-398.5 471.787,-370.5 297.97,-370.5"/>
 <text text-anchor="start" x="305.97" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkUnstructuredGridFEVorticity</text>
 <text text-anchor="middle" x="384.878" y="-376.5" font-family="Helvetica,sans-Serif" font-size="10.00">Assembler</text>
 </a>
 </g>
 </g>
-<!-- Node137&#45;&gt;Node142 -->
-<g id="edge12" class="edge"><title>Node137&#45;&gt;Node142</title>
+<!-- Node142&#45;&gt;Node147 -->
+<g id="edge12" class="edge"><title>Node142&#45;&gt;Node147</title>
 <path fill="none" stroke="midnightblue" d="M242.1,-442.333C248.372,-440.398 254.539,-438.138 260.3,-435.5 278.484,-427.174 278.339,-417.298 296.3,-408.5 304.087,-404.686 312.57,-401.403 321.091,-398.598"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="240.883,-439.04 232.202,-445.114 242.776,-445.779 240.883,-439.04"/>
 </g>
-<!-- Node146 -->
-<g id="node17" class="node"><title>Node146</title>
+<!-- Node151 -->
+<g id="node17" class="node"><title>Node151</title>
 <g id="a_node17"><a xlink:href="classvtkvmtkDataSetItem.html" target="_top" xlink:title="create an item instance with a data set and particular point id. ">
 <polygon fill="white" stroke="black" points="332.145,-333.5 332.145,-351.5 437.612,-351.5 437.612,-333.5 332.145,-333.5"/>
 <text text-anchor="middle" x="384.878" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkDataSetItem</text>
 </a>
 </g>
 </g>
-<!-- Node145&#45;&gt;Node146 -->
-<g id="edge16" class="edge"><title>Node145&#45;&gt;Node146</title>
+<!-- Node150&#45;&gt;Node151 -->
+<g id="edge16" class="edge"><title>Node150&#45;&gt;Node151</title>
 <path fill="none" stroke="midnightblue" d="M222.021,-342.5C254.265,-342.5 298.132,-342.5 332.065,-342.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="221.988,-339 211.988,-342.5 221.988,-346 221.988,-339"/>
 </g>
-<!-- Node147 -->
-<g id="node18" class="node"><title>Node147</title>
+<!-- Node152 -->
+<g id="node18" class="node"><title>Node152</title>
 <g id="a_node18"><a xlink:href="classvtkvmtkNeighborhood.html" target="_top" xlink:title="Query the neighborhood surrounding the set point id in an data set item. ">
 <polygon fill="white" stroke="black" points="511.957,-333.5 511.957,-351.5 624.671,-351.5 624.671,-333.5 511.957,-333.5"/>
 <text text-anchor="middle" x="568.314" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkNeighborhood</text>
 </a>
 </g>
 </g>
-<!-- Node146&#45;&gt;Node147 -->
-<g id="edge17" class="edge"><title>Node146&#45;&gt;Node147</title>
+<!-- Node151&#45;&gt;Node152 -->
+<g id="edge17" class="edge"><title>Node151&#45;&gt;Node152</title>
 <path fill="none" stroke="midnightblue" d="M448.14,-342.5C468.82,-342.5 491.695,-342.5 511.829,-342.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="447.871,-339 437.871,-342.5 447.871,-346 447.871,-339"/>
 </g>
-<!-- Node148 -->
-<g id="node19" class="node"><title>Node148</title>
+<!-- Node153 -->
+<g id="node19" class="node"><title>Node153</title>
 <g id="a_node19"><a xlink:href="classvtkvmtkEmptyNeighborhood.html" target="_top" xlink:title="Create an an empty neighborhood instance. ">
 <polygon fill="white" stroke="black" points="688.188,-407.5 688.188,-425.5 829.242,-425.5 829.242,-407.5 688.188,-407.5"/>
 <text text-anchor="middle" x="758.715" y="-413.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkEmptyNeighborhood</text>
 </a>
 </g>
 </g>
-<!-- Node147&#45;&gt;Node148 -->
-<g id="edge18" class="edge"><title>Node147&#45;&gt;Node148</title>
+<!-- Node152&#45;&gt;Node153 -->
+<g id="edge18" class="edge"><title>Node152&#45;&gt;Node153</title>
 <path fill="none" stroke="midnightblue" d="M589.5,-357.402C607.819,-370.209 636.038,-388.192 663.171,-398.5 672.855,-402.179 683.394,-405.132 693.805,-407.494"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="591.524,-354.547 581.351,-351.588 587.458,-360.245 591.524,-354.547"/>
 </g>
-<!-- Node149 -->
-<g id="node20" class="node"><title>Node149</title>
-<g id="a_node20"><a xlink:href="classvtkvmtkPolyDataManifoldNeighborhood.html" target="_top" xlink:title=".. ">
+<!-- Node154 -->
+<g id="node20" class="node"><title>Node154</title>
+<g id="a_node20"><a xlink:href="classvtkvmtkPolyDataManifoldNeighborhood.html" target="_top" xlink:title="Apply a neighborhood to the points of a manifold surface. ">
 <polygon fill="white" stroke="black" points="663.171,-370.5 663.171,-388.5 854.259,-388.5 854.259,-370.5 663.171,-370.5"/>
 <text text-anchor="middle" x="758.715" y="-376.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataManifoldNeighborhood</text>
 </a>
 </g>
 </g>
-<!-- Node147&#45;&gt;Node149 -->
-<g id="edge19" class="edge"><title>Node147&#45;&gt;Node149</title>
+<!-- Node152&#45;&gt;Node154 -->
+<g id="edge19" class="edge"><title>Node152&#45;&gt;Node154</title>
 <path fill="none" stroke="midnightblue" d="M623.828,-353.647C636.722,-356.253 650.427,-358.997 663.171,-361.5 678.255,-364.463 694.707,-367.62 709.597,-370.451"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="624.191,-350.149 613.695,-351.594 622.801,-357.01 624.191,-350.149"/>
 </g>
-<!-- Node151 -->
-<g id="node22" class="node"><title>Node151</title>
-<g id="a_node22"><a xlink:href="classvtkvmtkPolyDataNeighborhood.html" target="_top" xlink:title=".. ">
+<!-- Node156 -->
+<g id="node22" class="node"><title>Node156</title>
+<g id="a_node22"><a xlink:href="classvtkvmtkPolyDataNeighborhood.html" target="_top" xlink:title="Create a neighborhood for points on a surface. ">
 <polygon fill="white" stroke="black" points="682.07,-333.5 682.07,-351.5 835.36,-351.5 835.36,-333.5 682.07,-333.5"/>
 <text text-anchor="middle" x="758.715" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataNeighborhood</text>
 </a>
 </g>
 </g>
-<!-- Node147&#45;&gt;Node151 -->
-<g id="edge21" class="edge"><title>Node147&#45;&gt;Node151</title>
+<!-- Node152&#45;&gt;Node156 -->
+<g id="edge21" class="edge"><title>Node152&#45;&gt;Node156</title>
 <path fill="none" stroke="midnightblue" d="M635.112,-342.5C650.257,-342.5 666.482,-342.5 682.01,-342.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="634.821,-339 624.821,-342.5 634.821,-346 634.821,-339"/>
 </g>
-<!-- Node152 -->
-<g id="node23" class="node"><title>Node152</title>
+<!-- Node157 -->
+<g id="node23" class="node"><title>Node157</title>
 <g id="a_node23"><a xlink:href="classvtkvmtkStencil.html" target="_top" xlink:title="Apply a weighting matrix to a single neighborhood of a data set. ">
 <polygon fill="white" stroke="black" points="718.764,-296.5 718.764,-314.5 798.666,-314.5 798.666,-296.5 718.764,-296.5"/>
 <text text-anchor="middle" x="758.715" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkStencil</text>
 </a>
 </g>
 </g>
-<!-- Node147&#45;&gt;Node152 -->
-<g id="edge22" class="edge"><title>Node147&#45;&gt;Node152</title>
+<!-- Node152&#45;&gt;Node157 -->
+<g id="edge22" class="edge"><title>Node152&#45;&gt;Node157</title>
 <path fill="none" stroke="midnightblue" d="M625.311,-331.503C655.297,-325.614 691.503,-318.503 718.469,-313.208"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="624.54,-328.087 615.402,-333.449 625.889,-334.956 624.54,-328.087"/>
 </g>
-<!-- Node161 -->
-<g id="node32" class="node"><title>Node161</title>
+<!-- Node166 -->
+<g id="node32" class="node"><title>Node166</title>
 <g id="a_node32"><a xlink:href="classvtkvmtkUnstructuredGridNeighborhood.html" target="_top" xlink:title="Apply a neighborhood to the vertices on of a unstructured grid data set. ">
 <polygon fill="white" stroke="black" points="664.289,-259.5 664.289,-277.5 853.141,-277.5 853.141,-259.5 664.289,-259.5"/>
 <text text-anchor="middle" x="758.715" y="-265.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkUnstructuredGridNeighborhood</text>
 </a>
 </g>
 </g>
-<!-- Node147&#45;&gt;Node161 -->
-<g id="edge31" class="edge"><title>Node147&#45;&gt;Node161</title>
+<!-- Node152&#45;&gt;Node166 -->
+<g id="edge31" class="edge"><title>Node152&#45;&gt;Node166</title>
 <path fill="none" stroke="midnightblue" d="M617.187,-329.731C620.659,-328.167 624.027,-326.429 627.171,-324.5 646.727,-312.501 643.022,-298.474 663.171,-287.5 670.816,-283.336 679.257,-280.08 687.854,-277.534"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="615.821,-326.508 607.838,-333.473 618.422,-333.006 615.821,-326.508"/>
 </g>
-<!-- Node150 -->
-<g id="node21" class="node"><title>Node150</title>
-<g id="a_node21"><a xlink:href="classvtkvmtkPolyDataManifoldExtendedNeighborhood.html" target="_top" xlink:title=".. ">
+<!-- Node155 -->
+<g id="node21" class="node"><title>Node155</title>
+<g id="a_node21"><a xlink:href="classvtkvmtkPolyDataManifoldExtendedNeighborhood.html" target="_top" xlink:title="Apply a an extended neighborhood to the points of a manifold surface. ">
 <polygon fill="white" stroke="black" points="890.259,-365.5 890.259,-393.5 1060.78,-393.5 1060.78,-365.5 890.259,-365.5"/>
 <text text-anchor="start" x="898.259" y="-381.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataManifoldExtended</text>
 <text text-anchor="middle" x="975.517" y="-371.5" font-family="Helvetica,sans-Serif" font-size="10.00">Neighborhood</text>
 </a>
 </g>
 </g>
-<!-- Node149&#45;&gt;Node150 -->
-<g id="edge20" class="edge"><title>Node149&#45;&gt;Node150</title>
+<!-- Node154&#45;&gt;Node155 -->
+<g id="edge20" class="edge"><title>Node154&#45;&gt;Node155</title>
 <path fill="none" stroke="midnightblue" d="M864.826,-379.5C873.266,-379.5 881.724,-379.5 889.993,-379.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="864.556,-376 854.556,-379.5 864.555,-383 864.556,-376"/>
 </g>
-<!-- Node153 -->
-<g id="node24" class="node"><title>Node153</title>
+<!-- Node158 -->
+<g id="node24" class="node"><title>Node158</title>
 <g id="a_node24"><a xlink:href="classvtkvmtkEmptyStencil.html" target="_top" xlink:title="create a stencil but do not apply a weighting to the neighborhoods of the data set. ">
 <polygon fill="white" stroke="black" points="921.396,-312.5 921.396,-330.5 1029.64,-330.5 1029.64,-312.5 921.396,-312.5"/>
 <text text-anchor="middle" x="975.517" y="-318.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkEmptyStencil</text>
 </a>
 </g>
 </g>
-<!-- Node152&#45;&gt;Node153 -->
-<g id="edge23" class="edge"><title>Node152&#45;&gt;Node153</title>
+<!-- Node157&#45;&gt;Node158 -->
+<g id="edge23" class="edge"><title>Node157&#45;&gt;Node158</title>
 <path fill="none" stroke="midnightblue" d="M809.144,-309.182C842.652,-311.678 886.911,-314.974 921.209,-317.529"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="809.345,-305.687 799.113,-308.435 808.825,-312.668 809.345,-305.687"/>
 </g>
-<!-- Node154 -->
-<g id="node25" class="node"><title>Node154</title>
-<g id="a_node25"><a xlink:href="classvtkvmtkPolyDataManifoldStencil.html" target="_top" xlink:title=".. ">
+<!-- Node159 -->
+<g id="node25" class="node"><title>Node159</title>
+<g id="a_node25"><a xlink:href="classvtkvmtkPolyDataManifoldStencil.html" target="_top" xlink:title="Base class for stencils applied to a manifold surface. ">
 <polygon fill="white" stroke="black" points="896.379,-275.5 896.379,-293.5 1054.65,-293.5 1054.65,-275.5 896.379,-275.5"/>
 <text text-anchor="middle" x="975.517" y="-281.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataManifoldStencil</text>
 </a>
 </g>
 </g>
-<!-- Node152&#45;&gt;Node154 -->
-<g id="edge24" class="edge"><title>Node152&#45;&gt;Node154</title>
+<!-- Node157&#45;&gt;Node159 -->
+<g id="edge24" class="edge"><title>Node157&#45;&gt;Node159</title>
 <path fill="none" stroke="midnightblue" d="M809.377,-300.645C835.137,-298.126 867.204,-294.991 896.209,-292.156"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="808.725,-297.192 799.113,-301.648 809.406,-304.159 808.725,-297.192"/>
 </g>
-<!-- Node155 -->
-<g id="node26" class="node"><title>Node155</title>
+<!-- Node160 -->
+<g id="node26" class="node"><title>Node160</title>
 <g id="a_node26"><a xlink:href="classvtkvmtkPolyDataAreaWeightedUmbrellaStencil.html" target="_top" xlink:title="Apply umbrella (laplacian) weighting to the neighborhood connections of a surface. ">
 <polygon fill="white" stroke="black" points="1101.03,-333.5 1101.03,-361.5 1254.69,-361.5 1254.69,-333.5 1101.03,-333.5"/>
 <text text-anchor="start" x="1109.03" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataAreaWeighted</text>
@@ -472,26 +472,26 @@
 </a>
 </g>
 </g>
-<!-- Node154&#45;&gt;Node155 -->
-<g id="edge25" class="edge"><title>Node154&#45;&gt;Node155</title>
+<!-- Node159&#45;&gt;Node160 -->
+<g id="edge25" class="edge"><title>Node159&#45;&gt;Node160</title>
 <path fill="none" stroke="midnightblue" d="M1038.24,-296.11C1045.94,-298.229 1053.61,-300.681 1060.78,-303.5 1078.01,-310.283 1079.74,-317.221 1096.78,-324.5 1104.49,-327.797 1112.82,-330.781 1121.09,-333.424"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1039.07,-292.71 1028.51,-293.601 1037.32,-299.488 1039.07,-292.71"/>
 </g>
-<!-- Node156 -->
-<g id="node27" class="node"><title>Node156</title>
+<!-- Node161 -->
+<g id="node27" class="node"><title>Node161</title>
 <g id="a_node27"><a xlink:href="classvtkvmtkPolyDataGradientStencil.html" target="_top" xlink:title="Apply gradient weighting to the neighborhood connections of a surface. ">
 <polygon fill="white" stroke="black" points="1098.44,-296.5 1098.44,-314.5 1257.27,-314.5 1257.27,-296.5 1098.44,-296.5"/>
 <text text-anchor="middle" x="1177.86" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataGradientStencil</text>
 </a>
 </g>
 </g>
-<!-- Node154&#45;&gt;Node156 -->
-<g id="edge26" class="edge"><title>Node154&#45;&gt;Node156</title>
+<!-- Node159&#45;&gt;Node161 -->
+<g id="edge26" class="edge"><title>Node159&#45;&gt;Node161</title>
 <path fill="none" stroke="midnightblue" d="M1064.95,-293.77C1076.05,-294.933 1087.34,-296.116 1098.27,-297.262"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1065.15,-290.271 1054.84,-292.709 1064.42,-297.233 1065.15,-290.271"/>
 </g>
-<!-- Node157 -->
-<g id="node28" class="node"><title>Node157</title>
+<!-- Node162 -->
+<g id="node28" class="node"><title>Node162</title>
 <g id="a_node28"><a xlink:href="classvtkvmtkPolyDataLaplaceBeltramiStencil.html" target="_top" xlink:title="Apply LB weighting to the neighborhood connections of a surface. ">
 <polygon fill="white" stroke="black" points="1096.78,-249.5 1096.78,-277.5 1258.94,-277.5 1258.94,-249.5 1096.78,-249.5"/>
 <text text-anchor="start" x="1104.78" y="-265.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataLaplaceBeltrami</text>
@@ -499,26 +499,26 @@
 </a>
 </g>
 </g>
-<!-- Node154&#45;&gt;Node157 -->
-<g id="edge27" class="edge"><title>Node154&#45;&gt;Node157</title>
+<!-- Node159&#45;&gt;Node162 -->
+<g id="edge27" class="edge"><title>Node159&#45;&gt;Node162</title>
 <path fill="none" stroke="midnightblue" d="M1064.89,-275.237C1075.45,-274.13 1086.18,-273.005 1096.62,-271.911"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1064.42,-271.767 1054.84,-276.291 1065.15,-278.729 1064.42,-271.767"/>
 </g>
-<!-- Node160 -->
-<g id="node31" class="node"><title>Node160</title>
+<!-- Node165 -->
+<g id="node31" class="node"><title>Node165</title>
 <g id="a_node31"><a xlink:href="classvtkvmtkPolyDataUmbrellaStencil.html" target="_top" xlink:title="Weight the neighborhood connections of a surface mesh with a laplacian. ">
 <polygon fill="white" stroke="black" points="1097.62,-212.5 1097.62,-230.5 1258.1,-230.5 1258.1,-212.5 1097.62,-212.5"/>
 <text text-anchor="middle" x="1177.86" y="-218.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataUmbrellaStencil</text>
 </a>
 </g>
 </g>
-<!-- Node154&#45;&gt;Node160 -->
-<g id="edge30" class="edge"><title>Node154&#45;&gt;Node160</title>
+<!-- Node159&#45;&gt;Node165 -->
+<g id="edge30" class="edge"><title>Node159&#45;&gt;Node165</title>
 <path fill="none" stroke="midnightblue" d="M1008.2,-271.748C1032.25,-262.351 1066.27,-249.664 1096.78,-240.5 1108.96,-236.841 1122.35,-233.43 1134.63,-230.536"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1006.88,-268.505 998.858,-275.427 1009.44,-275.018 1006.88,-268.505"/>
 </g>
-<!-- Node158 -->
-<g id="node29" class="node"><title>Node158</title>
+<!-- Node163 -->
+<g id="node29" class="node"><title>Node163</title>
 <g id="a_node29"><a xlink:href="classvtkvmtkPolyDataFELaplaceBeltramiStencil.html" target="_top" xlink:title="Apply finite&#45;element LB weighting to the neighborhood connections of a surface. ">
 <polygon fill="white" stroke="black" points="1301.33,-272.5 1301.33,-300.5 1439.6,-300.5 1439.6,-272.5 1301.33,-272.5"/>
 <text text-anchor="start" x="1309.33" y="-288.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataFELaplace</text>
@@ -526,13 +526,13 @@
 </a>
 </g>
 </g>
-<!-- Node157&#45;&gt;Node158 -->
-<g id="edge28" class="edge"><title>Node157&#45;&gt;Node158</title>
+<!-- Node162&#45;&gt;Node163 -->
+<g id="edge28" class="edge"><title>Node162&#45;&gt;Node163</title>
 <path fill="none" stroke="midnightblue" d="M1269.33,-274.417C1280,-275.704 1290.75,-277.001 1301.04,-278.244"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1269.49,-270.911 1259.14,-273.187 1268.65,-277.86 1269.49,-270.911"/>
 </g>
-<!-- Node159 -->
-<g id="node30" class="node"><title>Node159</title>
+<!-- Node164 -->
+<g id="node30" class="node"><title>Node164</title>
 <g id="a_node30"><a xlink:href="classvtkvmtkPolyDataFVFELaplaceBeltramiStencil.html" target="_top" xlink:title="Apply finite&#45;volume, finite&#45;element LB weighting to the neighborhood connections of a surface...">
 <polygon fill="white" stroke="black" points="1294.94,-225.5 1294.94,-253.5 1445.99,-253.5 1445.99,-225.5 1294.94,-225.5"/>
 <text text-anchor="start" x="1302.94" y="-241.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyDataFVFELaplace</text>
@@ -540,52 +540,52 @@
 </a>
 </g>
 </g>
-<!-- Node157&#45;&gt;Node159 -->
-<g id="edge29" class="edge"><title>Node157&#45;&gt;Node159</title>
+<!-- Node162&#45;&gt;Node164 -->
+<g id="edge29" class="edge"><title>Node162&#45;&gt;Node164</title>
 <path fill="none" stroke="midnightblue" d="M1269.16,-252.13C1277.73,-251.051 1286.35,-249.966 1294.74,-248.908"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="1268.63,-248.669 1259.14,-253.391 1269.5,-255.615 1268.63,-248.669"/>
 </g>
-<!-- Node163 -->
-<g id="node34" class="node"><title>Node163</title>
+<!-- Node168 -->
+<g id="node34" class="node"><title>Node168</title>
 <g id="a_node34"><a xlink:href="classvtkvmtkDataSetItems.html" target="_top" xlink:title="Create a collection of data set items, one for every point within the data set. ">
 <polygon fill="white" stroke="black" points="329.645,-296.5 329.645,-314.5 440.112,-314.5 440.112,-296.5 329.645,-296.5"/>
 <text text-anchor="middle" x="384.878" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkDataSetItems</text>
 </a>
 </g>
 </g>
-<!-- Node162&#45;&gt;Node163 -->
-<g id="edge33" class="edge"><title>Node162&#45;&gt;Node163</title>
+<!-- Node167&#45;&gt;Node168 -->
+<g id="edge33" class="edge"><title>Node167&#45;&gt;Node168</title>
 <path fill="none" stroke="midnightblue" d="M224.468,-305.5C255.582,-305.5 296.66,-305.5 329.325,-305.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="224.325,-302 214.325,-305.5 224.325,-309 224.325,-302"/>
 </g>
-<!-- Node164 -->
-<g id="node35" class="node"><title>Node164</title>
+<!-- Node169 -->
+<g id="node35" class="node"><title>Node169</title>
 <g id="a_node35"><a xlink:href="classvtkvmtkNeighborhoods.html" target="_top" xlink:title="Create an empty, polydata, polydata manifold, polydata manifold extended, or unstructured grid neighb...">
 <polygon fill="white" stroke="black" points="509.457,-296.5 509.457,-314.5 627.171,-314.5 627.171,-296.5 509.457,-296.5"/>
 <text text-anchor="middle" x="568.314" y="-302.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkNeighborhoods</text>
 </a>
 </g>
 </g>
-<!-- Node163&#45;&gt;Node164 -->
-<g id="edge34" class="edge"><title>Node163&#45;&gt;Node164</title>
+<!-- Node168&#45;&gt;Node169 -->
+<g id="edge34" class="edge"><title>Node168&#45;&gt;Node169</title>
 <path fill="none" stroke="midnightblue" d="M450.496,-305.5C469.729,-305.5 490.672,-305.5 509.445,-305.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="450.315,-302 440.315,-305.5 450.315,-309 450.315,-302"/>
 </g>
-<!-- Node165 -->
-<g id="node36" class="node"><title>Node165</title>
+<!-- Node170 -->
+<g id="node36" class="node"><title>Node170</title>
 <g id="a_node36"><a xlink:href="classvtkvmtkStencils.html" target="_top" xlink:title="Create an empty, umbrella, area weighted umbrella, finite&#45;element LP, or finite&#45;volume finite&#45;element...">
 <polygon fill="white" stroke="black" points="525.863,-259.5 525.863,-277.5 610.765,-277.5 610.765,-259.5 525.863,-259.5"/>
 <text text-anchor="middle" x="568.314" y="-265.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkStencils</text>
 </a>
 </g>
 </g>
-<!-- Node163&#45;&gt;Node165 -->
-<g id="edge35" class="edge"><title>Node163&#45;&gt;Node165</title>
+<!-- Node168&#45;&gt;Node170 -->
+<g id="edge35" class="edge"><title>Node168&#45;&gt;Node170</title>
 <path fill="none" stroke="midnightblue" d="M440.086,-294.446C467.466,-288.862 500.172,-282.192 525.567,-277.013"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="439.361,-291.021 430.263,-296.449 440.76,-297.88 439.361,-291.021"/>
 </g>
-<!-- Node168 -->
-<g id="node39" class="node"><title>Node168</title>
+<!-- Node173 -->
+<g id="node39" class="node"><title>Node173</title>
 <g id="a_node39"><a xlink:href="classvtkvmtkOpenNLLinearSystemSolver.html" target="_top" xlink:title="Solve a linear system of equations using open NL. ">
 <polygon fill="white" stroke="black" points="310.743,-217.5 310.743,-245.5 459.014,-245.5 459.014,-217.5 310.743,-217.5"/>
 <text text-anchor="start" x="318.743" y="-233.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkOpenNLLinearSystem</text>
@@ -593,8 +593,8 @@
 </a>
 </g>
 </g>
-<!-- Node167&#45;&gt;Node168 -->
-<g id="edge38" class="edge"><title>Node167&#45;&gt;Node168</title>
+<!-- Node172&#45;&gt;Node173 -->
+<g id="edge38" class="edge"><title>Node172&#45;&gt;Node173</title>
 <path fill="none" stroke="midnightblue" d="M257.05,-231.5C274.622,-231.5 293.176,-231.5 310.509,-231.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="256.834,-228 246.834,-231.5 256.834,-235 256.834,-228"/>
 </g>

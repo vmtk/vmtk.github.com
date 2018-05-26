@@ -1,5 +1,5 @@
 <map id="vtkvmtkFEAssembler" name="vtkvmtkFEAssembler">
-<area shape="rect" id="node2" href="$classvtkvmtkSparseMatrix.html" title=".. " alt="" coords="19,92,164,117"/>
-<area shape="rect" id="node3" href="$classvtkvmtkSparseMatrixRow.html" title=".. " alt="" coords="5,5,177,31"/>
-<area shape="rect" id="node4" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="187,92,334,117"/>
+<area shape="rect" id="node3" href="$classvtkvmtkSparseMatrix.html" title="Class for constructing sparse matrices from a dataset and performing basic mathematical operations on..." alt="" coords="27,179,172,205"/>
+<area shape="rect" id="node4" href="$classvtkvmtkSparseMatrixRow.html" title="Class to handle operating on rows of a sparse matrix. " alt="" coords="46,80,218,105"/>
+<area shape="rect" id="node5" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="172,129,319,155"/>
 </map>

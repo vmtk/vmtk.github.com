@@ -67,23 +67,26 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkPolyDataMeanCurvature-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkPolyDataMeanCurvature Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>..  
+<p>Compute the mean curvature and mean curvature normals of surface point neighborhoods with a particular stencil applied.  
  <a href="classvtkvmtkPolyDataMeanCurvature.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkPolyDataMeanCurvature_8h_source.html">vtkvmtkPolyDataMeanCurvature.h</a>&gt;</code></p>
-
-<p>Inherits vtkPolyDataAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkPolyDataMeanCurvature:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkPolyDataMeanCurvature__inherit__graph.svg" width="223" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for vtkvmtkPolyDataMeanCurvature:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkPolyDataMeanCurvature__coll__graph.svg" width="223" height="359"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkPolyDataMeanCurvature__coll__graph.svg" width="348" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -175,18 +178,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a73c7410b87bdebfcdf502a200fab4943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a892bdeb974c2474569d5e662eeb77ec4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataMeanCurvature.html#a892bdeb974c2474569d5e662eeb77ec4">ComputeMeanCurvatureNormals</a></td></tr>
 <tr class="separator:a892bdeb974c2474569d5e662eeb77ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:acb34fe65fc6c504a267000091323c5ad"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataMeanCurvature.html#acb34fe65fc6c504a267000091323c5ad">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:acb34fe65fc6c504a267000091323c5ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a541caa0c65f84658fd54bac89f5143c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataMeanCurvature.html#a541caa0c65f84658fd54bac89f5143c2">vtkvmtkPolyDataMeanCurvature</a> (const <a class="el" href="classvtkvmtkPolyDataMeanCurvature.html">vtkvmtkPolyDataMeanCurvature</a> &amp;)</td></tr>
-<tr class="separator:a541caa0c65f84658fd54bac89f5143c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5277704e9dcf812e886a66395a2dc03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataMeanCurvature.html#ae5277704e9dcf812e886a66395a2dc03">operator=</a> (const <a class="el" href="classvtkvmtkPolyDataMeanCurvature.html">vtkvmtkPolyDataMeanCurvature</a> &amp;)</td></tr>
-<tr class="separator:ae5277704e9dcf812e886a66395a2dc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>.. </p>
+<div class="textblock"><p>Compute the mean curvature and mean curvature normals of surface point neighborhoods with a particular stencil applied. </p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:46:44 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.5 </dd></dl>
 <p>.. </p>
@@ -211,7 +205,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a36e9ea4c81007b27929d5ab6e90d3957"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36e9ea4c81007b27929d5ab6e90d3957">&#9670;&nbsp;</a></span>vtkvmtkPolyDataMeanCurvature() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e9ea4c81007b27929d5ab6e90d3957">&#9670;&nbsp;</a></span>vtkvmtkPolyDataMeanCurvature()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -260,32 +254,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a541caa0c65f84658fd54bac89f5143c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a541caa0c65f84658fd54bac89f5143c2">&#9670;&nbsp;</a></span>vtkvmtkPolyDataMeanCurvature() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkPolyDataMeanCurvature::vtkvmtkPolyDataMeanCurvature </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkPolyDataMeanCurvature.html">vtkvmtkPolyDataMeanCurvature</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae5ddafc45cb77404c894a7b161c232e2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5ddafc45cb77404c894a7b161c232e2">&#9670;&nbsp;</a></span>New()</h2>
@@ -306,31 +274,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acb34fe65fc6c504a267000091323c5ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb34fe65fc6c504a267000091323c5ad">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkPolyDataMeanCurvature::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -560,7 +503,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataMeanCurvature_8h_source.html#l00047">47</a> of file <a class="el" href="vtkvmtkPolyDataMeanCurvature_8h_source.html">vtkvmtkPolyDataMeanCurvature.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {this-&gt;<a class="code" href="classvtkvmtkPolyDataMeanCurvature.html#a1a491b3a34cb018b5253ef1e1b962d66">SetStencilType</a>(<a class="code" href="vtkvmtkConstants_8h.html#a06fc87d81c62e9abb8790b6e5713c55baede3541a3335e4b913fd06ecf7ff38e9">VTK_VMTK_UMBRELLA_STENCIL</a>);};</div><div class="ttc" id="classvtkvmtkPolyDataMeanCurvature_html_a1a491b3a34cb018b5253ef1e1b962d66"><div class="ttname"><a href="classvtkvmtkPolyDataMeanCurvature.html#a1a491b3a34cb018b5253ef1e1b962d66">vtkvmtkPolyDataMeanCurvature::SetStencilType</a></div><div class="ttdeci">virtual void SetStencilType(int)</div></div>
+<div class="ttc" id="vtkvmtkConstants_8h_html_a06fc87d81c62e9abb8790b6e5713c55baede3541a3335e4b913fd06ecf7ff38e9"><div class="ttname"><a href="vtkvmtkConstants_8h.html#a06fc87d81c62e9abb8790b6e5713c55baede3541a3335e4b913fd06ecf7ff38e9">VTK_VMTK_UMBRELLA_STENCIL</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkConstants_8h_source.html#l00055">vtkvmtkConstants.h:55</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a45e8215a1aa9e2266e7f51bcb440de57"></a>
@@ -587,7 +532,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataMeanCurvature_8h_source.html#l00049">49</a> of file <a class="el" href="vtkvmtkPolyDataMeanCurvature_8h_source.html">vtkvmtkPolyDataMeanCurvature.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {this-&gt;<a class="code" href="classvtkvmtkPolyDataMeanCurvature.html#a1a491b3a34cb018b5253ef1e1b962d66">SetStencilType</a>(<a class="code" href="vtkvmtkConstants_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba373784a3df73b3358b2a3a0d34fe1baa">VTK_VMTK_AREA_WEIGHTED_UMBRELLA_STENCIL</a>);};</div><div class="ttc" id="classvtkvmtkPolyDataMeanCurvature_html_a1a491b3a34cb018b5253ef1e1b962d66"><div class="ttname"><a href="classvtkvmtkPolyDataMeanCurvature.html#a1a491b3a34cb018b5253ef1e1b962d66">vtkvmtkPolyDataMeanCurvature::SetStencilType</a></div><div class="ttdeci">virtual void SetStencilType(int)</div></div>
+<div class="ttc" id="vtkvmtkConstants_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba373784a3df73b3358b2a3a0d34fe1baa"><div class="ttname"><a href="vtkvmtkConstants_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba373784a3df73b3358b2a3a0d34fe1baa">VTK_VMTK_AREA_WEIGHTED_UMBRELLA_STENCIL</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkConstants_8h_source.html#l00056">vtkvmtkConstants.h:56</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a63b9ee68ad00bb282d971e47dde84391"></a>
@@ -614,7 +561,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataMeanCurvature_8h_source.html#l00051">51</a> of file <a class="el" href="vtkvmtkPolyDataMeanCurvature_8h_source.html">vtkvmtkPolyDataMeanCurvature.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {this-&gt;<a class="code" href="classvtkvmtkPolyDataMeanCurvature.html#a1a491b3a34cb018b5253ef1e1b962d66">SetStencilType</a>(<a class="code" href="vtkvmtkConstants_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8adc860fa561104aa4fa4aef1c1a90cf">VTK_VMTK_FE_LAPLACE_BELTRAMI_STENCIL</a>);};</div><div class="ttc" id="classvtkvmtkPolyDataMeanCurvature_html_a1a491b3a34cb018b5253ef1e1b962d66"><div class="ttname"><a href="classvtkvmtkPolyDataMeanCurvature.html#a1a491b3a34cb018b5253ef1e1b962d66">vtkvmtkPolyDataMeanCurvature::SetStencilType</a></div><div class="ttdeci">virtual void SetStencilType(int)</div></div>
+<div class="ttc" id="vtkvmtkConstants_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba8adc860fa561104aa4fa4aef1c1a90cf"><div class="ttname"><a href="vtkvmtkConstants_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8adc860fa561104aa4fa4aef1c1a90cf">VTK_VMTK_FE_LAPLACE_BELTRAMI_STENCIL</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkConstants_8h_source.html#l00058">vtkvmtkConstants.h:58</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9d2377f226216c46b0123bc0f424242e"></a>
@@ -641,7 +590,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataMeanCurvature_8h_source.html#l00053">53</a> of file <a class="el" href="vtkvmtkPolyDataMeanCurvature_8h_source.html">vtkvmtkPolyDataMeanCurvature.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {this-&gt;<a class="code" href="classvtkvmtkPolyDataMeanCurvature.html#a1a491b3a34cb018b5253ef1e1b962d66">SetStencilType</a>(<a class="code" href="vtkvmtkConstants_8h.html#a06fc87d81c62e9abb8790b6e5713c55baaaf58810974e7258428acd821b89334e">VTK_VMTK_FVFE_LAPLACE_BELTRAMI_STENCIL</a>);};</div><div class="ttc" id="classvtkvmtkPolyDataMeanCurvature_html_a1a491b3a34cb018b5253ef1e1b962d66"><div class="ttname"><a href="classvtkvmtkPolyDataMeanCurvature.html#a1a491b3a34cb018b5253ef1e1b962d66">vtkvmtkPolyDataMeanCurvature::SetStencilType</a></div><div class="ttdeci">virtual void SetStencilType(int)</div></div>
+<div class="ttc" id="vtkvmtkConstants_8h_html_a06fc87d81c62e9abb8790b6e5713c55baaaf58810974e7258428acd821b89334e"><div class="ttname"><a href="vtkvmtkConstants_8h.html#a06fc87d81c62e9abb8790b6e5713c55baaaf58810974e7258428acd821b89334e">VTK_VMTK_FVFE_LAPLACE_BELTRAMI_STENCIL</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkConstants_8h_source.html#l00059">vtkvmtkConstants.h:59</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a997512ad043409a8189b5a77378fccc5"></a>
@@ -1051,32 +1002,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae5277704e9dcf812e886a66395a2dc03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae5277704e9dcf812e886a66395a2dc03">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkPolyDataMeanCurvature::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkPolyDataMeanCurvature.html">vtkvmtkPolyDataMeanCurvature</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

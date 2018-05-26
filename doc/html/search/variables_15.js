@@ -5,6 +5,5 @@ var searchData=
   ['warpvectorsarrayname',['WarpVectorsArrayName',['../classvtkvmtkBoundaryLayerGenerator.html#ac38a502a3d7c19cadc30352af495d03c',1,'vtkvmtkBoundaryLayerGenerator']]],
   ['weights',['Weights',['../classvtkvmtkStencil.html#a19b8035906c8ef9f47a3f7a2843594ff',1,'vtkvmtkStencil']]],
   ['weightscaling',['WeightScaling',['../classvtkvmtkStencil.html#a30be64729ed70ece12bdc8ded345d72b',1,'vtkvmtkStencil::WeightScaling()'],['../classvtkvmtkStencils.html#a16d9a9614a985d77373073049fa0e1a3',1,'vtkvmtkStencils::WeightScaling()']]],
-  ['writetobase64',['WriteToBase64',['../classvtkvmtkPNGWriter.html#a2106cc6c162fcd183ba4365504f27ba0',1,'vtkvmtkPNGWriter']]],
-  ['wstrength',['WStrength',['../classvtkvmtkVesselEnhancingDiffusionImageFilter.html#a837cd5c8f2e84801d83f70041d35b9e8',1,'vtkvmtkVesselEnhancingDiffusionImageFilter']]]
+  ['writetobase64',['WriteToBase64',['../classvtkvmtkPNGWriter.html#a2106cc6c162fcd183ba4365504f27ba0',1,'vtkvmtkPNGWriter']]]
 ];

@@ -1,6 +1,6 @@
 <map id="vtkvmtkUnstructuredGridFELaplaceAssembler" name="vtkvmtkUnstructuredGridFELaplaceAssembler">
-<area shape="rect" id="node2" href="$classvtkvmtkFEAssembler.html" title="Base class on which to build to build specific finite element routines. " alt="" coords="145,192,291,217"/>
-<area shape="rect" id="node3" href="$classvtkvmtkSparseMatrix.html" title=".. " alt="" coords="19,92,164,117"/>
-<area shape="rect" id="node4" href="$classvtkvmtkSparseMatrixRow.html" title=".. " alt="" coords="5,5,177,31"/>
-<area shape="rect" id="node5" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="187,92,334,117"/>
+<area shape="rect" id="node2" href="$classvtkvmtkFEAssembler.html" title="Base class on which to build to build specific finite element routines. " alt="" coords="48,267,194,292"/>
+<area shape="rect" id="node4" href="$classvtkvmtkSparseMatrix.html" title="Class for constructing sparse matrices from a dataset and performing basic mathematical operations on..." alt="" coords="49,179,194,205"/>
+<area shape="rect" id="node5" href="$classvtkvmtkSparseMatrixRow.html" title="Class to handle operating on rows of a sparse matrix. " alt="" coords="67,80,239,105"/>
+<area shape="rect" id="node6" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="193,129,340,155"/>
 </map>

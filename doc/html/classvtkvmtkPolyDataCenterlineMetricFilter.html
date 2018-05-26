@@ -67,7 +67,6 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkPolyDataCenterlineMetricFilter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkPolyDataCenterlineMetricFilter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
@@ -81,7 +80,13 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for vtkvmtkPolyDataCenterlineMetricFilter:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkPolyDataCenterlineMetricFilter__inherit__graph.svg" width="422" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkPolyDataCenterlineMetricFilter__inherit__graph.svg" width="619" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkPolyDataCenterlineMetricFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkPolyDataCenterlineMetricFilter__coll__graph.svg" width="192" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -187,26 +192,12 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7f75f1d9118e52a7247a31c9c6e47e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a019aeaae53398fa6dd95873a5891e413"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataCenterlineMetricFilter.html#a019aeaae53398fa6dd95873a5891e413">IncludeBifurcations</a></td></tr>
 <tr class="separator:a019aeaae53398fa6dd95873a5891e413"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a7de0e4e91dd9d5dd6ff7b627a5a61ad8"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataCenterlineMetricFilter.html#a7de0e4e91dd9d5dd6ff7b627a5a61ad8">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a7de0e4e91dd9d5dd6ff7b627a5a61ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a8465955871ca9902f17e16d4b427d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataCenterlineMetricFilter.html#a5a8465955871ca9902f17e16d4b427d8">vtkvmtkPolyDataCenterlineMetricFilter</a> (const <a class="el" href="classvtkvmtkPolyDataCenterlineMetricFilter.html">vtkvmtkPolyDataCenterlineMetricFilter</a> &amp;)</td></tr>
-<tr class="separator:a5a8465955871ca9902f17e16d4b427d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f28714f765a00a0ee4d6a89801b168b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataCenterlineMetricFilter.html#a5f28714f765a00a0ee4d6a89801b168b">operator=</a> (const <a class="el" href="classvtkvmtkPolyDataCenterlineMetricFilter.html">vtkvmtkPolyDataCenterlineMetricFilter</a> &amp;)</td></tr>
-<tr class="separator:a5f28714f765a00a0ee4d6a89801b168b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base class for evaluating metrics over a centerline onto a surface. </p>
-<p>calculate the minimum euclidian from surface points to a centerline.</p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:46:43 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.8 </dd></dl>
-<p>Pure virtual functions.</p>
-<dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:46:43 </dd></dl>
-<dl class="section rcs"><dt>Revision</dt><dd>1.4 </dd></dl>
-<p>This function has three distinct ways of working: 1) UseRadiusInformation: 1 (default=1) -&gt; Compute the euclidian distance between a surface point and the closest centerline point (based on polyball association). 2) EvaluateTubeFunction: 1 (default=0) -&gt; Compute the euclidian distance between a surface point and the center of the tube function (based on polyball line). 3) EvaluateCenterlineRadius: 1 (default=0) -&gt; Find the centerline point which is closest to a surface point (similar to method 1), and set distance at that surface point to the radius of the sphere associated with the closest centerline point id.</p>
-<p>By setting ProjectPointArrays: 1 (default=0) -&gt; Project point data from the centerline onto every surface point by linearly interpolating the relative position of the surface point on the line formed by the two closest centerline points. </p>
+<p>Pure virtual functions. </p>
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataCenterlineMetricFilter_8h_source.html#l00039">39</a> of file <a class="el" href="vtkvmtkPolyDataCenterlineMetricFilter_8h_source.html">vtkvmtkPolyDataCenterlineMetricFilter.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
@@ -228,7 +219,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a45e8364aa6d37c541f32941aff148048"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45e8364aa6d37c541f32941aff148048">&#9670;&nbsp;</a></span>vtkvmtkPolyDataCenterlineMetricFilter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a45e8364aa6d37c541f32941aff148048">&#9670;&nbsp;</a></span>vtkvmtkPolyDataCenterlineMetricFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,60 +268,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5a8465955871ca9902f17e16d4b427d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a8465955871ca9902f17e16d4b427d8">&#9670;&nbsp;</a></span>vtkvmtkPolyDataCenterlineMetricFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkPolyDataCenterlineMetricFilter::vtkvmtkPolyDataCenterlineMetricFilter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkPolyDataCenterlineMetricFilter.html">vtkvmtkPolyDataCenterlineMetricFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7de0e4e91dd9d5dd6ff7b627a5a61ad8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7de0e4e91dd9d5dd6ff7b627a5a61ad8">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkPolyDataCenterlineMetricFilter::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented in <a class="el" href="classvtkvmtkPolyDataCenterlineAbscissaMetricFilter.html#aff3e06caa4c69e9d92eac5f7f6036ae7">vtkvmtkPolyDataCenterlineAbscissaMetricFilter</a>, and <a class="el" href="classvtkvmtkPolyDataCenterlineAngularMetricFilter.html#ab8b452ba2aaa277cc8e72c663a0e611a">vtkvmtkPolyDataCenterlineAngularMetricFilter</a>.</p>
-
-</div>
-</div>
 <a id="a222829dcf61e4781244ec7471c2d4f7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a222829dcf61e4781244ec7471c2d4f7e">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -1154,32 +1092,6 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implemented in <a class="el" href="classvtkvmtkPolyDataCenterlineAbscissaMetricFilter.html#a675111583d59db6400c75a0d73cffe3a">vtkvmtkPolyDataCenterlineAbscissaMetricFilter</a>, and <a class="el" href="classvtkvmtkPolyDataCenterlineAngularMetricFilter.html#ad4d962c4821608319344908023eaf6b2">vtkvmtkPolyDataCenterlineAngularMetricFilter</a>.</p>
-
-</div>
-</div>
-<a id="a5f28714f765a00a0ee4d6a89801b168b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f28714f765a00a0ee4d6a89801b168b">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkPolyDataCenterlineMetricFilter::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkPolyDataCenterlineMetricFilter.html">vtkvmtkPolyDataCenterlineMetricFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

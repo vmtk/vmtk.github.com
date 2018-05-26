@@ -67,19 +67,28 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkLinearToQuadraticMeshFilter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkLinearToQuadraticMeshFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Converts linear elements to quadratic.  
+<p>Converts linear mesh elements to quadratic mesh elements (optionally) by executing by projecting mid side nodes onto the surface and relaxing projection if Jacobian is negative, otherwise does not project nodes.  
  <a href="classvtkvmtkLinearToQuadraticMeshFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkLinearToQuadraticMeshFilter_8h_source.html">vtkvmtkLinearToQuadraticMeshFilter.h</a>&gt;</code></p>
-
-<p>Inherits vtkUnstructuredGridAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkLinearToQuadraticMeshFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkLinearToQuadraticMeshFilter__inherit__graph.svg" width="207" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkLinearToQuadraticMeshFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkLinearToQuadraticMeshFilter__coll__graph.svg" width="207" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -187,18 +196,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a0f3563a96276ad80766ee7fd060ce375"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa96c3ee74eb7a1e7134ea46de1a7ec8f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearToQuadraticMeshFilter.html#aa96c3ee74eb7a1e7134ea46de1a7ec8f">TestFinalJacobians</a></td></tr>
 <tr class="separator:aa96c3ee74eb7a1e7134ea46de1a7ec8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a9da2fec4fda2ed4d4ccd5c735c70bc4a"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearToQuadraticMeshFilter.html#a9da2fec4fda2ed4d4ccd5c735c70bc4a">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a9da2fec4fda2ed4d4ccd5c735c70bc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3697226ebc718427f58d029a7ef69fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearToQuadraticMeshFilter.html#ad3697226ebc718427f58d029a7ef69fd">vtkvmtkLinearToQuadraticMeshFilter</a> (const <a class="el" href="classvtkvmtkLinearToQuadraticMeshFilter.html">vtkvmtkLinearToQuadraticMeshFilter</a> &amp;)</td></tr>
-<tr class="separator:ad3697226ebc718427f58d029a7ef69fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a136a788c15570ec30040ea92bc72a950"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearToQuadraticMeshFilter.html#a136a788c15570ec30040ea92bc72a950">operator=</a> (const <a class="el" href="classvtkvmtkLinearToQuadraticMeshFilter.html">vtkvmtkLinearToQuadraticMeshFilter</a> &amp;)</td></tr>
-<tr class="separator:a136a788c15570ec30040ea92bc72a950"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Converts linear elements to quadratic. </p>
+<div class="textblock"><p>Converts linear mesh elements to quadratic mesh elements (optionally) by executing by projecting mid side nodes onto the surface and relaxing projection if Jacobian is negative, otherwise does not project nodes. </p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:47:48 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.4 </dd></dl>
 <p>... </p>
@@ -223,7 +223,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aadaa07d3002c101063d174b687609419"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadaa07d3002c101063d174b687609419">&#9670;&nbsp;</a></span>vtkvmtkLinearToQuadraticMeshFilter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aadaa07d3002c101063d174b687609419">&#9670;&nbsp;</a></span>vtkvmtkLinearToQuadraticMeshFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,58 +272,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad3697226ebc718427f58d029a7ef69fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3697226ebc718427f58d029a7ef69fd">&#9670;&nbsp;</a></span>vtkvmtkLinearToQuadraticMeshFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkLinearToQuadraticMeshFilter::vtkvmtkLinearToQuadraticMeshFilter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkLinearToQuadraticMeshFilter.html">vtkvmtkLinearToQuadraticMeshFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9da2fec4fda2ed4d4ccd5c735c70bc4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9da2fec4fda2ed4d4ccd5c735c70bc4a">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkLinearToQuadraticMeshFilter::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ae5eca9d4ee244acfedc162baf1571429"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae5eca9d4ee244acfedc162baf1571429">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -1214,32 +1163,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a136a788c15570ec30040ea92bc72a950"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a136a788c15570ec30040ea92bc72a950">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkLinearToQuadraticMeshFilter::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkLinearToQuadraticMeshFilter.html">vtkvmtkLinearToQuadraticMeshFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

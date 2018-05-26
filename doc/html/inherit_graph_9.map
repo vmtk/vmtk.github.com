@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classvtkvmtkFDNEUTReader.html" title="vtkvmtkFDNEUTReader" alt="" coords="237,5,401,31"/>
-<area shape="rect" id="node3" href="$classvtkvmtkXdaReader.html" title="reads libmesh Xda files " alt="" coords="252,55,386,80"/>
+<area shape="rect" id="node2" href="$classvtkvmtkFDNEUTReader.html" title="Reads FDNEUT Fidap files. " alt="" coords="237,5,401,31"/>
+<area shape="rect" id="node3" href="$classvtkvmtkTetGenReader.html" title="reads unstructured grid data from Tetgen node/elem format " alt="" coords="242,55,396,80"/>
+<area shape="rect" id="node4" href="$classvtkvmtkXdaReader.html" title="reads libmesh Xda files " alt="" coords="252,104,386,129"/>
 </map>

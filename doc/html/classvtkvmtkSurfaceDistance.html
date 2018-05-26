@@ -67,7 +67,6 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkSurfaceDistance-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkSurfaceDistance Class Reference</div>  </div>
@@ -78,8 +77,18 @@ $(function() {
  <a href="classvtkvmtkSurfaceDistance.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkSurfaceDistance_8h_source.html">vtkvmtkSurfaceDistance.h</a>&gt;</code></p>
-
-<p>Inherits vtkPolyDataAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkSurfaceDistance:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkSurfaceDistance__inherit__graph.svg" width="175" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkSurfaceDistance:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkSurfaceDistance__coll__graph.svg" width="175" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -145,15 +154,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ad6c0215efb4ed38b02c0b5aa2efac706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af920a0894102c52ef03a66503da965c6"><td class="memItemLeft" align="right" valign="top">vtkPolyData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkSurfaceDistance.html#af920a0894102c52ef03a66503da965c6">ReferenceSurface</a></td></tr>
 <tr class="separator:af920a0894102c52ef03a66503da965c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a72d16262b1ca4f78bd11449869a407e4"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkSurfaceDistance.html#a72d16262b1ca4f78bd11449869a407e4">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a72d16262b1ca4f78bd11449869a407e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27f0e44fbc92b70a9ebea710e61d2a9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkSurfaceDistance.html#a27f0e44fbc92b70a9ebea710e61d2a9d">vtkvmtkSurfaceDistance</a> (const <a class="el" href="classvtkvmtkSurfaceDistance.html">vtkvmtkSurfaceDistance</a> &amp;)</td></tr>
-<tr class="separator:a27f0e44fbc92b70a9ebea710e61d2a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add601ff77abd25d3e337b5683da9661c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkSurfaceDistance.html#add601ff77abd25d3e337b5683da9661c">operator=</a> (const <a class="el" href="classvtkvmtkSurfaceDistance.html">vtkvmtkSurfaceDistance</a> &amp;)</td></tr>
-<tr class="separator:add601ff77abd25d3e337b5683da9661c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>calculate the euclidian distance of one surface from another </p>
@@ -180,7 +180,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8bac16b0fc81e1254480540fef9cc804"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bac16b0fc81e1254480540fef9cc804">&#9670;&nbsp;</a></span>vtkvmtkSurfaceDistance() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8bac16b0fc81e1254480540fef9cc804">&#9670;&nbsp;</a></span>vtkvmtkSurfaceDistance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -229,58 +229,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a27f0e44fbc92b70a9ebea710e61d2a9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27f0e44fbc92b70a9ebea710e61d2a9d">&#9670;&nbsp;</a></span>vtkvmtkSurfaceDistance() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkSurfaceDistance::vtkvmtkSurfaceDistance </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkSurfaceDistance.html">vtkvmtkSurfaceDistance</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a72d16262b1ca4f78bd11449869a407e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a72d16262b1ca4f78bd11449869a407e4">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkSurfaceDistance::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a7ea2674839a985588669d6b8ac5979a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ea2674839a985588669d6b8ac5979a3">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -702,32 +651,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="add601ff77abd25d3e337b5683da9661c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add601ff77abd25d3e337b5683da9661c">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkSurfaceDistance::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkSurfaceDistance.html">vtkvmtkSurfaceDistance</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

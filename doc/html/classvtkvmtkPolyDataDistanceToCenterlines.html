@@ -67,16 +67,28 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkPolyDataDistanceToCenterlines-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkPolyDataDistanceToCenterlines Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>&gt;</code></p>
+<p>calculate the minimum euclidian from surface points to a centerline.  
+ <a href="classvtkvmtkPolyDataDistanceToCenterlines.html#details">More...</a></p>
 
-<p>Inherits vtkPolyDataAlgorithm.</p>
+<p><code>#include &lt;<a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkPolyDataDistanceToCenterlines:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkPolyDataDistanceToCenterlines__inherit__graph.svg" width="198" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkPolyDataDistanceToCenterlines:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkPolyDataDistanceToCenterlines__coll__graph.svg" width="198" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -170,19 +182,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a59ec39786598962975685721eea263a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98883f096a1d5e76de04ed23a3317b75"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataDistanceToCenterlines.html#a98883f096a1d5e76de04ed23a3317b75">ProjectPointArrays</a></td></tr>
 <tr class="separator:a98883f096a1d5e76de04ed23a3317b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aa33fcf75bc917c698b6687e3fe11a100"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataDistanceToCenterlines.html#aa33fcf75bc917c698b6687e3fe11a100">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:aa33fcf75bc917c698b6687e3fe11a100"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd89059af25caa2c100b716e5cda214"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataDistanceToCenterlines.html#a4cd89059af25caa2c100b716e5cda214">vtkvmtkPolyDataDistanceToCenterlines</a> (const <a class="el" href="classvtkvmtkPolyDataDistanceToCenterlines.html">vtkvmtkPolyDataDistanceToCenterlines</a> &amp;)</td></tr>
-<tr class="separator:a4cd89059af25caa2c100b716e5cda214"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43224539e49fe79a6028c913dcf0c4b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataDistanceToCenterlines.html#a43224539e49fe79a6028c913dcf0c4b3">operator=</a> (const <a class="el" href="classvtkvmtkPolyDataDistanceToCenterlines.html">vtkvmtkPolyDataDistanceToCenterlines</a> &amp;)</td></tr>
-<tr class="separator:a43224539e49fe79a6028c913dcf0c4b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00042">42</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
+<div class="textblock"><p>calculate the minimum euclidian from surface points to a centerline. </p>
+<dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:46:43 </dd></dl>
+<dl class="section rcs"><dt>Revision</dt><dd>1.4 </dd></dl>
+<p>This function has three distinct ways of working: 1) UseRadiusInformation: 1 (default=1) -&gt; Compute the euclidian distance between a surface point and the closest centerline point (based on polyball association). 2) EvaluateTubeFunction: 1 (default=0) -&gt; Compute the euclidian distance between a surface point and the center of the tube function (based on polyball line). 3) EvaluateCenterlineRadius: 1 (default=0) -&gt; Find the centerline point which is closest to a surface point (similar to method 1), and set distance at that surface point to the radius of the sphere associated with the closest centerline point id. By setting ProjectPointArrays: 1 (default=0) -&gt; Project point data from the centerline onto every surface point by linearly interpolating the relative position of the surface point on the line formed by the two closest centerline points. </p>
+
+<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00041">41</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a58d659575d2b939e0b00206bbe781e5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58d659575d2b939e0b00206bbe781e5b">&#9670;&nbsp;</a></span>Superclass</h2>
@@ -196,13 +203,13 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00046">46</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00045">45</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad7cfd52c615583b08542a5147513445f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7cfd52c615583b08542a5147513445f">&#9670;&nbsp;</a></span>vtkvmtkPolyDataDistanceToCenterlines() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7cfd52c615583b08542a5147513445f">&#9670;&nbsp;</a></span>vtkvmtkPolyDataDistanceToCenterlines()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,32 +258,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4cd89059af25caa2c100b716e5cda214"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cd89059af25caa2c100b716e5cda214">&#9670;&nbsp;</a></span>vtkvmtkPolyDataDistanceToCenterlines() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkPolyDataDistanceToCenterlines::vtkvmtkPolyDataDistanceToCenterlines </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkPolyDataDistanceToCenterlines.html">vtkvmtkPolyDataDistanceToCenterlines</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2bd1d5bd79f0cd5e8b90dd392ac43e7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2bd1d5bd79f0cd5e8b90dd392ac43e7b">&#9670;&nbsp;</a></span>New()</h2>
@@ -297,31 +278,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa33fcf75bc917c698b6687e3fe11a100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa33fcf75bc917c698b6687e3fe11a100">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkPolyDataDistanceToCenterlines::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1047,32 +1003,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a43224539e49fe79a6028c913dcf0c4b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43224539e49fe79a6028c913dcf0c4b3">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkPolyDataDistanceToCenterlines::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkPolyDataDistanceToCenterlines.html">vtkvmtkPolyDataDistanceToCenterlines</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a43193440ebca4eb7a34d049f500562df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a43193440ebca4eb7a34d049f500562df">&#9670;&nbsp;</a></span>DistanceToCenterlinesArrayName</h2>
@@ -1094,7 +1024,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00079">79</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00078">78</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
 
 </div>
 </div>
@@ -1118,7 +1048,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00080">80</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00079">79</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
 
 </div>
 </div>
@@ -1142,7 +1072,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00082">82</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00081">81</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
 
 </div>
 </div>
@@ -1166,7 +1096,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00084">84</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00083">83</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
 
 </div>
 </div>
@@ -1190,7 +1120,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00085">85</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00084">84</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
 
 </div>
 </div>
@@ -1214,7 +1144,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00086">86</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00085">85</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
 
 </div>
 </div>
@@ -1238,7 +1168,7 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00087">87</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html#l00086">86</a> of file <a class="el" href="vtkvmtkPolyDataDistanceToCenterlines_8h_source.html">vtkvmtkPolyDataDistanceToCenterlines.h</a>.</p>
 
 </div>
 </div>

@@ -24,28 +24,28 @@
 <area shape="rect" id="node31" href="$classvtkvmtkPolyDataCenterlineProjection.html" title="Project all point data from a centerline onto a surface. " alt="" coords="230,1237,412,1276"/>
 <area shape="rect" id="node32" href="$classvtkvmtkPolyDataCenterlines.html" title="Compute centerlines from surface. " alt="" coords="227,1300,415,1325"/>
 <area shape="rect" id="node33" href="$classvtkvmtkPolyDataCenterlineSections.html" title="Extract a set of vessel sections from a surface along a centerline. " alt="" coords="230,1349,412,1388"/>
-<area shape="rect" id="node34" href="$classvtkvmtkPolyDataClampedSmoothingFilter.html" title=".. " alt="" coords="202,1412,440,1451"/>
-<area shape="rect" id="node35" href="$classvtkvmtkPolyDataDiscreteElasticaFilter.html" title=".. " alt="" coords="213,1475,429,1513"/>
-<area shape="rect" id="node36" href="$classvtkvmtkPolyDataDistanceToCenterlines.html" title="vtkvmtkPolyDataDistanceTo\lCenterlines" alt="" coords="228,1537,414,1576"/>
+<area shape="rect" id="node34" href="$classvtkvmtkPolyDataClampedSmoothingFilter.html" title="Apply a laplacian or curvature based smoothing filter to a surface with particular points fixed in pl..." alt="" coords="202,1412,440,1451"/>
+<area shape="rect" id="node35" href="$classvtkvmtkPolyDataDiscreteElasticaFilter.html" title="Not implemented; smooth a surface with via an elastic forces method. " alt="" coords="213,1475,429,1513"/>
+<area shape="rect" id="node36" href="$classvtkvmtkPolyDataDistanceToCenterlines.html" title="calculate the minimum euclidian from surface points to a centerline. " alt="" coords="228,1537,414,1576"/>
 <area shape="rect" id="node37" href="$classvtkvmtkPolyDataFlowExtensionsFilter.html" title="remove the end caps of a surface at flow inlets/outlets and append a cylinder with matching radius th..." alt="" coords="214,1600,428,1639"/>
-<area shape="rect" id="node38" href="$classvtkvmtkPolyDataGradientFilter.html" title=".. " alt="" coords="220,1663,422,1688"/>
-<area shape="rect" id="node39" href="$classvtkvmtkPolyDataHarmonicMappingFilter.html" title=".. " alt="" coords="207,1712,435,1751"/>
+<area shape="rect" id="node38" href="$classvtkvmtkPolyDataGradientFilter.html" title="Compute the gradient of data stored within an polydata surface. " alt="" coords="220,1663,422,1688"/>
+<area shape="rect" id="node39" href="$classvtkvmtkPolyDataHarmonicMappingFilter.html" title="Construct a harmonic function over each vascular surface segment used during mapping order to stretch..." alt="" coords="207,1712,435,1751"/>
 <area shape="rect" id="node41" href="$classvtkvmtkPolyDataKiteRemovalFilter.html" title="removes small protrusions (kites) from a surface based on a SizeFactor parameter " alt="" coords="223,1775,419,1813"/>
 <area shape="rect" id="node42" href="$classvtkvmtkPolyDataLineEmbedder.html" title="not implemented. Takes a number of lines and embed them in a mesh. " alt="" coords="217,1837,425,1863"/>
 <area shape="rect" id="node43" href="$classvtkvmtkPolyDataLocalGeometry.html" title="Compute shape&#45;related quantities over a surface. " alt="" coords="215,1887,426,1912"/>
-<area shape="rect" id="node44" href="$classvtkvmtkPolyDataMeanCurvature.html" title=".. " alt="" coords="215,1936,427,1961"/>
-<area shape="rect" id="node45" href="$classvtkvmtkPolyDataMultipleCylinderHarmonicMappingFilter.html" title=".. " alt="" coords="213,1985,429,2024"/>
+<area shape="rect" id="node44" href="$classvtkvmtkPolyDataMeanCurvature.html" title="Compute the mean curvature and mean curvature normals of surface point neighborhoods with a particula..." alt="" coords="215,1936,427,1961"/>
+<area shape="rect" id="node45" href="$classvtkvmtkPolyDataMultipleCylinderHarmonicMappingFilter.html" title="Wrap a harmonic function over a cylinders for every group within a surface. " alt="" coords="213,1985,429,2024"/>
 <area shape="rect" id="node46" href="$classvtkvmtkPolyDataNetworkExtraction.html" title="create an approximated network graph (preliminary to centerline) from an input surface with atleast o..." alt="" coords="207,2048,435,2073"/>
 <area shape="rect" id="node47" href="$classvtkvmtkPolyDataNormalPlaneEstimator.html" title="calculate the normal plane alone a centerline path " alt="" coords="222,2097,420,2136"/>
 <area shape="rect" id="node48" href="$classvtkvmtkPolyDataPatchingFilter.html" title="“cut” a set of contiguous rectangular regions on the mesh that follow iso&#45;contours in the Stretched..." alt="" coords="220,2160,422,2185"/>
-<area shape="rect" id="node49" href="$classvtkvmtkPolyDataPotentialFit.html" title="... " alt="" coords="227,2209,415,2235"/>
+<area shape="rect" id="node49" href="$classvtkvmtkPolyDataPotentialFit.html" title="Create an explicitly deformable model which evolves a surface to gradient magnitudes of an input imag..." alt="" coords="227,2209,415,2235"/>
 <area shape="rect" id="node50" href="$classvtkvmtkPolyDataReferenceSystemBoundaryMetricFilter.html" title="Assists in mapping and patching workflow by computing boundary metrics in the boundary reference syst..." alt="" coords="227,2259,415,2297"/>
-<area shape="rect" id="node51" href="$classvtkvmtkPolyDataRigidSurfaceModelling.html" title=".. " alt="" coords="223,2321,419,2360"/>
+<area shape="rect" id="node51" href="$classvtkvmtkPolyDataRigidSurfaceModelling.html" title="Not implemented; no utility developed yet. " alt="" coords="223,2321,419,2360"/>
 <area shape="rect" id="node52" href="$classvtkvmtkPolyDataScissors.html" title="not implemented, try to cut a surface along a line. " alt="" coords="235,2384,406,2409"/>
 <area shape="rect" id="node53" href="$classvtkvmtkPolyDataSizingFunction.html" title="constructs a sizing function for volume meshing on the basis of input surface " alt="" coords="217,2433,425,2459"/>
-<area shape="rect" id="node54" href="$classvtkvmtkPolyDataStencilFlowFilter.html" title=".. " alt="" coords="227,2483,415,2521"/>
+<area shape="rect" id="node54" href="$classvtkvmtkPolyDataStencilFlowFilter.html" title="Displace points of a surface with an iterative algorithm based on stencil weighting. " alt="" coords="227,2483,415,2521"/>
 <area shape="rect" id="node55" href="$classvtkvmtkPolyDataStretchMappingFilter.html" title="Constructs a harmonic function over each vascular segment which is used to map and stretch the longit..." alt="" coords="214,2545,428,2584"/>
-<area shape="rect" id="node56" href="$classvtkvmtkPolyDataSurfaceRemeshing.html" title=".. " alt="" coords="204,2608,438,2633"/>
+<area shape="rect" id="node56" href="$classvtkvmtkPolyDataSurfaceRemeshing.html" title="remesh a surface using quality triangles. " alt="" coords="204,2608,438,2633"/>
 <area shape="rect" id="node57" href="$classvtkvmtkSimpleCapPolyData.html" title="Add caps to boundaries. " alt="" coords="228,2657,414,2683"/>
 <area shape="rect" id="node58" href="$classvtkvmtkSimplifyVoronoiDiagram.html" title="Remove non essential Voronoi polygon points (little spikes). " alt="" coords="217,2707,425,2732"/>
 <area shape="rect" id="node59" href="$classvtkvmtkSmoothCapPolyData.html" title="Add caps to boundaries. " alt="" coords="225,2756,416,2781"/>
@@ -54,9 +54,10 @@
 <area shape="rect" id="node62" href="$classvtkvmtkStreamlineToParticlesFilter.html" title="Cluster streamlines based on Mahalanobis distance metric and K&#45;Means clustering. " alt="" coords="223,2931,419,2969"/>
 <area shape="rect" id="node63" href="$classvtkvmtkSurfaceDistance.html" title="calculate the euclidian distance of one surface from another " alt="" coords="239,2993,403,3019"/>
 <area shape="rect" id="node64" href="$classvtkvmtkSurfaceProjection.html" title="project point data from a reference surface onto an input surface. " alt="" coords="235,3043,407,3068"/>
-<area shape="rect" id="node65" href="$classvtkvmtkSurfMeshWrapper.html" title=".. " alt="" coords="234,3092,408,3117"/>
-<area shape="rect" id="node66" href="$classvtkvmtkUnstructuredGridCenterlineSections.html" title="obtain sections of an unstructured grid mesh with lie along a centerline path. " alt="" coords="207,3141,435,3180"/>
-<area shape="rect" id="node67" href="$classvtkvmtkVoronoiDiagram3D.html" title="Compute the Voronoi diagram from a Delaunay tessellation or an internal Delaunay tessellation. " alt="" coords="231,3204,411,3229"/>
+<area shape="rect" id="node65" href="$classvtkvmtkSurfMeshWrapper.html" title="wrapper around surfmesh surface mesh generator by Gordan Stuhne; May not be working. " alt="" coords="234,3092,408,3117"/>
+<area shape="rect" id="node66" href="$classvtkvmtkTopologicalSeamFilter.html" title="Create a feature edge on a surface from a point and implicit plane function. " alt="" coords="222,3141,420,3167"/>
+<area shape="rect" id="node67" href="$classvtkvmtkUnstructuredGridCenterlineSections.html" title="obtain sections of an unstructured grid mesh with lie along a centerline path. " alt="" coords="207,3191,435,3229"/>
+<area shape="rect" id="node68" href="$classvtkvmtkVoronoiDiagram3D.html" title="Compute the Voronoi diagram from a Delaunay tessellation or an internal Delaunay tessellation. " alt="" coords="231,3253,411,3279"/>
 <area shape="rect" id="node14" href="$classvtkvmtkCenterlineBranchExtractor.html" title="Split and group centerlines. " alt="" coords="490,565,713,591"/>
 <area shape="rect" id="node15" href="$classvtkvmtkCenterlineEndpointExtractor.html" title="Split a centerline into tracts which can be used to mark endpoints of the centerline. " alt="" coords="511,615,691,653"/>
 <area shape="rect" id="node16" href="$classvtkvmtkCenterlineSplitExtractor.html" title="Split a centerline into three tracts with the middle (blanked) tract being initialized between any tw..." alt="" coords="498,677,704,703"/>
@@ -64,5 +65,5 @@
 <area shape="rect" id="node22" href="$classvtkvmtkSteepestDescentShooter.html" title="experimental method attempting movement across voronoi vertices; implement with caution. " alt="" coords="494,860,709,885"/>
 <area shape="rect" id="node29" href="$classvtkvmtkPolyDataCenterlineAbscissaMetricFilter.html" title="Project the abscissa metric of the nearest centerline point to every point of a surface. " alt="" coords="510,1144,692,1183"/>
 <area shape="rect" id="node30" href="$classvtkvmtkPolyDataCenterlineAngularMetricFilter.html" title="create an angular metric array on each branch of a split surface representing he periodic circumferen..." alt="" coords="510,1207,692,1245"/>
-<area shape="rect" id="node40" href="$classvtkvmtkPolyDataCylinderHarmonicMappingFilter.html" title="vtkvmtkPolyDataCylinderHarmonic\lMappingFilter" alt="" coords="488,1712,714,1751"/>
+<area shape="rect" id="node40" href="$classvtkvmtkPolyDataCylinderHarmonicMappingFilter.html" title="Create a single instance wrapping a harmonic function over a cylinder so that mapping can be applied ..." alt="" coords="488,1712,714,1751"/>
 </map>

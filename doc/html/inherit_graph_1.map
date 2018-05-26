@@ -13,7 +13,7 @@
 <area shape="rect" id="node13" href="$classvtkvmtkGradientMagnitudeRecursiveGaussian2DImageFilter.html" title="Wrapper class around itk::GradientMagnitudeRecursiveGaussian2DImageFilter. " alt="" coords="252,681,473,720"/>
 <area shape="rect" id="node14" href="$classvtkvmtkGradientMagnitudeRecursiveGaussianImageFilter.html" title="Wrapper class around itk::GradientMagnitudeRecursiveGaussianImageFilter. " alt="" coords="261,744,464,783"/>
 <area shape="rect" id="node15" href="$classvtkvmtkGrayscaleMorphologyImageFilter.html" title="Wrapper class around itk::GrayscaleMorphologyImageFilter. " alt="" coords="264,807,461,845"/>
-<area shape="rect" id="node16" href="$classvtkvmtkImageBoxPainter.html" title=".. " alt="" coords="278,869,447,895"/>
+<area shape="rect" id="node16" href="$classvtkvmtkImageBoxPainter.html" title="Create a box shaped sub&#45;volume within a 3D image and paint (assign a value to) every sub&#45;volume eleme..." alt="" coords="278,869,447,895"/>
 <area shape="rect" id="node17" href="$classvtkvmtkLaplacianSegmentationLevelSetImageFilter.html" title="Wrapper class around itk::LaplacianSegmentationLevelSetImageFilter. " alt="" coords="260,919,465,957"/>
 <area shape="rect" id="node18" href="$classvtkvmtkLevelSetSigmoidFilter.html" title="Apply a sigmoid function to every voxel of an image. " alt="" coords="264,981,461,1007"/>
 <area shape="rect" id="node19" href="$classvtkvmtkMedialCurveFilter.html" title="flux driven automatic centerline extraction from a surface " alt="" coords="277,1031,448,1056"/>
@@ -24,7 +24,8 @@
 <area shape="rect" id="node24" href="$classvtkvmtkRecursiveGaussianImageFilter.html" title="Wrapper class around itk::RecursiveGaussianImageFilter. " alt="" coords="271,1317,454,1356"/>
 <area shape="rect" id="node25" href="$classvtkvmtkSatoVesselnessMeasureImageFilter.html" title="Wrapper class around itk::SatoVesselnessMeasureImageFilter. " alt="" coords="256,1380,469,1419"/>
 <area shape="rect" id="node26" href="$classvtkvmtkSigmoidImageFilter.html" title="Wrapper class around itk::SigmoidImageFilter. " alt="" coords="272,1443,453,1468"/>
-<area shape="rect" id="node27" href="$classvtkvmtkUpwindGradientMagnitudeImageFilter.html" title="Wrapper class around itk::UpwindGradientMagnitudeImageFilter. " alt="" coords="250,1492,475,1531"/>
-<area shape="rect" id="node28" href="$classvtkvmtkVesselEnhancingDiffusionImageFilter.html" title="Wrapper class around itk::VesselEnhancingDiffusionImageFilter. " alt="" coords="252,1555,473,1593"/>
-<area shape="rect" id="node29" href="$classvtkvmtkVesselnessMeasureImageFilter.html" title="Wrapper class around itk::VesselnessMeasureImageFilter. " alt="" coords="270,1617,455,1656"/>
+<area shape="rect" id="node27" href="$classvtkvmtkThresholdSegmentationLevelSetImageFilter.html" title="Wrapper class around itk::ThresholdSegmentationLevelSetImageFilter. " alt="" coords="258,1492,467,1531"/>
+<area shape="rect" id="node28" href="$classvtkvmtkUpwindGradientMagnitudeImageFilter.html" title="Wrapper class around itk::UpwindGradientMagnitudeImageFilter. " alt="" coords="250,1555,475,1593"/>
+<area shape="rect" id="node29" href="$classvtkvmtkVesselEnhancingDiffusionImageFilter.html" title="Wrapper class around itk::VesselEnhancingDiffusionImageFilter. " alt="" coords="252,1617,473,1656"/>
+<area shape="rect" id="node30" href="$classvtkvmtkVesselnessMeasureImageFilter.html" title="Wrapper class around itk::VesselnessMeasureImageFilter. " alt="" coords="270,1680,455,1719"/>
 </map>

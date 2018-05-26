@@ -67,19 +67,28 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkLinearizeMeshFilter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkLinearizeMeshFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Converts linear elements to quadratic.  
+<p>Convert linear mesh elements to quadratic mesh elements by ignoring mid side nodes.  
  <a href="classvtkvmtkLinearizeMeshFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkLinearizeMeshFilter_8h_source.html">vtkvmtkLinearizeMeshFilter.h</a>&gt;</code></p>
-
-<p>Inherits vtkUnstructuredGridAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkLinearizeMeshFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkLinearizeMeshFilter__inherit__graph.svg" width="207" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkLinearizeMeshFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkLinearizeMeshFilter__coll__graph.svg" width="207" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -127,18 +136,9 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ac9db88b931d9544e29379e7444c5df69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearizeMeshFilter.html#ac9db88b931d9544e29379e7444c5df69">CleanOutput</a></td></tr>
 <tr class="separator:ac9db88b931d9544e29379e7444c5df69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a3daf63d6f50a4b4bc64db8e72b916f99"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearizeMeshFilter.html#a3daf63d6f50a4b4bc64db8e72b916f99">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a3daf63d6f50a4b4bc64db8e72b916f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45009e118c238aca913a7474af8225d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearizeMeshFilter.html#a45009e118c238aca913a7474af8225d9">vtkvmtkLinearizeMeshFilter</a> (const <a class="el" href="classvtkvmtkLinearizeMeshFilter.html">vtkvmtkLinearizeMeshFilter</a> &amp;)</td></tr>
-<tr class="separator:a45009e118c238aca913a7474af8225d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85058141b2412677272b1565147489cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearizeMeshFilter.html#a85058141b2412677272b1565147489cf">operator=</a> (const <a class="el" href="classvtkvmtkLinearizeMeshFilter.html">vtkvmtkLinearizeMeshFilter</a> &amp;)</td></tr>
-<tr class="separator:a85058141b2412677272b1565147489cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Converts linear elements to quadratic. </p>
+<div class="textblock"><p>Convert linear mesh elements to quadratic mesh elements by ignoring mid side nodes. </p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:47:48 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.4 </dd></dl>
 <p>... </p>
@@ -163,7 +163,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6a79cee1c742427ea1973c07b529a83a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a79cee1c742427ea1973c07b529a83a">&#9670;&nbsp;</a></span>vtkvmtkLinearizeMeshFilter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a79cee1c742427ea1973c07b529a83a">&#9670;&nbsp;</a></span>vtkvmtkLinearizeMeshFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,58 +212,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a45009e118c238aca913a7474af8225d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45009e118c238aca913a7474af8225d9">&#9670;&nbsp;</a></span>vtkvmtkLinearizeMeshFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkLinearizeMeshFilter::vtkvmtkLinearizeMeshFilter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkLinearizeMeshFilter.html">vtkvmtkLinearizeMeshFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3daf63d6f50a4b4bc64db8e72b916f99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3daf63d6f50a4b4bc64db8e72b916f99">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkLinearizeMeshFilter::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a9686589a6f7483764bf52ccbc00f718d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9686589a6f7483764bf52ccbc00f718d">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -574,32 +523,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a85058141b2412677272b1565147489cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85058141b2412677272b1565147489cf">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkLinearizeMeshFilter::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkLinearizeMeshFilter.html">vtkvmtkLinearizeMeshFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
