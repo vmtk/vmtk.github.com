@@ -1,4 +1,4 @@
 <map id="vtkvmtkDataSetItems" name="vtkvmtkDataSetItems">
-<area shape="rect" id="node2" href="$classvtkvmtkItems.html" title="Control allocation and memory footprint of item instances. " alt="" coords="29,92,129,117"/>
-<area shape="rect" id="node3" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="33,5,125,31"/>
+<area shape="rect" id="node2" href="$classvtkvmtkItems.html" title="Control allocation and memory footprint of item instances. " alt="" coords="29,167,129,192"/>
+<area shape="rect" id="node4" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="95,80,188,105"/>
 </map>

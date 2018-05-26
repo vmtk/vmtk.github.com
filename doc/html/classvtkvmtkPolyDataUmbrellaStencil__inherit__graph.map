@@ -1,7 +1,7 @@
 <map id="vtkvmtkPolyDataUmbrellaStencil" name="vtkvmtkPolyDataUmbrellaStencil">
-<area shape="rect" id="node2" href="$classvtkvmtkPolyDataManifoldStencil.html" title=".. " alt="" coords="7,299,218,324"/>
-<area shape="rect" id="node3" href="$classvtkvmtkStencil.html" title="Apply a weighting matrix to a single neighborhood of a data set. " alt="" coords="59,225,166,251"/>
-<area shape="rect" id="node4" href="$classvtkvmtkNeighborhood.html" title="Query the neighborhood surrounding the set point id in an data set item. " alt="" coords="37,152,187,177"/>
-<area shape="rect" id="node5" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="42,79,183,104"/>
-<area shape="rect" id="node6" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="66,5,159,31"/>
+<area shape="rect" id="node2" href="$classvtkvmtkPolyDataManifoldStencil.html" title="Base class for stencils applied to a manifold surface. " alt="" coords="7,372,218,397"/>
+<area shape="rect" id="node3" href="$classvtkvmtkStencil.html" title="Apply a weighting matrix to a single neighborhood of a data set. " alt="" coords="59,299,166,324"/>
+<area shape="rect" id="node4" href="$classvtkvmtkNeighborhood.html" title="Query the neighborhood surrounding the set point id in an data set item. " alt="" coords="37,225,187,251"/>
+<area shape="rect" id="node5" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="42,152,183,177"/>
+<area shape="rect" id="node6" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="66,79,159,104"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="vtkvmtkEllipticProblem" name="vtkvmtkEllipticProblem">
-<area shape="rect" id="node2" href="$classvtkvmtkDirichletBoundaryConditions.html" title="Set up a Dirichlet (or first&#45;type) boundary conditions that a linear system needs to take along the b..." alt="" coords="235,365,406,404"/>
-<area shape="rect" id="node3" href="$classvtkvmtkBoundaryConditions.html" title="Base class to store nodes, value, and linear system composing a boundary condition. " alt="" coords="234,279,420,304"/>
-<area shape="rect" id="node4" href="$classvtkvmtkLinearSystem.html" title="Base container to hold sparse matrice objects representing a linear system of equations Ax = B..." alt="" coords="144,192,292,217"/>
-<area shape="rect" id="node5" href="$classvtkvmtkSparseMatrix.html" title=".. " alt="" coords="19,92,164,117"/>
-<area shape="rect" id="node6" href="$classvtkvmtkSparseMatrixRow.html" title=".. " alt="" coords="5,5,177,31"/>
-<area shape="rect" id="node7" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="187,92,334,117"/>
+<area shape="rect" id="node4" href="$classvtkvmtkBoundaryConditions.html" title="Base class to store nodes, value, and linear system composing a boundary condition. " alt="" coords="51,353,237,379"/>
+<area shape="rect" id="node5" href="$classvtkvmtkLinearSystem.html" title="Base container to hold sparse matrice objects representing a linear system of equations Ax = B..." alt="" coords="194,267,342,292"/>
+<area shape="rect" id="node6" href="$classvtkvmtkSparseMatrix.html" title="Class for constructing sparse matrices from a dataset and performing basic mathematical operations on..." alt="" coords="195,179,341,205"/>
+<area shape="rect" id="node7" href="$classvtkvmtkSparseMatrixRow.html" title="Class to handle operating on rows of a sparse matrix. " alt="" coords="237,80,409,105"/>
+<area shape="rect" id="node8" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="353,129,500,155"/>
+<area shape="rect" id="node3" href="$classvtkvmtkDirichletBoundaryConditions.html" title="Set up a Dirichlet (or first&#45;type) boundary conditions that a linear system needs to take along the b..." alt="" coords="53,440,225,479"/>
 </map>

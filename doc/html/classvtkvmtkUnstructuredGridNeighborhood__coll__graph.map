@@ -1,5 +1,5 @@
 <map id="vtkvmtkUnstructuredGridNeighborhood" name="vtkvmtkUnstructuredGridNeighborhood">
-<area shape="rect" id="node2" href="$classvtkvmtkNeighborhood.html" title="Query the neighborhood surrounding the set point id in an data set item. " alt="" coords="56,152,206,177"/>
-<area shape="rect" id="node3" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="61,79,202,104"/>
-<area shape="rect" id="node4" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="85,5,177,31"/>
+<area shape="rect" id="node2" href="$classvtkvmtkNeighborhood.html" title="Query the neighborhood surrounding the set point id in an data set item. " alt="" coords="56,225,206,251"/>
+<area shape="rect" id="node3" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="61,152,202,177"/>
+<area shape="rect" id="node4" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="85,79,177,104"/>
 </map>

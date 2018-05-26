@@ -67,7 +67,6 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkGrayscaleMorphologyImageFilter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkGrayscaleMorphologyImageFilter Class Reference</div>  </div>
@@ -78,8 +77,18 @@ $(function() {
  <a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html">vtkvmtkGrayscaleMorphologyImageFilter.h</a>&gt;</code></p>
-
-<p>Inherits vtkSimpleImageToImageFilter.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkGrayscaleMorphologyImageFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkGrayscaleMorphologyImageFilter__inherit__graph.svg" width="208" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkGrayscaleMorphologyImageFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkGrayscaleMorphologyImageFilter__coll__graph.svg" width="208" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -145,15 +154,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ac5641a9873cb8cd3080326555a89bdf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91247ea481c27e8927f691e7016ce459"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#a91247ea481c27e8927f691e7016ce459">Operation</a></td></tr>
 <tr class="separator:a91247ea481c27e8927f691e7016ce459"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a9831acfe1d40356f34a00cb0881d8d9d"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#a9831acfe1d40356f34a00cb0881d8d9d">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a9831acfe1d40356f34a00cb0881d8d9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afc4d0a8f7eaacec551d3718ca2b44bed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#afc4d0a8f7eaacec551d3718ca2b44bed">vtkvmtkGrayscaleMorphologyImageFilter</a> (const <a class="el" href="classvtkvmtkGrayscaleMorphologyImageFilter.html">vtkvmtkGrayscaleMorphologyImageFilter</a> &amp;)</td></tr>
-<tr class="separator:afc4d0a8f7eaacec551d3718ca2b44bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a604d4c11b8d2d125ff049281627be965"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#a604d4c11b8d2d125ff049281627be965">operator=</a> (const <a class="el" href="classvtkvmtkGrayscaleMorphologyImageFilter.html">vtkvmtkGrayscaleMorphologyImageFilter</a> &amp;)</td></tr>
-<tr class="separator:a604d4c11b8d2d125ff049281627be965"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper class around itk::GrayscaleMorphologyImageFilter. </p>
@@ -199,12 +199,16 @@ Private Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html">vtkvmtkGrayscaleMorphologyImageFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a594e7b8720c6e3bccf10bd31eaa5e1e3">DILATE</a>,</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517ae892b2d28e10975af561d7399001c077">ERODE</a>,</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a906931011c710b06fb4ecff66d420f48">CLOSE</a>,</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a350b9bb5eb9fa3357869219793a1992a">OPEN</a></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  };</div><div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_acf2dd8cd25e93f252349cec54930e517ae892b2d28e10975af561d7399001c077"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517ae892b2d28e10975af561d7399001c077">vtkvmtkGrayscaleMorphologyImageFilter::ERODE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00062">vtkvmtkGrayscaleMorphologyImageFilter.h:62</a></div></div>
+<div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_acf2dd8cd25e93f252349cec54930e517a594e7b8720c6e3bccf10bd31eaa5e1e3"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a594e7b8720c6e3bccf10bd31eaa5e1e3">vtkvmtkGrayscaleMorphologyImageFilter::DILATE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00061">vtkvmtkGrayscaleMorphologyImageFilter.h:61</a></div></div>
+<div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_acf2dd8cd25e93f252349cec54930e517a906931011c710b06fb4ecff66d420f48"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a906931011c710b06fb4ecff66d420f48">vtkvmtkGrayscaleMorphologyImageFilter::CLOSE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00063">vtkvmtkGrayscaleMorphologyImageFilter.h:63</a></div></div>
+<div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_acf2dd8cd25e93f252349cec54930e517a350b9bb5eb9fa3357869219793a1992a"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a350b9bb5eb9fa3357869219793a1992a">vtkvmtkGrayscaleMorphologyImageFilter::OPEN</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00064">vtkvmtkGrayscaleMorphologyImageFilter.h:64</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9c3fe3ea216e2081b4170fc2fe5bdcbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c3fe3ea216e2081b4170fc2fe5bdcbb">&#9670;&nbsp;</a></span>vtkvmtkGrayscaleMorphologyImageFilter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c3fe3ea216e2081b4170fc2fe5bdcbb">&#9670;&nbsp;</a></span>vtkvmtkGrayscaleMorphologyImageFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -253,32 +257,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afc4d0a8f7eaacec551d3718ca2b44bed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc4d0a8f7eaacec551d3718ca2b44bed">&#9670;&nbsp;</a></span>vtkvmtkGrayscaleMorphologyImageFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkGrayscaleMorphologyImageFilter::vtkvmtkGrayscaleMorphologyImageFilter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkGrayscaleMorphologyImageFilter.html">vtkvmtkGrayscaleMorphologyImageFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3ad36f51460f300da95166e8b79faaf6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ad36f51460f300da95166e8b79faaf6">&#9670;&nbsp;</a></span>New()</h2>
@@ -299,31 +277,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9831acfe1d40356f34a00cb0881d8d9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9831acfe1d40356f34a00cb0881d8d9d">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkGrayscaleMorphologyImageFilter::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -602,7 +555,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00050">50</a> of file <a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html">vtkvmtkGrayscaleMorphologyImageFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  { this-&gt;<a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#aa933e564fdafae84ccbb1b2a5e175288">SetOperation</a>(<a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a594e7b8720c6e3bccf10bd31eaa5e1e3">DILATE</a>); }</div><div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_aa933e564fdafae84ccbb1b2a5e175288"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#aa933e564fdafae84ccbb1b2a5e175288">vtkvmtkGrayscaleMorphologyImageFilter::SetOperation</a></div><div class="ttdeci">virtual void SetOperation(int)</div></div>
+<div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_acf2dd8cd25e93f252349cec54930e517a594e7b8720c6e3bccf10bd31eaa5e1e3"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a594e7b8720c6e3bccf10bd31eaa5e1e3">vtkvmtkGrayscaleMorphologyImageFilter::DILATE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00061">vtkvmtkGrayscaleMorphologyImageFilter.h:61</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa4d83ffc32309dc954912fea90ac6df4"></a>
@@ -629,7 +584,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00052">52</a> of file <a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html">vtkvmtkGrayscaleMorphologyImageFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  { this-&gt;<a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#aa933e564fdafae84ccbb1b2a5e175288">SetOperation</a>(<a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517ae892b2d28e10975af561d7399001c077">ERODE</a>); }</div><div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_acf2dd8cd25e93f252349cec54930e517ae892b2d28e10975af561d7399001c077"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517ae892b2d28e10975af561d7399001c077">vtkvmtkGrayscaleMorphologyImageFilter::ERODE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00062">vtkvmtkGrayscaleMorphologyImageFilter.h:62</a></div></div>
+<div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_aa933e564fdafae84ccbb1b2a5e175288"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#aa933e564fdafae84ccbb1b2a5e175288">vtkvmtkGrayscaleMorphologyImageFilter::SetOperation</a></div><div class="ttdeci">virtual void SetOperation(int)</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aee23c2a65a79ffc59fdd91376708516d"></a>
@@ -656,7 +613,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00054">54</a> of file <a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html">vtkvmtkGrayscaleMorphologyImageFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  { this-&gt;<a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#aa933e564fdafae84ccbb1b2a5e175288">SetOperation</a>(<a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a906931011c710b06fb4ecff66d420f48">CLOSE</a>); }</div><div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_aa933e564fdafae84ccbb1b2a5e175288"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#aa933e564fdafae84ccbb1b2a5e175288">vtkvmtkGrayscaleMorphologyImageFilter::SetOperation</a></div><div class="ttdeci">virtual void SetOperation(int)</div></div>
+<div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_acf2dd8cd25e93f252349cec54930e517a906931011c710b06fb4ecff66d420f48"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a906931011c710b06fb4ecff66d420f48">vtkvmtkGrayscaleMorphologyImageFilter::CLOSE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00063">vtkvmtkGrayscaleMorphologyImageFilter.h:63</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a6ac80d8f93c2ed206b49685444e3c819"></a>
@@ -683,7 +642,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00056">56</a> of file <a class="el" href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html">vtkvmtkGrayscaleMorphologyImageFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  { this-&gt;<a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#aa933e564fdafae84ccbb1b2a5e175288">SetOperation</a>(<a class="code" href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a350b9bb5eb9fa3357869219793a1992a">OPEN</a>); }</div><div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_aa933e564fdafae84ccbb1b2a5e175288"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#aa933e564fdafae84ccbb1b2a5e175288">vtkvmtkGrayscaleMorphologyImageFilter::SetOperation</a></div><div class="ttdeci">virtual void SetOperation(int)</div></div>
+<div class="ttc" id="classvtkvmtkGrayscaleMorphologyImageFilter_html_acf2dd8cd25e93f252349cec54930e517a350b9bb5eb9fa3357869219793a1992a"><div class="ttname"><a href="classvtkvmtkGrayscaleMorphologyImageFilter.html#acf2dd8cd25e93f252349cec54930e517a350b9bb5eb9fa3357869219793a1992a">vtkvmtkGrayscaleMorphologyImageFilter::OPEN</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkGrayscaleMorphologyImageFilter_8h_source.html#l00064">vtkvmtkGrayscaleMorphologyImageFilter.h:64</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ada12e89741f356762603c468914e337e"></a>
@@ -758,32 +719,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a604d4c11b8d2d125ff049281627be965"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a604d4c11b8d2d125ff049281627be965">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkGrayscaleMorphologyImageFilter::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkGrayscaleMorphologyImageFilter.html">vtkvmtkGrayscaleMorphologyImageFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

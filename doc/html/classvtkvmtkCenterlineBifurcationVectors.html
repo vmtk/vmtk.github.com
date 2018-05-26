@@ -67,7 +67,6 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkCenterlineBifurcationVectors-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkCenterlineBifurcationVectors Class Reference</div>  </div>
@@ -78,8 +77,18 @@ $(function() {
  <a href="classvtkvmtkCenterlineBifurcationVectors.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkCenterlineBifurcationVectors_8h_source.html">vtkvmtkCenterlineBifurcationVectors.h</a>&gt;</code></p>
-
-<p>Inherits vtkPolyDataAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkCenterlineBifurcationVectors:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkCenterlineBifurcationVectors__inherit__graph.svg" width="202" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkCenterlineBifurcationVectors:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkCenterlineBifurcationVectors__coll__graph.svg" width="202" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -233,15 +242,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7a48285d44bee1ac1fc1e5f08c3903e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae238279a9e646fa0324ed8d40e3dbe9d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkCenterlineBifurcationVectors.html#ae238279a9e646fa0324ed8d40e3dbe9d">NormalizeBifurcationVectors</a></td></tr>
 <tr class="separator:ae238279a9e646fa0324ed8d40e3dbe9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af7456ef5796ffb538ef3cfc4c1ef9ed8"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkCenterlineBifurcationVectors.html#af7456ef5796ffb538ef3cfc4c1ef9ed8">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:af7456ef5796ffb538ef3cfc4c1ef9ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae43730b262370f095d144d24d7904de2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkCenterlineBifurcationVectors.html#ae43730b262370f095d144d24d7904de2">vtkvmtkCenterlineBifurcationVectors</a> (const <a class="el" href="classvtkvmtkCenterlineBifurcationVectors.html">vtkvmtkCenterlineBifurcationVectors</a> &amp;)</td></tr>
-<tr class="separator:ae43730b262370f095d144d24d7904de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e6287520171e807c710d94a524e724"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkCenterlineBifurcationVectors.html#a42e6287520171e807c710d94a524e724">operator=</a> (const <a class="el" href="classvtkvmtkCenterlineBifurcationVectors.html">vtkvmtkCenterlineBifurcationVectors</a> &amp;)</td></tr>
-<tr class="separator:a42e6287520171e807c710d94a524e724"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Compute vectors which represent the orientation of branches involved within a bifurcation from a split centerline and bifurcation reference system. </p>
@@ -295,12 +295,14 @@ Private Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkCenterlineBifurcationVectors_8h_source.html#l00110">110</a> of file <a class="el" href="vtkvmtkCenterlineBifurcationVectors_8h_source.html">vtkvmtkCenterlineBifurcationVectors.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="classvtkvmtkCenterlineBifurcationVectors.html#a96837b3ee6450a5f39866329f5a00677ada026e966e60effd078ff42620fa3e04">VTK_VMTK_UPSTREAM_ORIENTATION</a> = 0,</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="classvtkvmtkCenterlineBifurcationVectors.html#a96837b3ee6450a5f39866329f5a00677a1c663176d3b82af4bf86a5a12dfcd3d3">VTK_VMTK_DOWNSTREAM_ORIENTATION</a></div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div><div class="ttc" id="classvtkvmtkCenterlineBifurcationVectors_html_a96837b3ee6450a5f39866329f5a00677a1c663176d3b82af4bf86a5a12dfcd3d3"><div class="ttname"><a href="classvtkvmtkCenterlineBifurcationVectors.html#a96837b3ee6450a5f39866329f5a00677a1c663176d3b82af4bf86a5a12dfcd3d3">vtkvmtkCenterlineBifurcationVectors::VTK_VMTK_DOWNSTREAM_ORIENTATION</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkCenterlineBifurcationVectors_8h_source.html#l00113">vtkvmtkCenterlineBifurcationVectors.h:113</a></div></div>
+<div class="ttc" id="classvtkvmtkCenterlineBifurcationVectors_html_a96837b3ee6450a5f39866329f5a00677ada026e966e60effd078ff42620fa3e04"><div class="ttname"><a href="classvtkvmtkCenterlineBifurcationVectors.html#a96837b3ee6450a5f39866329f5a00677ada026e966e60effd078ff42620fa3e04">vtkvmtkCenterlineBifurcationVectors::VTK_VMTK_UPSTREAM_ORIENTATION</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkCenterlineBifurcationVectors_8h_source.html#l00112">vtkvmtkCenterlineBifurcationVectors.h:112</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af4ee551b7e94634dda7d58c7dbeb484f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4ee551b7e94634dda7d58c7dbeb484f">&#9670;&nbsp;</a></span>vtkvmtkCenterlineBifurcationVectors() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ee551b7e94634dda7d58c7dbeb484f">&#9670;&nbsp;</a></span>vtkvmtkCenterlineBifurcationVectors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,58 +351,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae43730b262370f095d144d24d7904de2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae43730b262370f095d144d24d7904de2">&#9670;&nbsp;</a></span>vtkvmtkCenterlineBifurcationVectors() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkCenterlineBifurcationVectors::vtkvmtkCenterlineBifurcationVectors </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkCenterlineBifurcationVectors.html">vtkvmtkCenterlineBifurcationVectors</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af7456ef5796ffb538ef3cfc4c1ef9ed8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7456ef5796ffb538ef3cfc4c1ef9ed8">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkCenterlineBifurcationVectors::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a1745056c051b58b178f43d4399e318d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1745056c051b58b178f43d4399e318d4">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -1695,32 +1646,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a42e6287520171e807c710d94a524e724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42e6287520171e807c710d94a524e724">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkCenterlineBifurcationVectors::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkCenterlineBifurcationVectors.html">vtkvmtkCenterlineBifurcationVectors</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -67,7 +67,6 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkLinearSystem-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkLinearSystem Class Reference</div>  </div>
@@ -78,12 +77,16 @@ $(function() {
  <a href="classvtkvmtkLinearSystem.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkLinearSystem_8h_source.html">vtkvmtkLinearSystem.h</a>&gt;</code></p>
-
-<p>Inherits vtkObject.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkLinearSystem:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkLinearSystem__inherit__graph.svg" width="159" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for vtkvmtkLinearSystem:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkLinearSystem__coll__graph.svg" width="339" height="223"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkLinearSystem__coll__graph.svg" width="324" height="298"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -139,15 +142,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ade0fb5e43a6966dc383bf4e859c34aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dcf2324fa3364aefb4811dbf5a6076f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classvtkvmtkDoubleVector.html">vtkvmtkDoubleVector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearSystem.html#a0dcf2324fa3364aefb4811dbf5a6076f">B</a></td></tr>
 <tr class="separator:a0dcf2324fa3364aefb4811dbf5a6076f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aeeceb2a5905d1c0c1e5bd9e824db7691"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearSystem.html#aeeceb2a5905d1c0c1e5bd9e824db7691">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:aeeceb2a5905d1c0c1e5bd9e824db7691"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbdda9135581efe8ce4d7217ad9eb81f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearSystem.html#acbdda9135581efe8ce4d7217ad9eb81f">vtkvmtkLinearSystem</a> (const <a class="el" href="classvtkvmtkLinearSystem.html">vtkvmtkLinearSystem</a> &amp;)</td></tr>
-<tr class="separator:acbdda9135581efe8ce4d7217ad9eb81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9bf3ae0e34260da6815e32aae1f2303"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearSystem.html#aa9bf3ae0e34260da6815e32aae1f2303">operator=</a> (const <a class="el" href="classvtkvmtkLinearSystem.html">vtkvmtkLinearSystem</a> &amp;)</td></tr>
-<tr class="separator:aa9bf3ae0e34260da6815e32aae1f2303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base container to hold sparse matrice objects representing a linear system of equations Ax = B. </p>
@@ -175,7 +169,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a75a9342932ffc94f16517c41a0158753"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75a9342932ffc94f16517c41a0158753">&#9670;&nbsp;</a></span>vtkvmtkLinearSystem() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a9342932ffc94f16517c41a0158753">&#9670;&nbsp;</a></span>vtkvmtkLinearSystem()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,32 +218,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acbdda9135581efe8ce4d7217ad9eb81f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbdda9135581efe8ce4d7217ad9eb81f">&#9670;&nbsp;</a></span>vtkvmtkLinearSystem() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkLinearSystem::vtkvmtkLinearSystem </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkLinearSystem.html">vtkvmtkLinearSystem</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="adcdd7c5af71610a0c18c99f5836b3e86"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adcdd7c5af71610a0c18c99f5836b3e86">&#9670;&nbsp;</a></span>New()</h2>
@@ -270,31 +238,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aeeceb2a5905d1c0c1e5bd9e824db7691"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeceb2a5905d1c0c1e5bd9e824db7691">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkLinearSystem::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -587,32 +530,6 @@ Private Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa9bf3ae0e34260da6815e32aae1f2303"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9bf3ae0e34260da6815e32aae1f2303">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkLinearSystem::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkLinearSystem.html">vtkvmtkLinearSystem</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

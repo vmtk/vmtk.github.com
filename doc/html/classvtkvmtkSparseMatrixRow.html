@@ -67,19 +67,28 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkSparseMatrixRow-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkSparseMatrixRow Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>..  
+<p>Class to handle operating on rows of a sparse matrix.  
  <a href="classvtkvmtkSparseMatrixRow.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html">vtkvmtkSparseMatrixRow.h</a>&gt;</code></p>
-
-<p>Inherits vtkObject.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkSparseMatrixRow:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkSparseMatrixRow__inherit__graph.svg" width="183" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkSparseMatrixRow:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkSparseMatrixRow__coll__graph.svg" width="183" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -147,18 +156,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a897e7d62dae75b629383edbd1c71ea9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a976bd2fcb98fdebbd628e5ed7a8aaf31"><td class="memItemLeft" align="right" valign="top">vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkSparseMatrixRow.html#a976bd2fcb98fdebbd628e5ed7a8aaf31">NElements</a></td></tr>
 <tr class="separator:a976bd2fcb98fdebbd628e5ed7a8aaf31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a77d08bfce5b58a999fb84b91a22c852e"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkSparseMatrixRow.html#a77d08bfce5b58a999fb84b91a22c852e">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a77d08bfce5b58a999fb84b91a22c852e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ce431e786dcd065bac4583b84f609b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkSparseMatrixRow.html#a62ce431e786dcd065bac4583b84f609b">vtkvmtkSparseMatrixRow</a> (const <a class="el" href="classvtkvmtkSparseMatrixRow.html">vtkvmtkSparseMatrixRow</a> &amp;)</td></tr>
-<tr class="separator:a62ce431e786dcd065bac4583b84f609b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2510a54916764584b50b3eb03a2547aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkSparseMatrixRow.html#a2510a54916764584b50b3eb03a2547aa">operator=</a> (const <a class="el" href="classvtkvmtkSparseMatrixRow.html">vtkvmtkSparseMatrixRow</a> &amp;)</td></tr>
-<tr class="separator:a2510a54916764584b50b3eb03a2547aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>.. </p>
+<div class="textblock"><p>Class to handle operating on rows of a sparse matrix. </p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:46:44 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.3 </dd></dl>
 <p>.. </p>
@@ -183,7 +183,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a75237f8963dc17a2d73398545a54db05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75237f8963dc17a2d73398545a54db05">&#9670;&nbsp;</a></span>vtkvmtkSparseMatrixRow() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75237f8963dc17a2d73398545a54db05">&#9670;&nbsp;</a></span>vtkvmtkSparseMatrixRow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,32 +232,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a62ce431e786dcd065bac4583b84f609b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62ce431e786dcd065bac4583b84f609b">&#9670;&nbsp;</a></span>vtkvmtkSparseMatrixRow() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkSparseMatrixRow::vtkvmtkSparseMatrixRow </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkSparseMatrixRow.html">vtkvmtkSparseMatrixRow</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a35a0758054e3569762240d649cdabc87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35a0758054e3569762240d649cdabc87">&#9670;&nbsp;</a></span>New()</h2>
@@ -278,31 +252,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a77d08bfce5b58a999fb84b91a22c852e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77d08bfce5b58a999fb84b91a22c852e">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkSparseMatrixRow::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -454,7 +403,8 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html#l00044">44</a> of file <a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html">vtkvmtkSparseMatrixRow.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="classvtkvmtkSparseMatrixRow.html#a6db2f265e39a31b65c6475ebf7cb65e2">ElementIds</a>[i]; }</div><div class="ttc" id="classvtkvmtkSparseMatrixRow_html_a6db2f265e39a31b65c6475ebf7cb65e2"><div class="ttname"><a href="classvtkvmtkSparseMatrixRow.html#a6db2f265e39a31b65c6475ebf7cb65e2">vtkvmtkSparseMatrixRow::ElementIds</a></div><div class="ttdeci">vtkIdType * ElementIds</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkSparseMatrixRow_8h_source.html#l00071">vtkvmtkSparseMatrixRow.h:71</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8c2ceca949d876a5be71a24aec9d7914"></a>
@@ -492,7 +442,8 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html#l00045">45</a> of file <a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html">vtkvmtkSparseMatrixRow.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{ this-&gt;<a class="code" href="classvtkvmtkSparseMatrixRow.html#a6db2f265e39a31b65c6475ebf7cb65e2">ElementIds</a>[i] = id; }</div><div class="ttc" id="classvtkvmtkSparseMatrixRow_html_a6db2f265e39a31b65c6475ebf7cb65e2"><div class="ttname"><a href="classvtkvmtkSparseMatrixRow.html#a6db2f265e39a31b65c6475ebf7cb65e2">vtkvmtkSparseMatrixRow::ElementIds</a></div><div class="ttdeci">vtkIdType * ElementIds</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkSparseMatrixRow_8h_source.html#l00071">vtkvmtkSparseMatrixRow.h:71</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa6a221033cb9e9838f62dd371bae045e"></a>
@@ -520,7 +471,8 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html#l00047">47</a> of file <a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html">vtkvmtkSparseMatrixRow.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="classvtkvmtkSparseMatrixRow.html#a6721913cdf857190c9c3f525c437c9ac">Elements</a>[i]; }</div><div class="ttc" id="classvtkvmtkSparseMatrixRow_html_a6721913cdf857190c9c3f525c437c9ac"><div class="ttname"><a href="classvtkvmtkSparseMatrixRow.html#a6721913cdf857190c9c3f525c437c9ac">vtkvmtkSparseMatrixRow::Elements</a></div><div class="ttdeci">double * Elements</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkSparseMatrixRow_8h_source.html#l00072">vtkvmtkSparseMatrixRow.h:72</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a89c4a45925e486401ee0d62edfa2207e"></a>
@@ -558,7 +510,8 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html#l00048">48</a> of file <a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html">vtkvmtkSparseMatrixRow.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{ this-&gt;<a class="code" href="classvtkvmtkSparseMatrixRow.html#a6721913cdf857190c9c3f525c437c9ac">Elements</a>[i] = element; }</div><div class="ttc" id="classvtkvmtkSparseMatrixRow_html_a6721913cdf857190c9c3f525c437c9ac"><div class="ttname"><a href="classvtkvmtkSparseMatrixRow.html#a6721913cdf857190c9c3f525c437c9ac">vtkvmtkSparseMatrixRow::Elements</a></div><div class="ttdeci">double * Elements</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkSparseMatrixRow_8h_source.html#l00072">vtkvmtkSparseMatrixRow.h:72</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a397c5076c39b51fd90efe1b9582130c6"></a>
@@ -603,7 +556,8 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html#l00052">52</a> of file <a class="el" href="vtkvmtkSparseMatrixRow_8h_source.html">vtkvmtkSparseMatrixRow.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{ <span class="keywordflow">return</span> this-&gt;<a class="code" href="classvtkvmtkSparseMatrixRow.html#a976bd2fcb98fdebbd628e5ed7a8aaf31">NElements</a>; }</div><div class="ttc" id="classvtkvmtkSparseMatrixRow_html_a976bd2fcb98fdebbd628e5ed7a8aaf31"><div class="ttname"><a href="classvtkvmtkSparseMatrixRow.html#a976bd2fcb98fdebbd628e5ed7a8aaf31">vtkvmtkSparseMatrixRow::NElements</a></div><div class="ttdeci">vtkIdType NElements</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkSparseMatrixRow_8h_source.html#l00074">vtkvmtkSparseMatrixRow.h:74</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a1621b2262c0eddd6932b441ea25d080a"></a>
@@ -744,32 +698,6 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Standard DeepCopy method. Since this object contains no reference to other objects, there is no ShallowCopy. </p>
-
-</div>
-</div>
-<a id="a2510a54916764584b50b3eb03a2547aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2510a54916764584b50b3eb03a2547aa">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkSparseMatrixRow::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkSparseMatrixRow.html">vtkvmtkSparseMatrixRow</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>

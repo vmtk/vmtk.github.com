@@ -67,19 +67,28 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkInternalTetrahedraExtractor-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkInternalTetrahedraExtractor Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Extract internal tetrahedra from a Delaunay tessellation.  
+<p>Extract internal tetrahedra from a Delaunay tessellation of a surface.  
  <a href="classvtkvmtkInternalTetrahedraExtractor.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkInternalTetrahedraExtractor_8h_source.html">vtkvmtkInternalTetrahedraExtractor.h</a>&gt;</code></p>
-
-<p>Inherits vtkUnstructuredGridAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkInternalTetrahedraExtractor:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkInternalTetrahedraExtractor__inherit__graph.svg" width="207" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkInternalTetrahedraExtractor:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkInternalTetrahedraExtractor__coll__graph.svg" width="207" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -171,18 +180,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a556cfa860563d8d0104a2f01c60ab01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7008b3c11f6c10c7dba8de69c93cf41"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkInternalTetrahedraExtractor.html#ae7008b3c11f6c10c7dba8de69c93cf41">SubresolutionFactor</a></td></tr>
 <tr class="separator:ae7008b3c11f6c10c7dba8de69c93cf41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a99acf862991baf0b9e5e1e9e589dc7ad"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkInternalTetrahedraExtractor.html#a99acf862991baf0b9e5e1e9e589dc7ad">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a99acf862991baf0b9e5e1e9e589dc7ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a228f29024f53975a3fcb4eb17715a0a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkInternalTetrahedraExtractor.html#a228f29024f53975a3fcb4eb17715a0a5">vtkvmtkInternalTetrahedraExtractor</a> (const <a class="el" href="classvtkvmtkInternalTetrahedraExtractor.html">vtkvmtkInternalTetrahedraExtractor</a> &amp;)</td></tr>
-<tr class="separator:a228f29024f53975a3fcb4eb17715a0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78e520f52de6a1df270884e82cb37ac2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkInternalTetrahedraExtractor.html#a78e520f52de6a1df270884e82cb37ac2">operator=</a> (const <a class="el" href="classvtkvmtkInternalTetrahedraExtractor.html">vtkvmtkInternalTetrahedraExtractor</a> &amp;)</td></tr>
-<tr class="separator:a78e520f52de6a1df270884e82cb37ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Extract internal tetrahedra from a Delaunay tessellation. </p>
+<div class="textblock"><p>Extract internal tetrahedra from a Delaunay tessellation of a surface. </p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:46:43 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.5 </dd></dl>
 <p>This class takes in input the Delaunay tessellation of a point set and extracts internal tetrahedra based on outward oriented point normals (to be provided as input point data array). A tetrahedron <img class="formulaInl" alt="$T_i$" src="form_0.png"/> is retained if </p><p class="formulaDsp">
@@ -210,7 +210,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5505684a6b88b4a34a2c77c12101cd3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5505684a6b88b4a34a2c77c12101cd3c">&#9670;&nbsp;</a></span>vtkvmtkInternalTetrahedraExtractor() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5505684a6b88b4a34a2c77c12101cd3c">&#9670;&nbsp;</a></span>vtkvmtkInternalTetrahedraExtractor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,58 +259,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a228f29024f53975a3fcb4eb17715a0a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a228f29024f53975a3fcb4eb17715a0a5">&#9670;&nbsp;</a></span>vtkvmtkInternalTetrahedraExtractor() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkInternalTetrahedraExtractor::vtkvmtkInternalTetrahedraExtractor </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkInternalTetrahedraExtractor.html">vtkvmtkInternalTetrahedraExtractor</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a99acf862991baf0b9e5e1e9e589dc7ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99acf862991baf0b9e5e1e9e589dc7ad">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkInternalTetrahedraExtractor::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a3cbc05db412e0f0113469aaa28451b57"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3cbc05db412e0f0113469aaa28451b57">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -989,32 +938,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a78e520f52de6a1df270884e82cb37ac2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78e520f52de6a1df270884e82cb37ac2">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkInternalTetrahedraExtractor::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkInternalTetrahedraExtractor.html">vtkvmtkInternalTetrahedraExtractor</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -68,19 +68,28 @@ $(function() {
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkFEShapeFunctions-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkFEShapeFunctions Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>..  
+<p>Set of common utility (calculate jacobian, interpolation function, and interpolation function derivatives) functions used during assembly of certain finite element solutions.  
  <a href="classvtkvmtkFEShapeFunctions.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html">vtkvmtkFEShapeFunctions.h</a>&gt;</code></p>
-
-<p>Inherits vtkObject.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkFEShapeFunctions:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkFEShapeFunctions__inherit__graph.svg" width="191" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkFEShapeFunctions:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkFEShapeFunctions__coll__graph.svg" width="191" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -147,18 +156,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a6ec58f80fd66c5c12dd149cedde93812"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1169300b5ba051999017e64ce64e8aed"><td class="memItemLeft" align="right" valign="top">vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkFEShapeFunctions.html#a1169300b5ba051999017e64ce64e8aed">NumberOfCellPoints</a></td></tr>
 <tr class="separator:a1169300b5ba051999017e64ce64e8aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a7df680361e5bd891d018317eccdfa494"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkFEShapeFunctions.html#a7df680361e5bd891d018317eccdfa494">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a7df680361e5bd891d018317eccdfa494"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fa704023501a4da0e7eaeb7296aea63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkFEShapeFunctions.html#a3fa704023501a4da0e7eaeb7296aea63">vtkvmtkFEShapeFunctions</a> (const <a class="el" href="classvtkvmtkFEShapeFunctions.html">vtkvmtkFEShapeFunctions</a> &amp;)</td></tr>
-<tr class="separator:a3fa704023501a4da0e7eaeb7296aea63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a019b4c2faa6c7d262a70984099152f1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkFEShapeFunctions.html#a019b4c2faa6c7d262a70984099152f1d">operator=</a> (const <a class="el" href="classvtkvmtkFEShapeFunctions.html">vtkvmtkFEShapeFunctions</a> &amp;)</td></tr>
-<tr class="separator:a019b4c2faa6c7d262a70984099152f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>.. </p>
+<div class="textblock"><p>Set of common utility (calculate jacobian, interpolation function, and interpolation function derivatives) functions used during assembly of certain finite element solutions. </p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:46:44 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.4 </dd></dl>
 <p>.. </p>
@@ -183,7 +183,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6263da18178644ad00f89925797fd64c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6263da18178644ad00f89925797fd64c">&#9670;&nbsp;</a></span>vtkvmtkFEShapeFunctions() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6263da18178644ad00f89925797fd64c">&#9670;&nbsp;</a></span>vtkvmtkFEShapeFunctions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -232,58 +232,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3fa704023501a4da0e7eaeb7296aea63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fa704023501a4da0e7eaeb7296aea63">&#9670;&nbsp;</a></span>vtkvmtkFEShapeFunctions() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkFEShapeFunctions::vtkvmtkFEShapeFunctions </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkFEShapeFunctions.html">vtkvmtkFEShapeFunctions</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7df680361e5bd891d018317eccdfa494"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7df680361e5bd891d018317eccdfa494">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkFEShapeFunctions::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a4a346e0abd2a2ff7a5ee6cfdf4fc6357"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a346e0abd2a2ff7a5ee6cfdf4fc6357">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -492,7 +441,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html#l00045">45</a> of file <a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html">vtkvmtkFEShapeFunctions.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classvtkvmtkFEShapeFunctions.html#afeded0772bde960597c7e5e28dc58bef">Phi</a>-&gt;GetValue(<span class="keywordtype">id</span>*this-&gt;<a class="code" href="classvtkvmtkFEShapeFunctions.html#a1169300b5ba051999017e64ce64e8aed">NumberOfCellPoints</a>+i); }</div><div class="ttc" id="classvtkvmtkFEShapeFunctions_html_afeded0772bde960597c7e5e28dc58bef"><div class="ttname"><a href="classvtkvmtkFEShapeFunctions.html#afeded0772bde960597c7e5e28dc58bef">vtkvmtkFEShapeFunctions::Phi</a></div><div class="ttdeci">vtkDoubleArray * Phi</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFEShapeFunctions_8h_source.html#l00072">vtkvmtkFEShapeFunctions.h:72</a></div></div>
+<div class="ttc" id="classvtkvmtkFEShapeFunctions_html_a1169300b5ba051999017e64ce64e8aed"><div class="ttname"><a href="classvtkvmtkFEShapeFunctions.html#a1169300b5ba051999017e64ce64e8aed">vtkvmtkFEShapeFunctions::NumberOfCellPoints</a></div><div class="ttdeci">vtkIdType NumberOfCellPoints</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFEShapeFunctions_8h_source.html#l00075">vtkvmtkFEShapeFunctions.h:75</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a3c5a58a90bd1fec303b52c1787ddb899"></a>
@@ -530,7 +481,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html#l00048">48</a> of file <a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html">vtkvmtkFEShapeFunctions.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classvtkvmtkFEShapeFunctions.html#a2cc0c6d4ba9f2f123ba9178d4642b988">DPhi</a>-&gt;GetTuple(<span class="keywordtype">id</span>*this-&gt;<a class="code" href="classvtkvmtkFEShapeFunctions.html#a1169300b5ba051999017e64ce64e8aed">NumberOfCellPoints</a>+i); }</div><div class="ttc" id="classvtkvmtkFEShapeFunctions_html_a2cc0c6d4ba9f2f123ba9178d4642b988"><div class="ttname"><a href="classvtkvmtkFEShapeFunctions.html#a2cc0c6d4ba9f2f123ba9178d4642b988">vtkvmtkFEShapeFunctions::DPhi</a></div><div class="ttdeci">vtkDoubleArray * DPhi</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFEShapeFunctions_8h_source.html#l00073">vtkvmtkFEShapeFunctions.h:73</a></div></div>
+<div class="ttc" id="classvtkvmtkFEShapeFunctions_html_a1169300b5ba051999017e64ce64e8aed"><div class="ttname"><a href="classvtkvmtkFEShapeFunctions.html#a1169300b5ba051999017e64ce64e8aed">vtkvmtkFEShapeFunctions::NumberOfCellPoints</a></div><div class="ttdeci">vtkIdType NumberOfCellPoints</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFEShapeFunctions_8h_source.html#l00075">vtkvmtkFEShapeFunctions.h:75</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a272f7865d4ba29aeba7a712b37c3a514"></a>
@@ -574,7 +527,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html#l00051">51</a> of file <a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html">vtkvmtkFEShapeFunctions.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  { this-&gt;<a class="code" href="classvtkvmtkFEShapeFunctions.html#a2cc0c6d4ba9f2f123ba9178d4642b988">DPhi</a>-&gt;GetTuple(<span class="keywordtype">id</span>*this-&gt;<a class="code" href="classvtkvmtkFEShapeFunctions.html#a1169300b5ba051999017e64ce64e8aed">NumberOfCellPoints</a>+i,dphi); }</div><div class="ttc" id="classvtkvmtkFEShapeFunctions_html_a2cc0c6d4ba9f2f123ba9178d4642b988"><div class="ttname"><a href="classvtkvmtkFEShapeFunctions.html#a2cc0c6d4ba9f2f123ba9178d4642b988">vtkvmtkFEShapeFunctions::DPhi</a></div><div class="ttdeci">vtkDoubleArray * DPhi</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFEShapeFunctions_8h_source.html#l00073">vtkvmtkFEShapeFunctions.h:73</a></div></div>
+<div class="ttc" id="classvtkvmtkFEShapeFunctions_html_a1169300b5ba051999017e64ce64e8aed"><div class="ttname"><a href="classvtkvmtkFEShapeFunctions.html#a1169300b5ba051999017e64ce64e8aed">vtkvmtkFEShapeFunctions::NumberOfCellPoints</a></div><div class="ttdeci">vtkIdType NumberOfCellPoints</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFEShapeFunctions_8h_source.html#l00075">vtkvmtkFEShapeFunctions.h:75</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a51885236f913f0d3c139e9f20cab2d56"></a>
@@ -618,7 +573,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html#l00054">54</a> of file <a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html">vtkvmtkFEShapeFunctions.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classvtkvmtkFEShapeFunctions.html#a2cc0c6d4ba9f2f123ba9178d4642b988">DPhi</a>-&gt;GetComponent(<span class="keywordtype">id</span>*this-&gt;<a class="code" href="classvtkvmtkFEShapeFunctions.html#a1169300b5ba051999017e64ce64e8aed">NumberOfCellPoints</a>+i,c); }</div><div class="ttc" id="classvtkvmtkFEShapeFunctions_html_a2cc0c6d4ba9f2f123ba9178d4642b988"><div class="ttname"><a href="classvtkvmtkFEShapeFunctions.html#a2cc0c6d4ba9f2f123ba9178d4642b988">vtkvmtkFEShapeFunctions::DPhi</a></div><div class="ttdeci">vtkDoubleArray * DPhi</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFEShapeFunctions_8h_source.html#l00073">vtkvmtkFEShapeFunctions.h:73</a></div></div>
+<div class="ttc" id="classvtkvmtkFEShapeFunctions_html_a1169300b5ba051999017e64ce64e8aed"><div class="ttname"><a href="classvtkvmtkFEShapeFunctions.html#a1169300b5ba051999017e64ce64e8aed">vtkvmtkFEShapeFunctions::NumberOfCellPoints</a></div><div class="ttdeci">vtkIdType NumberOfCellPoints</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFEShapeFunctions_8h_source.html#l00075">vtkvmtkFEShapeFunctions.h:75</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="adab55aab07566dce69dd8afc02f26741"></a>
@@ -646,7 +603,8 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html#l00057">57</a> of file <a class="el" href="vtkvmtkFEShapeFunctions_8h_source.html">vtkvmtkFEShapeFunctions.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classvtkvmtkFEShapeFunctions.html#a6ec58f80fd66c5c12dd149cedde93812">Jacobians</a>-&gt;GetValue(i); }</div><div class="ttc" id="classvtkvmtkFEShapeFunctions_html_a6ec58f80fd66c5c12dd149cedde93812"><div class="ttname"><a href="classvtkvmtkFEShapeFunctions.html#a6ec58f80fd66c5c12dd149cedde93812">vtkvmtkFEShapeFunctions::Jacobians</a></div><div class="ttdeci">vtkDoubleArray * Jacobians</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFEShapeFunctions_8h_source.html#l00074">vtkvmtkFEShapeFunctions.h:74</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a7830d7b994fa99bf8fd1829bf67c925e"></a>
@@ -847,32 +805,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a019b4c2faa6c7d262a70984099152f1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a019b4c2faa6c7d262a70984099152f1d">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkFEShapeFunctions::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkFEShapeFunctions.html">vtkvmtkFEShapeFunctions</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

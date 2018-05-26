@@ -9,8 +9,8 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 97)">
 <title>Graphical Class Hierarchy</title>
 <polygon fill="white" stroke="none" points="-4,4 -4,-97 263.172,-97 263.172,4 -4,4"/>
-<!-- Node177 -->
-<g id="node1" class="node"><title>Node177</title>
+<!-- Node182 -->
+<g id="node1" class="node"><title>Node182</title>
 <polygon fill="white" stroke="#bfbfbf" points="0,-37.5 0,-55.5 98.2461,-55.5 98.2461,-37.5 0,-37.5"/>
 <text text-anchor="middle" x="49.123" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkImplicitFunction</text>
 </g>
@@ -22,34 +22,34 @@
 </a>
 </g>
 </g>
-<!-- Node177&#45;&gt;Node0 -->
-<g id="edge1" class="edge"><title>Node177&#45;&gt;Node0</title>
+<!-- Node182&#45;&gt;Node0 -->
+<g id="edge1" class="edge"><title>Node182&#45;&gt;Node0</title>
 <path fill="none" stroke="midnightblue" d="M95.6433,-58.0688C116.466,-63.3608 140.769,-69.5373 160.21,-74.4782"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="96.2914,-54.6223 85.7374,-55.5512 94.5671,-61.4066 96.2914,-54.6223"/>
 </g>
-<!-- Node179 -->
-<g id="node3" class="node"><title>Node179</title>
+<!-- Node184 -->
+<g id="node3" class="node"><title>Node184</title>
 <g id="a_node3"><a xlink:href="classvtkvmtkPolyBallLine.html" target="_top" xlink:title="Instance of vtkImplicitFunction which evaluates the minimum sphere function for an envelope created b...">
 <polygon fill="white" stroke="black" points="144.249,-37.5 144.249,-55.5 249.169,-55.5 249.169,-37.5 144.249,-37.5"/>
 <text text-anchor="middle" x="196.709" y="-43.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkPolyBallLine</text>
 </a>
 </g>
 </g>
-<!-- Node177&#45;&gt;Node179 -->
-<g id="edge2" class="edge"><title>Node177&#45;&gt;Node179</title>
+<!-- Node182&#45;&gt;Node184 -->
+<g id="edge2" class="edge"><title>Node182&#45;&gt;Node184</title>
 <path fill="none" stroke="midnightblue" d="M108.748,-46.5C120.482,-46.5 132.726,-46.5 144.197,-46.5"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="108.601,-43.0001 98.6011,-46.5 108.601,-50.0001 108.601,-43.0001"/>
 </g>
-<!-- Node180 -->
-<g id="node4" class="node"><title>Node180</title>
-<g id="a_node4"><a xlink:href="classvtkvmtkRBFInterpolation.html" target="_top" xlink:title="interpolate a radial basis function on a surface ">
+<!-- Node185 -->
+<g id="node4" class="node"><title>Node185</title>
+<g id="a_node4"><a xlink:href="classvtkvmtkRBFInterpolation.html" target="_top" xlink:title="Implicit function which when given a set of disjoined points and a radial basis shape type will evalu...">
 <polygon fill="white" stroke="black" points="134.246,-0.5 134.246,-18.5 259.172,-18.5 259.172,-0.5 134.246,-0.5"/>
 <text text-anchor="middle" x="196.709" y="-6.5" font-family="Helvetica,sans-Serif" font-size="10.00">vtkvmtkRBFInterpolation</text>
 </a>
 </g>
 </g>
-<!-- Node177&#45;&gt;Node180 -->
-<g id="edge3" class="edge"><title>Node177&#45;&gt;Node180</title>
+<!-- Node182&#45;&gt;Node185 -->
+<g id="edge3" class="edge"><title>Node182&#45;&gt;Node185</title>
 <path fill="none" stroke="midnightblue" d="M95.6433,-34.9312C116.466,-29.6392 140.769,-23.4627 160.21,-18.5218"/>
 <polygon fill="midnightblue" stroke="midnightblue" points="94.5671,-31.5934 85.7374,-37.4488 96.2914,-38.3777 94.5671,-31.5934"/>
 </g>

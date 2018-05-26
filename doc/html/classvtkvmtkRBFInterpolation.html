@@ -67,19 +67,28 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkRBFInterpolation-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkRBFInterpolation Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>interpolate a radial basis function on a surface  
+<p>Implicit function which when given a set of disjoined points and a radial basis shape type will evaluate it self at its zero level set.  
  <a href="classvtkvmtkRBFInterpolation.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkRBFInterpolation_8h_source.html">vtkvmtkRBFInterpolation.h</a>&gt;</code></p>
-
-<p>Inherits vtkImplicitFunction.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkRBFInterpolation:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkRBFInterpolation__inherit__graph.svg" width="178" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkRBFInterpolation:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkRBFInterpolation__coll__graph.svg" width="178" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -156,18 +165,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a72e7fbea166f3fadc6182307c0091762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c4aed2ef50f9230afd269df42e7e836"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkRBFInterpolation.html#a7c4aed2ef50f9230afd269df42e7e836">RBFInterpolationValue</a></td></tr>
 <tr class="separator:a7c4aed2ef50f9230afd269df42e7e836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:af3a81c391ff123e35c3ea8bdcf46eb88"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkRBFInterpolation.html#af3a81c391ff123e35c3ea8bdcf46eb88">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:af3a81c391ff123e35c3ea8bdcf46eb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a487357048a4c23586c972a3d4fa80d7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkRBFInterpolation.html#a487357048a4c23586c972a3d4fa80d7f">vtkvmtkRBFInterpolation</a> (const <a class="el" href="classvtkvmtkRBFInterpolation.html">vtkvmtkRBFInterpolation</a> &amp;)</td></tr>
-<tr class="separator:a487357048a4c23586c972a3d4fa80d7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a333ddddbd3bfcd4a882ad2e8876ccfbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkRBFInterpolation.html#a333ddddbd3bfcd4a882ad2e8876ccfbd">operator=</a> (const <a class="el" href="classvtkvmtkRBFInterpolation.html">vtkvmtkRBFInterpolation</a> &amp;)</td></tr>
-<tr class="separator:a333ddddbd3bfcd4a882ad2e8876ccfbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>interpolate a radial basis function on a surface </p>
+<div class="textblock"><p>Implicit function which when given a set of disjoined points and a radial basis shape type will evaluate it self at its zero level set. </p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:46:43 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.3 </dd></dl>
 <p>.. </p>
@@ -209,12 +209,15 @@ Private Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkRBFInterpolation_8h_source.html#l00073">73</a> of file <a class="el" href="vtkvmtkRBFInterpolation_8h_source.html">vtkvmtkRBFInterpolation.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99af51842367971910bb5800be807cff98c">THIN_PLATE_SPLINE</a>,</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99a15c2e541428025ab138382a4f1690a83">BIHARMONIC</a>,</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99a61a6edf36e2edc63fc03567cbd360e05">TRIHARMONIC</a></div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  };</div><div class="ttc" id="classvtkvmtkRBFInterpolation_html_a76c5748b980cf0dffa97e6b7fb862f99af51842367971910bb5800be807cff98c"><div class="ttname"><a href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99af51842367971910bb5800be807cff98c">vtkvmtkRBFInterpolation::THIN_PLATE_SPLINE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkRBFInterpolation_8h_source.html#l00075">vtkvmtkRBFInterpolation.h:75</a></div></div>
+<div class="ttc" id="classvtkvmtkRBFInterpolation_html_a76c5748b980cf0dffa97e6b7fb862f99a61a6edf36e2edc63fc03567cbd360e05"><div class="ttname"><a href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99a61a6edf36e2edc63fc03567cbd360e05">vtkvmtkRBFInterpolation::TRIHARMONIC</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkRBFInterpolation_8h_source.html#l00077">vtkvmtkRBFInterpolation.h:77</a></div></div>
+<div class="ttc" id="classvtkvmtkRBFInterpolation_html_a76c5748b980cf0dffa97e6b7fb862f99a15c2e541428025ab138382a4f1690a83"><div class="ttname"><a href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99a15c2e541428025ab138382a4f1690a83">vtkvmtkRBFInterpolation::BIHARMONIC</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkRBFInterpolation_8h_source.html#l00076">vtkvmtkRBFInterpolation.h:76</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7a31fba9f9303c55687846e2fdee8cb2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a31fba9f9303c55687846e2fdee8cb2">&#9670;&nbsp;</a></span>vtkvmtkRBFInterpolation() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a31fba9f9303c55687846e2fdee8cb2">&#9670;&nbsp;</a></span>vtkvmtkRBFInterpolation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,58 +266,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a487357048a4c23586c972a3d4fa80d7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a487357048a4c23586c972a3d4fa80d7f">&#9670;&nbsp;</a></span>vtkvmtkRBFInterpolation() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkRBFInterpolation::vtkvmtkRBFInterpolation </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkRBFInterpolation.html">vtkvmtkRBFInterpolation</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af3a81c391ff123e35c3ea8bdcf46eb88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3a81c391ff123e35c3ea8bdcf46eb88">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkRBFInterpolation::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aa77908794a7ed98d470c636a2afa66d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa77908794a7ed98d470c636a2afa66d7">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -549,7 +501,7 @@ Private Member Functions</h2></td></tr>
 <p>Evaluate polyball. </p>
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkRBFInterpolation_8h_source.html#l00048">48</a> of file <a class="el" href="vtkvmtkRBFInterpolation_8h_source.html">vtkvmtkRBFInterpolation.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  {<span class="keywordflow">return</span> this-&gt;vtkImplicitFunction::EvaluateFunction(x, y, z); } ;</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a828a30f85c971f2b141583a16bebc785"></a>
@@ -726,7 +678,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkRBFInterpolation_8h_source.html#l00065">65</a> of file <a class="el" href="vtkvmtkRBFInterpolation_8h_source.html">vtkvmtkRBFInterpolation.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  { this-&gt;<a class="code" href="classvtkvmtkRBFInterpolation.html#a181b1a09db086ad5353b35331e305e93">SetRBFType</a>(<a class="code" href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99af51842367971910bb5800be807cff98c">THIN_PLATE_SPLINE</a>); }</div><div class="ttc" id="classvtkvmtkRBFInterpolation_html_a76c5748b980cf0dffa97e6b7fb862f99af51842367971910bb5800be807cff98c"><div class="ttname"><a href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99af51842367971910bb5800be807cff98c">vtkvmtkRBFInterpolation::THIN_PLATE_SPLINE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkRBFInterpolation_8h_source.html#l00075">vtkvmtkRBFInterpolation.h:75</a></div></div>
+<div class="ttc" id="classvtkvmtkRBFInterpolation_html_a181b1a09db086ad5353b35331e305e93"><div class="ttname"><a href="classvtkvmtkRBFInterpolation.html#a181b1a09db086ad5353b35331e305e93">vtkvmtkRBFInterpolation::SetRBFType</a></div><div class="ttdeci">virtual void SetRBFType(int)</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a9ec6da6aa71cd51def80abf1fb0ae5a8"></a>
@@ -753,7 +707,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkRBFInterpolation_8h_source.html#l00067">67</a> of file <a class="el" href="vtkvmtkRBFInterpolation_8h_source.html">vtkvmtkRBFInterpolation.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  { this-&gt;<a class="code" href="classvtkvmtkRBFInterpolation.html#a181b1a09db086ad5353b35331e305e93">SetRBFType</a>(<a class="code" href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99a15c2e541428025ab138382a4f1690a83">BIHARMONIC</a>); }</div><div class="ttc" id="classvtkvmtkRBFInterpolation_html_a181b1a09db086ad5353b35331e305e93"><div class="ttname"><a href="classvtkvmtkRBFInterpolation.html#a181b1a09db086ad5353b35331e305e93">vtkvmtkRBFInterpolation::SetRBFType</a></div><div class="ttdeci">virtual void SetRBFType(int)</div></div>
+<div class="ttc" id="classvtkvmtkRBFInterpolation_html_a76c5748b980cf0dffa97e6b7fb862f99a15c2e541428025ab138382a4f1690a83"><div class="ttname"><a href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99a15c2e541428025ab138382a4f1690a83">vtkvmtkRBFInterpolation::BIHARMONIC</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkRBFInterpolation_8h_source.html#l00076">vtkvmtkRBFInterpolation.h:76</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4e3e76e081eb3b2fd8d816f1e8e1d13b"></a>
@@ -780,7 +736,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkRBFInterpolation_8h_source.html#l00069">69</a> of file <a class="el" href="vtkvmtkRBFInterpolation_8h_source.html">vtkvmtkRBFInterpolation.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  { this-&gt;<a class="code" href="classvtkvmtkRBFInterpolation.html#a181b1a09db086ad5353b35331e305e93">SetRBFType</a>(<a class="code" href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99a61a6edf36e2edc63fc03567cbd360e05">TRIHARMONIC</a>); }</div><div class="ttc" id="classvtkvmtkRBFInterpolation_html_a76c5748b980cf0dffa97e6b7fb862f99a61a6edf36e2edc63fc03567cbd360e05"><div class="ttname"><a href="classvtkvmtkRBFInterpolation.html#a76c5748b980cf0dffa97e6b7fb862f99a61a6edf36e2edc63fc03567cbd360e05">vtkvmtkRBFInterpolation::TRIHARMONIC</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkRBFInterpolation_8h_source.html#l00077">vtkvmtkRBFInterpolation.h:77</a></div></div>
+<div class="ttc" id="classvtkvmtkRBFInterpolation_html_a181b1a09db086ad5353b35331e305e93"><div class="ttname"><a href="classvtkvmtkRBFInterpolation.html#a181b1a09db086ad5353b35331e305e93">vtkvmtkRBFInterpolation::SetRBFType</a></div><div class="ttdeci">virtual void SetRBFType(int)</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8558284e4e11624c027e4333e666aa34"></a>
@@ -830,32 +788,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a333ddddbd3bfcd4a882ad2e8876ccfbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a333ddddbd3bfcd4a882ad2e8876ccfbd">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkRBFInterpolation::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkRBFInterpolation.html">vtkvmtkRBFInterpolation</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

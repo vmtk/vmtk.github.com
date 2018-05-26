@@ -66,8 +66,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classvtkvmtkUpwindGradientMagnitudeImageFilter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkUpwindGradientMagnitudeImageFilter Class Reference</div>  </div>
@@ -78,8 +76,18 @@ $(function() {
  <a href="classvtkvmtkUpwindGradientMagnitudeImageFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkUpwindGradientMagnitudeImageFilter_8h_source.html">vtkvmtkUpwindGradientMagnitudeImageFilter.h</a>&gt;</code></p>
-
-<p>Inherits vtkSimpleImageToImageFilter.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkUpwindGradientMagnitudeImageFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkUpwindGradientMagnitudeImageFilter__inherit__graph.svg" width="235" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkUpwindGradientMagnitudeImageFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkUpwindGradientMagnitudeImageFilter__coll__graph.svg" width="235" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -116,20 +124,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:afa2950fd98ccfece0d8335bd79843de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af37c409cd4dc0f40c2af9629afc9202f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkUpwindGradientMagnitudeImageFilter.html#af37c409cd4dc0f40c2af9629afc9202f">SimpleExecute</a> (vtkImageData *input, vtkImageData *output) VTK_OVERRIDE</td></tr>
 <tr class="separator:af37c409cd4dc0f40c2af9629afc9202f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:abb823099398752952ce1d33b42d1436c"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkUpwindGradientMagnitudeImageFilter.html#abb823099398752952ce1d33b42d1436c">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:abb823099398752952ce1d33b42d1436c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac56f373a486db0ce9aa4c434c90d4e11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkUpwindGradientMagnitudeImageFilter.html#ac56f373a486db0ce9aa4c434c90d4e11">vtkvmtkUpwindGradientMagnitudeImageFilter</a> (const <a class="el" href="classvtkvmtkUpwindGradientMagnitudeImageFilter.html">vtkvmtkUpwindGradientMagnitudeImageFilter</a> &amp;)</td></tr>
-<tr class="separator:ac56f373a486db0ce9aa4c434c90d4e11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3416cb3632f79bac43640987b12d0c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkUpwindGradientMagnitudeImageFilter.html#afe3416cb3632f79bac43640987b12d0c">operator=</a> (const <a class="el" href="classvtkvmtkUpwindGradientMagnitudeImageFilter.html">vtkvmtkUpwindGradientMagnitudeImageFilter</a> &amp;)</td></tr>
-<tr class="separator:afe3416cb3632f79bac43640987b12d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:ac0b90f00b125c4ce77d0f4097c637f31"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkUpwindGradientMagnitudeImageFilter.html#ac0b90f00b125c4ce77d0f4097c637f31">UpwindFactor</a></td></tr>
-<tr class="separator:ac0b90f00b125c4ce77d0f4097c637f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper class around itk::UpwindGradientMagnitudeImageFilter. </p>
@@ -157,7 +151,7 @@ Private Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a26b7ea042d45841bb7ee30a6d741bfb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26b7ea042d45841bb7ee30a6d741bfb4">&#9670;&nbsp;</a></span>vtkvmtkUpwindGradientMagnitudeImageFilter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b7ea042d45841bb7ee30a6d741bfb4">&#9670;&nbsp;</a></span>vtkvmtkUpwindGradientMagnitudeImageFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,33 +199,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkUpwindGradientMagnitudeImageFilter_8h_source.html#l00051">51</a> of file <a class="el" href="vtkvmtkUpwindGradientMagnitudeImageFilter_8h_source.html">vtkvmtkUpwindGradientMagnitudeImageFilter.h</a>.</p>
-
-</div>
-</div>
-<a id="ac56f373a486db0ce9aa4c434c90d4e11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac56f373a486db0ce9aa4c434c90d4e11">&#9670;&nbsp;</a></span>vtkvmtkUpwindGradientMagnitudeImageFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkUpwindGradientMagnitudeImageFilter::vtkvmtkUpwindGradientMagnitudeImageFilter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkUpwindGradientMagnitudeImageFilter.html">vtkvmtkUpwindGradientMagnitudeImageFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{};</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -254,31 +222,6 @@ Private Attributes</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abb823099398752952ce1d33b42d1436c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb823099398752952ce1d33b42d1436c">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkUpwindGradientMagnitudeImageFilter::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -489,57 +432,6 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="afe3416cb3632f79bac43640987b12d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe3416cb3632f79bac43640987b12d0c">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkUpwindGradientMagnitudeImageFilter::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkUpwindGradientMagnitudeImageFilter.html">vtkvmtkUpwindGradientMagnitudeImageFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac0b90f00b125c4ce77d0f4097c637f31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac0b90f00b125c4ce77d0f4097c637f31">&#9670;&nbsp;</a></span>UpwindFactor</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double vtkvmtkUpwindGradientMagnitudeImageFilter::UpwindFactor</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="vtkvmtkUpwindGradientMagnitudeImageFilter_8h_source.html#l00059">59</a> of file <a class="el" href="vtkvmtkUpwindGradientMagnitudeImageFilter_8h_source.html">vtkvmtkUpwindGradientMagnitudeImageFilter.h</a>.</p>
 
 </div>
 </div>

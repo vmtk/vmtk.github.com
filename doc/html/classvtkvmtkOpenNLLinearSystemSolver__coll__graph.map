@@ -1,7 +1,7 @@
 <map id="vtkvmtkOpenNLLinearSystemSolver" name="vtkvmtkOpenNLLinearSystemSolver">
-<area shape="rect" id="node2" href="$classvtkvmtkLinearSystemSolver.html" title="Base class for linear system of equation solver implementations. " alt="" coords="125,279,311,304"/>
-<area shape="rect" id="node3" href="$classvtkvmtkLinearSystem.html" title="Base container to hold sparse matrice objects representing a linear system of equations Ax = B..." alt="" coords="144,192,292,217"/>
-<area shape="rect" id="node4" href="$classvtkvmtkSparseMatrix.html" title=".. " alt="" coords="19,92,164,117"/>
-<area shape="rect" id="node5" href="$classvtkvmtkSparseMatrixRow.html" title=".. " alt="" coords="5,5,177,31"/>
-<area shape="rect" id="node6" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="187,92,334,117"/>
+<area shape="rect" id="node2" href="$classvtkvmtkLinearSystemSolver.html" title="Base class for linear system of equation solver implementations. " alt="" coords="11,353,197,379"/>
+<area shape="rect" id="node4" href="$classvtkvmtkLinearSystem.html" title="Base container to hold sparse matrice objects representing a linear system of equations Ax = B..." alt="" coords="113,267,261,292"/>
+<area shape="rect" id="node5" href="$classvtkvmtkSparseMatrix.html" title="Class for constructing sparse matrices from a dataset and performing basic mathematical operations on..." alt="" coords="150,179,295,205"/>
+<area shape="rect" id="node6" href="$classvtkvmtkSparseMatrixRow.html" title="Class to handle operating on rows of a sparse matrix. " alt="" coords="201,80,373,105"/>
+<area shape="rect" id="node7" href="$classvtkvmtkDoubleVector.html" title="Base class for vectors utilized in finite&#45;element and other PDE evaluations. " alt="" coords="319,129,465,155"/>
 </map>

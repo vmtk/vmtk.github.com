@@ -66,7 +66,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkNormalizeImageFilter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkNormalizeImageFilter Class Reference</div>  </div>
@@ -77,8 +76,18 @@ $(function() {
  <a href="classvtkvmtkNormalizeImageFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkNormalizeImageFilter_8h_source.html">vtkvmtkNormalizeImageFilter.h</a>&gt;</code></p>
-
-<p>Inherits vtkSimpleImageToImageFilter.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkNormalizeImageFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkNormalizeImageFilter__inherit__graph.svg" width="208" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkNormalizeImageFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkNormalizeImageFilter__coll__graph.svg" width="208" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -111,15 +120,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a17c45b103eed054e88e2546eeb2b45b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c8027d7a3b3c5c27d9b6f324a30429d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkNormalizeImageFilter.html#a0c8027d7a3b3c5c27d9b6f324a30429d">SimpleExecute</a> (vtkImageData *input, vtkImageData *output) VTK_OVERRIDE</td></tr>
 <tr class="separator:a0c8027d7a3b3c5c27d9b6f324a30429d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a4c9bf311b2a05ada67d83050e2361349"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkNormalizeImageFilter.html#a4c9bf311b2a05ada67d83050e2361349">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a4c9bf311b2a05ada67d83050e2361349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4636f49f8e5e0d5f7b1f1fe73ae07677"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkNormalizeImageFilter.html#a4636f49f8e5e0d5f7b1f1fe73ae07677">vtkvmtkNormalizeImageFilter</a> (const <a class="el" href="classvtkvmtkNormalizeImageFilter.html">vtkvmtkNormalizeImageFilter</a> &amp;)</td></tr>
-<tr class="separator:a4636f49f8e5e0d5f7b1f1fe73ae07677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6f5e903b90cc69ccac6c956f3a250b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkNormalizeImageFilter.html#a4a6f5e903b90cc69ccac6c956f3a250b">operator=</a> (const <a class="el" href="classvtkvmtkNormalizeImageFilter.html">vtkvmtkNormalizeImageFilter</a> &amp;)</td></tr>
-<tr class="separator:a4a6f5e903b90cc69ccac6c956f3a250b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Wrapper class around itk::NormalizeImageFilter. </p>
@@ -147,7 +147,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a91d1aac18466545dbb8d56b82802974a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91d1aac18466545dbb8d56b82802974a">&#9670;&nbsp;</a></span>vtkvmtkNormalizeImageFilter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91d1aac18466545dbb8d56b82802974a">&#9670;&nbsp;</a></span>vtkvmtkNormalizeImageFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,32 +196,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4636f49f8e5e0d5f7b1f1fe73ae07677"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4636f49f8e5e0d5f7b1f1fe73ae07677">&#9670;&nbsp;</a></span>vtkvmtkNormalizeImageFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkNormalizeImageFilter::vtkvmtkNormalizeImageFilter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkNormalizeImageFilter.html">vtkvmtkNormalizeImageFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="abb4d52dcb27e87d54cf066bfb430a901"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb4d52dcb27e87d54cf066bfb430a901">&#9670;&nbsp;</a></span>New()</h2>
@@ -242,31 +216,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4c9bf311b2a05ada67d83050e2361349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c9bf311b2a05ada67d83050e2361349">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkNormalizeImageFilter::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -423,32 +372,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4a6f5e903b90cc69ccac6c956f3a250b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a6f5e903b90cc69ccac6c956f3a250b">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkNormalizeImageFilter::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkNormalizeImageFilter.html">vtkvmtkNormalizeImageFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -67,19 +67,28 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkMeshLambda2-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkMeshLambda2 Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>...  
+<p>Compute the Lambda2 surface for a given flow field which allow for the visualization of fluid vortex cores.  
  <a href="classvtkvmtkMeshLambda2.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkMeshLambda2_8h_source.html">vtkvmtkMeshLambda2.h</a>&gt;</code></p>
-
-<p>Inherits vtkUnstructuredGridAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkMeshLambda2:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkMeshLambda2__inherit__graph.svg" width="207" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkMeshLambda2:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkMeshLambda2__coll__graph.svg" width="207" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -161,18 +170,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a49933c63080299ab471f47b9e79098b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e0e150a0f6541c5126e340eecf5f8c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkMeshLambda2.html#a4e0e150a0f6541c5126e340eecf5f8c9">ForceBoundaryToNegative</a></td></tr>
 <tr class="separator:a4e0e150a0f6541c5126e340eecf5f8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ae2c03d73abe41082cf17f3ac11174892"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkMeshLambda2.html#ae2c03d73abe41082cf17f3ac11174892">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:ae2c03d73abe41082cf17f3ac11174892"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a519020a519a0a39a47f283f3e2851293"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkMeshLambda2.html#a519020a519a0a39a47f283f3e2851293">vtkvmtkMeshLambda2</a> (const <a class="el" href="classvtkvmtkMeshLambda2.html">vtkvmtkMeshLambda2</a> &amp;)</td></tr>
-<tr class="separator:a519020a519a0a39a47f283f3e2851293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab686d6af8b520dfba951bb998e8fa0d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkMeshLambda2.html#ab686d6af8b520dfba951bb998e8fa0d1">operator=</a> (const <a class="el" href="classvtkvmtkMeshLambda2.html">vtkvmtkMeshLambda2</a> &amp;)</td></tr>
-<tr class="separator:ab686d6af8b520dfba951bb998e8fa0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>... </p>
+<div class="textblock"><p>Compute the Lambda2 surface for a given flow field which allow for the visualization of fluid vortex cores. </p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/07/27 08:28:36 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.1 </dd></dl>
 
@@ -196,7 +196,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0951a6a2c6c64b5c9ca46c46c29b75b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0951a6a2c6c64b5c9ca46c46c29b75b3">&#9670;&nbsp;</a></span>vtkvmtkMeshLambda2() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0951a6a2c6c64b5c9ca46c46c29b75b3">&#9670;&nbsp;</a></span>vtkvmtkMeshLambda2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,58 +245,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a519020a519a0a39a47f283f3e2851293"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a519020a519a0a39a47f283f3e2851293">&#9670;&nbsp;</a></span>vtkvmtkMeshLambda2() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkMeshLambda2::vtkvmtkMeshLambda2 </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkMeshLambda2.html">vtkvmtkMeshLambda2</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ae2c03d73abe41082cf17f3ac11174892"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2c03d73abe41082cf17f3ac11174892">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkMeshLambda2::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a66d7a669a0a4cb05bb4bb490529707c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66d7a669a0a4cb05bb4bb490529707c0">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -912,32 +861,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab686d6af8b520dfba951bb998e8fa0d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab686d6af8b520dfba951bb998e8fa0d1">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkMeshLambda2::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkMeshLambda2.html">vtkvmtkMeshLambda2</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

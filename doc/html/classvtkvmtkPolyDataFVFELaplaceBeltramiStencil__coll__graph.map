@@ -1,8 +1,8 @@
 <map id="vtkvmtkPolyDataFVFELaplaceBeltramiStencil" name="vtkvmtkPolyDataFVFELaplaceBeltramiStencil">
-<area shape="rect" id="node2" href="$classvtkvmtkPolyDataLaplaceBeltramiStencil.html" title="Apply LB weighting to the neighborhood connections of a surface. " alt="" coords="5,372,222,411"/>
-<area shape="rect" id="node3" href="$classvtkvmtkPolyDataManifoldStencil.html" title=".. " alt="" coords="8,299,219,324"/>
-<area shape="rect" id="node4" href="$classvtkvmtkStencil.html" title="Apply a weighting matrix to a single neighborhood of a data set. " alt="" coords="60,225,167,251"/>
-<area shape="rect" id="node5" href="$classvtkvmtkNeighborhood.html" title="Query the neighborhood surrounding the set point id in an data set item. " alt="" coords="38,152,189,177"/>
-<area shape="rect" id="node6" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="43,79,184,104"/>
-<area shape="rect" id="node7" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="67,5,160,31"/>
+<area shape="rect" id="node2" href="$classvtkvmtkPolyDataLaplaceBeltramiStencil.html" title="Apply LB weighting to the neighborhood connections of a surface. " alt="" coords="5,445,222,484"/>
+<area shape="rect" id="node3" href="$classvtkvmtkPolyDataManifoldStencil.html" title="Base class for stencils applied to a manifold surface. " alt="" coords="8,372,219,397"/>
+<area shape="rect" id="node4" href="$classvtkvmtkStencil.html" title="Apply a weighting matrix to a single neighborhood of a data set. " alt="" coords="60,299,167,324"/>
+<area shape="rect" id="node5" href="$classvtkvmtkNeighborhood.html" title="Query the neighborhood surrounding the set point id in an data set item. " alt="" coords="38,225,189,251"/>
+<area shape="rect" id="node6" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="43,152,184,177"/>
+<area shape="rect" id="node7" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="67,79,160,104"/>
 </map>

@@ -67,7 +67,6 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkFDNEUTWriter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkFDNEUTWriter Class Reference</div>  </div>
@@ -78,8 +77,18 @@ $(function() {
  <a href="classvtkvmtkFDNEUTWriter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkFDNEUTWriter_8h_source.html">vtkvmtkFDNEUTWriter.h</a>&gt;</code></p>
-
-<p>Inherits vtkUnstructuredGridWriter.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkFDNEUTWriter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkFDNEUTWriter__inherit__graph.svg" width="186" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkFDNEUTWriter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkFDNEUTWriter__coll__graph.svg" width="186" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -130,15 +139,6 @@ Protected Member Functions</h2></td></tr>
 Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a73936cbbe4f3a49197e53783da4dde7f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkFDNEUTWriter.html#a73936cbbe4f3a49197e53783da4dde7f">ZeroToOneOffset</a> (vtkIdType npts, vtkIdType *pts)</td></tr>
 <tr class="separator:a73936cbbe4f3a49197e53783da4dde7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:ad7ce5d3400d80aa16d14569a0fe03a57"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkFDNEUTWriter.html#ad7ce5d3400d80aa16d14569a0fe03a57">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:ad7ce5d3400d80aa16d14569a0fe03a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2dece7651531348ef1e85c6fc37b124"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkFDNEUTWriter.html#af2dece7651531348ef1e85c6fc37b124">vtkvmtkFDNEUTWriter</a> (const <a class="el" href="classvtkvmtkFDNEUTWriter.html">vtkvmtkFDNEUTWriter</a> &amp;)</td></tr>
-<tr class="separator:af2dece7651531348ef1e85c6fc37b124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c740b297cce1a76375182def84e7c3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkFDNEUTWriter.html#a3c740b297cce1a76375182def84e7c3d">operator=</a> (const <a class="el" href="classvtkvmtkFDNEUTWriter.html">vtkvmtkFDNEUTWriter</a> &amp;)</td></tr>
-<tr class="separator:a3c740b297cce1a76375182def84e7c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>writes FDNEUT Fidap files </p>
@@ -187,12 +187,18 @@ Private Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkFDNEUTWriter_8h_source.html#l00045">45</a> of file <a class="el" href="vtkvmtkFDNEUTWriter_8h_source.html">vtkvmtkFDNEUTWriter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  {</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672a4d4ec68f3369d4ae85d420c191a489fb">EDGE</a> = 0,</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672a582f870c764fa1517ee474dd67dce0d1">QUADRILATERAL</a>,</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672af3dbd1a305545b5e43c62399531c9dce">TRIANGLE</a>,</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672aa95c3c9e6dd69ceeae8874f868fd7e77">BRICK</a>,</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672a45d0ade4a11a03f9de11c97d031fde9c">WEDGE</a>,</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672aa336f7d4bfd262102049401603510b42">TETRAHEDRON</a></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  };</div><div class="ttc" id="classvtkvmtkFDNEUTWriter_html_a7eba3e8460c376cc0958d3dd98619672a582f870c764fa1517ee474dd67dce0d1"><div class="ttname"><a href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672a582f870c764fa1517ee474dd67dce0d1">vtkvmtkFDNEUTWriter::QUADRILATERAL</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFDNEUTWriter_8h_source.html#l00048">vtkvmtkFDNEUTWriter.h:48</a></div></div>
+<div class="ttc" id="classvtkvmtkFDNEUTWriter_html_a7eba3e8460c376cc0958d3dd98619672aa336f7d4bfd262102049401603510b42"><div class="ttname"><a href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672aa336f7d4bfd262102049401603510b42">vtkvmtkFDNEUTWriter::TETRAHEDRON</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFDNEUTWriter_8h_source.html#l00052">vtkvmtkFDNEUTWriter.h:52</a></div></div>
+<div class="ttc" id="classvtkvmtkFDNEUTWriter_html_a7eba3e8460c376cc0958d3dd98619672a45d0ade4a11a03f9de11c97d031fde9c"><div class="ttname"><a href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672a45d0ade4a11a03f9de11c97d031fde9c">vtkvmtkFDNEUTWriter::WEDGE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFDNEUTWriter_8h_source.html#l00051">vtkvmtkFDNEUTWriter.h:51</a></div></div>
+<div class="ttc" id="classvtkvmtkFDNEUTWriter_html_a7eba3e8460c376cc0958d3dd98619672aa95c3c9e6dd69ceeae8874f868fd7e77"><div class="ttname"><a href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672aa95c3c9e6dd69ceeae8874f868fd7e77">vtkvmtkFDNEUTWriter::BRICK</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFDNEUTWriter_8h_source.html#l00050">vtkvmtkFDNEUTWriter.h:50</a></div></div>
+<div class="ttc" id="classvtkvmtkFDNEUTWriter_html_a7eba3e8460c376cc0958d3dd98619672af3dbd1a305545b5e43c62399531c9dce"><div class="ttname"><a href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672af3dbd1a305545b5e43c62399531c9dce">vtkvmtkFDNEUTWriter::TRIANGLE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFDNEUTWriter_8h_source.html#l00049">vtkvmtkFDNEUTWriter.h:49</a></div></div>
+<div class="ttc" id="classvtkvmtkFDNEUTWriter_html_a7eba3e8460c376cc0958d3dd98619672a4d4ec68f3369d4ae85d420c191a489fb"><div class="ttname"><a href="classvtkvmtkFDNEUTWriter.html#a7eba3e8460c376cc0958d3dd98619672a4d4ec68f3369d4ae85d420c191a489fb">vtkvmtkFDNEUTWriter::EDGE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkFDNEUTWriter_8h_source.html#l00047">vtkvmtkFDNEUTWriter.h:47</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a24f2ebbaca2e6b46c441d79c21880d7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24f2ebbaca2e6b46c441d79c21880d7b">&#9670;&nbsp;</a></span>vtkvmtkFDNEUTWriter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f2ebbaca2e6b46c441d79c21880d7b">&#9670;&nbsp;</a></span>vtkvmtkFDNEUTWriter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,32 +247,6 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af2dece7651531348ef1e85c6fc37b124"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2dece7651531348ef1e85c6fc37b124">&#9670;&nbsp;</a></span>vtkvmtkFDNEUTWriter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkFDNEUTWriter::vtkvmtkFDNEUTWriter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkFDNEUTWriter.html">vtkvmtkFDNEUTWriter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aeefb2b28c89095e36e43d9ea240d23cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeefb2b28c89095e36e43d9ea240d23cb">&#9670;&nbsp;</a></span>New()</h2>
@@ -287,31 +267,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad7ce5d3400d80aa16d14569a0fe03a57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7ce5d3400d80aa16d14569a0fe03a57">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkFDNEUTWriter::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -526,33 +481,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkFDNEUTWriter_8h_source.html#l00062">62</a> of file <a class="el" href="vtkvmtkFDNEUTWriter_8h_source.html">vtkvmtkFDNEUTWriter.h</a>.</p>
-
-</div>
-</div>
-<a id="a3c740b297cce1a76375182def84e7c3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c740b297cce1a76375182def84e7c3d">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkFDNEUTWriter::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkFDNEUTWriter.html">vtkvmtkFDNEUTWriter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  { <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;npts; i++) ++pts[i]; }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

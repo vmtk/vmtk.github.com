@@ -68,19 +68,28 @@ $(function() {
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkImageBoxPainter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkImageBoxPainter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>..  
+<p>Create a box shaped sub-volume within a 3D image and paint (assign a value to) every sub-volume element with the same value.  
  <a href="classvtkvmtkImageBoxPainter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkImageBoxPainter_8h_source.html">vtkvmtkImageBoxPainter.h</a>&gt;</code></p>
-
-<p>Inherits vtkSimpleImageToImageFilter.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkImageBoxPainter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkImageBoxPainter__inherit__graph.svg" width="208" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkImageBoxPainter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkImageBoxPainter__coll__graph.svg" width="208" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -155,18 +164,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a4328ce55ad74f164641fda0690a1d7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade0dc0421badf3e4e21f9b18bfcdc2b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkImageBoxPainter.html#ade0dc0421badf3e4e21f9b18bfcdc2b9">BoxDefinition</a></td></tr>
 <tr class="separator:ade0dc0421badf3e4e21f9b18bfcdc2b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a28a6cbbe5f21e1fb99c3b11cc460ab22"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkImageBoxPainter.html#a28a6cbbe5f21e1fb99c3b11cc460ab22">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a28a6cbbe5f21e1fb99c3b11cc460ab22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7185744d598651f755035a385d30daff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkImageBoxPainter.html#a7185744d598651f755035a385d30daff">vtkvmtkImageBoxPainter</a> (const <a class="el" href="classvtkvmtkImageBoxPainter.html">vtkvmtkImageBoxPainter</a> &amp;)</td></tr>
-<tr class="separator:a7185744d598651f755035a385d30daff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5ecd228a67859382a1337256cc6cf06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkImageBoxPainter.html#af5ecd228a67859382a1337256cc6cf06">operator=</a> (const <a class="el" href="classvtkvmtkImageBoxPainter.html">vtkvmtkImageBoxPainter</a> &amp;)</td></tr>
-<tr class="separator:af5ecd228a67859382a1337256cc6cf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>.. </p>
+<div class="textblock"><p>Create a box shaped sub-volume within a 3D image and paint (assign a value to) every sub-volume element with the same value. </p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:47:48 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.3 </dd></dl>
 <p>.. </p>
@@ -215,12 +215,14 @@ Private Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkImageBoxPainter_8h_source.html#l00069">69</a> of file <a class="el" href="vtkvmtkImageBoxPainter_8h_source.html">vtkvmtkImageBoxPainter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <a class="code" href="classvtkvmtkImageBoxPainter.html#a33699036619886dc8265249bc3568475a3cf8fc51d7882fab38414d0c956fbf02">USE_BOUNDS</a>,</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <a class="code" href="classvtkvmtkImageBoxPainter.html#a33699036619886dc8265249bc3568475a37e9f1b4a0dc26a324491e9065db2a5d">USE_EXTENT</a></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    };</div><div class="ttc" id="classvtkvmtkImageBoxPainter_html_a33699036619886dc8265249bc3568475a3cf8fc51d7882fab38414d0c956fbf02"><div class="ttname"><a href="classvtkvmtkImageBoxPainter.html#a33699036619886dc8265249bc3568475a3cf8fc51d7882fab38414d0c956fbf02">vtkvmtkImageBoxPainter::USE_BOUNDS</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkImageBoxPainter_8h_source.html#l00071">vtkvmtkImageBoxPainter.h:71</a></div></div>
+<div class="ttc" id="classvtkvmtkImageBoxPainter_html_a33699036619886dc8265249bc3568475a37e9f1b4a0dc26a324491e9065db2a5d"><div class="ttname"><a href="classvtkvmtkImageBoxPainter.html#a33699036619886dc8265249bc3568475a37e9f1b4a0dc26a324491e9065db2a5d">vtkvmtkImageBoxPainter::USE_EXTENT</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkImageBoxPainter_8h_source.html#l00072">vtkvmtkImageBoxPainter.h:72</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a6eb7a98992c915b3f31bb489c0e11938"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6eb7a98992c915b3f31bb489c0e11938">&#9670;&nbsp;</a></span>vtkvmtkImageBoxPainter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb7a98992c915b3f31bb489c0e11938">&#9670;&nbsp;</a></span>vtkvmtkImageBoxPainter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,33 +270,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkImageBoxPainter_8h_source.html#l00059">59</a> of file <a class="el" href="vtkvmtkImageBoxPainter_8h_source.html">vtkvmtkImageBoxPainter.h</a>.</p>
-
-</div>
-</div>
-<a id="a7185744d598651f755035a385d30daff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7185744d598651f755035a385d30daff">&#9670;&nbsp;</a></span>vtkvmtkImageBoxPainter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkImageBoxPainter::vtkvmtkImageBoxPainter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkImageBoxPainter.html">vtkvmtkImageBoxPainter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{};</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -317,31 +293,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a28a6cbbe5f21e1fb99c3b11cc460ab22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28a6cbbe5f21e1fb99c3b11cc460ab22">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkImageBoxPainter::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -748,7 +699,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkImageBoxPainter_8h_source.html#l00051">51</a> of file <a class="el" href="vtkvmtkImageBoxPainter_8h_source.html">vtkvmtkImageBoxPainter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    { this-&gt;<a class="code" href="classvtkvmtkImageBoxPainter.html#ade0dc0421badf3e4e21f9b18bfcdc2b9">BoxDefinition</a> = <a class="code" href="classvtkvmtkImageBoxPainter.html#a33699036619886dc8265249bc3568475a37e9f1b4a0dc26a324491e9065db2a5d">vtkvmtkImageBoxPainter::USE_EXTENT</a>; }</div><div class="ttc" id="classvtkvmtkImageBoxPainter_html_ade0dc0421badf3e4e21f9b18bfcdc2b9"><div class="ttname"><a href="classvtkvmtkImageBoxPainter.html#ade0dc0421badf3e4e21f9b18bfcdc2b9">vtkvmtkImageBoxPainter::BoxDefinition</a></div><div class="ttdeci">int BoxDefinition</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkImageBoxPainter_8h_source.html#l00067">vtkvmtkImageBoxPainter.h:67</a></div></div>
+<div class="ttc" id="classvtkvmtkImageBoxPainter_html_a33699036619886dc8265249bc3568475a37e9f1b4a0dc26a324491e9065db2a5d"><div class="ttname"><a href="classvtkvmtkImageBoxPainter.html#a33699036619886dc8265249bc3568475a37e9f1b4a0dc26a324491e9065db2a5d">vtkvmtkImageBoxPainter::USE_EXTENT</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkImageBoxPainter_8h_source.html#l00072">vtkvmtkImageBoxPainter.h:72</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aac7220e60432581d3d63c06ccfae83bb"></a>
@@ -775,7 +728,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkImageBoxPainter_8h_source.html#l00053">53</a> of file <a class="el" href="vtkvmtkImageBoxPainter_8h_source.html">vtkvmtkImageBoxPainter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    { this-&gt;<a class="code" href="classvtkvmtkImageBoxPainter.html#ade0dc0421badf3e4e21f9b18bfcdc2b9">BoxDefinition</a> = <a class="code" href="classvtkvmtkImageBoxPainter.html#a33699036619886dc8265249bc3568475a3cf8fc51d7882fab38414d0c956fbf02">vtkvmtkImageBoxPainter::USE_BOUNDS</a>; }</div><div class="ttc" id="classvtkvmtkImageBoxPainter_html_ade0dc0421badf3e4e21f9b18bfcdc2b9"><div class="ttname"><a href="classvtkvmtkImageBoxPainter.html#ade0dc0421badf3e4e21f9b18bfcdc2b9">vtkvmtkImageBoxPainter::BoxDefinition</a></div><div class="ttdeci">int BoxDefinition</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkImageBoxPainter_8h_source.html#l00067">vtkvmtkImageBoxPainter.h:67</a></div></div>
+<div class="ttc" id="classvtkvmtkImageBoxPainter_html_a33699036619886dc8265249bc3568475a3cf8fc51d7882fab38414d0c956fbf02"><div class="ttname"><a href="classvtkvmtkImageBoxPainter.html#a33699036619886dc8265249bc3568475a3cf8fc51d7882fab38414d0c956fbf02">vtkvmtkImageBoxPainter::USE_BOUNDS</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkImageBoxPainter_8h_source.html#l00071">vtkvmtkImageBoxPainter.h:71</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a989fa4f3e4781dda33708da0ede11a10"></a>
@@ -808,32 +763,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af5ecd228a67859382a1337256cc6cf06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5ecd228a67859382a1337256cc6cf06">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkImageBoxPainter::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkImageBoxPainter.html">vtkvmtkImageBoxPainter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -1,6 +1,6 @@
 <map id="vtkvmtkPolyDataPotentialFit" name="vtkvmtkPolyDataPotentialFit">
-<area shape="rect" id="node2" href="$classvtkvmtkNeighborhoods.html" title="Create an empty, polydata, polydata manifold, polydata manifold extended, or unstructured grid neighb..." alt="" coords="21,241,177,267"/>
-<area shape="rect" id="node3" href="$classvtkvmtkDataSetItems.html" title="Create a collection of data set items, one for every point within the data set. " alt="" coords="25,167,173,192"/>
-<area shape="rect" id="node4" href="$classvtkvmtkItems.html" title="Control allocation and memory footprint of item instances. " alt="" coords="49,92,149,117"/>
-<area shape="rect" id="node5" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="53,5,145,31"/>
+<area shape="rect" id="node3" href="$classvtkvmtkNeighborhoods.html" title="Create an empty, polydata, polydata manifold, polydata manifold extended, or unstructured grid neighb..." alt="" coords="179,316,336,341"/>
+<area shape="rect" id="node4" href="$classvtkvmtkDataSetItems.html" title="Create a collection of data set items, one for every point within the data set. " alt="" coords="183,241,331,267"/>
+<area shape="rect" id="node5" href="$classvtkvmtkItems.html" title="Control allocation and memory footprint of item instances. " alt="" coords="208,167,307,192"/>
+<area shape="rect" id="node7" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="274,80,366,105"/>
 </map>

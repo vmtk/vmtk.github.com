@@ -68,19 +68,28 @@ $(function() {
 <a href="#pro-types">Protected Types</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkLinearToQuadraticSurfaceMeshFilter Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Converts linear elements to quadratic.  
+<p>Converts linear surface elements to quadratic surface elements via either linear subdivision of laplacian (butterfly) subdivision.  
  <a href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html">vtkvmtkLinearToQuadraticSurfaceMeshFilter.h</a>&gt;</code></p>
-
-<p>Inherits vtkUnstructuredGridAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkLinearToQuadraticSurfaceMeshFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkLinearToQuadraticSurfaceMeshFilter__inherit__graph.svg" width="207" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkLinearToQuadraticSurfaceMeshFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkLinearToQuadraticSurfaceMeshFilter__coll__graph.svg" width="207" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -135,18 +144,9 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a8caabeeb4dd959b883cc1f8858b8b8e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a8caabeeb4dd959b883cc1f8858b8b8e5">SubdivisionMethod</a></td></tr>
 <tr class="separator:a8caabeeb4dd959b883cc1f8858b8b8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a7e7d89294641f7fb89218b5a7f4a1d6b"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a7e7d89294641f7fb89218b5a7f4a1d6b">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a7e7d89294641f7fb89218b5a7f4a1d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8b8bd7ac258763ecf9d3bc0b6ac74c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a6c8b8bd7ac258763ecf9d3bc0b6ac74c">vtkvmtkLinearToQuadraticSurfaceMeshFilter</a> (const <a class="el" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html">vtkvmtkLinearToQuadraticSurfaceMeshFilter</a> &amp;)</td></tr>
-<tr class="separator:a6c8b8bd7ac258763ecf9d3bc0b6ac74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c58c57006a964a867fddce6ea56c849"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a3c58c57006a964a867fddce6ea56c849">operator=</a> (const <a class="el" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html">vtkvmtkLinearToQuadraticSurfaceMeshFilter</a> &amp;)</td></tr>
-<tr class="separator:a3c58c57006a964a867fddce6ea56c849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Converts linear elements to quadratic. </p>
+<div class="textblock"><p>Converts linear surface elements to quadratic surface elements via either linear subdivision of laplacian (butterfly) subdivision. </p>
 <dl class="section rcs"><dt>Date</dt><dd>2006/04/06 16:47:48 </dd></dl>
 <dl class="section rcs"><dt>Revision</dt><dd>1.4 </dd></dl>
 <p>... </p>
@@ -195,12 +195,14 @@ Private Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html#l00058">58</a> of file <a class="el" href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html">vtkvmtkLinearToQuadraticSurfaceMeshFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a1c9df5a4a8581974b628fbec0df4f903a9dee406b234a322cc3ec50066e68e24e">LINEAR_SUBDIVISION</a>,</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a1c9df5a4a8581974b628fbec0df4f903a4ba2c1df0ec986361d3c8495890fe4f1">BUTTERFLY_SUBDIVISION</a></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  };</div><div class="ttc" id="classvtkvmtkLinearToQuadraticSurfaceMeshFilter_html_a1c9df5a4a8581974b628fbec0df4f903a4ba2c1df0ec986361d3c8495890fe4f1"><div class="ttname"><a href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a1c9df5a4a8581974b628fbec0df4f903a4ba2c1df0ec986361d3c8495890fe4f1">vtkvmtkLinearToQuadraticSurfaceMeshFilter::BUTTERFLY_SUBDIVISION</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html#l00061">vtkvmtkLinearToQuadraticSurfaceMeshFilter.h:61</a></div></div>
+<div class="ttc" id="classvtkvmtkLinearToQuadraticSurfaceMeshFilter_html_a1c9df5a4a8581974b628fbec0df4f903a9dee406b234a322cc3ec50066e68e24e"><div class="ttname"><a href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a1c9df5a4a8581974b628fbec0df4f903a9dee406b234a322cc3ec50066e68e24e">vtkvmtkLinearToQuadraticSurfaceMeshFilter::LINEAR_SUBDIVISION</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html#l00060">vtkvmtkLinearToQuadraticSurfaceMeshFilter.h:60</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab5020b5b9f5b2bccef0f4a6f0f29d73e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5020b5b9f5b2bccef0f4a6f0f29d73e">&#9670;&nbsp;</a></span>vtkvmtkLinearToQuadraticSurfaceMeshFilter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5020b5b9f5b2bccef0f4a6f0f29d73e">&#9670;&nbsp;</a></span>vtkvmtkLinearToQuadraticSurfaceMeshFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -249,58 +251,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6c8b8bd7ac258763ecf9d3bc0b6ac74c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c8b8bd7ac258763ecf9d3bc0b6ac74c">&#9670;&nbsp;</a></span>vtkvmtkLinearToQuadraticSurfaceMeshFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkLinearToQuadraticSurfaceMeshFilter::vtkvmtkLinearToQuadraticSurfaceMeshFilter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html">vtkvmtkLinearToQuadraticSurfaceMeshFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7e7d89294641f7fb89218b5a7f4a1d6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e7d89294641f7fb89218b5a7f4a1d6b">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkLinearToQuadraticSurfaceMeshFilter::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="af56f2cde83d548a5c295f5100d243fb7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af56f2cde83d548a5c295f5100d243fb7">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -549,7 +500,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html#l00044">44</a> of file <a class="el" href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html">vtkvmtkLinearToQuadraticSurfaceMeshFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  { this-&gt;<a class="code" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a8caabeeb4dd959b883cc1f8858b8b8e5">SubdivisionMethod</a> = <a class="code" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a1c9df5a4a8581974b628fbec0df4f903a9dee406b234a322cc3ec50066e68e24e">LINEAR_SUBDIVISION</a>; }</div><div class="ttc" id="classvtkvmtkLinearToQuadraticSurfaceMeshFilter_html_a1c9df5a4a8581974b628fbec0df4f903a9dee406b234a322cc3ec50066e68e24e"><div class="ttname"><a href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a1c9df5a4a8581974b628fbec0df4f903a9dee406b234a322cc3ec50066e68e24e">vtkvmtkLinearToQuadraticSurfaceMeshFilter::LINEAR_SUBDIVISION</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html#l00060">vtkvmtkLinearToQuadraticSurfaceMeshFilter.h:60</a></div></div>
+<div class="ttc" id="classvtkvmtkLinearToQuadraticSurfaceMeshFilter_html_a8caabeeb4dd959b883cc1f8858b8b8e5"><div class="ttname"><a href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a8caabeeb4dd959b883cc1f8858b8b8e5">vtkvmtkLinearToQuadraticSurfaceMeshFilter::SubdivisionMethod</a></div><div class="ttdeci">int SubdivisionMethod</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html#l00055">vtkvmtkLinearToQuadraticSurfaceMeshFilter.h:55</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a380951742aca5a5f86a431a947510ed4"></a>
@@ -576,7 +529,9 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html#l00046">46</a> of file <a class="el" href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html">vtkvmtkLinearToQuadraticSurfaceMeshFilter.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  { this-&gt;<a class="code" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a8caabeeb4dd959b883cc1f8858b8b8e5">SubdivisionMethod</a> = <a class="code" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a1c9df5a4a8581974b628fbec0df4f903a4ba2c1df0ec986361d3c8495890fe4f1">BUTTERFLY_SUBDIVISION</a>; }</div><div class="ttc" id="classvtkvmtkLinearToQuadraticSurfaceMeshFilter_html_a1c9df5a4a8581974b628fbec0df4f903a4ba2c1df0ec986361d3c8495890fe4f1"><div class="ttname"><a href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a1c9df5a4a8581974b628fbec0df4f903a4ba2c1df0ec986361d3c8495890fe4f1">vtkvmtkLinearToQuadraticSurfaceMeshFilter::BUTTERFLY_SUBDIVISION</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html#l00061">vtkvmtkLinearToQuadraticSurfaceMeshFilter.h:61</a></div></div>
+<div class="ttc" id="classvtkvmtkLinearToQuadraticSurfaceMeshFilter_html_a8caabeeb4dd959b883cc1f8858b8b8e5"><div class="ttname"><a href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html#a8caabeeb4dd959b883cc1f8858b8b8e5">vtkvmtkLinearToQuadraticSurfaceMeshFilter::SubdivisionMethod</a></div><div class="ttdeci">int SubdivisionMethod</div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkLinearToQuadraticSurfaceMeshFilter_8h_source.html#l00055">vtkvmtkLinearToQuadraticSurfaceMeshFilter.h:55</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aa2b337dbcff0e28927e683d685a2b98e"></a>
@@ -615,32 +570,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3c58c57006a964a867fddce6ea56c849"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c58c57006a964a867fddce6ea56c849">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkLinearToQuadraticSurfaceMeshFilter::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkLinearToQuadraticSurfaceMeshFilter.html">vtkvmtkLinearToQuadraticSurfaceMeshFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

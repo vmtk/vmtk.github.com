@@ -1,4 +1,4 @@
 <map id="vtkvmtkNeighborhood" name="vtkvmtkNeighborhood">
-<area shape="rect" id="node2" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="10,79,151,104"/>
-<area shape="rect" id="node3" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="34,5,127,31"/>
+<area shape="rect" id="node2" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="10,152,151,177"/>
+<area shape="rect" id="node3" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="34,79,127,104"/>
 </map>

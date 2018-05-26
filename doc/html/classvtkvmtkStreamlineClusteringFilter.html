@@ -67,7 +67,6 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkStreamlineClusteringFilter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkStreamlineClusteringFilter Class Reference</div>  </div>
@@ -78,8 +77,18 @@ $(function() {
  <a href="classvtkvmtkStreamlineClusteringFilter.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkStreamlineClusteringFilter_8h_source.html">vtkvmtkStreamlineClusteringFilter.h</a>&gt;</code></p>
-
-<p>Inherits vtkPolyDataAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkStreamlineClusteringFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkStreamlineClusteringFilter__inherit__graph.svg" width="202" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkStreamlineClusteringFilter:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkStreamlineClusteringFilter__coll__graph.svg" width="202" height="123"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -121,15 +130,6 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:afa483cfc86870a470871bd5521153ff6"><td class="memItemLeft" align="right" valign="top">vtkPolyData *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkStreamlineClusteringFilter.html#afa483cfc86870a470871bd5521153ff6">ClusterCenters</a></td></tr>
 <tr class="separator:afa483cfc86870a470871bd5521153ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:aa839fa909ee431bae3d792d3f1db3aa7"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkStreamlineClusteringFilter.html#aa839fa909ee431bae3d792d3f1db3aa7">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:aa839fa909ee431bae3d792d3f1db3aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b688100ae0e331ecb3b0009ed760cd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkStreamlineClusteringFilter.html#a5b688100ae0e331ecb3b0009ed760cd1">vtkvmtkStreamlineClusteringFilter</a> (const <a class="el" href="classvtkvmtkStreamlineClusteringFilter.html">vtkvmtkStreamlineClusteringFilter</a> &amp;)</td></tr>
-<tr class="separator:a5b688100ae0e331ecb3b0009ed760cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fd658c94ccac7655782c3ab587c1b7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkStreamlineClusteringFilter.html#a4fd658c94ccac7655782c3ab587c1b7b">operator=</a> (const <a class="el" href="classvtkvmtkStreamlineClusteringFilter.html">vtkvmtkStreamlineClusteringFilter</a> &amp;)</td></tr>
-<tr class="separator:a4fd658c94ccac7655782c3ab587c1b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Cluster streamlines based on Mahalanobis distance metric and K-Means clustering. </p>
@@ -157,7 +157,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a52fc2086dc882f6277fcfba129d0a622"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52fc2086dc882f6277fcfba129d0a622">&#9670;&nbsp;</a></span>vtkvmtkStreamlineClusteringFilter() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a52fc2086dc882f6277fcfba129d0a622">&#9670;&nbsp;</a></span>vtkvmtkStreamlineClusteringFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,58 +206,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5b688100ae0e331ecb3b0009ed760cd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b688100ae0e331ecb3b0009ed760cd1">&#9670;&nbsp;</a></span>vtkvmtkStreamlineClusteringFilter() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkStreamlineClusteringFilter::vtkvmtkStreamlineClusteringFilter </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkStreamlineClusteringFilter.html">vtkvmtkStreamlineClusteringFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa839fa909ee431bae3d792d3f1db3aa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa839fa909ee431bae3d792d3f1db3aa7">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkStreamlineClusteringFilter::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ad0bd14f3fe2f8b7bbbc365002cc6e88f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0bd14f3fe2f8b7bbbc365002cc6e88f">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -492,32 +441,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4fd658c94ccac7655782c3ab587c1b7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fd658c94ccac7655782c3ab587c1b7b">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkStreamlineClusteringFilter::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkStreamlineClusteringFilter.html">vtkvmtkStreamlineClusteringFilter</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

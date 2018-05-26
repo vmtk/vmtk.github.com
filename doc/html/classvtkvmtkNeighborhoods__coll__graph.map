@@ -1,5 +1,5 @@
 <map id="vtkvmtkNeighborhoods" name="vtkvmtkNeighborhoods">
-<area shape="rect" id="node2" href="$classvtkvmtkDataSetItems.html" title="Create a collection of data set items, one for every point within the data set. " alt="" coords="10,167,157,192"/>
-<area shape="rect" id="node3" href="$classvtkvmtkItems.html" title="Control allocation and memory footprint of item instances. " alt="" coords="34,92,133,117"/>
-<area shape="rect" id="node4" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="38,5,130,31"/>
+<area shape="rect" id="node2" href="$classvtkvmtkDataSetItems.html" title="Create a collection of data set items, one for every point within the data set. " alt="" coords="10,241,157,267"/>
+<area shape="rect" id="node3" href="$classvtkvmtkItems.html" title="Control allocation and memory footprint of item instances. " alt="" coords="34,167,133,192"/>
+<area shape="rect" id="node5" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="100,80,193,105"/>
 </map>

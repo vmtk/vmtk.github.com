@@ -1,7 +1,7 @@
 <map id="vtkvmtkFEAssembler" name="vtkvmtkFEAssembler">
-<area shape="rect" id="node2" href="$classvtkvmtkPolyDataFEGradientAssembler.html" title="Construct a gradient based finite element calculation. " alt="" coords="224,5,412,44"/>
-<area shape="rect" id="node3" href="$classvtkvmtkPolyDataFELaplaceAssembler.html" title="construct a laplacian based finite element calculation. " alt="" coords="226,68,410,107"/>
-<area shape="rect" id="node4" href="$classvtkvmtkUnstructuredGridFEGradientAssembler.html" title=".. " alt="" coords="200,131,436,169"/>
-<area shape="rect" id="node5" href="$classvtkvmtkUnstructuredGridFELaplaceAssembler.html" title=".. " alt="" coords="202,193,434,232"/>
-<area shape="rect" id="node6" href="$classvtkvmtkUnstructuredGridFEVorticityAssembler.html" title=".. " alt="" coords="202,256,434,295"/>
+<area shape="rect" id="node3" href="$classvtkvmtkPolyDataFEGradientAssembler.html" title="Construct a gradient based finite element calculation on a surface. " alt="" coords="348,5,537,44"/>
+<area shape="rect" id="node4" href="$classvtkvmtkPolyDataFELaplaceAssembler.html" title="construct a laplacian based finite element calculation on a surface. " alt="" coords="351,68,535,107"/>
+<area shape="rect" id="node5" href="$classvtkvmtkUnstructuredGridFEGradientAssembler.html" title="Construct a gradient based finite element calculation on a mesh. " alt="" coords="325,131,561,169"/>
+<area shape="rect" id="node6" href="$classvtkvmtkUnstructuredGridFELaplaceAssembler.html" title="Construct a laplacian based finite element calculation on a mesh. " alt="" coords="327,193,559,232"/>
+<area shape="rect" id="node7" href="$classvtkvmtkUnstructuredGridFEVorticityAssembler.html" title="Construct a vorticity based finite element calculation on a mesh. " alt="" coords="327,256,559,295"/>
 </map>

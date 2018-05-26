@@ -67,7 +67,6 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkPolyDataNetworkExtraction-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkPolyDataNetworkExtraction Class Reference</div>  </div>
@@ -78,8 +77,18 @@ $(function() {
  <a href="classvtkvmtkPolyDataNetworkExtraction.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkPolyDataNetworkExtraction_8h_source.html">vtkvmtkPolyDataNetworkExtraction.h</a>&gt;</code></p>
-
-<p>Inherits vtkPolyDataAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkPolyDataNetworkExtraction:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkPolyDataNetworkExtraction__inherit__graph.svg" width="240" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkPolyDataNetworkExtraction:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkPolyDataNetworkExtraction__coll__graph.svg" width="240" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -236,15 +245,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ad6d05cb76c0b38cffa9dc00a2e6104b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7320fff3d79de1261ed395756900760"><td class="memItemLeft" align="right" valign="top">vtkIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataNetworkExtraction.html#ad7320fff3d79de1261ed395756900760">TotalMarkedPoints</a></td></tr>
 <tr class="separator:ad7320fff3d79de1261ed395756900760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a295b697aa65ce51c5dbb471b7299b664"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataNetworkExtraction.html#a295b697aa65ce51c5dbb471b7299b664">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a295b697aa65ce51c5dbb471b7299b664"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8cc22d219c97aa0a73d8825526b0015"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataNetworkExtraction.html#ac8cc22d219c97aa0a73d8825526b0015">vtkvmtkPolyDataNetworkExtraction</a> (const <a class="el" href="classvtkvmtkPolyDataNetworkExtraction.html">vtkvmtkPolyDataNetworkExtraction</a> &amp;)</td></tr>
-<tr class="separator:ac8cc22d219c97aa0a73d8825526b0015"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78b07cece7ca77686231337866aad581"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkPolyDataNetworkExtraction.html#a78b07cece7ca77686231337866aad581">operator=</a> (const <a class="el" href="classvtkvmtkPolyDataNetworkExtraction.html">vtkvmtkPolyDataNetworkExtraction</a> &amp;)</td></tr>
-<tr class="separator:a78b07cece7ca77686231337866aad581"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>create an approximated network graph (preliminary to centerline) from an input surface with atleast one hole in it. </p>
@@ -291,7 +291,12 @@ Private Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataNetworkExtraction_8h_source.html#l00067">67</a> of file <a class="el" href="vtkvmtkPolyDataNetworkExtraction_8h_source.html">vtkvmtkPolyDataNetworkExtraction.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classvtkvmtkPolyDataNetworkExtraction.html#a4aaa8a7be7e063a4785d984a4f37c152a3ea83e28f1ff0bfdb99bec0d77b7b3ac">STEP_ITERATION_PROCEED</a>,</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classvtkvmtkPolyDataNetworkExtraction.html#a4aaa8a7be7e063a4785d984a4f37c152ae62ea23bae145537d80fbd8212138f4e">STEP_ITERATION_REDEFINE</a>,</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="classvtkvmtkPolyDataNetworkExtraction.html#a4aaa8a7be7e063a4785d984a4f37c152a4148195d2ea465bf59008e195ff38367">STEP_ITERATION_STOP_END</a>,</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classvtkvmtkPolyDataNetworkExtraction.html#a4aaa8a7be7e063a4785d984a4f37c152aa34d119fbb14f004e17d40e707eda9f4">STEP_ITERATION_STOP_BIFURCATION</a>,</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classvtkvmtkPolyDataNetworkExtraction.html#a4aaa8a7be7e063a4785d984a4f37c152abdc8eb05491b99b57a6e3d0cb3cc334c">STEP_ITERATION_STOP_CLOSED</a></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  };</div><div class="ttc" id="classvtkvmtkPolyDataNetworkExtraction_html_a4aaa8a7be7e063a4785d984a4f37c152abdc8eb05491b99b57a6e3d0cb3cc334c"><div class="ttname"><a href="classvtkvmtkPolyDataNetworkExtraction.html#a4aaa8a7be7e063a4785d984a4f37c152abdc8eb05491b99b57a6e3d0cb3cc334c">vtkvmtkPolyDataNetworkExtraction::STEP_ITERATION_STOP_CLOSED</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkPolyDataNetworkExtraction_8h_source.html#l00073">vtkvmtkPolyDataNetworkExtraction.h:73</a></div></div>
+<div class="ttc" id="classvtkvmtkPolyDataNetworkExtraction_html_a4aaa8a7be7e063a4785d984a4f37c152aa34d119fbb14f004e17d40e707eda9f4"><div class="ttname"><a href="classvtkvmtkPolyDataNetworkExtraction.html#a4aaa8a7be7e063a4785d984a4f37c152aa34d119fbb14f004e17d40e707eda9f4">vtkvmtkPolyDataNetworkExtraction::STEP_ITERATION_STOP_BIFURCATION</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkPolyDataNetworkExtraction_8h_source.html#l00072">vtkvmtkPolyDataNetworkExtraction.h:72</a></div></div>
+<div class="ttc" id="classvtkvmtkPolyDataNetworkExtraction_html_a4aaa8a7be7e063a4785d984a4f37c152a3ea83e28f1ff0bfdb99bec0d77b7b3ac"><div class="ttname"><a href="classvtkvmtkPolyDataNetworkExtraction.html#a4aaa8a7be7e063a4785d984a4f37c152a3ea83e28f1ff0bfdb99bec0d77b7b3ac">vtkvmtkPolyDataNetworkExtraction::STEP_ITERATION_PROCEED</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkPolyDataNetworkExtraction_8h_source.html#l00069">vtkvmtkPolyDataNetworkExtraction.h:69</a></div></div>
+<div class="ttc" id="classvtkvmtkPolyDataNetworkExtraction_html_a4aaa8a7be7e063a4785d984a4f37c152ae62ea23bae145537d80fbd8212138f4e"><div class="ttname"><a href="classvtkvmtkPolyDataNetworkExtraction.html#a4aaa8a7be7e063a4785d984a4f37c152ae62ea23bae145537d80fbd8212138f4e">vtkvmtkPolyDataNetworkExtraction::STEP_ITERATION_REDEFINE</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkPolyDataNetworkExtraction_8h_source.html#l00070">vtkvmtkPolyDataNetworkExtraction.h:70</a></div></div>
+<div class="ttc" id="classvtkvmtkPolyDataNetworkExtraction_html_a4aaa8a7be7e063a4785d984a4f37c152a4148195d2ea465bf59008e195ff38367"><div class="ttname"><a href="classvtkvmtkPolyDataNetworkExtraction.html#a4aaa8a7be7e063a4785d984a4f37c152a4148195d2ea465bf59008e195ff38367">vtkvmtkPolyDataNetworkExtraction::STEP_ITERATION_STOP_END</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkPolyDataNetworkExtraction_8h_source.html#l00071">vtkvmtkPolyDataNetworkExtraction.h:71</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="ab946ee3e8a897dc8e20143b733fa6cbf"></a>
@@ -312,12 +317,15 @@ Private Member Functions</h2></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="vtkvmtkPolyDataNetworkExtraction_8h_source.html#l00078">78</a> of file <a class="el" href="vtkvmtkPolyDataNetworkExtraction_8h_source.html">vtkvmtkPolyDataNetworkExtraction.h</a>.</p>
-
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="classvtkvmtkPolyDataNetworkExtraction.html#ab946ee3e8a897dc8e20143b733fa6cbfa2410359193c09fa34d6422184195b141">NON_VISITED</a>,</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classvtkvmtkPolyDataNetworkExtraction.html#ab946ee3e8a897dc8e20143b733fa6cbfa62865a89689b51996c6ab7e06d4b4c24">VISITED</a>,</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classvtkvmtkPolyDataNetworkExtraction.html#ab946ee3e8a897dc8e20143b733fa6cbfaeeb72269505b51191024ef78c2ca2d00">GLOBAL</a></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  };</div><div class="ttc" id="classvtkvmtkPolyDataNetworkExtraction_html_ab946ee3e8a897dc8e20143b733fa6cbfa62865a89689b51996c6ab7e06d4b4c24"><div class="ttname"><a href="classvtkvmtkPolyDataNetworkExtraction.html#ab946ee3e8a897dc8e20143b733fa6cbfa62865a89689b51996c6ab7e06d4b4c24">vtkvmtkPolyDataNetworkExtraction::VISITED</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkPolyDataNetworkExtraction_8h_source.html#l00081">vtkvmtkPolyDataNetworkExtraction.h:81</a></div></div>
+<div class="ttc" id="classvtkvmtkPolyDataNetworkExtraction_html_ab946ee3e8a897dc8e20143b733fa6cbfa2410359193c09fa34d6422184195b141"><div class="ttname"><a href="classvtkvmtkPolyDataNetworkExtraction.html#ab946ee3e8a897dc8e20143b733fa6cbfa2410359193c09fa34d6422184195b141">vtkvmtkPolyDataNetworkExtraction::NON_VISITED</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkPolyDataNetworkExtraction_8h_source.html#l00080">vtkvmtkPolyDataNetworkExtraction.h:80</a></div></div>
+<div class="ttc" id="classvtkvmtkPolyDataNetworkExtraction_html_ab946ee3e8a897dc8e20143b733fa6cbfaeeb72269505b51191024ef78c2ca2d00"><div class="ttname"><a href="classvtkvmtkPolyDataNetworkExtraction.html#ab946ee3e8a897dc8e20143b733fa6cbfaeeb72269505b51191024ef78c2ca2d00">vtkvmtkPolyDataNetworkExtraction::GLOBAL</a></div><div class="ttdef"><b>Definition:</b> <a href="vtkvmtkPolyDataNetworkExtraction_8h_source.html#l00082">vtkvmtkPolyDataNetworkExtraction.h:82</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8edc2d27af084b436186fb43b8f56177"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8edc2d27af084b436186fb43b8f56177">&#9670;&nbsp;</a></span>vtkvmtkPolyDataNetworkExtraction() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8edc2d27af084b436186fb43b8f56177">&#9670;&nbsp;</a></span>vtkvmtkPolyDataNetworkExtraction()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,58 +374,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac8cc22d219c97aa0a73d8825526b0015"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8cc22d219c97aa0a73d8825526b0015">&#9670;&nbsp;</a></span>vtkvmtkPolyDataNetworkExtraction() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkPolyDataNetworkExtraction::vtkvmtkPolyDataNetworkExtraction </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkPolyDataNetworkExtraction.html">vtkvmtkPolyDataNetworkExtraction</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a295b697aa65ce51c5dbb471b7299b664"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a295b697aa65ce51c5dbb471b7299b664">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkPolyDataNetworkExtraction::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a6ac2d0639bb74cfb541fd80623dcd4ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6ac2d0639bb74cfb541fd80623dcd4ef">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -2604,32 +2561,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a78b07cece7ca77686231337866aad581"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78b07cece7ca77686231337866aad581">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkPolyDataNetworkExtraction::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkPolyDataNetworkExtraction.html">vtkvmtkPolyDataNetworkExtraction</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

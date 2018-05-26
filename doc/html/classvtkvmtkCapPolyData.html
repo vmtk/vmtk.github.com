@@ -67,7 +67,6 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classvtkvmtkCapPolyData-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">vtkvmtkCapPolyData Class Reference</div>  </div>
@@ -78,8 +77,18 @@ $(function() {
  <a href="classvtkvmtkCapPolyData.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="vtkvmtkCapPolyData_8h_source.html">vtkvmtkCapPolyData.h</a>&gt;</code></p>
-
-<p>Inherits vtkPolyDataAlgorithm.</p>
+<div class="dynheader">
+Inheritance diagram for vtkvmtkCapPolyData:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkCapPolyData__inherit__graph.svg" width="160" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+<div class="dynheader">
+Collaboration diagram for vtkvmtkCapPolyData:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classvtkvmtkCapPolyData__coll__graph.svg" width="160" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -155,15 +164,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:aebaa3ea115ff0596a803f3a7bb3023d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7b696036d70b363f8fa432f74c28c40"><td class="memItemLeft" align="right" valign="top">vtkIdList *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkCapPolyData.html#aa7b696036d70b363f8fa432f74c28c40">CapCenterIds</a></td></tr>
 <tr class="separator:aa7b696036d70b363f8fa432f74c28c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr class="memitem:a2570c043b509d8f2ceba08e2ba1217a2"><td class="memItemLeft" align="right" valign="top">virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkCapPolyData.html#a2570c043b509d8f2ceba08e2ba1217a2">GetClassNameInternal</a> () const</td></tr>
-<tr class="separator:a2570c043b509d8f2ceba08e2ba1217a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b6d43aee6cecd79de1273d31e5c4e59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkCapPolyData.html#a6b6d43aee6cecd79de1273d31e5c4e59">vtkvmtkCapPolyData</a> (const <a class="el" href="classvtkvmtkCapPolyData.html">vtkvmtkCapPolyData</a> &amp;)</td></tr>
-<tr class="separator:a6b6d43aee6cecd79de1273d31e5c4e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57ac20e10a879bda11ed6e84d86def2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvtkvmtkCapPolyData.html#a57ac20e10a879bda11ed6e84d86def2d">operator=</a> (const <a class="el" href="classvtkvmtkCapPolyData.html">vtkvmtkCapPolyData</a> &amp;)</td></tr>
-<tr class="separator:a57ac20e10a879bda11ed6e84d86def2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Close holes in a surface surface by creating a cap made of triangles sharing a common vertex at the boundary barycenter. </p>
@@ -191,7 +191,7 @@ Private Member Functions</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a91f68247e4d2b20927b88ad160dba234"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91f68247e4d2b20927b88ad160dba234">&#9670;&nbsp;</a></span>vtkvmtkCapPolyData() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a91f68247e4d2b20927b88ad160dba234">&#9670;&nbsp;</a></span>vtkvmtkCapPolyData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,58 +240,7 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b6d43aee6cecd79de1273d31e5c4e59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b6d43aee6cecd79de1273d31e5c4e59">&#9670;&nbsp;</a></span>vtkvmtkCapPolyData() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">vtkvmtkCapPolyData::vtkvmtkCapPolyData </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkCapPolyData.html">vtkvmtkCapPolyData</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2570c043b509d8f2ceba08e2ba1217a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2570c043b509d8f2ceba08e2ba1217a2">&#9670;&nbsp;</a></span>GetClassNameInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual const char* vtkvmtkCapPolyData::GetClassNameInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a809b52c903dad96da9d6b0c3dc991eab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a809b52c903dad96da9d6b0c3dc991eab">&#9670;&nbsp;</a></span>IsTypeOf()</h2>
 
@@ -788,32 +737,6 @@ Private Member Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a57ac20e10a879bda11ed6e84d86def2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57ac20e10a879bda11ed6e84d86def2d">&#9670;&nbsp;</a></span>operator=()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void vtkvmtkCapPolyData::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classvtkvmtkCapPolyData.html">vtkvmtkCapPolyData</a> &amp;&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

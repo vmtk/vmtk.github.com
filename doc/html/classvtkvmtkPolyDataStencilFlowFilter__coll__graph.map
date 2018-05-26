@@ -1,6 +1,6 @@
 <map id="vtkvmtkPolyDataStencilFlowFilter" name="vtkvmtkPolyDataStencilFlowFilter">
-<area shape="rect" id="node2" href="$classvtkvmtkStencils.html" title="Create an empty, umbrella, area weighted umbrella, finite&#45;element LP, or finite&#45;volume finite&#45;element..." alt="" coords="43,241,156,267"/>
-<area shape="rect" id="node3" href="$classvtkvmtkDataSetItems.html" title="Create a collection of data set items, one for every point within the data set. " alt="" coords="26,167,173,192"/>
-<area shape="rect" id="node4" href="$classvtkvmtkItems.html" title="Control allocation and memory footprint of item instances. " alt="" coords="50,92,149,117"/>
-<area shape="rect" id="node5" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="54,5,146,31"/>
+<area shape="rect" id="node3" href="$classvtkvmtkStencils.html" title="Create an empty, umbrella, area weighted umbrella, finite&#45;element LP, or finite&#45;volume finite&#45;element..." alt="" coords="178,316,291,341"/>
+<area shape="rect" id="node4" href="$classvtkvmtkDataSetItems.html" title="Create a collection of data set items, one for every point within the data set. " alt="" coords="161,241,308,267"/>
+<area shape="rect" id="node5" href="$classvtkvmtkItems.html" title="Control allocation and memory footprint of item instances. " alt="" coords="185,167,284,192"/>
+<area shape="rect" id="node7" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="251,80,343,105"/>
 </map>

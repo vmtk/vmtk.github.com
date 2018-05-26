@@ -1,4 +1,4 @@
 <map id="vtkvmtkPolyDataCenterlineMetricFilter" name="vtkvmtkPolyDataCenterlineMetricFilter">
-<area shape="rect" id="node2" href="$classvtkvmtkPolyDataCenterlineAbscissaMetricFilter.html" title="Project the abscissa metric of the nearest centerline point to every point of a surface. " alt="" coords="235,5,416,44"/>
-<area shape="rect" id="node3" href="$classvtkvmtkPolyDataCenterlineAngularMetricFilter.html" title="create an angular metric array on each branch of a split surface representing he periodic circumferen..." alt="" coords="235,68,416,107"/>
+<area shape="rect" id="node3" href="$classvtkvmtkPolyDataCenterlineAbscissaMetricFilter.html" title="Project the abscissa metric of the nearest centerline point to every point of a surface. " alt="" coords="432,5,613,44"/>
+<area shape="rect" id="node4" href="$classvtkvmtkPolyDataCenterlineAngularMetricFilter.html" title="create an angular metric array on each branch of a split surface representing he periodic circumferen..." alt="" coords="432,68,613,107"/>
 </map>

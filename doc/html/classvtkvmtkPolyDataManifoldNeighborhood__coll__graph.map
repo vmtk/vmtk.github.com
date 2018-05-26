@@ -1,5 +1,5 @@
 <map id="vtkvmtkPolyDataManifoldNeighborhood" name="vtkvmtkPolyDataManifoldNeighborhood">
-<area shape="rect" id="node2" href="$classvtkvmtkNeighborhood.html" title="Query the neighborhood surrounding the set point id in an data set item. " alt="" coords="58,152,208,177"/>
-<area shape="rect" id="node3" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="62,79,203,104"/>
-<area shape="rect" id="node4" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="87,5,179,31"/>
+<area shape="rect" id="node2" href="$classvtkvmtkNeighborhood.html" title="Query the neighborhood surrounding the set point id in an data set item. " alt="" coords="58,225,208,251"/>
+<area shape="rect" id="node3" href="$classvtkvmtkDataSetItem.html" title="create an item instance with a data set and particular point id. " alt="" coords="62,152,203,177"/>
+<area shape="rect" id="node4" href="$classvtkvmtkItem.html" title="Base class for the construction of neighborhoods and stencil from a set of points. " alt="" coords="87,79,179,104"/>
 </map>
