@@ -9,7 +9,7 @@ This tutorial demonstrates how to open your dataset in vmtk, navigate into a 3D 
 
 The first step is read the images and display them on the screen. vmtkimagereader is capable of reading DICOM directories. Additionally, it will reorient the image volume correctly based on its orientation relative to the patient. ((This feature can be disabled))
 
-     vmtkimagereader -ifile first_dicom_file_in_the_series.dcm --pipe vmtkimageviewer
+     vmtkimagereader -ifile dicom_directory_path/first_dicom_file_in_the_series.dcm --pipe vmtkimageviewer
 
 where *dicom_directory_path* is the path where your DICOM images (* *.dcm* or whatever extension you have) can be found.
 
@@ -83,7 +83,7 @@ If the image volume is composed by more than one slice, single slices will be ou
 
 Often, medical images contain structures which are not of interest. To extract a volume of interest (VOI) from a dataset, one can pipe an instance of vmtkimagevoiselector between the DICOM reader and the writer in this way:
 
-     vmtkimagereader -f dicom -d dicom_directory_path --pipe
+     vmtkimagereader -ifile dicom_directory_path/first_file_in_dicom_series.dcm --pipe
      vmtkimagevoiselector -ofile image_volume_voi.vti
 
 (this time I chose to use the built_in writer in vmtkimagevoiselector instead of piping to a *vmtkimagewriter*. No real difference.)
