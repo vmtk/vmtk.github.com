@@ -39,6 +39,7 @@ Please note: We are no longer updating the VMTK PyPi Package, therefore pip inst
 
     conda install anaconda-client
     conda update conda anaconda-client
+    conda config --set restore_free_channel true
 
 4) Enter the following commands to create a new virtual environment with vmtk installed (replace the name "foo" with whatever you want to call the environment, or replace python=3.6 with python=3.5 if you want python 3.5):
 
