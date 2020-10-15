@@ -227,4 +227,4 @@ Set these variables into your PATH environment variable:
 ##### Prior Releases
 ====================
 
-Note: These instructions are for the the VMTK 1.4+ releases. For research groups or individuals requiring the use of prior vmtk versions, please post on the <a href="https://groups.google.com/forum/#!forum/vmtk-users">mailing list</a> so that we can address concerns on a case-by-case basis. 
+Note: These instructions are for the the VMTK 1.4+ releases. For research groups or individuals requiring the use of prior vmtk versions, please post on the <a href="https://discourse.slicer.org/c/community/vmtk">forum</a> so that we can address concerns on a case-by-case basis. 
