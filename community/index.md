@@ -9,16 +9,15 @@ title: Community
 The Vascular Modeling Toolkit is an open source project where people from all over the world can contribute their work, with everyone benefitting from friendly help and advice, and kindly helping others in return.
 See the [contribute page]({{ site.baseurl }}/contribute) for details.
 
-## Mailing Lists
+## Discuss
 
-Mailing list is the best way to get in contact with the vmtk community. 
+VMTK forum is the best way to get in contact with the vmtk community. 
 It serve as primary support channel where users can help each other to learn how to use vmtk.
 
-The main forum for questions and discussions about the vascular modeling toolkit is hosted on google groups:
-
 ![]({{ site.baseurl }}/resources/img/google_groups.png)
-<a href="https://groups.google.com/forum/#!forum/vmtk-users" target="_blank">vmtk-mailing-list</a>
+<a href="https://discourse.slicer.org/c/community/vmtk/" target="_blank">VMTK forum</a>
 
+Before October 2020, [VMTK mailing list](https://groups.google.com/forum/#!forum/vmtk-users) was used as discussion forum. The list does not accept new posts but still contains valuable archive of previous questions and answers.
 
 ## Links
 
