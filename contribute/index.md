@@ -22,4 +22,4 @@ See vmtk <a href="https://github.com/vmtk/vmtk/issues/" target="_blank">open iss
 ### Help with the documentation
 
 An easy but very important way to contribute to vmtk is to
-participate in the [mailing list]({{ site.baseurl }}/community/#mailing-list).
+participate in the [VMTK forum](https://discourse.slicer.org/c/community/vmtk/).
