@@ -11,7 +11,7 @@ Three new scripts are now available in the [vmtk development version]({{site.bas
 + vmtkparticletracer: a script used to generate traces (VtkPolydata) from a velocity vector field.
 + vmtkpathlineanimator: a script used to animate the traces previously generated.
 
-This example shows animated streaklines in a model of arteriovenous fistula for hemodialysis generated using [vmtk](http://vmtk.org) and the [gnuid CFD solver](https://github.com/lorbot/gnuid).
+This example shows animated streaklines in a model of arteriovenous fistula for hemodialysis generated using [vmtk](https://vmtk.github.io/) and the [gnuid CFD solver](https://github.com/lorbot/gnuid).
 
 
 <object width="640" height="360"><param name="movie" value="//www.youtube.com/v/lqBvbKHS7Qo?&amp;hl=it_IT&amp;version=3"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="//www.youtube.com/v/lqBvbKHS7Qo?hl=it_IT&amp;version=3" type="application/x-shockwave-flash" width="640" height="360" allowscriptaccess="always" allowfullscreen="true"></embed></object>
