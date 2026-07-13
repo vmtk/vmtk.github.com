@@ -155,4 +155,4 @@ Two points to be made:
 
 That's it.
 
-Don't forget to explore the options that the scripts offer. If you're in doubt, mail us a question, either personally or on the mailing list (see the [vmtk homepage](http://www.vmtk.org/) for details).
+Don't forget to explore the options that the scripts offer. If you're in doubt, mail us a question, either personally or on the mailing list (see the [vmtk homepage](https://vmtk.github.io/) for details).
