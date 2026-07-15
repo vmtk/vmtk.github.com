@@ -1,7 +1,0 @@
-<map id="vtkvmtkLinearSystem.h" name="vtkvmtkLinearSystem.h">
-<area shape="rect" id="node2" href="$vtkvmtkBoundaryConditions_8h.html" title="vtkvmtkBoundaryConditions.h" alt="" coords="5,79,203,104"/>
-<area shape="rect" id="node4" href="$vtkvmtkEllipticProblem_8h.html" title="vtkvmtkEllipticProblem.h" alt="" coords="92,239,258,264"/>
-<area shape="rect" id="node5" href="$vtkvmtkLinearSystemSolver_8h.html" title="vtkvmtkLinearSystemSolver.h" alt="" coords="278,79,474,104"/>
-<area shape="rect" id="node3" href="$vtkvmtkDirichletBoundaryConditions_8h.html" title="vtkvmtkDirichletBoundary\lConditions.h" alt="" coords="25,152,197,191"/>
-<area shape="rect" id="node6" href="$vtkvmtkOpenNLLinearSystemSolver_8h.html" title="vtkvmtkOpenNLLinearSystem\lSolver.h" alt="" coords="277,152,475,191"/>
-</map>

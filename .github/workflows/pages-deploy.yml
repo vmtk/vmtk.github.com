@@ -1,0 +1,84 @@
+name: Deploy website and API documentation
+
+on:
+  push:
+    branches: [ master ]
+  schedule:
+    # Rebuild periodically so the C++ API reference picks up changes pushed
+    # to the vmtk repo even when nothing changes here.
+    - cron: '0 6 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website source
+        uses: actions/checkout@v4
+
+      - name: Install Doxygen and Graphviz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen graphviz
+
+      - name: Build Jekyll site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      # The C++ API reference is never committed to this repo. It is
+      # generated fresh, straight from vtkVmtk headers in the vmtk repo,
+      # every time the site is deployed. To publish another version, add a
+      # "[ref]=folder" entry below -- e.g. [1.6]=1.6 once that branch exists.
+      - name: Build versioned API documentation
+        run: |
+          set -e
+          declare -A VERSIONS=( [master]=latest [1.4]=1.4 )
+          for ref in "${!VERSIONS[@]}"; do
+            folder="${VERSIONS[$ref]}"
+            echo "::group::Building API docs for vmtk@${ref} -> documentation/api/${folder}"
+
+            src="${RUNNER_TEMP}/vmtk-src-${folder}"
+            git clone --depth 1 --branch "${ref}" https://github.com/vmtk/vmtk.git "${src}"
+
+            doxyfile="${RUNNER_TEMP}/Doxyfile-${folder}"
+            build_dir="${RUNNER_TEMP}/doxygen-build-${folder}"
+            mkdir -p "${build_dir}/Utilities/Doxygen/doc"
+            sed \
+              -e "s#@VTK_VMTK_SOURCE_DIR@#${src}/vtkVmtk#g" \
+              -e "s#@VTK_VMTK_BINARY_DIR@#${build_dir}#g" \
+              -e "s#@DOXYGEN_DOT_PATH@#$(dirname "$(command -v dot)")#g" \
+              "${src}/vtkVmtk/Utilities/Doxygen/doxyfile.in" > "${doxyfile}"
+
+            doxygen "${doxyfile}"
+
+            mkdir -p "_site/documentation/api/${folder}"
+            cp -r "${build_dir}/Utilities/Doxygen/doc/html/." "_site/documentation/api/${folder}/"
+            echo "::endgroup::"
+          done
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

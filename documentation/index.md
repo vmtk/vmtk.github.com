@@ -29,7 +29,7 @@ title: Learn vmtk
       <p>Automatically generated Python class reference.</p>
     </div>
     <div class="span4 doc-block">
-      <h3><a href="{{ site.baseurl }}/doc/html/index.html">C++ scripts</a></h3>
+      <h3><a href="{{ site.baseurl }}/documentation/api/index.html">C++ API documentation</a></h3>
       <p>Automatically generated C++ class reference.</p>
     </div>
   </div>
