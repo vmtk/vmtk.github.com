@@ -36,6 +36,12 @@ jobs:
           source: ./
           destination: ./_site
 
+      - name: Fix _site ownership
+        # jekyll-build-pages runs Jekyll inside a Docker container as root, so the
+        # files/directories it writes into _site end up root-owned. Reclaim them so
+        # the (non-root) runner user can add the API docs into _site afterwards.
+        run: sudo chown -R "$(id -u):$(id -g)" _site
+
       # The C++ API reference is never committed to this repo. It is
       # generated fresh, straight from vtkVmtk headers in the vmtk repo,
       # every time the site is deployed. To publish another version, add a
