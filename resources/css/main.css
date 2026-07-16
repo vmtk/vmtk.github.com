@@ -167,13 +167,11 @@ a:hover {
   text-shadow: none;
 }
 
-.darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#source-code > .toptip,
-.darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#orobix-twitter > .toptip {
+.darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#source-code > .toptip {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#source-code > .toptip:after,
-.darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#orobix-twitter > .toptip:after {
+.darkbluetopbar > .container > .navbar-wrap > .container > ul.nav > li#source-code > .toptip:after {
   border-top: 6px solid rgba(0, 0, 0, 0.3);
 }
 
@@ -263,12 +261,11 @@ a.brand {
 }
 
 .nav > li > a,
-#source-code > a > img,
-#orobix-twitter > a > img {
+#source-code > a > img {
   margin-right: -10px;
 }
 
-#source-code > a, #orobix-twitter > a {
+#source-code > a {
   background-color: transparent;
   border: none;
 }
