@@ -4,12 +4,9 @@ title: Working With Numpy Arrays
 by: Richard Izzo (Github @rlizzo), State University of New York at Buffalo, USA
 ---
 
-#### Applicable version(s):
-[Development version]({{ site.baseurl }}/download/#development_version)
-
 This tutorial demonstrates how to convert VMTK Image, Surface, and Centerline object data to and from a structured dictionary of Numpy arrays. This tutorial can be viewed as a Jupyter Notebook at [this link]({{ site.baseurl }}/tutorials/WorkingWithNumpyArraysIPYNB.html)
 
-<b>Note:</b> <i> This is an advanced function </i> meant only for users who wish to access & programmatically modify the underlying Visualization Toolkit (VTK) object data which defines Images, Surfaces, and Centerlines in VMTK. While the described vmtkscripts are valid PypeScript members, the API is designed to be called from a typical python script or from within a [Jupyter Notebook](http://jupyter.org/). Also please note that as of VMTK version 1.3, <i> the vmtkscripts described below are not included in the pre-built binary installer </i>. In order to take advantage of these functions, please build VMTK from source by following this instructions [here]({{ site.baseurl }}/download/#development_version) <br> 
+<b>Note:</b> <i> This is an advanced function </i> meant only for users who wish to access & programmatically modify the underlying Visualization Toolkit (VTK) object data which defines Images, Surfaces, and Centerlines in VMTK. While the described vmtkscripts are valid PypeScript members, the API is designed to be called from a typical python script or from within a [Jupyter Notebook](http://jupyter.org/).<br> 
 
 Though deep expertise is not necessary, we recommend that users are familiar with the VTK [data model](http://www.vtk.org/data-model/) and typical class structures for [vtkImageData](http://www.vtk.org/doc/nightly/html/classvtkImageData.html) and [vtkPolyData](http://www.vtk.org/doc/nightly/html/classvtkPolyData.html)
 
@@ -35,12 +32,12 @@ Convenience scripts to write and read a nested dictionary of numpy arrays to dis
 
 ## Requirements
 
-In addition to the standard VMTK package, the following packages must be installed and available on the users PATH:
+In addition to the standard VMTK package, the following packages must be installed:
 
-- [Numpy](http://www.numpy.org/)
-- [h5py](http://www.h5py.org/)
+- [Numpy](http://www.numpy.org/) (installed automatically with the vmtk package)
+- [h5py](http://www.h5py.org/) (only needed by vmtknumpyreader and vmtknumpywriter)
 
-We recommend using the [Python Anaconda](https://anaconda.org/) package manager to create a virtual environment and install the packages. Installation and quickstart instructions are available [here](https://docs.continuum.io/docs_oss/conda/get-started). 
+If you installed VMTK from PyPI, you can get all optional dependencies with `pip install vmtk[all]` (or install h5py separately with `pip install h5py`).
 
 ---
 

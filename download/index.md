@@ -1,230 +1,128 @@
 ---
 layout: page
-title: Download VMTK 1.4
+title: Download
 ---
 
-# VMTK Latest Release (1.4.0)
+# Install VMTK
 
-- Binary packages are supported by <a href="http://www.orobix.com" target="_blank">Orobix Srl</a>.
-- New vmtk users might want to read the <a href="{{ site.baseurl }}/documentation/getting-started.html">Getting Started</a> guide.<br/>
-- To see a detailed list of changes for each version of vmtk please refer to the <a href="https://github.com/vmtk/vmtk/commits/master" target="_blank">changelog</a>.<br/>
-- The vmtk distribution is released under a <a href="{{ site.baseurl }}/license.html" target="_blank">BSD-like license</a>.
+The officially supported way of getting VMTK is installing the <a href="https://pypi.org/project/vmtk/" target="_blank">vmtk package from PyPI</a>. Packages are available for Windows, Linux, and macOS:
 
----------------
-## Compatibility and Dependencies
+```
+pip install vmtk
+```
 
-The general dependencies of VMTK 1.4+ are automatically installed by the anaconda package manager. For reference they are:
-- ITK 4.13
-- VTK 8.1
-- H5Py
-- Numpy <= 1.13
-
-We no longer support python 2.7 on Windows builds. VMTK 1.4+ requires python 3.5+ on Windows 10. Linux and MacOSX machines support python 2.7, 3.5+ In the next release of VMTK, python 2.7 support will be dropped entirely for all platforms.
+- New VMTK users might want to read the <a href="{{ site.baseurl }}/documentation/getting-started.html">Getting Started</a> guide.
+- To see what has changed in each version, refer to the <a href="https://github.com/vmtk/vmtk/releases" target="_blank">release notes</a>.
+- The VMTK distribution is released under a <a href="{{ site.baseurl }}/license.html" target="_blank">BSD-like license</a>.
 
 ---------------
-## Package Distribution and Management
+## Installing from PyPI
 
-With the VMTK 1.4 release, we have transitioned to utilizing [Anaconda Python](https://www.anaconda.com/download/) as our primary method for packaging and distribution. Utilizing this system greatly simplifies the installation burden, environment activation, sequestration and general day to day use of the VMTK tool.
+1) Install <a href="https://www.python.org/downloads/" target="_blank">Python</a>. The list of currently supported Python versions and platforms is shown on the <a href="https://pypi.org/project/vmtk/" target="_blank">vmtk PyPI page</a>.
 
-Please note: We are no longer updating the VMTK PyPi Package, therefore pip installs will be frozen at VMTK 1.3.
+2) Optionally - but recommended - create and activate a virtual environment, so that VMTK and its dependencies do not interfere with other Python packages installed on your system:
 
----------------
-### Install Instructions:
+On Windows:
 
-1) Make sure you have either [Anaconda](https://www.anaconda.com/download/) or [Miniconda](https://conda.io/miniconda.html) (preferably the python 3.6 version) installed on your system.
+```
+python -m venv vmtk-venv
+vmtk-venv\Scripts\activate
+```
 
-2) Open the anaconda prompt
+On Linux and macOS:
 
-3) Make sure that conda and anaconda-client are installed and updated by entering the following two commands exactly as shown:
+```
+python -m venv vmtk-venv
+source vmtk-venv/bin/activate
+```
 
-    conda install anaconda-client
-    conda update conda anaconda-client
-    conda config --set restore_free_channel true
+3) Install VMTK:
 
-4) Enter the following commands to create a new virtual environment with vmtk installed (replace the name "foo" with whatever you want to call the environment, or replace python=3.6 with python=3.5 if you want python 3.5):
+```
+pip install vmtk
+```
 
-    conda create -n foo -c vmtk python=3.6 itk vtk vmtk
+All required dependencies are installed automatically. A few scripts rely on optional Python packages; to install these as well, use `pip install vmtk[all]` instead.
 
-Keep in mind that you will need to activate this virtual invironment before you can use the library. Start the environment with the command `source activate foo`. 
+4) Verify the installation:
 
-5) (optional) if you want to install vmtk into an environment which is already created, first activate that environment with the new conda environment management commands (source activate foo). Then enter:
+```
+vmtk --help
+```
 
-    conda install -c vmtk vtk itk vmtk
+You can use VMTK in several ways:
 
-6) Say "y" to accept the generated package specifications, and the install should proceed regularly. Once this is done, the VMTK icon should show up on your browser.
+- **PypePad user interface**: run `vmtk` without arguments to start <a href="{{ site.baseurl }}/tutorials/PypePad.html">PypePad</a>, and type VMTK scripts there.
+- **Command line**: pass a pype directly to the `vmtk` command, for example `vmtk vmtkimagereader -ifile image.vti --pipe vmtkimageviewer`.
+- **Python**: import VMTK in your own scripts with `from vmtk import vmtkscripts`.
 
----------------
-### Executable Installers
-
-Binary Installers are available for and Windows 7/8/10 64bit and MacOSX 10.9+.
-
-In case you can't find a binary package for your operating system, please [compile vmtk from source](#development-version).
-
-<style>
-table, td, th {
-    border: 1px solid black;
-
-#download-links {
-    border-collapse: separate;
-}
-</style>
-
-<table id="download-links" class="table table condensed table-hover">
-  <tbody>
-    <tr>
-      <td><i class="fa fa-windows"></i></td>
-      <td>Windows 7/8/10</td>
-      <td>Python 3.6</td>
-      <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Python3.6-Windows-x86_64.exe"><i class="fa fa-download"></i></a></td>
-    </tr>
-    <tr>
-      <td><i class="fa fa-windows"></i></td>
-      <td>Windows 7/8/10</td>
-      <td>Python 3.5</td>
-      <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Python3.5-Windows-x86_64.exe"><i class="fa fa-download"></i></a></td>
-    </tr>
-    <tr>
-      <td><i class="fa fa-apple"></i></td>
-      <td>MacOSX</td>
-      <td>Python 2.7</td>
-      <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Py27-MacOSX-x86_64.pkg"><i class="fa fa-download"></i></a></td>
-    </tr>
-    <tr>
-      <td><i class="fa fa-apple"></i></td>
-      <td>MacOSX</td>
-      <td>Python 3.5</td>
-      <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Py35-MacOSX-x86_64.pkg"><i class="fa fa-download"></i></a></td>
-    </tr>
-    <tr>
-      <td><i class="fa fa-apple"></i></td>
-      <td>MacOSX</td>
-      <td>Python 3.6</td>
-      <td><a href="https://vmtk-installers.s3.amazonaws.com/1.4/VMTK-1.4.0-Py36-MacOSX-x86_64.pkg"><i class="fa fa-download"></i></a></td>
-    </tr>
-  </tbody>
-</table>
-
-
-
-
+Note: due to license restrictions, the packages on PyPI do not include the optional TetGen mesh generator. If you need TetGen-based meshing, use one of the community-supported options below.
 
 ---------------
-#### Installing Executable Packages
+## Other ways of getting VMTK
 
-##### Windows 10
-If you have an older binary version of vmtk please remove it by double clicking on the vmtk entry in the uninstall program section of the windows control panel (add/remove program section).
+These distribution channels are maintained by the community:
 
-If you have an older compiled from source version of vmtk simply delete the folder.
-
-After you've [downloaded]({{ site.baseurl }}/download/) the installer, just run it. It will take you through the installation stage, after which you'll find a shortcut to vmtk in your desktop. Click on the vmtk icon, and you'll see PypePad ready for use.
-
-Note that, along with vmtk, the installer directly provides Python-wrapped vmtk and VTK classes, and vmtk, VTK, ITK dll's and header files to develop new applications in Python and C++.
-
-If you want to uninstall vmtk, double click on vmtk entry it in the uninstall program section of the windows control panel.
-
-##### MacOSX
-The MacOSX pkg installer does not place an icon in your application folder. By default, all contents of the package will be placed in your home directory in a folder name "vmtk". Additionally, the installer alters your .bash_profile so that script execution is available on the terminal without the need of a virtual environment. If you wish to execute commands within PypePad, just type "vmtk &" from the terminal, and a new window will appear. 
-
-To uninstall the package, just delete the "vmtk" folder from your home directory (and don't forget to remove the additions to your bash_profile!)
+- **conda**: VMTK is available on the <a href="https://anaconda.org/conda-forge/vmtk" target="_blank">conda-forge channel</a>: `conda install -c conda-forge vmtk`
+- **3D Slicer**: the <a href="https://github.com/vmtk/SlicerExtension-VMTK" target="_blank">SlicerVMTK extension</a> makes core VMTK features (vessel segmentation, centerline computation, ...) available in the <a href="https://www.slicer.org" target="_blank">3D Slicer</a> desktop application, without any programming.
 
 ---------------
-## Development version
+## Building from source
 
-You can grab the latest development version from the <a href="https://github.com/vmtk/vmtk" target="_blank">official vmtk git repository on Github</a>. To clone this repository, make sure <a href="http://git-scm.com" target="_blank">git</a> is installed on your system and issue the following:
+You can grab the latest development version from the <a href="https://github.com/vmtk/vmtk" target="_blank">official vmtk git repository on GitHub</a>. To clone this repository, make sure <a href="https://git-scm.com" target="_blank">git</a> is installed on your system and issue the following:
 
-     git clone https://github.com/vmtk/vmtk.git
+```
+git clone https://github.com/vmtk/vmtk.git
+```
 
-vmtk is now based on SuperBuild, a CMake feature that allows to automatically download and compile dependencies (in our case VTK and ITK). This makes the whole process a lot easier than it was up until version 0.9. Make sure you update your notes based on the instructions below.
+VMTK is based on a CMake SuperBuild, which automatically downloads and compiles its major dependencies (VTK and ITK).
 
----------------
 ### Requirements
 
-vmtk is cross-platform and will compile and work on Linux, Mac OSX and Windows. Most of the development is performed under Linux and Mac OSX, but feel free to update us on eventual issues on Windows.
+VMTK is cross-platform and will compile and work on Linux, macOS, and Windows. To build it you need:
 
-In order to successfully compile and use vmtk, the following software has to be installed in your system:
+- <a href="https://git-scm.com" target="_blank">Git</a>
+- <a href="https://www.python.org" target="_blank">Python</a> 3
+- <a href="https://cmake.org" target="_blank">CMake</a>
+- A C++ compiler toolchain (Visual Studio on Windows, Xcode command line tools on macOS, gcc/g++ on Linux)
 
-- <span> <a href="http://www.git-scm.org" target="_blank">Git</a> (&#8805; 1.6)</span>
-- <span> <a href="http://www.python.org" target="_blank">Python</a> (&#8805; 2.6, &lt; 3.0)</span>
-- <span><a href="http://www.cmake.org" target="_blank">CMake</a> (&#8805; 2.8)</span>
-- A C++ compiler
+On Linux, development packages for OpenGL and X11 are also needed. For example, on Ubuntu:
 
-#### Linux Requirements
+```
+sudo apt-get install libxt-dev libgl1-mesa-glx libgl1-mesa-dev libglapi-mesa libosmesa-dev build-essential
+```
 
-For Ubuntu users, you'll have to install the following packages prior to compiling:
-
-    sudo apt-get install libxt-dev libgl1-mesa-glx libgl1-mesa-dev libglapi-mesa libosmesa-dev build-essential
-
-For other distributions, please ensure that that OpenGL (version 2), Glew, and OSMesa libraries are installed. VMTK also requires a C++ 11 compatible C++ compiler (we currently use gcc-7 and g++-7).
-
-#### MacOS Requirements
-
-VMTK only support MacOSX 10.9+. Please ensure that XCode (with xcode command line tools) is installed on the system (we currently clang-9 and clang++-9).
-
-#### Windows Requirements
-
-Visual Studios 2015+ is required on the system. VMTK no longer supports python 2.7 on windows builds.Please be sure to set "Release" flag instead of the default "Debug" flag in Visual Studio.
-
-In addition make sure that you choose the Visual Studio amd64 version during cmake configuration in order to build for an x64 system.  
-
----------------
 ### Build
 
 Create a build directory and cd into it
 
-    mkdir vmtk-build
-    cd vmtk-build
+```
+mkdir vmtk-build
+cd vmtk-build
+```
 
 Run CMake with the directory where the vmtk source tree is located as an argument e.g.
 
-    cmake ../vmtk
+```
+cmake ../vmtk
+```
 
-Or with the GUI
+or if you use the CMake GUI, point the source path to the vmtk source directory. Set CMake variables as appropriate (they have sensible defaults), *configure* and *generate* (for more details look at the <a href="https://cmake.org/runningcmake/" target="_blank">CMake help pages</a>). On Windows, make sure a 64-bit generator/toolchain is selected and build in "Release" configuration.
 
-    ccmake ../vmtk
+Build the project with your compiler or by running
 
-or if you use the CMake GUI, point the source path to the vmtk source directory.
-Set CMake variables as appropriate (they have sensible defaults), *configure* and *generate* (for more details look at the <a href="http://www.cmake.org/cmake/help/runningcmake.html" target="_blank">CMake help pages</a>). Once you're done, you'll find either Makefiles or a Visual Studio solution or an XCode project in the build directory, depending on your platform and compiler.
+```
+cmake --build . --config Release
+```
 
-Start your compiler in your build directory, as your platform requires. Note that this will download and compile both VTK and ITK in the background, so it will typically take a long time. The build process will automatically install all build products in the vmtk-build/Install directory.
+Note that this will download and compile both VTK and ITK in the background, so it will typically take a long time. The build process will automatically install all build products in the vmtk-build/Install directory.
 
----------------
 ### Environment variables
-In order to properly run vmtk you have to set environment variables.
 
-#### Recommended (automatically set on per-session basis)
-You can use the script vmtk_env.sh located in your vmtk-build/Install folder.
-It allows to set environment variables for your current running shell session.
-This is very useful if you have different versions of vmtk installed in your system:
+In order to run a source-built vmtk you have to set environment variables for your shell session. Use the script vmtk_env.sh located in your vmtk-build/Install folder:
 
-    source path-to-vmtk_env.sh
+```
+source path-to-vmtk_env.sh
+```
 
-Otherwise you can permanently set environment variables by adding it to your .bash_profile or .bash_rc.
-
-#### Not Recommended (manually set as global defaults)
-You can also manually add environment variables. Please substitute ```${path-to-vmtk-build}``` with the correct installation directory, and ```${VMTK_PYTHON_VERSION}``` with the string "pythonX.Y" where X is the python major version (2 or 3) and Y is the python minor version
-
-Examples:
-- for python 2.7 ```${VMTK_PYTHON_VERSION}=python2.7```
-- for python 3.6 ```${VMTK_PYTHON_VERSION}=3.6```
-
-##### For Linux or MacOS
-Add these lines to your .bashrc or .bash_profile file (in your home directory):
-
-    VMTKHOME=${path-to-vmtk-build}/Install
-
-    export PATH=$VMTKHOME/bin:$PATH
-    export PYTHONPATH=$VMTKHOME/lib/${VMTK_PYTHON_VERSION}/site-packages:$PYTHONPATH
-
-##### For Windows
-Set these variables into your PATH environment variable:
-
-    VMTKHOME=${path-to-vmtk-build}\Install
-
-    PATH=VMTKHOME\bin;VMTKHOME\lib;%PATH%
-    PYTHONPATH=VMTKHOME\lib\${VMTK_PYTHON_VERSION}\site-packages;%PYTHONPATH%
-
-
-##### Prior Releases
-====================
-
-Note: These instructions are for the the VMTK 1.4+ releases. For research groups or individuals requiring the use of prior vmtk versions, please post on the <a href="https://discourse.slicer.org/c/community/vmtk">forum</a> so that we can address concerns on a case-by-case basis. 
+This is very useful if you have different versions of vmtk installed on your system. Alternatively, you can make the setup permanent by adding this line to your shell startup file (e.g., .bashrc or .bash_profile).

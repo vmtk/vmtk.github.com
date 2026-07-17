@@ -3,7 +3,26 @@ layout: page-full-width
 title: Getting Started
 ---
 
-This tutorial demonstrates how to open your dataset in vmtk, navigate into a 3D volume and set up your image for further processing.
+This tutorial demonstrates how to install vmtk, open your dataset, navigate into a 3D volume and set up your image for further processing.
+
+## Installation
+
+The officially supported way of getting VMTK is installing the <a href="https://pypi.org/project/vmtk/" target="_blank">vmtk package from PyPI</a>:
+
+    pip install vmtk
+
+See the [Download]({{ site.baseurl }}/download/) page for step-by-step instructions and for other ways of getting VMTK (conda, 3D Slicer extension, building from source).
+
+## Running vmtk scripts
+
+The examples in this guide are *pypes* — chains of vmtk scripts (see the [Basic PypeS tutorial]({{ site.baseurl }}/tutorials/PypesBasic.html)). You can run them in two ways:
+
+- **PypePad**: run `vmtk` in a terminal to start the [PypePad]({{ site.baseurl }}/tutorials/PypePad.html) user interface, then type the example there as shown.
+- **Command line**: prefix the example with the `vmtk` command, for example:
+
+      vmtk vmtkimagereader -ifile image.vti --pipe vmtkimageviewer
+
+- **Python scripts**: each pype is a class that you can import and use from any Python script.
 
 ## Reading and displaying images
 
@@ -42,6 +61,61 @@ Or maybe you want to have 8-bit png images to put in your next paper:
      vmtkimagereader -ifile first_dicom_file_in_the_series.dcm --pipe vmtkimagewriter -f png -ofile image_file_prefix
 
 If the image volume is composed by more than one slice, single slices will be output in separate png files named image_file_prefix0001.png, image_file_prefix0002.png, image_file_prefix0003.png, etc. For 8-bit formats, image levels will be automatically scaled to 0-255. You can adjust that with the *-windowlevel* option of *vmtkimagewriter*. (Use of 8-bit images should be limited to display purposes only such as those used in presentations or publications. No processing should be carried out on them since important information and details can be lost by rescaling levels.)
+
+## Example of using pypes from Python script
+
+```python
+from vmtk import vmtksurfacereader
+from vmtk import vmtkcenterlines
+from vmtk import vmtkrenderer
+from vmtk import vmtksurfaceviewer
+
+# Extract vessel mesh from image
+vmtk vmtkmarchingcubes -ifile aorta.mha -ofile aorta.vtp -l 1000
+
+# Read surface
+reader = vmtksurfacereader.vmtkSurfaceReader()
+reader.InputFileName = "aorta.vtp"
+reader.Execute()
+
+# Compute centerlines
+# A window will appear showing the vessel endpoints.
+# Take note of IDs of inlets and outlets and press `q`
+# Type inlet IDs (separated by spaces), such as `13` and hit `Enter`
+# Type outlet IDs (separated by spaces) or leave empty to extract all and hit `Enter`
+# centerlines = vmtkcenterlines.vmtkCenterlines()
+centerlines.Surface = reader.Surface
+centerlines.SeedSelectorName = 'openprofiles'
+centerlines.Execute()
+
+# Display the vessel surface (semi-transparent) and the extracted
+# centerlines in the same viewer window: both viewers below share
+# this single renderer, so only one window opens
+renderer = vmtkrenderer.vmtkRenderer()
+renderer.Initialize()
+
+# Add the surface to the shared window without showing it yet
+surfaceViewer = vmtksurfaceviewer.vmtkSurfaceViewer()
+surfaceViewer.vmtkRenderer = renderer
+surfaceViewer.Surface = reader.Surface
+surfaceViewer.Opacity = 0.3
+surfaceViewer.Display = 0
+surfaceViewer.Execute()
+
+# Add the centerlines (red) and show the window with both objects.
+centerlineViewer = vmtksurfaceviewer.vmtkSurfaceViewer()
+centerlineViewer.vmtkRenderer = renderer
+centerlineViewer.Surface = centerlines.Centerlines
+centerlineViewer.Color = [1.0, 0.0, 0.0]
+centerlineViewer.LineWidth = 3
+centerlineViewer.Display = 1
+centerlineViewer.Execute()
+
+# A window will appear that shows the vessel surface and centerline.
+# Press q to quit.
+
+renderer.Deallocate()
+```
 
 ## File formats
 ---
